@@ -16,8 +16,8 @@
     $(".owl-carousel").owlCarousel({
                 margin: 10,
                 loop: true,
-                autoWidth: true,
-                items: 1,
+                autoWidth: false,
+                items: 5,
                 autoplay: true,
                 autoplayTimeout: 5000,
                 autoplayHoverPause: true
@@ -26,7 +26,7 @@
     $('.tp-banner').show().revolution({
                 delay: 7500,
                 startwidth: 1000,
-                startheight: 300,
+                startheight: 488,
                 hideThumbs: 600,
 
                 thumbWidth: 80,
