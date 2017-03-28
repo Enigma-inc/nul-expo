@@ -1,7 +1,8 @@
 @extends('partials.master')
+<!--@include('pages.home.partials.about')-->
 
 @section('content')
-<h1>This now from content</h1>
+    @include('pages.schedule.partials.schedule')
 @stop
 
 @section('scripts')
