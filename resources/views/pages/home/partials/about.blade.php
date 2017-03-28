@@ -29,7 +29,7 @@
 
 
                         <p style="text-align: justify;">
-                                <img height="200px" src="/images/resource/manthoto_lephoto.png" alt="PVC" title="PVC" style="float: left; margin: 10px;" class="thumbnail"> 
+                                <img height="200px" src="/images/team/manthoto_lephoto.png" alt="PVC" title="PVC" style="float: left; margin: 10px;" class="thumbnail"> 
                                The National University of Lesotho (NUL) is located at about 34 km from Maseru, the Capital city of the Kingdom of Lesotho. The origin of the university dates back to 8th April, 1945 when a Catholic University College, the Pius XII College, was founded at Roma by the Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in the history of the University have taken place both in terms of physical infrastructure development and growth in students' enrolment. 
                         </p>
 
