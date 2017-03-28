@@ -10,7 +10,7 @@
                 <!--Team Member-->
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/maluke_letete.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/maluke_letete.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Maluke Letete</h5>                    
@@ -22,7 +22,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/moeketsi_mpholo.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/moeketsi_mpholo.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Moeketsi Mpholo</h5>
@@ -35,7 +35,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/mosotho_george.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/mosotho_george.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Mosotho George</h5>
@@ -48,7 +48,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/pulane_nkhabutlane.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/pulane_nkhabutlane.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Pulane Nkhabutlane</h5>
@@ -61,7 +61,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/puleng_ranthimo.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/puleng_ranthimo.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Puleng Ranthimo</h5>
@@ -74,7 +74,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/sissay_mekbib.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/sissay_mekbib.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Sissay Mekbib</h5>
@@ -88,7 +88,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/pulane_nkhabutlane.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/pulane_nkhabutlane.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Pulane Nkhabutlane</h5>
@@ -102,7 +102,7 @@
                 </article>
                 <article class="team-member wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="inner">
-                        <figure class="member-image"><img src="/images/resource/pulane_nkhabutlane.jpg" alt="" title=""></figure>
+                        <figure class="member-image"><img src="/images/team/pulane_nkhabutlane.jpg" alt="" title=""></figure>
                         <div class="lower">
                             <div class="member-title">
                                 <h5>Pulane Nkhabutlane</h5>
