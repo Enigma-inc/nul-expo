@@ -1,0 +1,43 @@
+/*About Section CSS*/
+
+.inner {
+    padding: 5px !important;
+   /* border: 1px solid #d0d0d0;*/
+    font-size: 1em !important;
+    min-height:250px;
+   
+}
+.check-listing li {
+ margin-bottom: 5px !important; 
+}
+.welcome{
+    text-align: justify
+}
+.latest-posts.sec-title{
+   color: #000;
+}
+
+/*Slideshow Section CSS*/
+
+ .musk{
+     position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='svgMask'><feGaussianBlur stdDeviation='10' /></filter></svg>#svgMask")
+    }
+
+/*Sponsors Section CSS*/
+    
+    .sec-title{
+        color:#fff;
+    }
