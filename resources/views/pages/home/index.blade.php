@@ -1,6 +1,4 @@
-
 @extends('partials.master')
-<!--@include('pages.home.partials.about')-->
 
 @section('content')
     @include('pages.home.partials.slider')
