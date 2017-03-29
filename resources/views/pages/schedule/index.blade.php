@@ -1,5 +1,4 @@
 @extends('partials.master')
-<!--@include('pages.home.partials.about')-->
 
 @section('content')
     @include('pages.schedule.partials.schedule')
