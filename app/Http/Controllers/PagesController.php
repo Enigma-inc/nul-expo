@@ -35,4 +35,9 @@ class PagesController extends Controller
     {
         return view('pages.booking.index');
     }
+
+    public function blog()
+    {
+        return view('pages.blog.index');
+    }
 }

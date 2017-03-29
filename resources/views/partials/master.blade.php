@@ -41,6 +41,7 @@
 <!--Scroll to top-->
 <div class="scroll-to-top"></div>
 
+<script src={{mix('js/app.js')}}></script>
 
 <script src="/js/jquery.js"></script> 
 <script src="/js/bootstrap.min.js"></script>

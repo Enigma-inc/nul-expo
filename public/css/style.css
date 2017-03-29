@@ -1062,6 +1062,7 @@ ul,li{
 	font-size:18px;
 	padding-right:30px;
 	color:#292929;
+	cursor:default;
 }
 
 .schedule-box .hour-box .toggle-btn h3:after{
@@ -1072,7 +1073,7 @@ ul,li{
 	top:0px;
 	width:30px;
 	height:30px;
-	display:block;
+	display:none;
 	color:#e13f30;
 	line-height:28px;
 	font-size:24px;
@@ -4109,4 +4110,9 @@ ul,li{
 #single-speakers .session-time li {
 	margin-bottom: 10px;
 	color: #7f7f7f;
+}
+
+.img-circle-red{
+	border: #E13F30 2px solid  !important;
+	background: #E13F30;
 }

@@ -1,13 +1,8 @@
 @extends('partials.master')
 
 @section('content')
-    @include('pages.home.partials.slider')
-    @include('pages.home.partials.about')
-    @include('pages.home.partials.topics')
-    @include('pages.home.partials.speakers')
-    @include('pages.home.partials.blog')
+<h1>Blog content</h1>
 @stop
-
 
 @section('scripts')
     <script> 
@@ -16,7 +11,7 @@
                 margin: 10,
                 loop: true,
                 autoWidth: false,
-                items: 4,
+                items: 5,
                 autoplay: true,
                 autoplayTimeout: 5000,
                 autoplayHoverPause: true
@@ -102,10 +97,3 @@
     </script>
 
 @stop
-
-
-
-
-
-
-
