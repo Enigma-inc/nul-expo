@@ -20,11 +20,11 @@
                 
                 <!--Tab Buttons-->
                 <ul class="tab-buttons clearfix">
-                    <li class="tab-btn active" data-id="#monday"><span class="day">Monday</span><span class="date">12/05/2015</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#tuesday"><span class="day">Tuesday</span><span class="date">13/05/2015</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#wednesday"><span class="day">Wednesday</span><span class="date">14/05/2015</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#thursday"><span class="day">Thursday</span><span class="date">15/05/2015</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#friday"><span class="day">Friday</span><span class="date">16/05/2015</span><span class="curve"></span></li>
+                    <li class="tab-btn active" data-id="#monday"><span class="day">Monday</span><span class="date">22/01/2018</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#tuesday"><span class="day">Tuesday</span><span class="date">23/01/2018</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#wednesday"><span class="day">Wednesday</span><span class="date">24/01/2018</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#thursday"><span class="day">Thursday</span><span class="date">25/01/2018</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#friday"><span class="day">Friday</span><span class="date">26/01/2018</span><span class="curve"></span></li>
                 </ul>
                 
                 <!--Tabs Box-->
@@ -64,8 +64,7 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">17:00 - 19:00</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,110 +76,183 @@
                     <div class="tab" id="tuesday">
                         
                         <div class="hour-box active-box">
+                            <div class="hour">08:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn active"><h3>Registration</h3></div>
+                            <div class="content-box collapsed">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">08:00 - 09:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
+                            <div class="hour">09:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Opening Ceremony</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">09:00 - 10:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
                             <div class="hour">10:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn active"><h3>Adobe Photoshop beginner course</h3></div>
-                            <div class="content-box collapsed">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                            <div class="toggle-btn"><h3>Tea/Break</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
+                                        
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 10:30</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="hour-box">
-                            <div class="hour">12:00 AM</div>
+                            <div class="hour">10:30 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>The latest design standarts for web</h3></div>
+                            <div class="toggle-btn"><h3>Plenary Lectures</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></p></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                                                            </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:30 - 11:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="hour-box">
-                            <div class="hour">02:00 PM</div>
+                            <div class="hour">11:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>How to create vectors with Adobe Illustrator</h3></div>
+                            <div class="toggle-btn"><h3>Parallel Sessions</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">11:00 - 13:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="hour-box">
-                            <div class="hour">04:00 PM</div>
+                            <div class="hour">13:00 PM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Build awesome templates with Adobe Photoshop</h3></div>
+                            <div class="toggle-btn"><h3>Lunch</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">13:00 - 14:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="hour-box">
-                            <div class="hour">06:00 PM</div>
+                            <div class="hour">14:00 PM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Presentation professional wordpress developers</h3></div>
+                            <div class="toggle-btn"><h3>Parallel Sessions</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">14:00 - 16:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">16:30 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Tea Break/Posters</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">16:30 - 17:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">17:00 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>End of Day</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">17:00 - 19:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">19:00 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Local Music/Dance</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">19:00 - 22:00</a>
                                     </div>
                                 </div>
                             </div>
@@ -192,110 +264,183 @@
                     <div class="tab" id="wednesday">
                         
                         <div class="hour-box active-box">
+                            <div class="hour">08:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn active"><h3>Registration</h3></div>
+                            <div class="content-box collapsed">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">08:00 - 09:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
+                            <div class="hour">09:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Plenary Lectures</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">09:00 - 10:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
                             <div class="hour">10:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn active"><h3>Adobe Photoshop beginner course</h3></div>
-                            <div class="content-box collapsed">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                            <div class="toggle-btn"><h3>Tea/Break</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
+                                        
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 10:30</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="hour-box">
-                            <div class="hour">12:00 AM</div>
+                            <div class="hour">10:30 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>The latest design standarts for web</h3></div>
+                            <div class="toggle-btn"><h3>Invited Speakers</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></p></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                                                            </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:30 - 11:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="hour-box">
-                            <div class="hour">02:00 PM</div>
+                            <div class="hour">11:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>How to create vectors with Adobe Illustrator</h3></div>
+                            <div class="toggle-btn"><h3>Parallel Sessions</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">11:00 - 13:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="hour-box">
-                            <div class="hour">04:00 PM</div>
+                            <div class="hour">13:00 PM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Build awesome templates with Adobe Photoshop</h3></div>
+                            <div class="toggle-btn"><h3>Lunch</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">13:00 - 14:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="hour-box">
-                            <div class="hour">06:00 PM</div>
+                            <div class="hour">14:00 PM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Presentation professional wordpress developers</h3></div>
+                            <div class="toggle-btn"><h3>Parallel Sessions</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">14:00 - 16:30</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">16:30 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Tea Break/Posters</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">16:30 - 17:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">17:00 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>End of Day</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">17:00 - 19:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">19:00 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Local Music/Dance</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">19:00 - 22:00</a>
                                     </div>
                                 </div>
                             </div>
@@ -307,226 +452,190 @@
                     <div class="tab" id="thursday">
                         
                         <div class="hour-box active-box">
+                            <div class="hour">08:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn active"><h3>Registration</h3></div>
+                            <div class="content-box collapsed">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">08:00 - 09:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
+                            <div class="hour">09:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Plenary Lectures</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">09:00 - 10:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
                             <div class="hour">10:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn active"><h3>Adobe Photoshop beginner course</h3></div>
-                            <div class="content-box collapsed">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                            <div class="toggle-btn"><h3>Tea/Break</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
+                                        
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 10:30</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="hour-box">
-                            <div class="hour">12:00 AM</div>
+                            <div class="hour">10:30 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>The latest design standarts for web</h3></div>
+                            <div class="toggle-btn"><h3>Invited Speakers</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></p></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                                                            </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:30 - 11:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="hour-box">
-                            <div class="hour">02:00 PM</div>
+                            <div class="hour">11:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>How to create vectors with Adobe Illustrator</h3></div>
+                            <div class="toggle-btn"><h3>Parallel Sessions</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">11:00 - 13:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="hour-box">
-                            <div class="hour">04:00 PM</div>
+                            <div class="hour">13:00 PM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Build awesome templates with Adobe Photoshop</h3></div>
+                            <div class="toggle-btn"><h3>Lunch</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">13:00 - 14:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="hour-box">
-                            <div class="hour">06:00 PM</div>
+                            <div class="hour">14:00 PM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Presentation professional wordpress developers</h3></div>
+                            <div class="toggle-btn"><h3>Expo at Pioneer Mall</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                        </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">14:00 - 17:00</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <div class="hour-box">
+                            <div class="hour">17:00 PM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn"><h3>Gala Dinner</h3></div>
+                            <div class="content-box">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">17:00 - 22:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                                                
                     </div>
                 
                     <!--Tab / Friday-->
                     <div class="tab" id="friday">
                         
                         <div class="hour-box active-box">
+                            <div class="hour">08:00 AM</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn active"><h3>Expo Continues at the mall.</h3></div>
+                            <div class="content-box collapsed">
+                                <div class="content"></div>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
+                                        
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                                        
+                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">08:00 - 10:00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hour-box">
                             <div class="hour">10:00 AM</div>
                             <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn active"><h3>Adobe Photoshop beginner course</h3></div>
-                            <div class="content-box collapsed">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
-                                <br>
-                                <div class="row professional clearfix">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                                        
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="hour-box">
-                            <div class="hour">12:00 AM</div>
-                            <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>The latest design standarts for web</h3></div>
+                            <div class="toggle-btn"><h3>International Visitors' Day Trip</h3></div>
                             <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
+                                <div class="content"></div>
                                 <br>
                                 <div class="row professional clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
+                                          </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                                         
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="hour-box">
-                            <div class="hour">02:00 PM</div>
-                            <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>How to create vectors with Adobe Illustrator</h3></div>
-                            <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
-                                <br>
-                                <div class="row professional clearfix">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                                        
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="hour-box">
-                            <div class="hour">04:00 PM</div>
-                            <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Build awesome templates with Adobe Photoshop</h3></div>
-                            <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
-                                <br>
-                                <div class="row professional clearfix">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                                        
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="hour-box">
-                            <div class="hour">06:00 PM</div>
-                            <div class="img-circle circle"><span></span></div>
-                            <div class="toggle-btn"><h3>Presentation professional wordpress developers</h3></div>
-                            <div class="content-box">
-                                <div class="content"><p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s difficult to get to the phone if you are in the middle of something and you don’t want to miss that important call that could be the start of an exciting new business opportunity, so let us answer it for you. </p></div>
-                                <br>
-                                <div class="row professional clearfix">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 info">
-                                        <figure class="img-circle image"><img class="img-circle" src="images/resource/testi-thumb-1.jpg" alt=""></figure>
-                                        <h5 class="prof-title">Laurence Francis</h5>
-                                        <h6 class="prof-occup">Speaker</h6>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                                        
-                                        <a href="#" class="theme-btn btn-style-one hvr-bounce-to-right dull">10:00 - 12:00</a>
-                                        <a href="single-event.html" class="theme-btn btn-style-one hvr-bounce-to-right"><span class="fa fa-play"></span>DETAILS ABOUT THE EVENT</a>
-                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
