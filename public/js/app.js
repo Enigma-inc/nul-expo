@@ -31780,7 +31780,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('a', {
       staticClass: "col-md-4",
       attrs: {
-        "href": "blog-detail.html"
+        "href": article.articleUrl,
+        "target": "_blank"
       }
     }, [_c('img', {
       staticClass: "img-responsive",
@@ -31790,6 +31791,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     })])]), _vm._v(" "), _c('div', {
       staticClass: "wow fadeInUp animated col-md-8"
+    }, [_c('a', {
+      attrs: {
+        "href": article.articleUrl,
+        "target": "_blank"
+      }
     }, [_c('h4', {
       staticStyle: {
         "visibility": "visible",
@@ -31797,7 +31803,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "color": "#e13f30",
         "text-align": "left"
       }
-    }, [_vm._v(_vm._s(article.title))]), _vm._v(" "), _c('p', {
+    }, [_vm._v(_vm._s(article.title))])]), _vm._v(" "), _c('p', {
       staticStyle: {
         "text-align": "justify"
       },

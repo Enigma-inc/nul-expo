@@ -266,7 +266,7 @@
                         <div class="hour-box">
                             <div class="hour">08:00 AM</div>
                             <div class="img-circle circle "><span></span></div>
-                            <div class="toggle-btn"><h3>Expo Continues at the mall.</h3></div>
+                            <div class="toggle-btn"><h3>Expo Continues at the Mall</h3></div>
                             
                         </div>
                         

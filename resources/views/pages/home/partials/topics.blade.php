@@ -12,7 +12,7 @@
         <div class="row clearfix">
 
             <!--Table Column-->
-            <article class="col-xs-12 col-sm-6 col-md-3 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <article class="col-md-2 col-md-offset-1 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="table-inner hvr-sweep-to-bottom">
                     <div class="clearfix">
                         <div class="col-xs-12 half-column price">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </article>
-            <article class="col-xs-12 col-sm-6 col-md-3 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <article class="col-md-2 table-column wow fadeInUp" style="height: 171px;" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="table-inner hvr-sweep-to-bottom">
                     <div class="clearfix">
                         <div class="col-xs-12 half-column price">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </article>
-            <article class="col-xs-12 col-sm-6 col-md-3 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <article class="col-md-2 table-column wow fadeInUp" style="height: 171px;" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="table-inner hvr-sweep-to-bottom">
                     <div class="clearfix">
                         <div class="col-xs-12 half-column price">
@@ -44,7 +44,7 @@
 
                 </div>
             </article>
-            <article class="col-xs-12 col-sm-6 col-md-3 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <article class="col-md-2 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="table-inner hvr-sweep-to-bottom">
                     <div class="clearfix">
                         <div class="col-xs-12 half-column price">
@@ -56,7 +56,7 @@
 
                 </div>
             </article>
-            <article class="col-xs-12 col-sm-6 col-md-3 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <article class="col-md-2 table-column wow fadeInUp" style="height: 171px;" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="table-inner hvr-sweep-to-bottom">
                     <div class="clearfix">
                         <div class="col-xs-12 half-column price">

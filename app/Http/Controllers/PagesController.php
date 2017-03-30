@@ -40,4 +40,9 @@ class PagesController extends Controller
     {
         return view('pages.blog.index');
     }
+
+    public function accomodation()
+    {
+        return view('pages.accomodation.index');
+    }
 }

@@ -271,7 +271,7 @@
 	
 	//Contact Form Validation
 	if($('#contact-form').length){
-		$('#contact-form').validate({ // initialize the plugin
+		$('#contact-form').validate({
 			rules: {
 				username: {
 					required: true
@@ -305,10 +305,10 @@
 		  
 		  //Add map Marker
 		  map.addMarker({
-			lat: -37.817085,
-			lng: 144.955631,
+			lat: -29.451286,
+			lng: 27.720619,
 			infoWindow: {
-			  content: '<p><strong>Envato</strong><br>Melbourne VIC 3000, Australia</p>'
+			  content: '<p>NUL Research & Innovations</p>'
 			}
 		 
 		});

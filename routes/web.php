@@ -19,3 +19,4 @@ Route::get('/blog', 'PagesController@blog');
 Route::get('/sponsors', 'PagesController@sponsors');
 Route::get('/', 'PagesController@home');
 Route::get('/booking', 'PagesController@booking');
+Route::get('/accomodation', 'PagesController@accomodation');
