@@ -29,8 +29,10 @@
 
 
                         <p style="text-align: justify;">
-                                <img height="200px" src="/images/team/manthoto_lephoto.png" alt="PVC" title="PVC" style="float: left; margin: 10px;" class="thumbnail"> 
-                               The National University of Lesotho (NUL) is located at about 34 km from Maseru, the Capital city of the Kingdom of Lesotho. The origin of the university dates back to 8th April, 1945 when a Catholic University College, the Pius XII College, was founded at Roma by the Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in the history of the University have taken place both in terms of physical infrastructure development and growth in students' enrolment. 
+                        <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail"><img height="200px" src="/images/team/manthoto_lephoto.png" style="margin-bottom: 7px;" alt="PVC" title="PVC" class="">
+                        <em>Pro Vice Chancellor: Mrs L. Liphoto</em>
+                        </div>                               
+                       The National University of Lesotho (NUL) is located at about 34 km from Maseru, the Capital city of the Kingdom of Lesotho. The origin of the university dates back to 8th April, 1945 when a Catholic University College, the Pius XII College, was founded at Roma by the Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in the history of the University have taken place both in terms of physical infrastructure development and growth in students' enrolment. 
                         </p>
 
                         <p style="text-align: justify;">
@@ -120,47 +122,47 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="col-lg-12 faq-title">
             <div class="row">
-                        <h2>Important Dates Section</h2>
+                        <h2>Main Events</h2>
                 </div>           
                 <div class="row" style="height: 350px;border: gray 1px solid;">
                               
-                            <table class="table table-striped" style="margin-top: 10px;">
+                            <table class="table table-bordered" style="margin-bottom: 5px;">
                                 <thead>
                                 <tr>
-                                    <th>Activities</th>
-                                    <th>Date</th>                                   
+                                    <th>Date</th>
+                                    <th>Event</th>                                   
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Arrival</td>
-                                    <td>23 January 2018</td>                                  
+                                    <td>22/01/2018</td>
+                                    <td>Arrival</td>                                  
                                 </tr>
                                 <tr>
-                                    <td>Registration</td>
-                                    <td>24 January 2018</td>                                   
+                                    <td>23/01/2018</td>
+                                    <td>Opening Ceremony</td>                                   
                                 </tr>
                                 <tr>
-                                    <td>Opening Ceremory</td>
-                                    <td>24 January 2018</td>                                    
+                                    <td>23/01/2018</td>
+                                    <td>Parallel Sessions</td>                                    
                                 </tr>
                                 <tr>
-                                    <td>Plenary Lectures</td>
-                                    <td>24 January 2018</td>                                    
+                                    <td>24/01/2018</td>
+                                    <td>Parallel Sessions</td>                                    
                                 </tr>
                                 <tr>
-                                    <td>Parallel Sessions</td>
-                                    <td>24 January 2018</td>                                    
+                                    <td>25/01/2018</td>
+                                    <td>Expo @ Pioneer & Gala Dinner</td>                                    
                                 </tr>
                                 <tr>
-                                    <td>Local Music/Dance</td>
-                                    <td>24 January 2018</td>                                    
+                                    <td>26/01/2018</td>
+                                    <td>Expo @ Pioneer & International Visitors' Trip</td>                                    
                                 </tr>
 
                                 </tbody>
                             </table> 
 
-                            <center><a href="schedule" class="btn btn-danger" style="background-color: #e13f30;">Full Schedule</a></center>
+                            <center><a href="schedule" class="default-btn orange hvr-bounce-to-right" style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 17px; border-width: 0px; margin-bottom: 5px 13.9429px 6.97143px 0px; padding: 7px 17px; letter-spacing: 0px; font-size: 10px;">Full Schedule</a></center>
 
                             </div> 
                     </div>

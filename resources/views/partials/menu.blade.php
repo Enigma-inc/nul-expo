@@ -28,6 +28,9 @@
                             <a href="speakers">Speakers</a>
                         </li>
                         <li >
+                            <a href="blog">Blog</a>
+                        </li>
+                        <li >
                             <a href="sponsors">Sponsors</a>
                         </li>
                         
