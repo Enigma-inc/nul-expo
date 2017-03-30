@@ -1,7 +1,7 @@
 @extends('partials.master')
 
 @section('content')
-    @include('pages.schedule.partials.schedule')
+    @include('pages.schedule.test')
 @stop
 
 @section('scripts')
