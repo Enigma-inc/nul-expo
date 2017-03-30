@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="post-item wow animated col-xs-12" v-for="(article,index) in articles" v-if="index <=2">
+            <div class="post-item wow animated col-xs-12" v-for="(article, index) in articles" v-if="index <= 4">
 
                 <div class="row" style="padding: 20px;">
                 <div class="post wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
@@ -34,7 +34,7 @@
             }
         },
         mounted() {
-            axios.get('http://nulresearchandinnovations.co.ls/blog/api/articles/featured').then(response => {
+            axios.get('http://nulresearchandinnovations.co.ls/blog/api/articles').then(response => {
 
                 this.articles = response.data;
                 console.log(this.articles[0]);

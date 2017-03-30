@@ -1854,6 +1854,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1867,6 +1870,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         axios.get('http://nulresearchandinnovations.co.ls/blog/api/articles/featured').then(function (response) {
 
             _this.articles = response.data;
+            console.log(_this.articles[0]);
         });
     }
 });
@@ -31763,25 +31767,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return (index <= 2) ? _c('div', {
       staticClass: "post-item wow animated col-xs-12"
     }, [_c('div', {
-      staticClass: "row"
-    }, [_c('h4', {
-      staticClass: "wow fadeInUp animated col-xs-12 col-md-offset-4 col-md-8",
+      staticClass: "row",
+      staticStyle: {
+        "padding": "20px"
+      }
+    }, [_c('div', {
+      staticClass: "post wow fadeInUp animated",
       staticStyle: {
         "visibility": "visible",
         "animation-name": "fadeInUp"
       }
     }, [_c('a', {
-      attrs: {
-        "href": "#"
-      }
-    }, [_vm._v(_vm._s(article.title))])])]), _vm._v(" "), _c('div', {
-      staticClass: "post wow fadeInUp animated row",
-      staticStyle: {
-        "visibility": "visible",
-        "animation-name": "fadeInUp"
-      }
-    }, [_c('a', {
-      staticClass: "col-xs-4",
+      staticClass: "col-md-4",
       attrs: {
         "href": "blog-detail.html"
       }
@@ -31791,27 +31788,42 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "src": article.mainImage,
         "alt": "blog"
       }
-    })]), _vm._v(" "), _c('div', {
-      staticClass: "post-content col-xs-8"
-    }, [_c('p', {
+    })])]), _vm._v(" "), _c('div', {
+      staticClass: "wow fadeInUp animated col-md-8"
+    }, [_c('h4', {
+      staticStyle: {
+        "visibility": "visible",
+        "animation-name": "fadeInUp",
+        "color": "#e13f30",
+        "text-align": "left"
+      }
+    }, [_vm._v(_vm._s(article.title))]), _vm._v(" "), _c('p', {
+      staticStyle: {
+        "text-align": "justify"
+      },
       domProps: {
         "innerHTML": _vm._s(article.body)
       }
-    }), _vm._v(" "), _vm._m(0, true)])])]) : _vm._e()
-  }))])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "posted-date"
-  }, [_vm._v("July 19, 2014 / "), _c('span', [_vm._v("by")]), _vm._v(" "), _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("John")]), _vm._v(" / "), _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("12 Comments")])])
-}]}
+    }), _vm._v(" "), _c('a', {
+      staticClass: "default-btn orange hvr-bounce-to-right pull-left",
+      staticStyle: {
+        "transition": "all 0.2s ease-out 0s",
+        "min-height": "0px",
+        "min-width": "0px",
+        "line-height": "17px",
+        "border-width": "0px",
+        "margin-bottom": "5px 13.9429px 6.97143px 0px",
+        "padding": "7px 17px",
+        "letter-spacing": "0px",
+        "font-size": "10px"
+      },
+      attrs: {
+        "href": article.articleUrl,
+        "target": "_blank"
+      }
+    }, [_vm._v("\n                    Read More")])])])]) : _vm._e()
+  })), _vm._v(" "), _c('hr')])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
