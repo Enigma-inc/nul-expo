@@ -1,7 +1,7 @@
 @extends('partials.master')
 
 @section('content')
-<h1>Blog content</h1>
+  @include('pages.blog.partials.blog')
 @stop
 
 @section('scripts')
