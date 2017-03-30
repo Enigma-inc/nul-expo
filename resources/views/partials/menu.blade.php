@@ -22,16 +22,19 @@
                             <a href="home">Home</a>                           
                         </li>
                         <li >
-                            <a  href="schedule">Schedule</a>
+                            <a href="schedule">Schedule</a>
                         </li>
                         <li >
                             <a href="speakers">Speakers</a>
                         </li>
                         <li >
+                            <a href="sponsors">Sponsors</a>
+                        </li>
+                        <li >
                             <a href="blog">Blog</a>
                         </li>
                         <li >
-                            <a href="sponsors">Sponsors</a>
+                            <a href="accomodation">Accomodation</a>
                         </li>
                         
                         <li>
