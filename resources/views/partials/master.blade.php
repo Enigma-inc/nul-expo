@@ -12,6 +12,7 @@
 <link href="/css/owl.carousel.min.css" rel="stylesheet" >
 <link  href="/css/owl.theme.default.min.css" rel="stylesheet">
 <link  href="/css/owl.css" rel="stylesheet">
+<link  href={{mix('css/app.css')}} rel="stylesheet">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">

@@ -27,6 +27,9 @@
                         <li >
                             <a href="blog">Blog</a>
                         </li>
+                        <li>
+                            <a href="conference">Conference</a>
+                        </li>
                         <li >
                             <a href="accomodation">Accomodation</a>
                         </li>

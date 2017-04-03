@@ -45,4 +45,9 @@ class PagesController extends Controller
     {
         return view('pages.accomodation.index');
     }
+
+    public function conference()
+    {
+        return view('pages.conference.index');
+    }
 }
