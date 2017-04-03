@@ -21,15 +21,15 @@
         <div class="row clearfix">
 
             <div class="col-xs-12 text-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <div class="col-xs-12 col-sm-8" style="text-align:justify">
+                <div class="col-xs-12 col-sm-12" style="text-align:justify">
                     <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                         <h3>Message from the Chairperson of the NULSTICE 2018</h3>
                     </div>
                     <div class="text welcome">
                         <div id="text-welcomes">
                         <p class="text-align-just">
-                        <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail"><img height="200px" src="/images/team/manthoto_lephoto.png" style="margin-bottom: 7px;" alt="PVC" title="PVC" class="">
-                        <em>Pro Vice Chancellor: Prof H.M. Lephoto</em>
+                        <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10"><img width="100%" src="/images/team/manthoto_lephoto.png" style="margin-bottom: 7px;" alt="PVC" title="PVC" class="">
+                        <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2018 </em>
                         </div>                               
 
                         <p class="text-align-just"> <strong>Dear Prospective Delegate</strong> <br>
@@ -68,59 +68,7 @@
 
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="col-lg-12 faq-title">
-                        <div class="row">
-                            <div class="sec-title ">
-                                <h3>Main Events</h3>
-                            </div>
-                        </div>
-                        <div class="row" style="height: 350px;border: gray 1px solid;">
-
-                            <table class="table table-bordered" style="margin-bottom: 5px;">
-                                <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Event</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>22/01/2018</td>
-                                    <td>Arrival</td>
-                                </tr>
-                                <tr>
-                                    <td>23/01/2018</td>
-                                    <td>Opening Ceremony</td>
-                                </tr>
-                                <tr>
-                                    <td>23/01/2018</td>
-                                    <td>Parallel Sessions</td>
-                                </tr>
-                                <tr>
-                                    <td>24/01/2018</td>
-                                    <td>Parallel Sessions</td>
-                                </tr>
-                                <tr>
-                                    <td>25/01/2018</td>
-                                    <td>Expo @ Pioneer & Gala Dinner</td>
-                                </tr>
-                                <tr>
-                                    <td>26/01/2018</td>
-                                    <td>Expo @ Pioneer & International Visitors' Trip</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-
-                            <center><a href="schedule" class="default-btn orange hvr-bounce-to-right"
-                                       style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 17px; border-width: 0px; margin-bottom: 5px 13.9429px 6.97143px 0px; padding: 7px 17px; letter-spacing: 0px; font-size: 10px;">Full
-                                    Schedule</a></center>
-
-                        </div>
-                    </div>
-
-                </div>
+            
             </div>
 
         </div>

@@ -63,12 +63,7 @@
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyClJlIWcBjIz0wcRP_VAewoG3b21aatXXA"></script>
 <script src="/js/googlemaps.js"></script>
 
-<script>
-$('#text-welcomes').slimScroll({
-    size: '10px',
-    height: '320px'
-});
-</script>
+
  @yield('scripts')
 
 </body>

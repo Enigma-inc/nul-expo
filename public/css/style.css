@@ -65,10 +65,10 @@
 
 body {
 	font-family: 'Droid Sans', sans-serif;
-	font-size:16px;
+	font-size:16px !important;
 	color:#292929;
 	line-height:2em;
-	font-weight:400;
+	font-weight:400 !important;
 	background:#ffffff;
 }
 

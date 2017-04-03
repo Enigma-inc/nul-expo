@@ -18,19 +18,19 @@
                 
                 <div class="navbar-collapse collapse clearfix">                                                                                              
                     <ul class="navigation">
-                        <li class="current dropdown">
+                        <li class="{{ Request::path() == '/' ? 'current' : '' }}">
                             <a href="home">Home</a>                           
                         </li>
-                        <li >
+                        <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
                             <a href="schedule">Schedule</a>
                         </li>
-                        <li >
+                        <li  class="{{ Request::path() == 'blog' ? 'current' : '' }}">
                             <a href="blog">Blog</a>
                         </li>
-                        <li>
+                        <li  class="{{ Request::path() == 'conference' ? 'current' : '' }}">
                             <a href="conference">Conference</a>
                         </li>
-                        <li >
+                        <li  class="{{ Request::path() == 'accomodation' ? 'current' : '' }}">
                             <a href="accomodation">Accomodation</a>
                         </li>
                     </ul>

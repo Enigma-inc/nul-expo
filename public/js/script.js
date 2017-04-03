@@ -9,7 +9,12 @@
 			$('.preloader').delay(500).fadeOut(500);
 		}
 	}
-	
+function enableSlimScroll(){
+		$('#text-welcomes').slimScroll({
+		size: '10px',
+		height: '460px'
+     });
+}
 	
 	//Update Header Style + Scroll Top
 	function headerStyle() {
@@ -370,6 +375,7 @@
    
 	$(document).on('ready', function() {
 		headerStyle();
+		enableSlimScroll();
 		factCounter();
 		GalleryFilter();
 		galleryLightBox();
