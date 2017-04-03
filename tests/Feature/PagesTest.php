@@ -23,16 +23,23 @@ class PagesTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_see_a_sponsors_page()
+    public function a_user_can_see_schedule_page()
     {
-        $this->get('/sponsors')
+        $this->get('/schedule')
              ->assertStatus(200);
     }
 
     /** @test */
-    public function a_user_can_see_schedule_page()
+    public function a_user_can_see_blog_page()
     {
-        $this->get('/schedule')
+        $this->get('/blog')
+             ->assertStatus(200);
+    }
+
+    /** @test */
+    public function a_user_can_see_accomodation_page()
+    {
+        $this->get('/accomodation')
              ->assertStatus(200);
     }
 }
