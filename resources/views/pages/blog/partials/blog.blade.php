@@ -13,7 +13,7 @@
         <div class="row clearfix">
 
             <!--Table Column-->
-            <blog-brief></blog-brief>
+            <blog></blog>
 
         </div>
 
