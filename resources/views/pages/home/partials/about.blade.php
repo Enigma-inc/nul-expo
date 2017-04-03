@@ -27,9 +27,6 @@
                     </div>
                     <div class="text welcome">
                         <div id="text-welcomes">
-
-
-<<<<<<< HEAD
                         <p class="text-align-just">
                         <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail"><img height="200px" src="/images/team/manthoto_lephoto.png" style="margin-bottom: 7px;" alt="PVC" title="PVC" class="">
                         <em>Pro Vice Chancellor: Prof H.M. Lephoto</em>
