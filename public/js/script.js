@@ -10,9 +10,12 @@
 		}
 	}
 function enableSlimScroll(){
-		$('#text-welcomes').slimScroll({
+		$('#welcome-text').slimScroll({
 		size: '10px',
-		height: '460px'
+		height: '400px',
+		railVisible: true,
+        alwaysVisible: true,
+		color: '#e13f30'
      });
 }
 	
