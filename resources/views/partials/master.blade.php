@@ -12,11 +12,13 @@
 <link href="/css/owl.carousel.min.css" rel="stylesheet" >
 <link  href="/css/owl.theme.default.min.css" rel="stylesheet">
 <link  href="/css/owl.css" rel="stylesheet">
-<link  href={{mix('css/app.css')}} rel="stylesheet">
+<link href="{{mix('css/app.css')}}"  rel="stylesheet">
+<link href="{{mix('css/helpers.css')}}" rel="stylesheet">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="/css/responsive.css" rel="stylesheet">
+
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="/js/respond.js"></script><![endif]-->
 </head>
@@ -28,7 +30,10 @@
     <div class="preloader"></div>-->
  	
      @include('partials.menu')
-     @yield('content')
+    <div class="red-bg">
+        @yield('content')
+
+    </div>
      @include('partials.sponsors')
      @include('partials.footer')
     <!--End Main Header -->

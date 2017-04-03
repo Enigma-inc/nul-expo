@@ -14,6 +14,7 @@ require('./bootstrap');
  */
 
 Vue.component('blog-brief', require('./components/blog-brief.vue'));
+Vue.component('blog', require('./components/blog.vue'));
 
 const app = new Vue({
     el: '#app'
