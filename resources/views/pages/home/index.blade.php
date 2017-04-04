@@ -3,8 +3,9 @@
 @section('content')
     @include('pages.home.partials.slider')
     @include('pages.home.partials.about')
-     @include('pages.home.partials.importantdates')
+    @include('pages.home.partials.importantdates')
     @include('pages.home.partials.topics')
+    @include('pages.home.partials.fees')    
     @include('pages.home.partials.speakers')
     @include('pages.home.partials.blog')
 @stop

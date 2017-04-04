@@ -18,17 +18,45 @@
 .conference-img{
     width: 300px;
 }
-<<<<<<< HEAD
-.primary-color{
+
+.color-primary{
    color: #e13f30 !important;
+}
+.color-white{
+   color: #fff !important;
 }
 .blockquote{
     padding: 0 !important;
 }
-=======
 
 .conference-img-lg{
     width: 500px;
 }
 
->>>>>>> 990ada10798572f0c2a126ca4186f6d7eef661ee
+.fees-container{
+    display: flex;
+    font-family: sans-serif
+}
+.fees-header{
+    flex:1;
+    font-size: 1.3em;
+    color: #e13f30;
+    line-height: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.fees-body{
+    flex:1;
+    font-size: 1.2em;
+    line-height: 3em;
+    font-weight: 600;
+    margin-top:20px;
+    border: 1px #a6a6a6 solid;   
+    
+}
+.fees-body > span{
+    font-size: 2em;
+}
+section.latest-posts {
+    font-size: 1.2em !important;
+}
