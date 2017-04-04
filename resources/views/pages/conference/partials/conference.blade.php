@@ -1,7 +1,7 @@
 <section class="padding-20">
         <div  id="app" class="auto-container">
 
-        <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+        <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2>Conference Concept</h2>
             </div>
             <div class="row clearfix" >
