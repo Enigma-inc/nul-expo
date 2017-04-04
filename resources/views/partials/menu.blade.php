@@ -25,7 +25,7 @@
                             <a href="schedule">Schedule</a>
                         </li>
                         <li  class="{{ Request::path() == 'conference' ? 'current' : '' }}">
-                            <a href="conference">Conference</a>
+                            <a href="conference">The Conference</a>
                         </li>
                         <li  class="{{ Request::path() == 'accomodation' ? 'current' : '' }}">
                             <a href="accomodation">Accomodation</a>
