@@ -1,7 +1,7 @@
 @extends('partials.master')
 
 @section('content')
-  @include('pages.accomodation.partials.accomodation')
+  
 @stop
 
 @section('scripts')
