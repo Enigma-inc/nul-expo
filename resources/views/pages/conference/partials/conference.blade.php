@@ -3,8 +3,8 @@
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2>Conference Concept</h2>
             </div>
-            <div class="row clearfix">
-                        <div class="row">
+            <div class="row clearfix" >
+                        <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <img src="{{asset('images/conference/nul-roma.jpg')}}" alt="Concept" class="thumbnail pull-left margin-10 conference-img-lg">
                             <p class="text-align-just">
                                 The National University of Lesotho (NUL) is located at about 34 km from Maseru, the Capital city of the Kingdom of Lesotho. The origin of the university dates back to 8th April, 1945 when a Catholic University College, the Pius XII College, was founded at Roma by the Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in the history of the University have taken place both in terms of physical infrastructure development and growth in students' enrolment. 
@@ -28,7 +28,7 @@
                         </div>
                         
 
-                        <div class="row">
+                        <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <p class="text-align-left">
                                 <strong>The Conference</strong>
                             </p>
@@ -46,7 +46,7 @@
                             </p>
                         </div>
                         
-                        <div class="row">
+                        <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <p class="text-align-left">
                                 <strong>The Expo</strong>
                             </p>
@@ -64,7 +64,7 @@
                             </p>
                         </div>
                         
-                        <div class="row">
+                        <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <p class="text-align-left">
                                 <strong>Vodacom-NUL Hackathon </strong>
                             </p>
@@ -78,7 +78,7 @@
                             </p>
                         </div>
                         
-                        <div class="row">
+                        <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <p class="text-align-left">
                                 <strong>The Gala Dinner</strong>
                             </p>
@@ -88,7 +88,7 @@
                             </p>
                         </div>
                         
-                        <div class="row">
+                        <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <p class="text-align-left">
                                 <strong>The Daytrip</strong>
                             </p>

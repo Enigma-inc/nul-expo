@@ -4,7 +4,7 @@
                 <h2>Abstract Submission Format NULISTICE 2018</h2>
             </div>
             <div>
-                    <div class="text-align-just">
+                    <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <p class="text-align-just">
                             <ul class="list">
                                 <li>Title  (Font 14 , Times New Romans, bold),</li>
@@ -28,10 +28,10 @@
                 <h4>Authors’ information with their institution and post box</h4>
             </div>
 
-            <p class="text-align-just"><strong><i>Abstract</i></strong></p>
+            <p class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"><strong><i>Abstract</i></strong></p>
             <hr>
 
-            <p class="text-align-just">
+            <p class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                 An abstract is a brief, comprehensive summary of the contents of the article; it allows readers to survey the contents of an article quickly and, like a title, 
                 it enables persons interested in the document to retrieve it from abstracting and indexing databases. Most scholarly journals require an abstract. 
                 Consult the instructions to authors or web page of the journal to which you plan to submit your article for any journal-specific instructions. 
@@ -39,19 +39,22 @@
                 usually in comparison with several other abstracts, as they are doing a literature search.
             </p>
 
-            <p class="text-align-just"> 
+            <p class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> 
                 Readers frequently decide on the basis of the abstract whether to read the entire article. The abstract needs to be dense with information. By embedding key words in your abstract, 
                 you enhance the user’s ability to find it. Do not exceed the abstract word limit of the journal to which you are submitting your article. Word limits vary from journal to journal and 
                 typically range from 250 to 300 words. For information on how abstracts are used to retrieve articles, consult Record Structure for APA Databases or any International Standard journals for information.
             </p>
             <hr>
 
-            <p class="text-align-just">
+            <p class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <strong>Keywords: </strong>
                 Upper case; Semi-colon; Paper template; Abstract; Keywords; Introduction
                 Corresponding author: Identify by *
                 Email address;
                 Telephone and Fax
             </p>
+            <div class="text-right margin-bottom-5 margin-top-50 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+                	<a href="http://localhost:8000/public/docs/abstract.pdf" target="_blank" class="download-btn theme-btn"><span class="fa fa-file-pdf-o"></span> DOWNLOAD Abstract Guide</a>
+                </div>
         </div>
 </section>
