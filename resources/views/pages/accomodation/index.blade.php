@@ -1,7 +1,7 @@
 @extends('partials.master')
 
 @section('content')
-  
+      
 @stop
 
 @section('scripts')
