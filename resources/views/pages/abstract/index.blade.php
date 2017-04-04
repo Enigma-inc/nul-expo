@@ -57,7 +57,7 @@
                 Telephone and Fax
             </p>
             <div class="text-right margin-bottom-10 margin-top-20 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
-                	<a href="http://localhost:8000/public/docs/abstract.pdf" target="_blank" class="download-btn theme-btn padding-5"><span class="fa fa-file-pdf-o"></span> DOWNLOAD Abstract Guide</a>
+                	<a href="{{url('download?file-name=abstract')}}"  class="download-btn theme-btn padding-5"><span class="fa fa-file-pdf-o"></span> DOWNLOAD Abstract Guide</a>
                 </div>
         </div>
 </section>

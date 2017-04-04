@@ -18,7 +18,9 @@ Route::get('/speakers', 'PagesController@speakers');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/sponsors', 'PagesController@sponsors');
 Route::get('/booking', 'PagesController@booking');
-Route::get('/accomodation', 'PagesController@accomodation');
+//Route::get('/accomodation', 'PagesController@accomodation');
 Route::get('/conference', 'PagesController@conference');
 Route::get('/abstract', 'PagesController@abstract_format');
 Route::get('/fees', 'PagesController@fees');
+
+Route::get('download','PagesController@download');

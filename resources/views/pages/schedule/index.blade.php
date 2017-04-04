@@ -12,7 +12,7 @@
                 </div>
                 
                 <div class="col-md-4 col-sm-12 col-xs-12 text-right wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
-                	<a href="http://localhost:8000/public/docs/schedule.pdf" class="download-btn theme-btn"><span class="fa fa-file-pdf-o"></span> DOWNLOAD schedule PDF</a>
+                	<a href="{{url('download?file-name=schedule')}}" class="download-btn theme-btn"><span class="fa fa-file-pdf-o"></span> DOWNLOAD schedule PDF</a>
                 </div>
                 
             </div>

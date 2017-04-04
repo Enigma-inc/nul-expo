@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Response;
 
 class PagesController extends Controller
 {
@@ -59,5 +61,23 @@ class PagesController extends Controller
     public function fees()
     {
         return view('pages.fees.index');
+    }
+
+    public function download()
+    {
+        $fileName = Input::get("file-name");
+
+        $filePath = public_path() . "/docs/" . $fileName . ".pdf";
+        if( file_exists($filePath)){
+            $headers = array(
+                'Content-Type: application/pdf',
+            );
+            return Response::download($filePath, $fileName . '.pdf', $headers);
+        }
+        else{
+           return back();
+        }
+
+
     }
 }
