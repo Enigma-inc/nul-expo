@@ -50,4 +50,9 @@ class PagesController extends Controller
     {
         return view('pages.conference.index');
     }
+
+    public function abstract_format()
+    {
+        return view('pages.abstract.index');
+    }
 }
