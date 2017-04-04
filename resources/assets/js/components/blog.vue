@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <div class="row">
             <div class="post-item wow animated col-xs-12" v-for="article in articles">
 

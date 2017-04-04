@@ -31851,9 +31851,7 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [_c('div', {
+  return _c('div', [_c('div', {
     staticClass: "row"
   }, _vm._l((_vm.articles), function(article) {
     return _c('div', {

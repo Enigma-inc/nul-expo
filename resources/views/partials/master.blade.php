@@ -30,10 +30,7 @@
     <div class="preloader"></div>-->
  	
      @include('partials.menu')
-    <div class="red-bg">
-        @yield('content')
-
-    </div>
+     @yield('content')
      @include('partials.sponsors')
      @include('partials.footer')
     <!--End Main Header -->

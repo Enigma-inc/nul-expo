@@ -1,4 +1,4 @@
-<section class="price-plans">
+<section >
     <div  id="app" class="auto-container">
 
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
