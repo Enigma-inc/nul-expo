@@ -49,4 +49,11 @@ class PagesTest extends TestCase
         $this->get('/conference')
              ->assertStatus(200);
     }
+
+    /** @test */
+    public function a_user_can_see_abstract_format_page()
+    {
+        $this->get('/abstract')
+             ->assertStatus(200);
+    }
 }
