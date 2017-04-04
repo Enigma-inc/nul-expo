@@ -12,22 +12,35 @@
                 <div class="col-md-6 col-sm-6 col-xs-12 pull-right content-side wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
                 	<h2>Important Dates</h2>
             		
-                    <article class="feature">
-                    	<figure class="icon"><img src="images/icons/icon-money.png" alt="" title=""></figure>
-                        <h3>Money transfer security</h3>
-						<p>We believe that analysis of your company and your customers is key in responding effectively to your promotional needs and we will work with you.</p>
+                     <article class="feature">
+                    	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
+                        <h3 class="primary-color">Conference dates </h3>
+						<blockquote>
+                        <h3>23-26 Jan 2018</h3>
+                        </blockquote>
                     </article>
-                    
-                    <article class="feature">
-                    	<figure class="icon"><img src="images/icons/icon-saving.png" alt="" title=""></figure>
-                        <h3>Speed up your creative workflow</h3>
-						<p>Using the outcomes from the Company Analysis, we will put together a plan for the most effective marketing strategy.</p>
+                     <article class="feature">
+                    	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
+                        <h3 class="primary-color">Abstract submission deadline</h3>
+						<blockquote>
+                        <h3>30th June 2017</h3>
+                        </blockquote>
+                    </article>
+                     <article class="feature">
+                    	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
+                        <h3 class="primary-color">Acceptance notification</h3>
+						<blockquote>
+                        <h3>25th August 2017</h3>
+                        </blockquote>
                     </article>
                     
                     <article class="feature">
                     	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
-                        <h3>The best marketing strategies</h3>
-						<p>We will create a unique and visually pleasing logo to reflect your overall brand to be used in all areas of your marketing.</p>
+                        <h3 class="primary-color">Registration date </h3>
+						<blockquote>
+                        <h3>Early bird – 4th Sept 2017</h3>
+                        <h3>and closes 27th October 2017</h3>
+                        </blockquote>
                     </article>
                     
                 </div>
