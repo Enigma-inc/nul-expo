@@ -5,6 +5,7 @@
             </div>
             <div class="row clearfix">
                         <div class="row">
+                        <img src="{{asset('images/conference/nul-roma.jpg')}}" alt="Concept" class="thumbnail pull-left margin-10 conference-img-lg">
                             <p class="text-align-just">
                                 The National University of Lesotho (NUL) is located at about 34 km from Maseru, the Capital city of the Kingdom of Lesotho. The origin of the university dates back to 8th April, 1945 when a Catholic University College, the Pius XII College, was founded at Roma by the Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in the history of the University have taken place both in terms of physical infrastructure development and growth in students' enrolment. 
                             </p>
@@ -31,7 +32,7 @@
                             <p class="text-align-left">
                                 <strong>The Conference</strong>
                             </p>
-
+                            <img src="{{asset('images/conference/conf.jpg')}}" alt="Conference" class="thumbnail pull-left margin-10 conference-img">
                             <p class="text-align-just">
                                 National University of Lesotho International Science, Technology and Innovation Conference & Expo (NULSTICE-2018) will be a convergence of international scholars from many areas of Science and Technology with the theme, “Resource Mobilization and Entrepreneurship Action for Development.” The main areas include Renewable Energy, Biotechnology, Environment and Natural Resources Management, Food and Water Safety, Climate Change Challenges and Mitigation Strategies, Agriculture and Food Security, Material Science and Nano-Technology, Entrepreneurship and Technology, Information and Communication Technology. 
                             </p>
