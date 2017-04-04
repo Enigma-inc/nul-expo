@@ -63,3 +63,30 @@ section.latest-posts {
 body{
     background-color: #fff!important
 }
+.big-title{
+  text-align: center !important;
+   background-color: rgba(0,0,0, 0.5);
+   padding: 10px !important;
+}
+.big-title > h2{
+   font-family: 'Anton', sans-serif;
+    font-size: 4em !important;
+    line-height: 2em;
+}
+.big-title > span{
+  font-family: 'Cinzel', serif;
+  color:#E13F30;
+   font-size: 2.8em !important;
+
+
+}
+.slide-date{
+      color:#fff;
+   font-size: 1.5em !important;
+}
+.divider{
+    border: 1px rgba(255,255,255, 0.3) solid;
+    height: 1px;
+    border-width: 1px !important;
+    margin-bottom: 40px !important;
+}

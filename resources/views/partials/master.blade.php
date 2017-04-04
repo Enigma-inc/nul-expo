@@ -19,6 +19,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="/css/responsive.css" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900" rel="stylesheet">
+
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="/js/respond.js"></script><![endif]-->
 </head>
