@@ -24,14 +24,14 @@
                         <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
                             <a href="schedule">Schedule</a>
                         </li>
-                        <li  class="{{ Request::path() == 'blog' ? 'current' : '' }}">
-                            <a href="blog">Blog</a>
-                        </li>
                         <li  class="{{ Request::path() == 'conference' ? 'current' : '' }}">
                             <a href="conference">Conference</a>
                         </li>
                         <li  class="{{ Request::path() == 'accomodation' ? 'current' : '' }}">
                             <a href="accomodation">Accomodation</a>
+                        </li>
+                        <li  class="{{ Request::path() == 'blog' ? 'current' : '' }}">
+                            <a href="blog">Blog</a>
                         </li>
                     </ul>
                 </div>
