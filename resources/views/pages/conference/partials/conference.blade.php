@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 <section class="padding-20">
         <div  id="app" class="auto-container">
-=======
-<section>
-        <div  id="app" class="container">
->>>>>>> a533ac49303fc74078cc4d142169c026296b990b
+
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2>Conference Concept</h2>
             </div>
