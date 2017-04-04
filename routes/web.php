@@ -21,3 +21,4 @@ Route::get('/booking', 'PagesController@booking');
 Route::get('/accomodation', 'PagesController@accomodation');
 Route::get('/conference', 'PagesController@conference');
 Route::get('/abstract', 'PagesController@abstract_format');
+Route::get('/fees', 'PagesController@fees');
