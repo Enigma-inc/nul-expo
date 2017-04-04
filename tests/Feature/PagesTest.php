@@ -56,4 +56,11 @@ class PagesTest extends TestCase
         $this->get('/abstract')
              ->assertStatus(200);
     }
+
+    /** @test */
+    public function a_user_can_see_fees_page()
+    {
+        $this->get('/fees')
+             ->assertStatus(200);
+    }
 }
