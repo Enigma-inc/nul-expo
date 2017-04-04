@@ -55,4 +55,9 @@ class PagesController extends Controller
     {
         return view('pages.abstract.index');
     }
+
+    public function fees()
+    {
+        return view('pages.fees.index');
+    }
 }

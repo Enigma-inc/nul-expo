@@ -6,7 +6,7 @@
                 <h2 align="center">Organising Team</h2>
             </div>
 
-            <div class="owl-carousel">
+            <div class="owl-carousel team">
                 <!--Organising Team-->
                 <article class="team-member" >
                     <div class="inner">
