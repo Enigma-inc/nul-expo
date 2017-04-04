@@ -29,7 +29,7 @@
                         
 
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>The Conference</strong>
                             </p>
                             <img src="{{asset('images/conference/conf.jpg')}}" alt="Conference" class="thumbnail pull-left margin-10 conference-img">
@@ -47,7 +47,7 @@
                         </div>
                         
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>The Expo</strong>
                             </p>
                                 <img src="{{asset('images/conference/expo.jpg')}}" alt="Expo" class="thumbnail pull-left margin-10 conference-img">
