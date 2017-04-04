@@ -19,7 +19,7 @@
                 <div class="navbar-collapse collapse clearfix">                                                                                              
                     <ul class="navigation">
                         <li class="{{ Request::path() == '/' ? 'current' : '' }}">
-                            <a href="home">Home</a>                           
+                            <a href="/">Home</a>                           
                         </li>
                         <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
                             <a href="schedule">Schedule</a>

@@ -12,7 +12,7 @@
                     <p>23 January, 2018</p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 text-right">
-                    <a href="booking" class="theme-btn btn-style-one hvr-bounce-to-right"><span
+                    <a href="conference" class="theme-btn btn-style-one hvr-bounce-to-right"><span
                                 class="fa fa-play"></span> View Conference Concept</a>
                 </div>
             </div>
