@@ -42,4 +42,11 @@ class PagesTest extends TestCase
         $this->get('/accomodation')
              ->assertStatus(200);
     }
+
+    /** @test */
+    public function a_user_can_see_conference_page()
+    {
+        $this->get('/conference')
+             ->assertStatus(200);
+    }
 }

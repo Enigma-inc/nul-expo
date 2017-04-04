@@ -17,7 +17,6 @@ Route::get('/contacts', 'PagesController@contacts');
 Route::get('/speakers', 'PagesController@speakers');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/sponsors', 'PagesController@sponsors');
-Route::get('/', 'PagesController@home');
 Route::get('/booking', 'PagesController@booking');
 Route::get('/accomodation', 'PagesController@accomodation');
 Route::get('/conference', 'PagesController@conference');
