@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <section class="padding-20">
         <div  id="app" class="auto-container">
+=======
+<section>
+        <div  id="app" class="container">
+>>>>>>> a533ac49303fc74078cc4d142169c026296b990b
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2>Conference Concept</h2>
             </div>
@@ -29,7 +34,7 @@
                         
 
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>The Conference</strong>
                             </p>
                             <img src="{{asset('images/conference/conf.jpg')}}" alt="Conference" class="thumbnail pull-left margin-10 conference-img">
@@ -47,7 +52,7 @@
                         </div>
                         
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>The Expo</strong>
                             </p>
                                 <img src="{{asset('images/conference/expo.jpg')}}" alt="Expo" class="thumbnail pull-left margin-10 conference-img">
@@ -65,7 +70,7 @@
                         </div>
                         
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>Vodacom-NUL Hackathon </strong>
                             </p>
                             <img src="{{asset('images/conference/hackathon.jpg')}}" alt="Hackathon" class="thumbnail pull-left margin-10 conference-img">
@@ -79,7 +84,7 @@
                         </div>
                         
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>The Gala Dinner</strong>
                             </p>
                             <img src="{{asset('images/conference/gala-dinner.jpg')}}" alt="Gala-Dinner" class="thumbnail pull-left margin-10 conference-img">
@@ -89,7 +94,7 @@
                         </div>
                         
                         <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <p class="text-align-left">
+                            <p class="text-align-left color-primary">
                                 <strong>The Daytrip</strong>
                             </p>
                             <img src="{{asset('images/conference/kome.jpg')}}" alt="Kome" class="thumbnail pull-left margin-10 conference-img">
