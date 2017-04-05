@@ -30,6 +30,9 @@
                         <li  class="{{ Request::path() == 'fees' ? 'current' : '' }}">
                             <a href="fees">Fees</a>
                         </li>
+                        <li  class="{{ Request::path() == 'abstract' ? 'current' : '' }}">
+                            <a href="abstract">Abstract Submission</a>
+                        </li>
                         <li  class="{{ Request::path() == 'blog' ? 'current' : '' }}">
                             <a href="blog">Blog</a>
                         </li>
