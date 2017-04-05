@@ -1,24 +1,24 @@
 @extends('partials.master') @section('content')
-<section>
+<section >
     <div id="app" class="auto-container">
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2>Abstract Submission Format NULISTICE 2018</h2>
         </div>
         <div>
             <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <p class="text-align-just">
-                    <ul>
-                        <li>Title (Font 14 , Times New Romans, bold),</li>
-                        <li>Surname and initials of author and co-authors, followed by their respective institution address (Font
+                <p class="text-align-just abstract">
+                    <ul >
+                        <li><i class="fa fa-circle"></i> Title (Font 14 , Times New Romans, bold),</li>
+                        <li><i class="fa fa-circle"></i> Surname and initials of author and co-authors, followed by their respective institution address (Font
                             12 , Times New Romans),</li>
-                        <li>Abstract (Font 12 (Times New Romans) and word count up to 300,</li>
-                        <li>Line space 1.5,</li>
-                        <li>Key words: Five, separated by a semi-colon(;) and first letter upper case,</li>
-                        <li>Corresponding author: (Font 12, Times New Romans):
-                            <ul class="list">
-                                <li>Identify by * </li>
-                                <li>Email address</li>
-                                <li>Telephone and Fax</li>
+                        <li><i class="fa fa-circle"></i> Abstract (Font 12 (Times New Romans) and word count up to 300,</li>
+                        <li><i class="fa fa-circle"></i> Line space 1.5,</li>
+                        <li><i class="fa fa-circle"></i> Key words: Five, separated by a semi-colon(;) and first letter upper case,</li>
+                        <li><i class="fa fa-circle"></i> Corresponding author: (Font 12, Times New Romans):
+                            <ul>
+                                <li><i class="fa fa-circle-thin"></i> Identify by * </li>
+                                <li><i class="fa fa-circle-thin"></i> Email address</li>
+                                <li><i class="fa fa-circle-thin"></i> Telephone and Fax</li>
                             </ul>
                         </li>
                     </ul>
