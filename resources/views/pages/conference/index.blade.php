@@ -180,7 +180,6 @@
             autoplayHoverPause: true
         });
 
-
     });
 </script>
 
