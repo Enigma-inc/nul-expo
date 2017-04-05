@@ -44,6 +44,17 @@ section.latest-posts {
 body{
     background-color: #fff!important
 }
+ul,li{
+     list-style-type: none ;
+}
+
+li > .fa-circle{
+     font-size: 8px !important;
+}
+
+li > .fa-circle-thin{
+     font-size: 9px !important;
+}
 
 @media (max-width: 768px) {
     .tp-caption{
@@ -64,7 +75,6 @@ body{
         font-family: 'Cinzel', serif;
         color:#E13F30;
         font-size: 2em !important;
-
 
         }
         .slide-date{
@@ -101,55 +111,73 @@ body{
   
   }
 @media (min-width: 769px)  {
-      .tp-caption{
-        left:20% !important;
-    }
-    .big-title{
-    text-align: center !important;
-    background-color: rgba(0,0,0, 0.5);
-    padding: 10px !important;
-    }
-    .big-title > h2{
-    font-family: 'Anton', sans-serif;
-        font-size: 4em !important;
-        line-height: 2em;
-    }
-    .big-title > span{
-    font-family: 'Cinzel', serif;
-    color:#E13F30;
-    font-size: 2.8em !important;
-
-
-    }
-    .slide-date{
-        color:#fff;
-        font-size: 1.5em !important;
-    }
-    .divider{
-        border: 1px rgba(255,255,255, 0.3) solid;
-        height: 1px;
-        border-width: 1px !important;
-        margin-bottom: 40px !important;
-    }
-
-            .fees-header{
-            flex:1;
-            font-size: 1.3em;
-            color: #e13f30;
-            line-height: 1.3em;
-            font-weight: 600;
-            text-transform: uppercase;
+        .tp-caption{
+            left:20% !important;
         }
-        .fees-body{
-            flex:1;
-            font-size: 1.2em;
-            line-height: 3em;
-            font-weight: 600;
-            margin-top:20px;
-            border: 1px #a6a6a6 solid;   
+        .big-title{
+        text-align: center !important;
+        background-color: rgba(0,0,0, 0.5);
+        padding: 10px !important;
+        }
+        .big-title > h2{
+        font-family: 'Anton', sans-serif;
+            font-size: 4em !important;
+            line-height: 2em;
+        }
+        .big-title > span{
+        font-family: 'Cinzel', serif;
+        color:#E13F30;
+        font-size: 2.8em !important;
+
+
+        }
+        .slide-date{
+            color:#fff;
+            font-size: 1.5em !important;
+        }
+        .divider{
+            border: 1px rgba(255,255,255, 0.3) solid;
+            height: 1px;
+            border-width: 1px !important;
+            margin-bottom: 40px !important;
+        }
+
+                .fees-header{
+                flex:1;
+                font-size: 1.3em;
+                color: #e13f30;
+                line-height: 1.3em;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            .fees-body{
+                flex:1;
+                font-size: 1.2em;
+                line-height: 3em;
+                font-weight: 600;
+                margin-top:20px;
+                border: 1px #a6a6a6 solid;   
+                
+            }
+            .fees-body > span{
+                font-size: 2em;
+            }
+    
+
+
+        .slide-date{
+                color:#fff;
+            font-size: 1.5em !important;
+            }
+            .divider{
+                border: 1px rgba(255,255,255, 0.3) solid;
+                height: 1px;
+                border-width: 1px !important;
+                margin-bottom: 40px !important;
+
+            }
+
             
-        }
-        .fees-body > span{
-            font-size: 2em;
-        }
-  }
+    }
+
+
