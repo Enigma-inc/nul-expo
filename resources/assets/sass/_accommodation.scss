@@ -1,0 +1,19 @@
+.accom-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.accom-header{
+    display: flex;
+      .name{
+             flex:1;
+            }
+}
+.accom-body{
+    display: flex;
+        
+        .body-item{
+             flex:1;
+            }
+}
+

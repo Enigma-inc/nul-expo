@@ -23,22 +23,3 @@
     </div>
 </section>
 @stop
-
-@section('scripts')
-    <script> 
-    $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-                margin: 10,
-                loop: true,
-                autoWidth: false,
-                items: 5,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true
-    });
-    
-    });
-
-    </script>
-
-@stop

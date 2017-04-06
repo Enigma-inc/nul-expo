@@ -37,15 +37,6 @@
 
                 }
     });
-    $(".owl-carousel").owlCarousel({
-                margin: 10,
-                loop: true,
-                autoWidth: false,
-                items: 4,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true
-    });
 
     $('.tp-banner').show().revolution({
                 delay: 7500,

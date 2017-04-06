@@ -1,6 +1,9 @@
 <template>
-    <div>
-        <div class="row">
+    <div class="text-align-center">
+       <div v-if="loading" class="margin-10" >
+            <span class="fa fa-spinner fa-4x fa-spin"></span>
+        </div>
+        <div class="row" v-if="!loading" >
             <div class="post-item wow animated col-xs-12" v-for="article in articles">
 
                 <div class="row" style="padding: 20px;">
@@ -30,14 +33,16 @@
     export default {
         data() {
             return {
+                loading:true,
                 articles: []
             }
         },
         mounted() {
+            this.loading=true;
             axios.get('http://nulresearchandinnovations.co.ls/blog/api/articles/featured').then(response => {
 
                 this.articles = response.data;
-                console.log(this.articles);
+                this.loading=false;
             });
         }
     }

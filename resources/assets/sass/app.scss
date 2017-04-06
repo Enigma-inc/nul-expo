@@ -7,6 +7,7 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'accommodation';
 
 .text-align-just{
     text-align:justify;
@@ -14,6 +15,9 @@
 
 .text-align-left{
     text-align:left;
+}
+.text-align-center{
+    text-align:center;
 }
 .conference-img{
     width: 300px;
@@ -55,7 +59,9 @@ li > .fa-circle{
 li > .fa-circle-thin{
      font-size: 9px !important;
 }
-
+.fa-spinner{
+    color: rgba(255,0,0, 0.1) !important;
+}
 @media (max-width: 768px) {
     .tp-caption{
         left:20% !important;
@@ -179,5 +185,11 @@ li > .fa-circle-thin{
 
             
     }
+
+
+
+    //ACCOMMODATION LAYOUT
+
+
 
 
