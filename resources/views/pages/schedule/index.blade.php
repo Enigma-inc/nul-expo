@@ -8,7 +8,7 @@
             <div class="row clearfix">
             
             	<div class="col-md-8 col-sm-12 col-xs-12">
-                	<div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><h2>Check our schedule</h2></div>
+                	<div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><h2 class="header">schedule</h2></div>
                 </div>
                 
                 <div class="col-md-4 col-sm-12 col-xs-12 text-right wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">

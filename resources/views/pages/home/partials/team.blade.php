@@ -3,7 +3,7 @@
         <div class="auto-container">
 
             <div class="sec-title">
-                <h2 align="center">Organising Team</h2>
+                <h2 align="center" class="header">organising Team</h2>
             </div>
 
             <div class="owl-carousel team">

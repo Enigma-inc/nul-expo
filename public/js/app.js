@@ -1907,12 +1907,118 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
-        return {};
+        return {
+            loading: true,
+            hotels: [],
+            lodges: [],
+            guestHouses: [],
+            BnBs: []
+        };
     },
-    mounted: function mounted() {}
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get('http://demo.servicebox.co.ls/api/accommodation?type=1&district=5').then(function (response) {
+            _this.hotels = _.orderBy(response.data.data, ['name'], ['asc']);
+            _this.loading = false;
+        });
+        axios.get('http://demo.servicebox.co.ls/api/accommodation?type=2&district=5').then(function (response) {
+            _this.lodges = _.orderBy(response.data.data, ['name'], ['asc']);
+            _this.loading = false;
+        });
+        axios.get('http://demo.servicebox.co.ls/api/accommodation?type=4&district=5').then(function (response) {
+            _this.guestHouses = _.orderBy(response.data.data, ['name'], ['asc']);
+            _this.loading = false;
+        });
+        axios.get('http://demo.servicebox.co.ls/api/accommodation?type=3&district=5').then(function (response) {
+            _this.BnBs = _.orderBy(response.data.data, ['name'], ['asc']);
+            _this.loading = false;
+        });
+    },
+
+
+    methods: {
+
+        distance: function distance(lat1, lon1, lat2, lon2, unit) {
+            var radlat1 = Math.PI * lat1 / 180;
+            var radlat2 = Math.PI * lat2 / 180;
+            var theta = lon1 - lon2;
+            var radtheta = Math.PI * theta / 180;
+            var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+            dist = Math.acos(dist);
+            dist = dist * 180 / Math.PI;
+            dist = dist * 60 * 1.1515;
+            if (unit == "K") {
+                dist = dist * 1.609344;
+            }
+            if (unit == "N") {
+                dist = dist * 0.8684;
+            }
+            return dist.toFixed(1);
+        }
+
+    }
 });
 
 /***/ }),
@@ -1982,6 +2088,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -31936,7 +32046,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "fa fa-spinner fa-4x fa-spin"
   })]) : _vm._e(), _vm._v(" "), (!_vm.loading) ? _c('div', {
     staticClass: "row"
-  }, _vm._l((_vm.articles), function(article) {
+  }, [_vm._l((_vm.articles), function(article) {
     return _c('div', {
       staticClass: "post-item wow animated col-xs-12"
     }, [_c('div', {
@@ -31995,8 +32105,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "target": "_blank"
       }
     }, [_vm._v("\n                    Read More")])])])])
-  })) : _vm._e(), _vm._v(" "), _c('hr')])
-},staticRenderFns: []}
+  }), _vm._v(" "), _vm._m(0)], 2) : _vm._e(), _vm._v(" "), _c('hr')])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row text-center"
+  }, [_c('a', {
+    staticClass: "default-btn green hvr-bounce-to-right pull-right",
+    staticStyle: {
+      "transition": "all 0.2s ease-out 0s",
+      "min-height": "0px",
+      "min-width": "0px",
+      "line-height": "17px",
+      "border-width": "0px",
+      "margin-bottom": "5px 13.9429px 6.97143px 0px",
+      "padding": "7px 17px",
+      "letter-spacing": "0px",
+      "font-size": "10px"
+    },
+    attrs: {
+      "href": "http://nulresearchandinnovations.co.ls/blog",
+      "target": "_blank"
+    }
+  }, [_vm._v("\n                    More Articles")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -32010,25 +32141,236 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "accom-container"
+    staticClass: "text-align-center"
+  }, [(_vm.loading) ? _c('div', {
+    staticClass: "margin-10"
+  }, [_c('span', {
+    staticClass: "fa fa-spinner fa-4x fa-spin"
+  })]) : _vm._e(), _vm._v(" "), (!_vm.loading) ? _c('div', {
+    staticClass: "bs-example bs-example-tabs",
+    attrs: {
+      "data-example-id": "togglable-tabs"
+    }
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "tab-content",
+    attrs: {
+      "id": "myTabContent"
+    }
   }, [_c('div', {
-    staticClass: "accom-header"
-  }, [_c('h4', {
-    staticClass: "name"
-  }, [_vm._v("Hotel Name Here")])]), _vm._v(" "), _c('div', {
-    staticClass: "accom-body"
-  }, [_c('div', {
-    staticClass: "body-item phone"
-  }, [_vm._v("Phone Number")]), _vm._v(" "), _c('div', {
-    staticClass: "body-item email"
-  }, [_vm._v("Email")]), _vm._v(" "), _c('div', {
-    staticClass: "body-item website"
-  }, [_vm._v("Website")]), _vm._v(" "), _c('div', {
-    staticClass: "body-item Distant"
-  }, [_vm._v("40 km "), _c('span', [_vm._v("from NUL")])])])])
+    staticClass: "tab-pane fade active in",
+    attrs: {
+      "role": "tabpanel",
+      "id": "hotels",
+      "aria-labelledby": "hotels-tab"
+    }
+  }, _vm._l((_vm.hotels), function(hotel) {
+    return _c('div', {
+      staticClass: "accom-container"
+    }, [_c('div', {
+      staticClass: "accom-header"
+    }, [_c('h4', {
+      staticClass: "name"
+    }, [_vm._v(_vm._s(hotel.name))])]), _vm._v(" "), _c('div', {
+      staticClass: "accom-body"
+    }, [_c('div', {
+      staticClass: "body-item phone"
+    }, [(hotel.hasPhone) ? _c('a', {
+      attrs: {
+        "href": 'tel:' + hotel.phone
+      }
+    }, [_vm._v(_vm._s(hotel.phone))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item email"
+    }, [(hotel.hasEmail) ? _c('a', {
+      attrs: {
+        "href": 'mailto:' + hotel.email
+      }
+    }, [_vm._v(_vm._s(hotel.email))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item website"
+    }, [(hotel.hasWebsite) ? _c('a', {
+      attrs: {
+        "href": 'http://' + (hotel.website).replace(' ', ''),
+        "target": "_blank"
+      }
+    }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item distance"
+    }, [_vm._v(_vm._s(_vm.distance(-29.451244, 27.720536, hotel.latitude, hotel.longitude, 'K')) + " km "), _c('span', [_vm._v("from NUL")])])])])
+  })), _vm._v(" "), _c('div', {
+    staticClass: "tab-pane fade",
+    attrs: {
+      "role": "tabpanel",
+      "id": "lodges",
+      "aria-labelledby": "lodges-tab"
+    }
+  }, _vm._l((_vm.lodges), function(lodge) {
+    return _c('div', {
+      staticClass: "accom-container"
+    }, [_c('div', {
+      staticClass: "accom-header"
+    }, [_c('h4', {
+      staticClass: "name"
+    }, [_vm._v(_vm._s(lodge.name))])]), _vm._v(" "), _c('div', {
+      staticClass: "accom-body"
+    }, [_c('div', {
+      staticClass: "body-item phone"
+    }, [(lodge.hasPhone) ? _c('a', {
+      attrs: {
+        "href": 'tel:' + lodge.phone
+      }
+    }, [_vm._v(_vm._s(lodge.phone))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item email"
+    }, [(lodge.hasEmail) ? _c('a', {
+      attrs: {
+        "href": 'mailto:' + lodge.email
+      }
+    }, [_vm._v(_vm._s(lodge.email))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item website"
+    }, [(lodge.hasWebsite) ? _c('a', {
+      attrs: {
+        "href": 'http://' + (lodge.website).replace(' ', ''),
+        "target": "_blank"
+      }
+    }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item distance"
+    }, [_vm._v(_vm._s(_vm.distance(-29.451244, 27.720536, lodge.latitude, lodge.longitude, 'K')) + " km "), _c('span', [_vm._v("from NUL")])])])])
+  })), _vm._v(" "), _c('div', {
+    staticClass: "tab-pane fade",
+    attrs: {
+      "role": "tabpanel",
+      "id": "guest-houses",
+      "aria-labelledby": "guest-houses-tab"
+    }
+  }, _vm._l((_vm.guestHouses), function(guestHouse) {
+    return _c('div', {
+      staticClass: "accom-container"
+    }, [_c('div', {
+      staticClass: "accom-header"
+    }, [_c('h4', {
+      staticClass: "name"
+    }, [_vm._v(_vm._s(guestHouse.name))])]), _vm._v(" "), _c('div', {
+      staticClass: "accom-body"
+    }, [_c('div', {
+      staticClass: "body-item phone"
+    }, [(guestHouse.hasPhone) ? _c('a', {
+      attrs: {
+        "href": 'tel:' + guestHouse.phone
+      }
+    }, [_vm._v(_vm._s(guestHouse.phone))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item email"
+    }, [(guestHouse.hasEmail) ? _c('a', {
+      attrs: {
+        "href": 'mailto:' + guestHouse.email
+      }
+    }, [_vm._v(_vm._s(guestHouse.email))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item website"
+    }, [(guestHouse.hasWebsite) ? _c('a', {
+      attrs: {
+        "href": 'http://' + (guestHouse.website).replace(' ', ''),
+        "target": "_blank"
+      }
+    }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item distance"
+    }, [_vm._v(_vm._s(_vm.distance(-29.451244, 27.720536, guestHouse.latitude, guestHouse.longitude, 'K')) + " km "), _c('span', [_vm._v("from NUL")])])])])
+  })), _vm._v(" "), _c('div', {
+    staticClass: "tab-pane fade",
+    attrs: {
+      "role": "tabpanel",
+      "id": "BnBs",
+      "aria-labelledby": "BnBs-tab"
+    }
+  }, _vm._l((_vm.BnBs), function(BnB) {
+    return _c('div', {
+      staticClass: "accom-container"
+    }, [_c('div', {
+      staticClass: "accom-header"
+    }, [_c('h4', {
+      staticClass: "name"
+    }, [_vm._v(_vm._s(BnB.name))])]), _vm._v(" "), _c('div', {
+      staticClass: "accom-body"
+    }, [_c('div', {
+      staticClass: "body-item phone"
+    }, [(BnB.hasPhone) ? _c('a', {
+      attrs: {
+        "href": 'tel:' + BnB.phone
+      }
+    }, [_vm._v(_vm._s(BnB.phone))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item email"
+    }, [(BnB.hasEmail) ? _c('a', {
+      attrs: {
+        "href": 'mailto:' + BnB.email
+      }
+    }, [_vm._v(_vm._s(BnB.email))]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item website"
+    }, [(BnB.hasWebsite) ? _c('a', {
+      attrs: {
+        "href": 'http://' + (BnB.website).replace(' ', ''),
+        "target": "_blank"
+      }
+    }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "body-item distance"
+    }, [_vm._v(_vm._s(_vm.distance(-29.451244, 27.720536, BnB.latitude, BnB.longitude, 'K')) + " km "), _c('span', [_vm._v("from NUL")])])])])
+  }))])]) : _vm._e()])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
+    staticClass: "nav nav-tabs  nav-justified",
+    attrs: {
+      "id": "accom-tabs",
+      "role": "tablist"
+    }
+  }, [_c('li', {
+    staticClass: "active",
+    attrs: {
+      "role": "presentation"
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "#hotels",
+      "id": "hotels-tab",
+      "role": "tab",
+      "data-toggle": "tab",
+      "aria-controls": "hotels",
+      "aria-expanded": "true"
+    }
+  }, [_vm._v("Hotels")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "role": "presentation"
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "#lodges",
+      "role": "tab",
+      "id": "lodges-tab",
+      "data-toggle": "tab",
+      "aria-controls": "lodges",
+      "aria-expanded": "false"
+    }
+  }, [_vm._v("Lodges")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "role": "presentation"
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "#guest-houses",
+      "role": "tab",
+      "id": "guest-houses-tab",
+      "data-toggle": "tab",
+      "aria-controls": "guest-houses",
+      "aria-expanded": "false"
+    }
+  }, [_vm._v("Guest Houses")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "role": "presentation"
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "#BnBs",
+      "role": "tab",
+      "id": "BnBs-tab",
+      "data-toggle": "tab",
+      "aria-controls": "BnBs",
+      "aria-expanded": "false"
+    }
+  }, [_vm._v("B&Bs")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
