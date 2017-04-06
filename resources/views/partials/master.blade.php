@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>NUL EXPO 2018</title>
+<title>NULISTICE 2018</title>
+<meta name="description" content="National University of Lesotho Science, Technology and Innovation Expo and Conference.">
   <base href="/">
  <link rel="icon" type="image/x-icon" href="favicon.ico">
 <!-- Stylesheets -->
@@ -16,10 +17,14 @@
 <link href="{{mix('css/helpers.css')}}" rel="stylesheet">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="/css/responsive.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+
 
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="/js/respond.js"></script><![endif]-->
