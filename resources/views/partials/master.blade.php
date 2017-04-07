@@ -64,6 +64,6 @@
 
 
  @yield('scripts')
-
+ @include('partials.sponsors-scripts')
 </body>
 </html>

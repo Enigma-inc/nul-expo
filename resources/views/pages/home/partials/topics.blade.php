@@ -2,7 +2,7 @@
 
     <div class="auto-container" style="color: #fff">
                 <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2>Key Areas of Scientific Topics</h2>
+            <h2 class="header">Key Areas of scientific Topics</h2>
         </div>
         <div class="row" >
             <article class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">

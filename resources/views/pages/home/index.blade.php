@@ -6,7 +6,7 @@
     @include('pages.home.partials.importantdates')
     @include('pages.home.partials.topics')
     @include('pages.home.partials.fees')    
-    @include('pages.home.partials.speakers')
+    @include('pages.home.partials.team')
     @include('pages.home.partials.blog')
 @stop
 
@@ -36,15 +36,6 @@
                     },
 
                 }
-    });
-    $(".owl-carousel").owlCarousel({
-                margin: 10,
-                loop: true,
-                autoWidth: false,
-                items: 4,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true
     });
 
     $('.tp-banner').show().revolution({

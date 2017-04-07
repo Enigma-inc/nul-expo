@@ -2,7 +2,7 @@
 <section >
     <div id="app" class="auto-container">
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2>Abstract Submission Format NULISTICE 2018</h2>
+            <h2 class="header">Abstract Submission Format NULISTICE 2018</h2>
         </div>
         <div>
             <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -61,19 +61,5 @@
         </div>
     </div>
 </section>
-@stop @section('scripts')
-<script>
-    $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            margin: 10,
-            loop: true,
-            autoWidth: false,
-            items: 5,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true
-        });
-    });
-</script>
+@stop 
 
-@stop

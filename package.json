@@ -17,6 +17,7 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "vuelidate": "^0.4.2"
   }
 }

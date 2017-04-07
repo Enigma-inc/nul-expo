@@ -5,7 +5,7 @@
     <div class="auto-container">
 
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2>Fee structure for conference registration</h2>
+            <h2 class="header">Fee structure for conference registration</h2>
         </div>
         <div class="fees-container">
            <div class="fees-header">Category</div>
@@ -36,22 +36,3 @@
     </div>
 </section>
 @stop
-
-@section('scripts')
-    <script> 
-    $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-                margin: 10,
-                loop: true,
-                autoWidth: false,
-                items: 5,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true
-    });
-
-    });
-    </script>
-
-@stop
-

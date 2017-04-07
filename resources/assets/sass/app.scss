@@ -1,103 +1,191 @@
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
-.text-align-just{
-    text-align:justify;
+@import 'accommodation';
+.text-align-just {
+    text-align: justify;
 }
 
-.text-align-left{
-    text-align:left;
+.text-align-left {
+    text-align: left;
 }
-.conference-img{
+
+.text-align-center {
+    text-align: center;
+}
+
+.conference-img {
     width: 300px;
 }
 
-.color-primary{
-   color: #e13f30 !important;
+.color-primary {
+    color: #e13f30 !important;
 }
-.color-white{
-   color: #fff !important;
+
+.color-white {
+    color: #fff !important;
 }
-.blockquote{
+
+.blockquote {
     padding: 0 !important;
 }
 
-.conference-img-lg{
+.conference-img-lg {
     width: 500px;
 }
 
-.fees-container{
+.fees-container {
     display: flex;
     font-family: sans-serif
 }
-.fees-header{
-    flex:1;
-    font-size: 1.3em;
-    color: #e13f30;
-    line-height: 1.3em;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.fees-body{
-    flex:1;
-    font-size: 1.2em;
-    line-height: 3em;
-    font-weight: 600;
-    margin-top:20px;
-    border: 1px #a6a6a6 solid;   
-    
-}
-.fees-body > span{
-    font-size: 2em;
-}
+
 section.latest-posts {
     font-size: 1.2em !important;
 }
-body{
+
+body {
     background-color: #fff!important
 }
-.big-title{
-  text-align: center !important;
-   background-color: rgba(0,0,0, 0.5);
-   padding: 10px !important;
-}
-.big-title > h2{
-   font-family: 'Anton', sans-serif;
-    font-size: 4em !important;
-    line-height: 2em;
-}
-.big-title > span{
-  font-family: 'Cinzel', serif;
-  color:#E13F30;
-   font-size: 2.8em !important;
 
-
-}
-.slide-date{
-      color:#fff;
-   font-size: 1.5em !important;
-}
-.divider{
-    border: 1px rgba(255,255,255, 0.3) solid;
-    height: 1px;
-    border-width: 1px !important;
-    margin-bottom: 40px !important;
-}
-ul,li{
-     list-style-type: none ;
+ul,
+li {
+    list-style-type: none;
 }
 
-li > .fa-circle{
-     font-size: 8px !important;
+li>.fa-circle {
+    font-size: 8px !important;
 }
 
-li > .fa-circle-thin{
-     font-size: 9px !important;
+li>.fa-circle-thin {
+    font-size: 9px !important;
+}
+
+.fa-spinner {
+    color: rgba(255, 0, 0, 0.1) !important;
+}
+
+.nav {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .tp-caption {
+        left: 20% !important;
+    }
+    .big-title {
+        text-align: center !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px !important;
+    }
+    .big-title>h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 2em !important;
+        line-height: 1.5em !important;
+        width: 100%;
+    }
+    .big-title>span {
+        font-family: 'Cinzel', serif;
+        color: #E13F30;
+        font-size: 2em !important;
+    }
+    .slide-date {
+        color: #fff;
+        font-size: 1.5em !important;
+    }
+    .divider {
+        border: 1px rgba(255, 255, 255, 0.3) solid;
+        height: 1px;
+        border-width: 1px !important;
+        margin-bottom: 40px !important;
+    }
+    .fees-header {
+        flex: 1;
+        font-size: 1em;
+        color: #e13f30;
+        line-height: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .fees-body {
+        flex: 1;
+        font-size: 1em;
+        line-height: 3em;
+        font-weight: 600;
+        margin-top: 20px;
+        border: 1px #a6a6a6 solid;
+    }
+    .fees-body>span {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 769px) {
+    .tp-caption {
+        left: 20% !important;
+    }
+    .big-title {
+        text-align: center !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px !important;
+    }
+    .big-title>h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 4em !important;
+        line-height: 2em;
+    }
+    .big-title>span {
+        font-family: 'Cinzel', serif;
+        color: #E13F30;
+        font-size: 2.8em !important;
+    }
+    .slide-date {
+        color: #fff;
+        font-size: 1.5em !important;
+    }
+    .divider {
+        border: 1px rgba(255, 255, 255, 0.3) solid;
+        height: 1px;
+        border-width: 1px !important;
+        margin-bottom: 40px !important;
+    }
+    .fees-header {
+        flex: 1;
+        font-size: 1.3em;
+        color: #e13f30;
+        line-height: 1.3em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .fees-body {
+        flex: 1;
+        font-size: 1.2em;
+        line-height: 3em;
+        font-weight: 600;
+        margin-top: 20px;
+        border: 1px #a6a6a6 solid;
+    }
+    .fees-body>span {
+        font-size: 2em;
+    }
+    .slide-date {
+        color: #fff;
+        font-size: 1.5em !important;
+    }
+    .divider {
+        border: 1px rgba(255, 255, 255, 0.3) solid;
+        height: 1px;
+        border-width: 1px !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+.header {
+    text-transform: capitalize;
+}
+
+.default-btn.green {
+    background-color: #377e3c;
 }
