@@ -1,6 +1,7 @@
 @extends('partials.master')
 
 @section('content')
+    <div class="preloader"></div>
     @include('pages.home.partials.slider')
     @include('pages.home.partials.about')
     @include('pages.home.partials.importantdates')

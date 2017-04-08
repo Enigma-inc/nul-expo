@@ -33,8 +33,7 @@
 <body>
 <div class="page-wrapper">
  	
-    <!-- Preloader 
-    <div class="preloader"></div>-->
+   
  	
      @include('partials.menu')
      @yield('content')

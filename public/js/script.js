@@ -276,9 +276,9 @@
         Typed.new('#nulistice', {
             strings: ["<br> NULISTICE-2018 "],
             typeSpeed: 500,
-            startDelay: 3000,
-            loopCount: 2,
-            loop: false,
+            startDelay: 5000,
+            loopCount: 3,
+            loop: true,
             showCursor: true,
         });
     }
