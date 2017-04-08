@@ -9,8 +9,8 @@
             <h2>National University of Lesotho Science and Technology <br> Innovation Conference and Expo
             </h2>
             <div class="divider"></div>
-            <span> 
-                    <br> NULISTICE-2018 
+            <span id="nulistice"> 
+                    
                    
                 </span>
             <br> <small class="slide-date"><i class="fa fa-calendar"></i> 23 - 26 January 2018</small>

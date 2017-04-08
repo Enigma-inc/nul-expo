@@ -61,6 +61,7 @@
 <script src="/js/jquery.fancybox.pack.js"></script>
 <script src="/js/wow.js"></script>
 <script src="/js/jquery.countdown.js"></script>
+<script src="/js/typed.min.js"></script>
 <script src="/js/script.js"></script>
 <script src="js/jquery.slimscroll.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
