@@ -278,7 +278,7 @@
             typeSpeed: 500,
             startDelay: 5000,
             loopCount: 3,
-            loop: true,
+            loop: false,
             showCursor: true,
         });
     }
