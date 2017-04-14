@@ -56,10 +56,6 @@ class PagesController extends Controller
         return view('pages.conference.index');
     }
 
-    public function abstract_submission()
-    {
-        return view('pages.abstract.index');
-    }
 
     public function fees()
     {

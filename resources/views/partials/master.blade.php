@@ -50,7 +50,9 @@
 
 <!--Scroll to top-->
 <div class="scroll-to-top"></div>
-
+<script>
+  window.Laravel={csrfToken:'{{csrf_token()}}'}
+</script>
 <script src={{mix('js/app.js')}}></script>
 
 <script src="/js/jquery.js"></script> 
