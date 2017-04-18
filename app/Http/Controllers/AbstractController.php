@@ -34,7 +34,13 @@ class AbstractController extends Controller
      */
     public function store(Request $request)
     {
-        return 'working on it';
+        $file=$request->file('file');
+        $name=  time()." - ".$file->getClientOriginalName();
+        $file->move('submitted-abstracts',$name);
+
+        /// Send email
+
+
     }
 
 
