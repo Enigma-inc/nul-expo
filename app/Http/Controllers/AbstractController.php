@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\AbstractReceived;
 
 class AbstractController extends Controller
 {
@@ -34,11 +36,13 @@ class AbstractController extends Controller
      */
     public function store(Request $request)
     {
-        $file=$request->file('file');
-        $name=  time()." - ".$file->getClientOriginalName();
-        $file->move('submitted-abstracts',$name);
+     //   $file=$request->file('file');
+    //    $name=  time()." - ".$file->getClientOriginalName();
+    //    $file->move('submitted-abstracts',$name);
 
         /// Send email
+        Mail::to('neo@enigma.co.ls')->send(new AbstractReceived());
+   
 
 
     }

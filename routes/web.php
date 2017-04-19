@@ -21,7 +21,7 @@ Route::get('/booking', 'PagesController@booking');
 Route::get('/accommodation', 'PagesController@accomodation');
 Route::get('/conference', 'PagesController@conference');
 Route::get('/abstract', 'AbstractController@index');
-Route::get('/abstract/upload', 'AbstractController@create');
+Route::get('/abstract/submitP', 'AbstractController@create');
 Route::post('/abstract', 'AbstractController@store');
 Route::get('/fees', 'PagesController@fees');
 Route::get('download','PagesController@download');
