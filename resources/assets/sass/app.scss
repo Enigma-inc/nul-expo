@@ -4,6 +4,8 @@
 @import "variables";
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'general';
+@import 'profile';
 @import 'accommodation';
 @import 'slider';
 @import 'typed';

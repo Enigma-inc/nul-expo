@@ -16,12 +16,16 @@ class CreateSubmissionsTable extends Migration
         Schema::create('submissions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
+            $table->string('title')->nullable();
             $table->string('name');
             $table->string('surname');
-            $table->string('organisation');
-            $table->string('country');
-            $table->string('phone');            
-            $table->string('physical_address');
+            $table->string('organisation')->nullable();
+            $table->string('country')->nullable();
+            $table->string('country_flag')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('phone_code')->nullable();
+            $table->string('physical_address')->nullable();
+            $table->string('abstract')->nullable();
             $table->timestamps();
         });
     }

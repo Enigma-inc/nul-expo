@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/','PagesController@home');
+Auth::routes();
+Route::get('/', 'PagesController@home');
 Route::get('/schedule', 'PagesController@schedule');
 Route::get('/contacts', 'PagesController@contacts');
 Route::get('/speakers', 'PagesController@speakers');
@@ -20,8 +21,26 @@ Route::get('/sponsors', 'PagesController@sponsors');
 Route::get('/booking', 'PagesController@booking');
 Route::get('/accommodation', 'PagesController@accomodation');
 Route::get('/conference', 'PagesController@conference');
-Route::get('/abstract', 'AbstractController@index');
-Route::get('/abstract/submitP', 'AbstractController@create');
-Route::post('/abstract', 'AbstractController@store');
+Route::get('/abstract', 'PagesController@loadAbstractPage');
+Route::get('/abstract/submit', 'AbstractController@create');
 Route::get('/fees', 'PagesController@fees');
-Route::get('download','PagesController@download');
+Route::get('download', 'PagesController@download');
+
+
+
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('/profile', 'AbstractController@index');
+
+    Route::post('/abstract', 'AbstractController@store');
+    Route::post('/submit-details', [
+        'uses' => 'AbstractController@submitSpeakerDetails',
+        'as' => 'submit.speaker.details'
+    ]);
+
+    Route::post('/profile/{user}/edit', [
+        'uses' => 'AbstractController@enableEditProfile',
+        'as' => 'enable.profile.edit'
+    ]);
+});
+

@@ -17,8 +17,10 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->boolean('abstract_uploaded')->default(0);
             $table->string('password');
+            $table->boolean('is_admin')->default(0);
+            $table->boolean('abstract_uploaded')->default(0);
+            $table->boolean('details_captured')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

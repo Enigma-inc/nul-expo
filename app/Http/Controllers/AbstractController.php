@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SubmitSpeakerDetailsRequest;
+use App\Submission;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AbstractReceived;
 
@@ -15,8 +20,10 @@ class AbstractController extends Controller
      */
     public function index()
     {
-         return view('pages.abstract.index');
+        return view('profile');
     }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -34,7 +41,7 @@ class AbstractController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function uploadAbstract(Request $request)
     {
      //   $file=$request->file('file');
     //    $name=  time()." - ".$file->getClientOriginalName();
@@ -42,8 +49,40 @@ class AbstractController extends Controller
 
         /// Send email
         Mail::to('neo@enigma.co.ls')->send(new AbstractReceived());
-   
 
+
+    }
+
+
+    public function submitSpeakerDetails(SubmitSpeakerDetailsRequest $request)
+    {
+         $currentUser=Auth::User();
+         $submission=Auth::User()->submission;
+
+          $submission->title=$request->title;
+          $submission->name=$request->name;
+          $submission->surname=$request->surname;
+          $submission->organisation=$request->organisation;
+          $submission->country=$request->country;
+          $submission->country_flag=$request['country-flag'];
+          $submission->phone=$request->phone;
+          $submission->phone_code=$request['phone-code'];
+          $submission->save();
+
+          //Marked details as Updated
+
+        $currentUser->details_captured=1;
+        $currentUser->save();
+        return redirect('/profile');
+
+
+    }
+
+    public function enableEditProfile(User $user)
+    {
+        $user->details_captured=0;
+        $user->save();
+        return redirect('/profile');
 
     }
 

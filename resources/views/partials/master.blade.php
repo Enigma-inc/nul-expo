@@ -66,6 +66,7 @@
 <script src="/js/typed.min.js"></script>
 <script src="/js/script.js"></script>
 <script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/bootstrap-3.typehead.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyClJlIWcBjIz0wcRP_VAewoG3b21aatXXA"></script>
 <script src="/js/googlemaps.js"></script>
