@@ -1629,7 +1629,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         Dropzone: __WEBPACK_IMPORTED_MODULE_0_vue2_dropzone___default.a
     },
-    props: ['csrfToken'],
+    props: ['csrfToken', 'user'],
     data: function data() {
         return {
             options: {
@@ -1647,7 +1647,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     mounted: function mounted() {
-        console.log('TOKEN IS', this.csrfToken);
+        console.log('TOKEN IS', this.user);
     }
 });
 
@@ -32315,7 +32315,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('dropzone', {
     attrs: {
       "id": "uploadDropzone",
-      "url": "/abstract",
+      "url": '/abstract/' + _vm.user,
       "thumbnailWidth": "350",
       "dropzone-options": _vm.options,
       "use-custom-dropzone-options": true

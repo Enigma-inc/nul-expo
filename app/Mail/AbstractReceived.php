@@ -6,19 +6,22 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Support\Facades\Storage;
 
 class AbstractReceived extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $user;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
-        //
+        $this->user=$user;
+
     }
 
     /**
@@ -28,6 +31,6 @@ class AbstractReceived extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.abstract-received');
+        return $this->markdown('emails.abstract-received')->attach(public_path()."/submitted-abstracts/".$this->user->submission->abstract);
     }
 }

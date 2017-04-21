@@ -33,4 +33,9 @@ class User extends Authenticatable
        return $this->hasOne(Submission::class);
 
    }
+
+   public function fullName()
+   {
+       return  $this->submission->title." ".$this->submission->name." ".$this->submission->surname;
+   }
 }

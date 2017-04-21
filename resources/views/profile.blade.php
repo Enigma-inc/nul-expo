@@ -132,7 +132,7 @@
                     <div class="col-md-4 profile">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <div class=" header">{{Auth::user()->name}}</div>
+                                <div class=" header">{{Auth::user()->fullName()}}</div>
                             </div>
 
                             <div class="panel-body">
@@ -166,27 +166,59 @@
                                 <hr>
 
                                 <div class="row">
-                                    <form role="form" action="{{route('enable.profile.edit',Auth::user()->id)}}" method="POST">
-                                        {{ csrf_field() }}
-                                        <button class="btn btn-primary btn-xs  col-xs-8 col-xs-offset-2">Edit Profile</button>
-
-                                    </form>
+                                    <div class="col-xs-12">
+                                        <form role="form" action="{{route('enable.profile.edit',Auth::user()->id)}}" method="POST">
+                                            {{ csrf_field() }}
+                                            <button class="btn btn-primary btn-xs  col-xs-6"><i class="fa fa-pencil"></i> Edit Profile</button>
+                                            <a class="btn btn-primary btn-xs  col-xs-6" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                               <i class="fa fa-lock"></i> Logout
+                                            </a>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 profile">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <div class=" header">Submitted Abstracts</div>
+                                <div class=" header">Abstract</div>
                             </div>
 
                             <div class="panel-body">
+                                <div class="file-container">
+                                    <div>{{Auth::user()->submission->abstract}}</div>
+                                    @if(Auth::user()->submission->abstract)
+                                    <div>
+                                            <form action="{{route('abstract.download')}}" method="POST">
+                                                {{csrf_field()}}
+                                                <input type="text" name="file-name" value="{{Auth::user()->submission->abstract}}" hidden>
+                                                <button type="submit" class="btn btn-primary btn-xs"> <i class="fa fa-download"></i> Download</button>
+                                            </form>
+                                    </div>
+                                    @endif
 
+                                </div>
                             </div>
                         </div>
+                   <div class="row">
+                       <div id="app" class="auto-container">
+                           <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                               <abstract-upload user="{{Auth::user()->id}}" csrf-token="{{csrf_token()}}"></abstract-upload>
+                           </div>
+
+
+                       </div>
+                   </div>
                     </div>
                 </div>
+
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
             @endif
         @endif
 

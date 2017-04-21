@@ -1,7 +1,7 @@
 <template>
      <dropzone 
         id="uploadDropzone"
-        url="/abstract" 
+        :url="'/abstract/' +user"
         v-on:vdropzone-success="showSuccess"
         thumbnailWidth="350"
         v-bind:dropzone-options="options"
@@ -9,12 +9,12 @@
      </dropzone>
 </template>
 <script>
-    import Dropzone from 'vue2-dropzone'
+    import Dropzone from 'vue2-dropzone';
     export default {
         components: {
             Dropzone
         },
-        props: ['csrfToken'],
+        props: ['csrfToken','user'],
         data() {
             return {
                 options: {
@@ -32,7 +32,7 @@
             }
         },
         mounted() {
-            console.log('TOKEN IS', this.csrfToken);
+            console.log('TOKEN IS', this.user);
 
         },
     }

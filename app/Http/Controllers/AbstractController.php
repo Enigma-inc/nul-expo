@@ -6,10 +6,12 @@ use App\Http\Requests\SubmitSpeakerDetailsRequest;
 use App\Submission;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AbstractReceived;
+use Illuminate\Support\Facades\Storage;
 
 class AbstractController extends Controller
 {
@@ -41,14 +43,23 @@ class AbstractController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function uploadAbstract(Request $request)
+    public function uploadAbstract(Request $request,User $user)
     {
-     //   $file=$request->file('file');
-    //    $name=  time()." - ".$file->getClientOriginalName();
-    //    $file->move('submitted-abstracts',$name);
+        $submission= $user->submission;
+        $file=$request->file('file');
+        $name= $file->getClientOriginalName();
+        $file->move('submitted-abstracts',$name);
+
+
+        //Update user profile
+        $submission->abstract=$name;
+        $submission->save();
+
 
         /// Send email
-        Mail::to('neo@enigma.co.ls')->send(new AbstractReceived());
+        Mail::to('neo@enigma.co.ls')->send(new AbstractReceived(Auth::User()));
+
+        return redirect()->route('profile');
 
 
     }
@@ -83,6 +94,25 @@ class AbstractController extends Controller
         $user->details_captured=0;
         $user->save();
         return redirect('/profile');
+
+    }
+
+    public function downloadAbstract()
+    {
+        $fileName = Input::get("file-name");
+        $filePath = public_path() . "/submitted-abstracts/" . $fileName;
+
+
+        if( file_exists($filePath)){
+            $headers = array(
+                'Content-Type: '.Storage::mimeType("/submitted-abstracts/" .$fileName),
+            );
+            return Response::download($filePath, $fileName,$headers);
+        }
+        else{
+            return back();
+        }
+
 
     }
 

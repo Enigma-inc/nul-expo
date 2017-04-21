@@ -30,9 +30,16 @@ Route::get('download', 'PagesController@download');
 
 Route::group(['middleware' => 'auth'], function () {
 
-    Route::get('/profile', 'AbstractController@index');
+    Route::get('/profile', [
+        'uses'=>'AbstractController@index',
+        'as'=>'profile'
+    ]);
 
-    Route::post('/abstract', 'AbstractController@store');
+    Route::post('/abstract/{user}', [
+        'uses'=>'AbstractController@uploadAbstract',
+        'as'=>'abstract.upload'
+    ]);
+    
     Route::post('/submit-details', [
         'uses' => 'AbstractController@submitSpeakerDetails',
         'as' => 'submit.speaker.details'
@@ -41,6 +48,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/profile/{user}/edit', [
         'uses' => 'AbstractController@enableEditProfile',
         'as' => 'enable.profile.edit'
+    ]);
+
+    Route::post('/download/abstract', [
+        'uses' => 'AbstractController@downloadAbstract',
+        'as' => 'abstract.download'
     ]);
 });
 
