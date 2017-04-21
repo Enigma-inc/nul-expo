@@ -2,9 +2,17 @@
  @section('content')
 <section >
     <div id="app" class="auto-container">
+        <div class="row">
+            <div class="text-right margin-bottom-10 margin-top-20 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <a href="{{route('profile')}}" class="download-btn theme-btn padding-5"><span class="fa fa-upload"></span> Upload Abstract</a>
+                <a href="{{route('profile')}}" class="download-btn theme-btn padding-5"><span class="fa fa-user"></span> Go to Your Profile</a>
+                <a href="{{url('download?file-name=abstract')}}" class="download-btn theme-btn padding-5"><span class="fa fa-file-pdf-o"></span> DOWNLOAD Abstract Guide</a>
+            </div>
+        </div>
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2 class="header">Abstract Submission Format NULISTICE 2018</h2>
         </div>
+
         <div>
             <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <p class="text-align-just abstract">
@@ -57,9 +65,7 @@
             <strong>Keywords: </strong> Upper case; Semi-colon; Paper template; Abstract; Keywords; Introduction Corresponding
             author: Identify by * Email address; Telephone and Fax
         </p>
-        <div class="text-right margin-bottom-10 margin-top-20 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <a href="{{url('download?file-name=abstract')}}" class="download-btn theme-btn padding-5"><span class="fa fa-file-pdf-o"></span> DOWNLOAD Abstract Guide</a>
-        </div>
+
     </div>
 </section>
 @stop 

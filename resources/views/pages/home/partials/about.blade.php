@@ -12,8 +12,8 @@
                     <p>23 January, 2018</p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 text-right">
-                    <a href="conference" class="theme-btn btn-style-one hvr-bounce-to-right"><span
-                                class="fa fa-play"></span> View Conference Concept</a>
+                    <a href="profile" class="theme-btn btn-style-one hvr-bounce-to-right"><span
+                                class="fa fa-file"></span> Submit Your Abstract</a>
                 </div>
             </div>
         </div>

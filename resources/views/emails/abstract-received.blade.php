@@ -12,7 +12,7 @@ Below are the details of submission, abstract document is attached.
 | **Name**  | {{$user->submission->name}}      |
 | **Surname**  | {{$user->submission->surname}}      |
 | **Organisation**  | {{$user->submission->organisation}}      |
-| **Country**  | {{$user->submission->country}} <img src="{{$user->submission->country_flag}}" height="10" />     |
+| **Country**  | {{$user->submission->country}} <img src="{{$message->embed($user->submission->country_flag)}}" height="10" />     |
 | **Phone**  | {{$user->submission->phone_code}} {{$user->submission->phone}}     |
 | **Email**  | {{$user->email}}    |
 @endcomponent
