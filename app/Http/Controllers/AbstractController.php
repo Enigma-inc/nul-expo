@@ -57,7 +57,7 @@ class AbstractController extends Controller
 
 
         /// Send email
-        Mail::to(['address' => 'neo@enigma.co.ls'])->send(new AbstractReceived(Auth::User()));
+        Mail::to(['address' => 'mokoena.n.a@gmail.com'])->queue(new AbstractReceived(Auth::User()));
 
         return redirect()->route('profile');
 

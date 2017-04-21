@@ -228,6 +228,10 @@
 @section('scripts')
     <script>
         var $input = $("#country");
+        var flag = $('#country-flag');
+        if(!flag.val()){
+            flag.hide();
+        }
 
         $.get("https://restcountries.eu/rest/v2/all", function (data) {
             $input.typeahead({
