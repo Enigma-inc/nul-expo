@@ -31,6 +31,7 @@ class AbstractReceived extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.abstract-received')->attach(public_path()."/submitted-abstracts/".$this->user->submission->abstract);
+        return $this->from($this->user->email)
+                    ->markdown('emails.abstract-received')->attach(public_path()."/submitted-abstracts/".$this->user->submission->abstract);
     }
 }
