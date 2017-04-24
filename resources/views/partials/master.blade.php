@@ -21,6 +21,7 @@
 <link href="/css/responsive.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900|Dancing+Script" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.min.css">
 
 <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
@@ -63,13 +64,12 @@
 <script src="/js/jquery.fancybox.pack.js"></script>
 <script src="/js/wow.js"></script>
 <script src="/js/jquery.countdown.js"></script>
-<script src="/js/typed.min.js"></script>
 <script src="/js/script.js"></script>
 <script src="js/jquery.slimscroll.min.js"></script>
 <script src="js/bootstrap-3.typehead.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyClJlIWcBjIz0wcRP_VAewoG3b21aatXXA"></script>
-<script src="/js/googlemaps.js"></script>
+<script src="js/ui-block.js"></script>
+<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.min.js"></script>
+
 
 
  @yield('scripts')

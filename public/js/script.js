@@ -289,7 +289,7 @@
     $(document).on('ready', function() {
         headerStyle();
         enableSlimScroll();
-        typeNulistice();
+        //typeNulistice();
 
     });
 

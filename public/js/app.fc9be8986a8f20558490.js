@@ -1623,6 +1623,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1635,7 +1636,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             options: {
                 headers: {
                     'X-CSRF-TOKEN': this.csrfToken
-                }
+                },
+                uploadMultiple: false,
+                acceptedFiles: 'application/pdf,.doc,.docx',
+                dictDefaultMessage: 'Drop your abstract here or click to upload.'
             }
         };
     },
@@ -1643,12 +1647,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
 
         'showSuccess': function showSuccess(file) {
-            console.log('A file was successfully uploaded');
+            swal({
+                type: 'success',
+                title: 'Success!',
+                html: 'Thank you, your abstract was submitted, we shall get back to you<br/>\n                      <em><small>You can get back to your profile and update details if needed.</small></em>',
+                confirmButtonColor: '#E13F30'
+            });
+        },
+        'fileAdded': function fileAdded(file) {
+            console.log('A file Added...');
         }
     },
-    mounted: function mounted() {
-        console.log('TOKEN IS', this.user);
-    }
+    mounted: function mounted() {}
 });
 
 /***/ }),
@@ -32316,12 +32326,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "uploadDropzone",
       "url": '/abstract/' + _vm.user,
-      "thumbnailWidth": "350",
       "dropzone-options": _vm.options,
       "use-custom-dropzone-options": true
     },
     on: {
-      "vdropzone-success": _vm.showSuccess
+      "vdropzone-success": _vm.showSuccess,
+      "vdropzone-file-added": _vm.fileAdded
     }
   })
 },staticRenderFns: []}

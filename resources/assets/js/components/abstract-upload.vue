@@ -3,9 +3,10 @@
         id="uploadDropzone"
         :url="'/abstract/' +user"
         v-on:vdropzone-success="showSuccess"
-        thumbnailWidth="350"
+        v-on:vdropzone-file-added="fileAdded"
         v-bind:dropzone-options="options"
-        v-bind:use-custom-dropzone-options="true">
+        v-bind:use-custom-dropzone-options="true"
+        >
      </dropzone>
 </template>
 <script>
@@ -20,20 +21,31 @@
                 options: {
                     headers: {
                         'X-CSRF-TOKEN': this.csrfToken
-                    }
-                }
+                    },
+                    uploadMultiple:false,
+                    acceptedFiles:'application/pdf,.doc,.docx',
+                    dictDefaultMessage:'Drop your abstract here or click to upload.'
+                },
             }
         },
         methods: {
 
 
             'showSuccess': function(file) {
-                console.log('A file was successfully uploaded')
-            }
+                swal({
+                    type:'success',
+                    title:'Success!',
+                    html:`Thank you, your abstract was submitted, we shall get back to you<br/>
+                          <em><small>You can get back to your profile and update details if needed.</small></em>`,
+                    confirmButtonColor: '#E13F30',
+                }
+                )
+            },
+            'fileAdded': function(file) {
+                console.log('A file Added...')
+            },
         },
         mounted() {
-            console.log('TOKEN IS', this.user);
-
         },
     }
 </script>
