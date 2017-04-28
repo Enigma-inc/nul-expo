@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 class RequestsController extends Controller
 {
     //
-    public function store(){
+    public function store(Request $request)
+    {
+        $request->
 
     }
 }
