@@ -25,7 +25,7 @@ Route::get('/abstract', 'PagesController@loadAbstractPage');
 Route::get('/abstract/submit', 'AbstractController@create');
 Route::get('/fees', 'PagesController@fees');
 Route::get('download', 'PagesController@download');
-Route::post('/', 'RequestsController@store');
+Route::post('/', 'QueriesController@create');
 
 
 

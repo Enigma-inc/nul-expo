@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Query;
 use Illuminate\Http\Request;
 
-class RequestsController extends Controller
+class QueriesController extends Controller
 {
     //
-    public function store(Request $request)
+    public function create(Request $request)
     {
         $query = Query::create([
             'name' => request('name'),
