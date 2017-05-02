@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Mail;
 use App\Query;
 use Illuminate\Http\Request;
+use App\Mail\QueryReceived;
+use Illuminate\Support\Facades\Storage;
 
 class QueriesController extends Controller
 {
@@ -15,7 +19,12 @@ class QueriesController extends Controller
             'email' => request('email'),
             'message' => request('message')
         ]);
-
+        
+        Mail::to(['email'=>'seramerammeleke@gmail.com'])
+            ->send(new QueryReceived($query));
+    
         return redirect()->back();
+
     }
+
 }
