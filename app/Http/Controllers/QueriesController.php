@@ -12,8 +12,19 @@ use Illuminate\Support\Facades\Storage;
 class QueriesController extends Controller
 {
     //
-    public function create(Request $request)
+    public function create()
     {
+        return view('queries.create');
+
+    }
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+        'name' => 'required',
+        'email' => 'required|email',
+        'message' => 'required|max:255',
+    ]);
+
         $query = Query::create([
             'name' => request('name'),
             'email' => request('email'),

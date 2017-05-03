@@ -12,8 +12,10 @@
                     <p>23 January, 2018</p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 text-right">
-                    <a href="profile" class="theme-btn btn-style-one hvr-bounce-to-right"><span
+                    <a href="profile" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-file"></span> Submit Your Abstract</a>
+                    <a href="{{route('contact.create')}}" class=" col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
+                                class="fa fa-envelope"></span> Contact us</a>
                 </div>
             </div>
         </div>
