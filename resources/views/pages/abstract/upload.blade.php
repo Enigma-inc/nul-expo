@@ -1,4 +1,5 @@
-@extends('partials.master') @section('content')
+@extends('partials.master') 
+@section('content')
 <section>
     <div id="app" class="auto-container">
         <div class="sec-title wow fadeInUp text-center" style="text-align:left" data-wow-delay="200ms" data-wow-duration="1000ms">

@@ -32,6 +32,7 @@ class QueryReceived extends Mailable
     public function build()
     {
         return $this->from($this->query)
+                     ->subject($this->query->subject)
                     ->markdown('emails.query-received');
     }
 }

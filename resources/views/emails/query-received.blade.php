@@ -1,8 +1,5 @@
 @component('mail::message')
-#{{$query->name}} submitted a query
-@component('mail::panel')
-Below are the details of submission.
-@endcomponent
+#Message from {{$query->name}} 
 
 
 @component('mail::table')
@@ -13,6 +10,6 @@ Below are the details of submission.
 | **Message** | {{$query->message}}    |
 @endcomponent
 @component('mail::button', ['url' => 'http://www.nulistice.org.ls', 'color' => 'red'])
-View All Submitted Queries
+View All Messages
 @endcomponent
 @endcomponent

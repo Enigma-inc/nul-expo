@@ -22,19 +22,26 @@ class QueriesController extends Controller
         $this->validate($request, [
         'name' => 'required',
         'email' => 'required|email',
+        'subject' => 'required',
         'message' => 'required|max:255',
     ]);
 
-        $query = Query::create([
+//dd($request->toArray());
+      $query = Query::create([
             'name' => request('name'),
             'email' => request('email'),
+            'subject' => request('subject'),
             'message' => request('message')
+            
         ]);
         
-        Mail::to(['email'=>'seramerammeleke@gmail.com'])
+        Mail::to(['address' => 'info@nulistice.org.ls'])
+              ->bcc(['address'=>'neo@enigma.co.ls'])
             ->send(new QueryReceived($query));
+
+           $request->session()->flash('flash', "Thank you, we have received your message, we will get back soon");
+           return redirect()->back();
     
-        return redirect()->back();
 
     }
 
