@@ -12,10 +12,15 @@ use Illuminate\Support\Facades\Storage;
 class QueriesController extends Controller
 {
     //
+    public function index()
+    {
+        $queries = Query::latest()->get();
+
+        return view('queries.index', compact('queries'));
+    }
     public function create()
     {
         return view('queries.create');
-
     }
     public function store(Request $request)
     {
