@@ -22,7 +22,11 @@
            <div class="fees-body">USD <span>450</span></div>
            <div class="fees-body">USD <span>250</span></div>
         </div>
-         <div class="fees-container">
+        <div class="col-xs-12">
+        <p>For more information <a href="{{route('contact.create')}}">contact us</a></p>
+             
+        </div>
+   <!--      <div class="fees-container">
            <div class="fees-body">Local </div>
            <div class="fees-body">LSL <span>1500</span></div>
            <div class="fees-body">LSL <span>750</span></div>
@@ -32,7 +36,7 @@
            <div class="fees-body">LSL <span>500</span></div>
            <div class="fees-body">FREE </div>
         </div>
-
+-->
     </div>
 </section>
 @stop

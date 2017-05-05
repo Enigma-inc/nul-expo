@@ -57,7 +57,7 @@ class AbstractController extends Controller
 
 
         /// Send email
-        Mail::to(['address' => 'thamaetm@gmail.com'])
+        Mail::to(['address' => 'info@nulistice.org.ls'])
               ->bcc(['address'=>'neo@enigma.co.ls'])
               ->send(new AbstractReceived(Auth::User()));
 
