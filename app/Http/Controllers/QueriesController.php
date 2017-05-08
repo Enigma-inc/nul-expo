@@ -11,10 +11,16 @@ use Illuminate\Support\Facades\Storage;
 
 class QueriesController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         $queries = Query::latest()->paginate(5);
+
+        //$this->authorize('view', $queries);
 
         return view('queries.index', compact('queries'));
     }
@@ -31,7 +37,6 @@ class QueriesController extends Controller
         'message' => 'required|max:255',
     ]);
 
-//dd($request->toArray());
       $query = Query::create([
             'name' => request('name'),
             'email' => request('email'),

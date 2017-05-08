@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'App\Model' => 'App\Policies\ModelPolicy',
+        'App\Query' => 'App\Policies\ViewMessagesPolicy',
     ];
 
     /**
@@ -25,12 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Gate::define('view-messages', function($user, $queries){
-            return $user->id == $queries->user_id;
+        Gate::before(function ($user){
+            if($user->is_admin) return true;
         });
-
-        if(Gate::forUser($user)->allows('view-messages', $queries)){
-            
-        }
     }
 }

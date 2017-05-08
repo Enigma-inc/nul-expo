@@ -9,19 +9,25 @@
       <div class="message-container">
         <div class="message-menu">
           <ul class="nav nav-pills nav-stacked margin-top-20">
+          @can('view', $queries)
             @foreach($queries as $message)
 
             <li role="presentation" class=" button"  v-bind:class="{ 'active' : selectedMessage =={{$message}}}" > <a href="#" @click.prevent="displayMessage({{$message}})">{{$message->name }}</a> </>
             </li>
             @endforeach
 
-          </ul>
-          {{ $queries->links() }}
-        </div>
+            </ul>
+            {{ $queries->links() }}
+            </div>
+            <div class="message-body">
+                <message-display></message-display>
+            </div>
+          @endcan
+
+          @cannot('view', $queries)
+              <h1 class="header center">Sorry, but you cannot view this page!</h1>
+          @endcannot
         
-        <div class="message-body">
-             <message-display></message-display>
-        </div>
       </div>
     </messages>
 
