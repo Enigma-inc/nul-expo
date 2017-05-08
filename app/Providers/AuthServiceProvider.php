@@ -25,6 +25,12 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('view-messages', function($user, $queries){
+            return $user->id == $queries->user_id;
+        });
+
+        if(Gate::forUser($user)->allows('view-messages', $queries)){
+            
+        }
     }
 }

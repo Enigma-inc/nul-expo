@@ -17,6 +17,8 @@ Vue.component('blog', require('./components/blog.vue'));
 Vue.component('accommodation', require('./components/accommodation.vue'));
 Vue.component('abstract-upload', require('./components/abstract-upload.vue'));
 Vue.component('flash-message', require('./components/flash-message.vue'));
+Vue.component('messages', require('./components/messages.vue'));
+Vue.component('message-display', require('./components/message-display.vue'));
 
 const app = new Vue({
     el: '#app'

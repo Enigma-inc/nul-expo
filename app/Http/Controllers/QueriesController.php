@@ -14,7 +14,7 @@ class QueriesController extends Controller
     //
     public function index()
     {
-        $queries = Query::latest()->get();
+        $queries = Query::latest()->paginate(5);
 
         return view('queries.index', compact('queries'));
     }

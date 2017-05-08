@@ -1,0 +1,14 @@
+.message-container{
+    display: flex;
+    .message-menu{
+        flex: 1;
+    }
+    .message-body{
+        flex: 2;
+    }
+}
+
+.message-timestamp{
+    display: flex;
+    justify-content: flex-end;
+}
