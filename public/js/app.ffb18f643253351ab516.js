@@ -1931,15 +1931,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['message'],
+    props: ['message', 'type', 'title'],
     data: function data() {
         return {};
     },
     mounted: function mounted() {
         swal({
-            title: 'Success!',
+            title: this.title,
             text: this.message,
-            type: 'success',
+            type: this.type,
             confirmButtonText: 'Ok',
             confirmButtonColor: '#E13F30'
         });

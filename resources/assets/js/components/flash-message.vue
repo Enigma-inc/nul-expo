@@ -3,16 +3,16 @@
 </template>
 <script>
     export default{
-        props:['message'],
+        props:['message','type','title'],
         data(){
             return {
         }
         },
         mounted(){
             swal({
-                    title: 'Success!',
+                    title: this.title,
                     text: this.message,
-                    type: 'success',
+                    type: this.type,
                     confirmButtonText: 'Ok',
                     confirmButtonColor: '#E13F30',
                 })

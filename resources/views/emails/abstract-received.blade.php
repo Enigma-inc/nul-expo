@@ -16,7 +16,7 @@ Below are the details of submission, abstract document is attached.
 | **Phone**  | {{$user->submission->phone_code}} {{$user->submission->phone}}     |
 | **Email**  | {{$user->email}}    |
 @endcomponent
-@component('mail::button', ['url' => 'http://127.0.0.1:8000/messages', 'color' => 'red'])
+@component('mail::button', ['url' => './messages', 'color' => 'red'])
 View All Submitted Abstracts
 @endcomponent
 @endcomponent

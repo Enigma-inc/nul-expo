@@ -14,7 +14,10 @@
 
             <!--Table Column-->
             <blog-brief></blog-brief>
+   @if (session('flash'))
+         <flash-message title="Error!" type="error" message="{{ session('flash') }}"></flash-message>
 
+      @endif
         </div>
 
     </div>

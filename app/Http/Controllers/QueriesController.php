@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use App\Mail\QueryReceived;
 use Illuminate\Support\Facades\Storage;
 
+use Session;
+
 class QueriesController extends Controller
 {
     public function __construct()
@@ -20,7 +22,7 @@ class QueriesController extends Controller
     {
         $queries = Query::latest()->paginate(5);
 
-        //$this->authorize('view', $queries);
+        Session::flash('flash', "You can't view this page");
 
         return view('queries.index', compact('queries'));
     }

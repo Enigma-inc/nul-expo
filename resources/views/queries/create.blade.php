@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         @if (session('flash'))
-                        <flash-message message="{{ session('flash') }}"></flash-message>
+                        <flash-message title="Success!" type="success" message="{{ session('flash') }}"></flash-message>
 
                         @endif
 

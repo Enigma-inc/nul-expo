@@ -24,8 +24,14 @@
             </div>
           @endcan
 
-          @cannot('view', $queries)
-              <h1 class="header center">Sorry, but you cannot view this page!</h1>
+          @cannot('view', $queries) 
+          {{  Session::flash('flash', "Sorry, You are not authorised to view that page!")}}
+              @if (Session::has('flash'))
+                <div class="alert alert-info">{{ Session::get('flash') }}</div>
+              @endif
+              <script>
+                  window.location = "/"
+              </script>
           @endcannot
         
       </div>
