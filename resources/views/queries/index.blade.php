@@ -25,9 +25,9 @@
           @endcan
 
           @cannot('view', $queries) 
-          {{  Session::flash('flash', "Sorry, You are not authorised to view that page!")}}
+              {{ Session::flash('flash', "Sorry, You are not authorised to view that page!") }}
               @if (Session::has('flash'))
-                <div class="alert alert-info">{{ Session::get('flash') }}</div>
+                    <flash-message title="Error" type="error" message="{{ session('flash') }}"></flash-message>
               @endif
               <script>
                   window.location = "/"

@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Storage;
 
 class AbstractController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -22,10 +27,17 @@ class AbstractController extends Controller
      */
     public function index()
     {
-        return view('profile');
+        $abstracts = Submission::latest()->paginate(10);
+
+        return view('pages.abstract.viewabstracts', compact('abstracts'));
     }
 
 
+
+    public function profile()
+    {
+        return view('profile');
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -115,9 +127,6 @@ class AbstractController extends Controller
             return back();
         }
 
-
     }
-
-
     
 }

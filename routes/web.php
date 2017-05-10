@@ -26,6 +26,7 @@ Route::get('/abstract/submit', 'AbstractController@create');
 Route::get('/fees', 'PagesController@fees');
 Route::get('download', 'PagesController@download');
 Route::get('/messages', 'QueriesController@index');
+Route::get('/abstracts', 'AbstractController@index');
 
 Route::get('/contact-us','QueriesController@create')->name('contact.create');;
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
@@ -35,7 +36,7 @@ Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/profile', [
-        'uses'=>'AbstractController@index',
+        'uses'=>'AbstractController@profile',
         'as'=>'profile'
     ]);
 

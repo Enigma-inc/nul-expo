@@ -22,14 +22,18 @@ class QueriesController extends Controller
     {
         $queries = Query::latest()->paginate(5);
 
-        Session::flash('flash', "You can't view this page");
+        Session::flash('flash', "Sorry, You are not authorised to view that page!");
 
         return view('queries.index', compact('queries'));
     }
+
+
     public function create()
     {
         return view('queries.create');
     }
+
+
     public function store(Request $request)
     {
         $this->validate($request, [

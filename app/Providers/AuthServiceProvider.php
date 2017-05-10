@@ -14,6 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         'App\Query' => 'App\Policies\ViewMessagesPolicy',
+        'App\Submission' => 'App\Policies\ViewAbstractsPolicy'
     ];
 
     /**

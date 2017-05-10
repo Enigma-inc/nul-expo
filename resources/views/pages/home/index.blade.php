@@ -9,7 +9,6 @@
     @include('pages.home.partials.fees')
     @include('pages.home.partials.team')
     @include('pages.home.partials.blog')
-  
 @stop
 
 

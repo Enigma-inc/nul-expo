@@ -208,8 +208,6 @@
                            <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                                <abstract-upload user="{{Auth::user()->id}}" csrf-token="{{csrf_token()}}"></abstract-upload>
                            </div>
-
-
                        </div>
                    </div>
                     </div>

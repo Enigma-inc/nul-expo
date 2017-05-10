@@ -19,7 +19,6 @@ class ViewMessagesPolicy
      */
     public function view(User $user, Query $query)
     {
-        //
         return $query->user_id == $user->is_admin;
     }
 
