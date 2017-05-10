@@ -7,16 +7,19 @@
     @can('view', $abstracts)
     <table class="margin-bottom-20">
         <tr>
-            <th class="text-align-center">Sender's Details</th>
+            <th class="text-align-center tr">Sender's Details</th>
             <th class="text-align-center">Document</th>
         </tr>
         @foreach($abstracts as $abstract)
         <tr>
             <td class="text-align-center">
-                <div class="profile">
-                    <div class="avatar-container">
-                        <img class="avatar thumbnail"  src="{{ $abstract->country_flag }}" alt="Image">
+                <p> 
+                    <div class="profile">
+                        <div class="avatar-container">
+                            <img class="abstracts-avatar thumbnail"  src="{{ $abstract->country_flag }}" alt="Image">
+                        </div>
                     </div>
+                </p>
                 </div>
                 <p>
                     {{ $abstract->title }}
@@ -35,8 +38,10 @@
             </td>
         </tr>
         @endforeach
+        
     @endcan
     </table>
+    {{ $abstracts->links() }}
 
     @cannot('view', $abstracts)
         {{ Session::flash('flash', "Sorry, You are not authorised to view that page!") }}

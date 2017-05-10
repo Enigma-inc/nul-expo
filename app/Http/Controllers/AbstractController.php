@@ -27,7 +27,7 @@ class AbstractController extends Controller
      */
     public function index()
     {
-        $abstracts = Submission::latest()->paginate(10);
+        $abstracts = Submission::latest()->paginate(2);
 
         return view('pages.abstract.viewabstracts', compact('abstracts'));
     }
