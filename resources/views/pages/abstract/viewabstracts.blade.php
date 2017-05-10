@@ -15,7 +15,7 @@
             <td class="text-align-center">
                 <div class="profile">
                     <div class="avatar-container">
-                        <img class="avatar thumbnail"  src="{{Auth::user()->submission->country_flag}}" alt="Image">
+                        <img class="avatar thumbnail"  src="{{ $abstract->country_flag }}" alt="Image">
                     </div>
                 </div>
                 <p>
