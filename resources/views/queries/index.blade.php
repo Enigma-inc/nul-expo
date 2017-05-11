@@ -2,8 +2,9 @@
 <section id="app">
   <div class="auto-container">
     <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-      <h2 class="header center">All Available Messages</h2>
+      <h2 class="header margin-top-5 margin-bottom-5">Inbox</h2>
     </div>
+    <hr class="margin-top-5">
 
     <messages  inline-template>
       <div class="message-container">

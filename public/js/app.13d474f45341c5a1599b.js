@@ -50086,9 +50086,14 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(!_vm.message) ? _c('h3', [_c('i', {
-    staticClass: "fa fa-arrow-left"
-  }), _vm._v(" Make you selection")]) : _vm._e(), _vm._v(" "), (_vm.message) ? _c('div', {
+  return _c('div', [(!_vm.message) ? _c('h5', [_c('i', {
+    staticClass: "fa fa-arrow-right"
+  }), _c('div', {
+    staticClass: "alert alert-info",
+    attrs: {
+      "role": "alert"
+    }
+  }, [_vm._v("Click name to view a message")])]) : _vm._e(), _vm._v(" "), (_vm.message) ? _c('div', {
     staticClass: "panel panel-default margin-20"
   }, [_c('div', {
     staticClass: "panel-heading"

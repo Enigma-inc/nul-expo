@@ -1,6 +1,6 @@
 <template>
           <div>
-          <h3 v-if="!message"> <i class="fa fa-arrow-left"></i> Make you selection</h3>
+          <h5 v-if="!message"> <i class="fa fa-arrow-right"></i><div class="alert alert-info" role="alert">Click name to view a message</div></h5>
           <div class="panel panel-default margin-20" v-if="message">
           <div class="panel-heading">
            <div class="message-name"><strong>From: </strong>{{message.name}} </div>
