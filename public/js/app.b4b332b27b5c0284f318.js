@@ -50093,7 +50093,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "role": "alert"
     }
-  }, [_vm._v("Click name to view a message")])]) : _vm._e(), _vm._v(" "), (_vm.message) ? _c('div', {
+  }, [_vm._v("Pick name on the left to view a message")])]) : _vm._e(), _vm._v(" "), (_vm.message) ? _c('div', {
     staticClass: "panel panel-default margin-20"
   }, [_c('div', {
     staticClass: "panel-heading"

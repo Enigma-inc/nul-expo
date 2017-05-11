@@ -45,7 +45,7 @@
                                 <hr>
 
                                 <div class="row ">
-                                    <div class="col-xs-12 ">
+                                    <div class="col-xs-12">
                                          <form action="{{route('abstract.download')}}" method="POST">
                                             {{csrf_field()}}
                                             <input type="text" name="file-name" value="{{$abstract->abstract}}" hidden>
