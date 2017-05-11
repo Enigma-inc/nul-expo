@@ -40,16 +40,20 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                         <li class="navigation">
-                            <li "{{ Request::path() == 'login' ? 'current' : '' }}">
+                            <li class="{{ Request::path() == 'login' ? 'current' : '' }}">
                                 <a href="login">Sign In</a>
                             </li>
-                            <li "{{ Request::path() == 'register' ? 'current' : '' }}">
+                            <li class="{{ Request::path() == 'register' ? 'current' : '' }}">
                                 <a href="register">Sign Up</a>
                             </li>
                         @else
                         @if (Auth::user()->is_admin)
-                            <li><a href="/messages" alt="Mochesane">Messages</a></li>
-                            <li><a href="/all-abstracts">Abstracts</a></li>
+                            <li class="current">
+                                <a href="messages" alt="Mochesane">Messages</a>
+                            </li>
+                            <li class="current">
+                                <a href="all-abstracts">Abstracts</a>
+                            </li>
                             @endif
                             <li>
                                 <a href="/profile">
@@ -58,7 +62,7 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="/profile">
+                                        <a href="profile">
                                             Profile
                                         </a>
                                     </li>

@@ -7,8 +7,8 @@
     @can('view', $abstracts)
       <div class="row">
     
-      @foreach($abstracts as $abstract)
-    <div class="col-md-4 profile">
+        @foreach($abstracts as $abstract)
+            <div class="col-md-4 profile">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class=" header"> {{ $abstract->fullName() }}</div>
@@ -55,13 +55,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                   
-         
-@endforeach
-    </div>
+                    </div>         
+            @endforeach
+                </div>
    
-  @endcan  
+        @endcan  
  
     <div class="row text-center">
     {{ $abstracts->links() }}
