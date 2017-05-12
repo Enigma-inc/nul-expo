@@ -1973,6 +1973,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1993,6 +2017,97 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     }
 });
+
+/* form validation plugin */
+$.fn.goValidate = function () {
+    var $form = this,
+        $inputs = $form.find('input:text');
+
+    var validators = {
+        name: {
+            regex: /^[A-Za-z]{3,}$/
+        },
+        pass: {
+            regex: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/
+        },
+        email: {
+            regex: /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/
+        },
+        phone: {
+            regex: /^[2-9]\d{2}-\d{3}-\d{4}$/
+        }
+    };
+    var validate = function validate(klass, value) {
+        var isValid = true,
+            error = '';
+
+        if (!value && /required/.test(klass)) {
+            error = 'This field is required';
+            isValid = false;
+        } else {
+            klass = klass.split(/\s/);
+            $.each(klass, function (i, k) {
+                if (validators[k]) {
+                    if (value && !validators[k].regex.test(value)) {
+                        isValid = false;
+                        error = validators[k].error;
+                    }
+                }
+            });
+        }
+        return {
+            isValid: isValid,
+            error: error
+        };
+    };
+    var showError = function showError($input) {
+        var klass = $input.attr('class'),
+            value = $input.val(),
+            test = validate(klass, value);
+
+        $input.removeClass('invalid');
+        $('#form-error').addClass('hide');
+
+        if (!test.isValid) {
+            $input.addClass('invalid');
+
+            if (typeof $input.data("shown") == "undefined" || $input.data("shown") == false) {
+                $input.popover('show');
+            }
+        } else {
+            $input.popover('hide');
+        }
+    };
+
+    $inputs.keyup(function () {
+        showError($(this));
+    });
+
+    $inputs.on('shown.bs.popover', function () {
+        $(this).data("shown", true);
+    });
+
+    $inputs.on('hidden.bs.popover', function () {
+        $(this).data("shown", false);
+    });
+
+    $form.submit(function (e) {
+
+        $inputs.each(function () {
+            /* test each input */
+            if ($(this).is('.required') || $(this).hasClass('invalid')) {
+                showError($(this));
+            }
+        });
+        if ($form.find('input.invalid').length) {
+            /* form is not valid */
+            e.preventDefault();
+            $('#form-error').toggleClass('hide');
+        }
+    });
+    return this;
+};
+$('form').goValidate();
 
 /***/ }),
 
@@ -50113,10 +50228,109 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), _vm._v(" "), _c('div', {
     staticClass: "panel-footer"
-  }, [_c('div', {
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
     staticClass: "message-timestamp"
   }, [_c('span', [_vm._v("Received on: "), _c('strong', [_vm._v(_vm._s(_vm.freindlyDates))])])])])]) : _vm._e()])
-},staticRenderFns: []}
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h6', {
+    staticClass: "text-centr"
+  }, [_c('a', {
+    staticClass: "btn btn-primary btn-xs",
+    attrs: {
+      "href": "#myModal",
+      "role": "button",
+      "data-toggle": "modal"
+    }
+  }, [_vm._v("Reply To This Message")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal fade",
+    attrs: {
+      "id": "myModal",
+      "tabindex": "-1",
+      "role": "dialog",
+      "aria-labelledby": "myModalLabel",
+      "aria-hidden": "true"
+    }
+  }, [_c('div', {
+    staticClass: "modal-dialog"
+  }, [_c('div', {
+    staticClass: "modal-content"
+  }, [_c('div', {
+    staticClass: "modal-header"
+  }, [_c('button', {
+    staticClass: "close",
+    attrs: {
+      "type": "button",
+      "data-dismiss": "modal",
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("×")]), _vm._v(" "), _c('h3', {
+    attrs: {
+      "id": "myModalLabel"
+    }
+  }, [_vm._v("We'd Love to Hear From You")])]), _vm._v(" "), _c('div', {
+    staticClass: "modal-body"
+  }, [_c('form', {
+    staticClass: "form-horizontal col-sm-12"
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('label', [_vm._v("Name")]), _c('input', {
+    staticClass: "form-control required",
+    attrs: {
+      "placeholder": "Your name",
+      "data-placement": "top",
+      "data-trigger": "manual",
+      "data-content": "Must be at least 3 characters long, and must only contain letters.",
+      "type": "text"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', [_vm._v("Message")]), _c('textarea', {
+    staticClass: "form-control",
+    attrs: {
+      "placeholder": "Your message here..",
+      "data-placement": "top",
+      "data-trigger": "manual"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', [_vm._v("E-Mail")]), _c('input', {
+    staticClass: "form-control email",
+    attrs: {
+      "placeholder": "email@you.com (so that we can contact you)",
+      "data-placement": "top",
+      "data-trigger": "manual",
+      "data-content": "Must be a valid e-mail address (user@gmail.com)",
+      "type": "text"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', [_vm._v("Phone")]), _c('input', {
+    staticClass: "form-control phone",
+    attrs: {
+      "placeholder": "999-999-9999",
+      "data-placement": "top",
+      "data-trigger": "manual",
+      "data-content": "Must be a valid phone number (999-999-9999)",
+      "type": "text"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('button', {
+    staticClass: "btn btn-success pull-right",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Send It!")]), _vm._v(" "), _c('p', {
+    staticClass: "help-block pull-left text-danger hide",
+    attrs: {
+      "id": "form-error"
+    }
+  }, [_vm._v("  The form is not valid. ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "modal-footer"
+  })])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

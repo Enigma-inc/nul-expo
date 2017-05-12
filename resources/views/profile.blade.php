@@ -1,7 +1,7 @@
 @extends('partials.master')
 @section('content')
     <div class="container">
-        @if(!Auth::guest())
+        @if(!Auth::guest()) 
             @if(!Auth::User()->details_captured)
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">

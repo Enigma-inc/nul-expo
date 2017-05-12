@@ -45,12 +45,16 @@
                                 <hr>
 
                                 <div class="row ">
-                                    <div class="col-xs-12">
+                                    <div class="col-xs-12 text-center">
+                                    @if($abstract->abstract)
                                          <form action="{{route('abstract.download')}}" method="POST">
                                             {{csrf_field()}}
                                             <input type="text" name="file-name" value="{{$abstract->abstract}}" hidden>
                                             <button type="submit" class="btn btn-primary btn-xs pull-right"> <i class="fa fa-download"></i> Download</button>
                                         </form>
+                                        @else
+                                        <div class="label label-info">Abstract Not Yet Submitted</div>
+                                    @endif
                                     </div>
                                 </div>
                             </div>

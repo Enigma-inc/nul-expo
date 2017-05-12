@@ -11,4 +11,8 @@
 .message-timestamp{
     display: flex;
     justify-content: flex-end;
+    .reply-button{
+    justify-content: flex-start;
+    }
 }
+

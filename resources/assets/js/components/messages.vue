@@ -8,7 +8,7 @@
          }
      },
     methods:{
-        displayMessage(message){
+        displayMessage(message){ 
             this.selectedMessage=message;
             EventBus.$emit('display-message',message);
         }
