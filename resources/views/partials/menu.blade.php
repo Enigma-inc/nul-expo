@@ -51,7 +51,7 @@
                             <li class="{{ Request::path() == 'messages' ? 'current' : '' }} admin-menu">
                                 <a href="messages" >Messages</a>
                             </li>
-                            <li class="admin-menu">
+                            <li class="{{ Request::path() == 'all-abstracts' ? 'current' : '' }} admin-menu">
                                 <a href="all-abstracts" >Abstracts</a>
                             </li>
                             @endif

@@ -17,7 +17,7 @@ Below are the details of the message.
 | **Email**  | {{$query->email}}      |
 | **Message**  | {{$query->message}}      |
 @endcomponent
-@component('mail::button', ['url' => 'http://127.0.0.1:8000/messages', 'color' => 'red'])
+@component('mail::button', ['url' => 'http://nulistice.org.ls/messages', 'color' => 'red'])
 View All Submitted Messages
 @endcomponent
 @endcomponent
