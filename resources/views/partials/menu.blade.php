@@ -48,11 +48,11 @@
                             </li>
                         @else
                         @if (Auth::user()->is_admin)
-                            <li class="current">
-                                <a href="messages" alt="Mochesane">Messages</a>
+                            <li class="{{ Request::path() == 'messages' ? 'current' : '' }} admin-menu">
+                                <a href="messages" >Messages</a>
                             </li>
-                            <li class="current">
-                                <a href="all-abstracts">Abstracts</a>
+                            <li class="admin-menu">
+                                <a href="all-abstracts" >Abstracts</a>
                             </li>
                             @endif
                             <li>
