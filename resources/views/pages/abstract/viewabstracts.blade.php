@@ -54,7 +54,11 @@
                                         </form>
                                         @else
                                         <div class="label label-info">Abstract Not Yet Submitted</div>
+<<<<<<< HEAD
                                     @endif
+=======
+                                        @endif
+>>>>>>> master
                                     </div>
                                 </div>
                             </div>
