@@ -51,7 +51,7 @@ class QueriesController extends Controller
             
         ]);
         
-        Mail::to(['address' => 'info@nulistice.org.ls'])
+        Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
               ->bcc(['address'=>'neo@enigma.co.ls'])
             ->send(new QueryReceived($query));
 
