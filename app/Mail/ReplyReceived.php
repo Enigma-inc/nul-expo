@@ -8,10 +8,11 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\Storage;
 
-class QueryReceived extends Mailable
+class ReplyReceived extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $user;
     public $query;
 
     /**
@@ -19,8 +20,9 @@ class QueryReceived extends Mailable
      *
      * @return void
      */
-    public function __construct($query)
+    public function __construct($user, $query)
     {
+        $this->user=$user;
         $this->query=$query;
     }
 
@@ -31,8 +33,8 @@ class QueryReceived extends Mailable
      */
     public function build()
     {
-        return $this->from($this->query)
+        return $this->from($this->user->email)
                     ->subject($this->query->subject)
-                    ->markdown('emails.query-received');
+                    ->markdown('emails.reply-received');
     }
 }

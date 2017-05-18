@@ -27,7 +27,7 @@ class AbstractController extends Controller
      */
     public function index()
     {
-        $abstracts = Submission::latest()->paginate(3);
+        $abstracts = Submission::orderBy('updated_at','DESC')->paginate(3);
 
         return view('pages.abstract.viewabstracts', compact('abstracts'));
     }

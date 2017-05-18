@@ -31,6 +31,8 @@ Route::get('/all-abstracts', 'AbstractController@index');
 Route::get('/contact-us','QueriesController@create')->name('contact.create');;
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
+Route::post('/replies', 'RepliesController@store')->name('reply.store');
+
 
 
 Route::group(['middleware' => 'auth'], function () {
