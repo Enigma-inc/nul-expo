@@ -53,7 +53,7 @@
                                             <button type="submit" class="btn btn-primary btn-xs pull-right"> <i class="fa fa-download"></i> Download</button>
                                         </form>
                                         @else
-                                        <div class="label label-info">Abstract Not Yet Submitted</div>
+                                        <div class="label label-info">Abstract Not Yet Uploaded</div>
                                         @endif
 
                                     </div>

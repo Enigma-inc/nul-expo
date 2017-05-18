@@ -10,7 +10,7 @@
               <p v-html="message.message"></p>
               </div>
               <div class="panel-footer"> 
-                    <h6 class="text-centr"><a href="#myModal" role="button" class="btn btn-primary btn-xs" data-toggle="modal">Reply To This Message</a></h6>
+                   <!-- <h6 class="text-centr"><a href="#myModal" role="button" class="btn btn-primary btn-xs" data-toggle="modal">Reply To This Message</a></h6>
                     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -30,7 +30,7 @@
                         </div>
                         </div>
                     </div>
-                    </div>
+                    </div>-->
                     <div class="message-timestamp">
                     <span>Received on: <strong>{{freindlyDates}}</strong> </span>
                    </div>
