@@ -16,7 +16,7 @@
 
                             <div class="panel-body">
                                 <div class="avatar-container" style="height:100px">
-                                    <img class="avatar thumbnail" src="{{ $abstract->country_flag }}" witdth="100%" alt="Image">
+                                    <img class="avatar thumbnail" src="{{ $abstract->country_flag }}"  alt="Image" style="height:100px">
                                 </div>
 
 
