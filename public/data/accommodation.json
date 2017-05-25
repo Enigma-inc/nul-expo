@@ -1,0 +1,1251 @@
+{
+    "data": [{
+        "id": 31,
+        "name": "Black Swan Bed & Breakfast",
+        "phone": " +266 22317700",
+        "email": "boeti@blackswan.co.ls",
+        "cell": " 26658811981.0",
+        "address": "28 Manong Road, Hillsview",
+        "website": "www.blackswan.co.ls",
+        "book_url": null,
+        "latitude": -29.324992064,
+        "longitude": 27.4786991515,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 32,
+        "name": "Boikhutsong Bed & Breakfast",
+        "phone": "+266 28328871",
+        "email": "gmothepu@gmail.com",
+        "cell": " +266 62858871",
+        "address": "Tjobolo Street, Hillsview",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.327506217,
+        "longitude": 27.4817902021,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 33,
+        "name": "Hillsview Bed & Breakfast",
+        "phone": " +266 22311320",
+        "email": null,
+        "cell": null,
+        "address": "Hillsview",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3244752854,
+        "longitude": 27.479636854,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 34,
+        "name": "Ifo Bed & Breakfast",
+        "phone": " +266 22327630",
+        "email": "mampaila@yahoo.com",
+        "cell": " +266 58997494",
+        "address": "58B Cathedral Area, Maseru",
+        "website": "www.citylodger.com",
+        "book_url": null,
+        "latitude": -29.3224003377,
+        "longitude": 27.4964648603,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 35,
+        "name": "Lindy's Bed & Breakfast",
+        "phone": null,
+        "email": "info@lidysbnb.co.ls",
+        "cell": " +266 59111732",
+        "address": "Ha Matela, Morija",
+        "website": "www.lindysbnb.co.ls",
+        "book_url": null,
+        "latitude": -29.6316657297,
+        "longitude": 27.5139653574,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 36,
+        "name": "Phokeng Gardens",
+        "phone": " +266 22311925",
+        "email": "phokenggardensbed&breakfast@yahoo.com",
+        "cell": " +266 59775540",
+        "address": "15 Linakaneng Street, Maseru East",
+        "website": "www.phokeng.co.ls",
+        "book_url": null,
+        "latitude": -29.3068805903,
+        "longitude": 27.5073782504,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 37,
+        "name": "Road stay Guest House",
+        "phone": "+266 28333046",
+        "email": "roadstay@gmail.com",
+        "cell": "+266 C7151409432",
+        "address": "Naleli Sekamaneng",
+        "website": "www.roadstay.co.za",
+        "book_url": null,
+        "latitude": -29.2852027751,
+        "longitude": 27.5473920796,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 38,
+        "name": "Gracas a Deus B&B",
+        "phone": " +266 28318777\/ 22327559",
+        "email": "info.gracasadeus@gmail.com",
+        "cell": null,
+        "address": "Ha Hoohlo",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.303022325,
+        "longitude": 27.4666932248,
+        "image": "placeholder-2.png",
+        "icon": "b-b-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 39,
+        "name": "Foothills Guest House",
+        "phone": " ",
+        "email": "info@foothills.co.ls",
+        "cell": " +266 58706566",
+        "address": "121 Maluti Road, Maseru West",
+        "website": "www.foothillsguesthouse.com",
+        "book_url": null,
+        "latitude": -29.3035184157,
+        "longitude": 27.4774872134,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 40,
+        "name": "Haven of Peace",
+        "phone": " +266 22313629",
+        "email": "ntb@ilesotho.com",
+        "cell": " +266 63097209",
+        "address": "257 Lepoqo Road, Maseru West",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3009613168,
+        "longitude": 27.4787013911,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 41,
+        "name": "J&E CYAARA Guest House",
+        "phone": " +266 28320303\/ 22315271",
+        "email": "cyaarainfo@gmail.com",
+        "cell": null,
+        "address": "Cathedral Area, Maseru",
+        "website": "www.cyaara.com",
+        "book_url": null,
+        "latitude": -29.3224271647,
+        "longitude": 27.5015222298,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 42,
+        "name": "Seilatsatsi Guest House",
+        "phone": "+266 28332317",
+        "email": "info@seilatsatsi.com",
+        "cell": "+266 58852284",
+        "address": "Ha Mabote",
+        "website": "www.seilatsatsi.com",
+        "book_url": null,
+        "latitude": -29.2984489338,
+        "longitude": 27.520848899,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 43,
+        "name": "Mahloenyeng Guest House",
+        "phone": null,
+        "email": null,
+        "cell": " +266 58731277\/63471408",
+        "address": "Mahloenyeng, Matsieng",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.564340342,
+        "longitude": 27.546276597,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 44,
+        "name": "Maluti Guest House",
+        "phone": " +266 22312677",
+        "email": "doc@polka.co.za",
+        "cell": " +266 58998794",
+        "address": "Main North 1 Highway, Maseru East",
+        "website": "www.malutiguesthouse.com",
+        "book_url": null,
+        "latitude": -29.3132056803,
+        "longitude": 27.5068395619,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 45,
+        "name": "Mohokare Guest House",
+        "phone": " +266 22314442\/52506500",
+        "email": "reception@mohokare.co.ls",
+        "cell": null,
+        "address": "260 Kofi Annan Road, New Europa",
+        "website": "www.mohokare.co.ls",
+        "book_url": null,
+        "latitude": -29.3215673019,
+        "longitude": 27.473203199,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 46,
+        "name": "Marits'oana Guest House",
+        "phone": " +266 22314224",
+        "email": "maritsoana.rest@gmail.com",
+        "cell": null,
+        "address": "256 Lepoqo Road, Maseru West",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3009328093,
+        "longitude": 27.4793758884,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 47,
+        "name": "Morija Guest House",
+        "phone": "+26628350225",
+        "email": "mgh@leo.co.ls",
+        "cell": " +266 63065093",
+        "address": "Ha Matela, Morija",
+        "website": "www.morijaguesthouses.com",
+        "book_url": null,
+        "latitude": -29.6328546303,
+        "longitude": 27.5129860896,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 48,
+        "name": "Village court Guest House",
+        "phone": null,
+        "email": "village1@gmail.com",
+        "cell": "62050012\/58050012",
+        "address": "Khubetsoana",
+        "website": "www.villagecourt.com",
+        "book_url": null,
+        "latitude": -29.2773279093,
+        "longitude": 27.5298548565,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 49,
+        "name": "City Stay Guest House",
+        "phone": " +266 22315215",
+        "email": "qproteas@gmail.com",
+        "cell": null,
+        "address": "New Parliament Drive, Maseru",
+        "website": "www.queenproteas.com",
+        "book_url": null,
+        "latitude": -29.3287663291,
+        "longitude": 27.5024592586,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 50,
+        "name": "Reitumetse Guest House",
+        "phone": "+266 B8022323178",
+        "email": "reitumetseguest house@stella.co.ls",
+        "cell": null,
+        "address": "Matlaka Road, Hillsview",
+        "website": "www.reitumetseguesthouse.co.ls",
+        "book_url": null,
+        "latitude": -29.3233792577,
+        "longitude": 27.4761708045,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 51,
+        "name": "Scenery Guest House",
+        "phone": " +266 22316745\/28316744",
+        "email": "sceneryguesthouse@hotmail.com",
+        "cell": null,
+        "address": "Maseru East behind Setsoto Stadium",
+        "website": "www.scenery.co.ls",
+        "book_url": null,
+        "latitude": -29.3084195857,
+        "longitude": 27.5023639434,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 52,
+        "name": "The Trading Post Roma",
+        "phone": " +266 22340202",
+        "email": "tradingpost@leo.co.ls",
+        "cell": " +27 827732180",
+        "address": "Ha Baseane",
+        "website": "www.tradingpost.co.ls",
+        "book_url": null,
+        "latitude": -29.4422230054,
+        "longitude": 27.7033227361,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 53,
+        "name": "Tribute Guest House",
+        "phone": " +266 22325356",
+        "email": "info@tributelesotho.com",
+        "cell": null,
+        "address": "Florida Maseru",
+        "website": "www.tributelesotho.com",
+        "book_url": null,
+        "latitude": -29.3047206348,
+        "longitude": 27.4658743938,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 54,
+        "name": "Rhino Guest House",
+        "phone": "+266 28323262",
+        "email": null,
+        "cell": "+266 50780016",
+        "address": "Ha Nelese",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.381828,
+        "longitude": 27.560231,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 55,
+        "name": "Lakeview  Guest House",
+        "phone": "+266 28346606",
+        "email": null,
+        "cell": "+266 62116606",
+        "address": "Maqalika",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.2910238856,
+        "longitude": 27.5120932535,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 56,
+        "name": "Cn Saki Guest House",
+        "phone": null,
+        "email": null,
+        "cell": " +266 57901892",
+        "address": "Ha Mabote",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.2985744708,
+        "longitude": 27.5343725969,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 57,
+        "name": "Aloes Lancer's Gap ",
+        "phone": " +266 28316377",
+        "email": "aloeslancersgap@gmail.com",
+        "cell": " +266 58692377",
+        "address": "Sehlabeng, Thuate",
+        "website": "www.aloeslancersgap.com",
+        "book_url": null,
+        "latitude": -29.3248567559,
+        "longitude": 27.5644178478,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 58,
+        "name": "Lapeng Home Away ",
+        "phone": "+266 22314262",
+        "email": "lapengbed&breakfast@ilesotho.com",
+        "cell": "+266 58772790",
+        "address": "Lower Thetsane",
+        "website": "www.lapeng.co.ls",
+        "book_url": null,
+        "latitude": -29.3322178177,
+        "longitude": 27.4759877405,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 59,
+        "name": "Rethabile guest House",
+        "phone": "+266 28351979",
+        "email": null,
+        "cell": null,
+        "address": "Ha Matala",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.37075,
+        "longitude": 27.53488,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 60,
+        "name": "Botleng Guest House",
+        "phone": null,
+        "email": "info@botleng.co.ls",
+        "cell": " +266 62004000",
+        "address": "Ha Makhoathi",
+        "website": "www.botleng.co.ls",
+        "book_url": null,
+        "latitude": -29.3548375184,
+        "longitude": 27.5909138873,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 61,
+        "name": "Gecko Guest House",
+        "phone": " +266 28339224",
+        "email": null,
+        "cell": " +266 58540691",
+        "address": "Mookoli",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3069314564,
+        "longitude": 27.5192252916,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 62,
+        "name": "Karona Guest House",
+        "phone": " +266 28357067",
+        "email": "bookings@karona.co.ls",
+        "cell": " +266 58146162 \/ 59797760",
+        "address": "Ha Makhoathi",
+        "website": "www.karona.co.ls",
+        "book_url": null,
+        "latitude": -29.3524985707,
+        "longitude": 27.5751350192,
+        "image": "placeholder-2.png",
+        "icon": "guest-house-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 63,
+        "name": "Hotel Victoria",
+        "phone": " +266 22313687",
+        "email": "hotelvictoria@leo.co.ls",
+        "cell": null,
+        "address": "Kingsway Road",
+        "website": "www.hotelvictoria.co.ls",
+        "book_url": null,
+        "latitude": -29.3126141365,
+        "longitude": 27.4788370145,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 64,
+        "name": "Khali Hotel",
+        "phone": " +266 22326326 ",
+        "email": "khalihotel@hotmail.com",
+        "cell": null,
+        "address": "Hillsview, Manong Road",
+        "website": "www.khalihotel.co.ls",
+        "book_url": null,
+        "latitude": -29.321711195,
+        "longitude": 27.476259215,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 65,
+        "name": "Lakeside Hotel",
+        "phone": " +266 22313646",
+        "email": "lakesidehotel@tlmail.co.ls",
+        "cell": null,
+        "address": "Sebaboleng, Maseru",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3135705994,
+        "longitude": 27.5110072391,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 66,
+        "name": "Lancer's Inn",
+        "phone": " +266 22312114",
+        "email": "johny@lancersinn.co.ls",
+        "cell": null,
+        "address": "Corner Kingway & Pioneer Roads",
+        "website": "www.lancersinn.co.ls",
+        "book_url": null,
+        "latitude": -29.3144900116,
+        "longitude": 27.4807193019,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 67,
+        "name": "AVANI Lesotho Hotel & Casino",
+        "phone": "+266 22243000",
+        "email": "lesotho@avanihotels.com ",
+        "cell": null,
+        "address": "Hilton Road, Maseru",
+        "website": "www.minorhotels.com\/en\/avani\/lesotho ",
+        "book_url": null,
+        "latitude": -29.3184186757,
+        "longitude": 27.4884998606,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 68,
+        "name": "AVANI Maseru Hotel ",
+        "phone": "+266 22312434",
+        "email": "maseru@avanihotels.com",
+        "cell": null,
+        "address": "12 Orpen Road",
+        "website": " www.minorhotels.com\/en\/avani\/lesotho",
+        "book_url": null,
+        "latitude": -29.3168332562,
+        "longitude": 27.4732283283,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 69,
+        "name": "Mpilo Boutiue Hotel",
+        "phone": "+266 52203000",
+        "email": "info@mpilohotel.co.ls",
+        "cell": null,
+        "address": "Corner Kingway & Maluti Road, Maseru West",
+        "website": "www.mpilohotel.co.ls",
+        "book_url": null,
+        "latitude": -29.3073818315,
+        "longitude": 27.4726757451,
+        "image": "placeholder-2.png",
+        "icon": "hotel-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 70,
+        "name": "Goodnight Lodge",
+        "phone": " +266 22323585",
+        "email": "goodnightlodge@g.mail.com",
+        "cell": null,
+        "address": "Ha 'Nelese",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.307067,
+        "longitude": 27.486646,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 71,
+        "name": "Khotsong Lodge",
+        "phone": " +266 52500113\/6\/4",
+        "email": "khotsonglodge@gmail.com",
+        "cell": null,
+        "address": "Thaba Khupa",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3885724443,
+        "longitude": 27.6236610063,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 72,
+        "name": "Mabotlenyane Lodge",
+        "phone": null,
+        "email": null,
+        "cell": " +266 59010560\/63173222",
+        "address": "Ha Molengoane",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.4044175729,
+        "longitude": 27.7824735452,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 73,
+        "name": "Marakabei Lodge",
+        "phone": " +266 52501111",
+        "email": "moteanelodges@gmail.com",
+        "cell": " +266 59598330",
+        "address": "Ha Marakabei",
+        "website": "www.moteanelodges.com",
+        "book_url": null,
+        "latitude": -29.5524339235,
+        "longitude": 28.1479537294,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 74,
+        "name": "Mmelesi Lodge",
+        "phone": "  52500006\/7\/8\/52501115",
+        "email": "mmelesilodge@ilesotho.com",
+        "cell": " +266 58861116",
+        "address": "Thaba Bosiu, Sekhutloaneng",
+        "website": "www.mmelesi.co.ls",
+        "book_url": null,
+        "latitude": -29.3503279931,
+        "longitude": 27.6606630214,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 75,
+        "name": "Orion Mohale Lodge",
+        "phone": " 22936821\/22936135\/134",
+        "email": "resmoh@orionhotels.co.za",
+        "cell": null,
+        "address": "Likalaneng, Ha Mohale",
+        "website": "www.orionhotels",
+        "book_url": null,
+        "latitude": -29.4784457822,
+        "longitude": 28.0620980196,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 76,
+        "name": "Molengoane Lodge",
+        "phone": " +266 22347766",
+        "email": "molengoane@gmail.com",
+        "cell": null,
+        "address": "Ha Molengoane",
+        "website": "www.molengoane.kapitseng.co.ls",
+        "book_url": null,
+        "latitude": -29.4036596142,
+        "longitude": 27.7827936585,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 77,
+        "name": "Paradise Lodge",
+        "phone": " +266 52550000",
+        "email": null,
+        "cell": " +266 58883228",
+        "address": "Lower Seoli",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.346226984,
+        "longitude": 27.5075862351,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 78,
+        "name": "Semonkong Lodge",
+        "phone": " +266 27006037",
+        "email": "bookings@placeofsmoke.co.ls",
+        "cell": " +266 62021021\/58881021",
+        "address": "1 Riverside Road",
+        "website": "www.placeofsmoke.co.ls",
+        "book_url": null,
+        "latitude": -29.8438391824,
+        "longitude": 28.0434448689,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 79,
+        "name": "Mants'onyane Lodge",
+        "phone": " +266 27001102",
+        "email": "mantsonyanelodge22@yahoo.com",
+        "cell": " +266 50181308",
+        "address": "Mants'onyane",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.5440376026,
+        "longitude": 28.2704841421,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 80,
+        "name": "Thaba-Bosiu Cultural Village",
+        "phone": "+266 50221962",
+        "email": null,
+        "cell": "+266 58840018",
+        "address": "Thaba Bosiu",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.3450099991,
+        "longitude": 27.6622106008,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 81,
+        "name": "City Lodger",
+        "phone": " +299 283127757\/22324215",
+        "email": "citylodger@gmail.com",
+        "cell": null,
+        "address": "221 Moshoeshoe Road",
+        "website": "www.citylodger.co.za",
+        "book_url": null,
+        "latitude": -29.3009631721,
+        "longitude": 27.4806062386,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": false,
+        "hasWebsite": true,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }, {
+        "id": 82,
+        "name": "Ramabanta Lodge",
+        "phone": "+266 22340203\/ 22340267",
+        "email": "tradingpost@leo.co.ls",
+        "cell": "+27 827732180",
+        "address": "Ramabanta, Roma",
+        "website": null,
+        "book_url": null,
+        "latitude": -29.6657896348,
+        "longitude": 27.7971489046,
+        "image": "placeholder-2.png",
+        "icon": "lodge-marker.png",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasCell": true,
+        "hasWebsite": false,
+        "hasBookUrl": false,
+        "district": {
+            "data": {
+                "id": 5,
+                "name": "Maseru"
+            }
+        }
+    }]
+}

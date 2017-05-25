@@ -83,19 +83,20 @@
 
         },
         mounted() {
-            axios.get('http://demo.servicebox.co.ls/api/accommodation?type=1&district=5').then(response => {
+            axios.get('./data/hotels.json').then(response => {
+                console.log("Hotels....",response);
                 this.hotels = _.orderBy(response.data.data, ['name'], ['asc']);
                  this.loading = false;
             });
-            axios.get('http://demo.servicebox.co.ls/api/accommodation?type=2&district=5').then(response => {
+            axios.get('./data/lodges.json').then(response => {
                 this.lodges = _.orderBy(response.data.data, ['name'], ['asc']);
                  this.loading = false;
             });
-            axios.get('http://demo.servicebox.co.ls/api/accommodation?type=4&district=5').then(response => {
+            axios.get('./data/guest-houses.json').then(response => {
                 this.guestHouses = _.orderBy(response.data.data, ['name'], ['asc']);
                  this.loading = false;
             });
-            axios.get('http://demo.servicebox.co.ls/api/accommodation?type=3&district=5').then(response => {
+            axios.get('./data/bnbs.json').then(response => {
                 this.BnBs = _.orderBy(response.data.data, ['name'], ['asc']);
                  this.loading = false;
             });
