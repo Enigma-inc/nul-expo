@@ -40,7 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile', [
         'uses'=>'AbstractController@profile',
         'as'=>'profile'
-    ]);
+    ]); 
 
     Route::post('/abstract/{user}', [
         'uses'=>'AbstractController@uploadAbstract',
