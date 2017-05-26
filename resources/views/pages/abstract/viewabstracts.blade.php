@@ -16,7 +16,7 @@
 
                             <div class="panel-body">
                                 <div class="avatar-container" style="height:100px">
-                                    <img class="avatar thumbnail" src="{{ $abstract->country_flag }}" witdth="100%" alt="Image">
+                                    <img class="avatar thumbnail" src="{{ $abstract->country_flag }}"  alt="Image" style="height:100px">
                                 </div>
 
 
@@ -53,7 +53,7 @@
                                             <button type="submit" class="btn btn-primary btn-xs pull-right"> <i class="fa fa-download"></i> Download</button>
                                         </form>
                                         @else
-                                        <div class="label label-info">Abstract Not Yet Submitted</div>
+                                        <div class="label label-info">Abstract Not Yet Uploaded</div>
                                         @endif
 
                                     </div>

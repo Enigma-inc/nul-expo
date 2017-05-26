@@ -38,4 +38,8 @@ class User extends Authenticatable
    {
        return  $this->submission->title." ".$this->submission->name." ".$this->submission->surname;
    }
+   public function email()
+   {
+       return  $this->email;
+   }
 }

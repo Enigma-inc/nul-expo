@@ -1,6 +1,3 @@
-@component('mail::message')
-#Message from {{$query->name}} 
-
 
 @component('mail::message')
 #{{$query->name}} submitted a message
