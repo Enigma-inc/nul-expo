@@ -1150,7 +1150,7 @@ p{
 .latest-posts{
 	position:relative;
 	padding:20px 0px;
-	background-color:#ffffff;
+	background-color:#e13f30;
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -1162,7 +1162,7 @@ p{
 	top:0px;
 	width:100%;
 	height:100%;
-	background-color:#e13f30;
+	background-color:rgba(252,90,27,0.98);
 	background-position:center 70px;
 	background-repeat:no-repeat;
 	z-index:1;
@@ -1175,7 +1175,7 @@ p{
 }
 
 .latest-posts .sec-title{
-	color:#e13f30;
+	color:#ffffff;
 	margin-bottom:30px;
 	text-align:center;	
 }
@@ -1190,7 +1190,7 @@ p{
 	max-width:420px;
 	margin:0 auto;
 	border:1px solid #d0d0d0;
-	background:#e13f30;
+	background:#ffffff;
 	transition:all 400ms ease-in;
 	-webkit-transition:all 400ms ease-in;
 	-ms-transition:all 400ms ease-in;
@@ -1273,7 +1273,7 @@ p{
 	height:54px;
 	line-height:30px;
 	padding:12px 10px;
-	color:#e13f30;
+	color:#ffffff;
 	background:#292929;
 }
 
@@ -1344,13 +1344,72 @@ p{
 }
 
 .latest-posts .post .post-image .theme-btn:hover{
-	color:#e13f30;	
+	color:#ffffff;	
 }
 
 .latest-posts .post:hover .post-image .overlay{
 	opacity:1;	
 }
 
+/*** 
+
+====================================================================
+	Scientific Committee Style
+====================================================================
+
+***/
+
+.scientific-committee{
+	position:relative;
+	padding:20px 0px;
+	background-color:#ffffff;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.scientific-committee .auto-container{
+	position:relative;
+	z-index:5;	
+}
+
+.scientific-committee .sec-title{
+	color:#636b6f;
+	margin-bottom:30px;
+	text-align:center;	
+}
+
+.scientific-committee .post .inner{
+	position:relative;
+	max-width:420px;
+	margin:0 auto;
+	border:1px solid #d0d0d0;
+	background:#ffffff;
+	transition:all 400ms ease-in;
+	-webkit-transition:all 400ms ease-in;
+	-ms-transition:all 400ms ease-in;
+	-o-transition:all 400ms ease-in;
+	-moz-transition:all 400ms ease-in;
+}
+
+.scientific-committee .post .more:before{
+	background-color:#11c3f0;	
+}
+
+.scientific-committee .post .post-image{
+	position:relative;
+	overflow:hidden;
+	margin-left:-1px;
+	margin-right:-1px;
+	margin-bottom:-1px;
+}
+
+.scientific-committee .post .post-image .overlay .overlay-content p{
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-transform:uppercase;
+}
 /*** 
 
 ====================================================================
