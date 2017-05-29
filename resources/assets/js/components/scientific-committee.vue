@@ -10,8 +10,8 @@
                     <hr style="width:170px; border:solid 0.1px;">
                     <div>
                         <ul>  
-                            <li> Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL)</li>
-                            <li> Prof. Himanshu Narayan, National University of Lesotho (NUL)</li>                          
+                            <li> Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho</li>
+                            <li> Prof. Himanshu Narayan, National University of Lesotho (NUL), Lesotho</li>                          
                             <li> Dr Thimothy Thamae, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Zak Thamae, National University of Lesotho (NUL), Lesotho</li>
                         </ul>
@@ -27,7 +27,7 @@
                             <li> Prof. Armando C. Oliveira, University of Porto, Portugal</li>
                             <li> Prof. Marco Rupprich, MCI - The Entrepreneurial School®, Austria</li>
                             <li> Prof. Abdelilah Slaoui, University of Strasbourg, France</li>
-                            <li> Prof. Anthony Staak, Cape Peninsula University of Technology (CPUT), South Africa tbc</li>
+                            <li> Prof. Anthony Staak, Cape Peninsula University of Technology (CPUT), South Africa</li>
                             <li> Dr Sandor Szabo, European Commission Joint Research Centre, Italy  </li>
                             <li> Dr Daniel Yamegueu, International Institute for Water and Environmental Engineering (2iE), Burkina Faso </li>
                             <li> Prof. Abdellatif Zerga, Pan African University Institute of Water and Energy Sciences (PAUWES), Algeria </li>
