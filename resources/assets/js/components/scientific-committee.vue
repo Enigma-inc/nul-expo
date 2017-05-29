@@ -1,12 +1,13 @@
 <template>
     <div class="auto-container">
                 <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header text-center">Scientific Committee</h2>
+            <h2 class="header text-center">Scientific Committees</h2>
         </div>
         <div class="row" id="committee">
             <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="col-xs-12 col-sm-6">
-                    <h4 class="header text-center">NULISTICE Committee</h4>
+                    <h3 class="header text-center">NULISTICE</h3>
+                    <hr style="width:170px; border:solid 0.1px;">
                     <div>
                         <ul>  
                             <li> Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL)</li>
@@ -17,7 +18,8 @@
                     </div>
                 </div>
                 <div class="inner col-xs-12 col-sm-6">
-                    <h4 class="header text-center">RERIS Committee</h4>
+                    <h3 class="header text-center">RERIS</h3>
+                    <hr style="width:120px; border:solid 0.1px;">
                     <div class="">
                         <ul>
                             <li> Dr Joseph Mutale, University of Manchester, United Kingdom</li>

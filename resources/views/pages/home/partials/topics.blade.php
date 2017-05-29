@@ -26,7 +26,7 @@
                 </div>
                 <div class="inner col-xs-12 col-sm-6">
                 <h3 class="header text-center">RERIS</h3>
-                <hr style="width:140px">
+                <hr style="width:120px;">
                     <div class="topics-li">
                         <ul>
                             <li class="topic-container"><i class="fa fa-check"></i> <p>Renewable energy</p></li>
