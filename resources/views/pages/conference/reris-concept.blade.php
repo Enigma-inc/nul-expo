@@ -11,6 +11,7 @@
                     <p>
                         <strong class="color-primary">Background</strong>
                     </p>                 
+                    <img src="{{asset('images/conference/reris.jpg')}}" alt="Concept" class="thumbnail pull-left margin-10 conference-img-lg">
 
                     With more than 600 million Africans living without access to electricity and over 730 million relying on dangerous, inefficient forms of cooking, 
                     fast but sustainable development of African renewable energy markets is needed. Applied research and innovative business roll-outs play a key role in boosting this development, 
@@ -36,7 +37,7 @@
                 </p>
                 <br></br>
                 <p class="text-align-center">
-                    For more information on the submission of abstracts, visit <a href="abstract">this</a> page.
+                    For more information on the submission of abstracts, visit <a href="profile">this</a> page.
                 </p>
             </div>
         </div>

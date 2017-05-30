@@ -2110,6 +2110,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 $(function () {
@@ -50259,7 +50272,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "width": "170px",
       "border": "solid 0.1px"
     }
-  }), _vm._v(" "), _c('div', [_c('ul', [_c('li', [_vm._v(" Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Himanshu Narayan, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Thimothy Thamae, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Zak Thamae, National University of Lesotho (NUL), Lesotho")])])])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c('div', [_c('ul', [_c('li', [_vm._v(" Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Himanshu Narayan, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Thimothy Thamae, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Zak Thamae, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Mosotho George, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Pulane Nkhabutlane, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Puleng Rathimo, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Sissay Mekbib, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Mr Joseph Thabana, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Mr Rets'elisitsoe Thamae, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Mrs Maleshoane Ramoholi, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Mr Kebitsamamng Mothibe, National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Maluke Letete, National University of Lesotho (NUL), Lesotho")])])])]), _vm._v(" "), _c('div', {
     staticClass: "inner col-xs-12 col-sm-6"
   }, [_c('h3', {
     staticClass: "header text-center"
@@ -50268,7 +50281,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "width": "120px",
       "border": "solid 0.1px"
     }
-  }), _vm._v(" "), _c('div', {}, [_c('ul', [_c('li', [_vm._v(" Dr Joseph Mutale, University of Manchester, United Kingdom")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Wikus van Niekerk, Stellenbosch University, South Africa")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Armando C. Oliveira, University of Porto, Portugal")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Marco Rupprich, MCI - The Entrepreneurial School®, Austria")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Abdelilah Slaoui, University of Strasbourg, France")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Anthony Staak, Cape Peninsula University of Technology (CPUT), South Africa")]), _vm._v(" "), _c('li', [_vm._v(" Dr Sandor Szabo, European Commission Joint Research Centre, Italy  ")]), _vm._v(" "), _c('li', [_vm._v(" Dr Daniel Yamegueu, International Institute for Water and Environmental Engineering (2iE), Burkina Faso ")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Abdellatif Zerga, Pan African University Institute of Water and Energy Sciences (PAUWES), Algeria ")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Benmansour Abdelhalim, Université Aboubekr Belkaid de Tlemcen, Algeria")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Venkata Ramayya Ancha, Jimma University, Ethiopia")]), _vm._v(" "), _c('li', [_vm._v(" Dr Ed Brown, Loughborough University, United Kingdom")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Thameur Chaibi, National Research Institute for Rural Engineering, Water and Forestry, Tunisia")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Seladji Chakib, Université Aboubekr Belkaid de Tlemcen, Algeria")]), _vm._v(" "), _c('li', [_vm._v(" Dr Zivaye Chiguvare, Namibia University of Science and Technology, Namibia")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Emanuela Colombo, Politecnico di Milano, Italy")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Abdellah Khellaf, Centre de Développement des Energies Renouvelables, Algeria")]), _vm._v(" "), _c('li', [_vm._v(" Prof.  Daniel  Egbe, Johannes Kepler University Linz, Austria")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Thomas Hamacher, Technische Universität München, Germany")])])])])])])])
+  }), _vm._v(" "), _c('div', {}, [_c('ul', [_c('li', [_vm._v(" Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho")]), _vm._v(" "), _c('li', [_vm._v(" Dr Joseph Mutale, University of Manchester, United Kingdom")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Wikus van Niekerk, Stellenbosch University, South Africa")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Armando C. Oliveira, University of Porto, Portugal")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Marco Rupprich, MCI - The Entrepreneurial School®, Austria")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Abdelilah Slaoui, University of Strasbourg, France")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Anthony Staak, Cape Peninsula University of Technology (CPUT), South Africa")]), _vm._v(" "), _c('li', [_vm._v(" Dr Sandor Szabo, European Commission Joint Research Centre, Italy  ")]), _vm._v(" "), _c('li', [_vm._v(" Dr Daniel Yamegueu, International Institute for Water and Environmental Engineering (2iE), Burkina Faso ")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Abdellatif Zerga, Pan African University Institute of Water and Energy Sciences (PAUWES), Algeria ")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Benmansour Abdelhalim, Université Aboubekr Belkaid de Tlemcen, Algeria")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Venkata Ramayya Ancha, Jimma University, Ethiopia")]), _vm._v(" "), _c('li', [_vm._v(" Dr Ed Brown, Loughborough University, United Kingdom")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Thameur Chaibi, National Research Institute for Rural Engineering, Water and Forestry, Tunisia")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Seladji Chakib, Université Aboubekr Belkaid de Tlemcen, Algeria")]), _vm._v(" "), _c('li', [_vm._v(" Dr Zivaye Chiguvare, Namibia University of Science and Technology, Namibia")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Emanuela Colombo, Politecnico di Milano, Italy")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Abdellah Khellaf, Centre de Développement des Energies Renouvelables, Algeria")]), _vm._v(" "), _c('li', [_vm._v(" Prof.  Daniel  Egbe, Johannes Kepler University Linz, Austria")]), _vm._v(" "), _c('li', [_vm._v(" Prof. Thomas Hamacher, Technische Universität München, Germany")])])])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
