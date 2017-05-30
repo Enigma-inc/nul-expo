@@ -1,8 +1,8 @@
-@extends('partials.master') @section('content')
+@extends('partials.master') @section('content') 
 <section class="padding-20">
     <div class="auto-container">
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header">Conference Concept</h2>
+            <h2 class="header">NULISTICE Concept Note</h2>
         </div>
         <div class="row clearfix">
             <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
