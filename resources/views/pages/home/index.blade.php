@@ -8,6 +8,7 @@
     @include('pages.home.partials.topics')
     @include('pages.home.partials.fees')
     @include('pages.home.partials.team')
+    @include('pages.home.partials.scientific-committee')    
     @include('pages.home.partials.blog')
 @stop
 

@@ -1354,6 +1354,65 @@ p{
 /*** 
 
 ====================================================================
+	Scientific Committee Style
+====================================================================
+
+***/
+
+.scientific-committee{
+	position:relative;
+	padding:20px 0px;
+	background-color:#ffffff;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.scientific-committee .auto-container{
+	position:relative;
+	z-index:5;	
+}
+
+.scientific-committee .sec-title{
+	color:#636b6f;
+	margin-bottom:30px;
+	text-align:center;	
+}
+
+.scientific-committee .post .inner{
+	position:relative;
+	max-width:420px;
+	margin:0 auto;
+	border:1px solid #d0d0d0;
+	background:#ffffff;
+	transition:all 400ms ease-in;
+	-webkit-transition:all 400ms ease-in;
+	-ms-transition:all 400ms ease-in;
+	-o-transition:all 400ms ease-in;
+	-moz-transition:all 400ms ease-in;
+}
+
+.scientific-committee .post .more:before{
+	background-color:#11c3f0;	
+}
+
+.scientific-committee .post .post-image{
+	position:relative;
+	overflow:hidden;
+	margin-left:-1px;
+	margin-right:-1px;
+	margin-bottom:-1px;
+}
+
+.scientific-committee .post .post-image .overlay .overlay-content p{
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-transform:uppercase;
+}
+/*** 
+
+====================================================================
 	Feature Listing style
 ====================================================================
 

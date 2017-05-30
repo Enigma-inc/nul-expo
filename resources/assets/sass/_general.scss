@@ -10,3 +10,11 @@ input,.panel, .btn{
     border-radius: 0 !important;
     
 }
+
+.topic-container{
+  display: flex;
+  p{
+    flex: 1;
+    padding-left: 5px;
+  }
+}

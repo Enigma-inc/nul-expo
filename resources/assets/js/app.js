@@ -19,6 +19,7 @@ Vue.component('abstract-upload', require('./components/abstract-upload.vue'));
 Vue.component('flash-message', require('./components/flash-message.vue'));
 Vue.component('messages', require('./components/messages.vue'));
 Vue.component('message-display', require('./components/message-display.vue'));
+Vue.component('committee', require('./components/scientific-committee.vue'));
 
 const app = new Vue({
     el: '#app'
