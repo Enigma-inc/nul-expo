@@ -36,7 +36,7 @@
                 </p>
                 <br></br>
                 <p class="text-align-center">
-                    For more information on the submission of abstracts, visit <a href="abstract">this</a> link.
+                    For more information on the submission of abstracts, visit <a href="abstract">this</a> page.
                 </p>
             </div>
         </div>
