@@ -206,7 +206,7 @@
                    <div class="row">
                        <div id="app" class="auto-container">
                            <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                               <abstract-upload user="{{Auth::user()->id}}" csrf-token="{{csrf_token()}}"></abstract-upload>
+                             @include('abstract-upload.nulistice')
                            </div>
                        </div>
                    </div>
