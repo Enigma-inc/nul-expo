@@ -46,14 +46,18 @@ class PagesController extends Controller
         return view('pages.blog.index');
     }
 
-    public function accomodation()
+    public function accomodation() 
     {
         return view('pages.accomodation.index');
     }
 
-    public function conference()
+    public function nulistice_concept()
     {
-        return view('pages.conference.index');
+        return view('pages.conference.nulistice-concept');
+    }
+
+    public function reris_concept(){
+        return view('pages.conference.reris-concept');
     }
 
     public function loadAbstractPage()

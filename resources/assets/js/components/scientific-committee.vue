@@ -14,6 +14,18 @@
                             <li> Prof. Himanshu Narayan, National University of Lesotho (NUL), Lesotho</li>                          
                             <li> Dr Thimothy Thamae, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Zak Thamae, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Dr Mosotho George, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Dr Pulane Nkhabutlane, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Dr Puleng Rathimo, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Dr Sissay Mekbib, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Mr Joseph Thabana, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Mr Rets'elisitsoe Thamae, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Mrs Maleshoane Ramoholi, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Mr Kebitsamamng Mothibe, National University of Lesotho (NUL), Lesotho</li>
+                            <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li>
+                            
+                            
+                                                        
                         </ul>
                     </div>
                 </div>
@@ -22,6 +34,7 @@
                     <hr style="width:120px; border:solid 0.1px;">
                     <div class="">
                         <ul>
+                            <li> Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho</li>                        
                             <li> Dr Joseph Mutale, University of Manchester, United Kingdom</li>
                             <li> Prof. Wikus van Niekerk, Stellenbosch University, South Africa</li>
                             <li> Prof. Armando C. Oliveira, University of Porto, Portugal</li>
@@ -44,7 +57,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 

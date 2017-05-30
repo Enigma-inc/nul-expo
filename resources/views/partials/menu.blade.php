@@ -21,8 +21,20 @@
                         <li class="{{ Request::path() == '/' ? 'current' : '' }}">
                             <a href="/">Home</a>                           
                         </li>
-                        <li  class="{{ Request::path() == 'conference' ? 'current' : '' }}">
-                            <a href="conference">The Conference</a>
+                        <li class="{{ Request::path() == '#' ? 'current' : '' }}">
+                            <a href="#">Concept Notes</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="nulistice-concept">
+                                        NULISTICE Concept
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="reris-concept">
+                                        RERIS Concept
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
                             <a href="schedule">Schedule</a>
