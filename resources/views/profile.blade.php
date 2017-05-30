@@ -205,9 +205,16 @@
                         </div>
                    <div class="row">
                        <div id="app" class="auto-container">
-                           <div class="text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                             @include('abstract-upload.nulistice')
+                           <div class="col-xs-12 col-md-6 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
+                             </a>
                            </div>
+                              <div class="col-xs-12 col-md-6 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for RERIS
+                             </a>
+                          </div>
                        </div>
                    </div>
                     </div>
