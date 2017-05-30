@@ -11,13 +11,13 @@
         </div>
          <div class="fees-container">
            <div class="fees-body">International </div>
-           <div class="fees-body">USD <span>650</span></div>
-           <div class="fees-body">USD <span>250</span></div>
+           <div class="fees-body">USD <span>450</span></div>
+           <div class="fees-body">USD <span>200</span></div>
         </div>
          <div class="fees-container">
            <div class="fees-body">Regional </div>
-           <div class="fees-body">USD <span>450</span></div>
-           <div class="fees-body">USD <span>250</span></div>
+           <div class="fees-body">USD <span>325</span></div>
+           <div class="fees-body">USD <span>200</span></div>
         </div>
 
          <div class="col-xs-12">

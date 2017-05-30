@@ -22,3 +22,13 @@ input,
         margin-top: 10px;
     }
 }
+
+.star {
+    color: #ff0000;
+}
+
+.has-error .help-block {
+    font-weight: 300;
+    color: #ff0000;
+    font-size: .8em;
+}

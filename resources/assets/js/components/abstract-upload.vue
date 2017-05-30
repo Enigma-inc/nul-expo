@@ -42,7 +42,6 @@
                 )
             },
             'fileAdded': function(file) {
-                console.log('A file Added...')
             },
         },
         mounted() {

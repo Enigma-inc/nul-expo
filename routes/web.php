@@ -47,6 +47,10 @@ Route::group(['middleware' => 'auth'], function () {
         'uses'=>'AbstractController@uploadAbstract',
         'as'=>'abstract.upload'
     ]);
+    Route::get('/abstract/upload/{conference}', [
+        'uses'=>'AbstractController@abstractUploadPage',
+        'as'=>'abstract.upload.page'
+    ]);
     
     Route::post('/submit-details', [
         'uses' => 'AbstractController@submitSpeakerDetails',

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SubmitSpeakerDetailsRequest;
 use App\Submission;
 use App\User;
+use App\AbstractDoc;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Auth;
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AbstractReceived;
 use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 
 class AbstractController extends Controller
 {
@@ -48,6 +50,10 @@ class AbstractController extends Controller
     {
         return view('pages.abstract.upload');
     }
+    public function abstractUploadPage($conference)
+    {
+        return view('pages.abstract.upload')->with(['conference'=>$conference]);
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -57,21 +63,32 @@ class AbstractController extends Controller
      */
     public function uploadAbstract(Request $request,User $user)
     {
+       $this->validate($request, [
+        'title' => 'required|max:255',
+        'file' => 'required',
+        ]);
+       
         $submission= $user->submission;
         $file=$request->file('file');
-        $name= $file->getClientOriginalName();
+        $name= str_slug(Carbon::now()->toDayDateTimeString())
+               ."-".$file->getClientOriginalName();
         $file->move('submitted-abstracts',$name);
 
 
-        //Update user profile
-        $submission->abstract=$name;
-        $submission->save();
+        //Add Document To Submitted Docs
+        AbstractDoc::create([
+            'doc_path'=>$name,
+            'title'=>$request["title"],
+            'conference'=>strtoupper($request['conference']),
+            'comment'=>$request['comment'],
+            'submission_id'=>$submission->id
+        ]);
 
 
         /// Send email
-        Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
+      /*  Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
               ->bcc(['address'=>'neo@enigma.co.ls'])
-              ->send(new AbstractReceived(Auth::User()));
+              ->send(new AbstractReceived(Auth::User()));*/
 
         return redirect()->route('profile');
 
