@@ -182,42 +182,47 @@
                         </div>
                     </div>
                     <div class="col-md-8 profile">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <div class=" header">Abstract</div>
-                            </div>
-
-                            <div class="panel-body">
-                                <div class="file-container">
-                                    <div>{{Auth::user()->submission->abstract}}</div>
-                                    @if(Auth::user()->submission->abstract)
-                                    <div>
-                                            <form action="{{route('abstract.download')}}" method="POST">
-                                                {{csrf_field()}}
-                                                <input type="text" name="file-name" value="{{Auth::user()->submission->abstract}}" hidden>
-                                                <button type="submit" class="btn btn-primary btn-xs"> <i class="fa fa-download"></i> Download</button>
-                                            </form>
-                                    </div>
-                                    @endif
-
-                                </div>
-                            </div>
-                        </div>
-                   <div class="row">
+                       <div class="row ">
                        <div id="app" class="auto-container">
-                           <div class="col-xs-12 col-md-6 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                           <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                              <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
                              <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
                              </a>
                            </div>
-                              <div class="col-xs-12 col-md-6 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                              <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                              <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
                              <i class="fa fa-upload"></i> Upload Abstract for RERIS
                              </a>
                           </div>
                        </div>
                    </div>
-                    </div>
+                   @if($abstracts->count()>0)
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class=" header">Submitted Abstracts</div>
+                            </div>
+
+                            <div class="panel-body">
+                                        @foreach ($abstracts as $abstract)
+                            
+                                <div class="file-container">
+                                            <p>This is user {{ $abstract->title }} <br>
+                                            <small class="color-primary">Submission for <strong>{{$abstract->conference}}</strong> </small>
+                                            </p>
+                                             <form action="{{route('abstract.download')}}" method="POST">
+                                                {{csrf_field()}}
+                                                <input type="text" name="file-name" value="{{$abstract->doc_path}}" hidden>
+                                                <button type="submit" class="btn btn-primary btn-xs"> <i class="fa fa-download"></i> Download</button>
+                                            </form>
+
+                                </div>
+                                <hr>
+                                        @endforeach
+                                {{$abstracts->links()}}
+                            </div>
+                        </div>
+                
+                    @endif
                 </div>
 
 

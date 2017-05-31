@@ -39,7 +39,9 @@ class AbstractController extends Controller
 
     public function profile()
     {
-        return view('profile');
+        $abstracts=Submission::where('user_id',Auth::User()->id)->first()
+                    ->abstracts()->paginate(2);
+        return view('profile')->with('abstracts',$abstracts);
     }
 
     /**
@@ -93,10 +95,10 @@ class AbstractController extends Controller
 
          LaravelSweetAlert::setMessage([
                         'title' => 'Success',
-                         'text'=>'Thank you, your abstract was submitted, we shall get back to you<br/>',
+                         'text'=>'Thank you, your abstract was submitted, we shall get back to you',
                         'type' => 'success'
                     ]);
-        return redirect()->route('profile');
+       return redirect('/profile');
 
 
     }

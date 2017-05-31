@@ -8,39 +8,42 @@
     }
     .avatar {
         width: 150px;
-
     }
     .abstracts-avatar {
         width: 80px;
-
     }
     .avatar-container {
         text-align: center;
-        .thumbnail{
+        .thumbnail {
             display: inline;
             margin-bottom: 0;
         }
     }
-    .details-container,.file-container {
+    .details-container,
+    .file-container {
         display: flex;
         justify-content: space-between;
-        margin-top:1em;
-        .profile-label,.profile-info{
-            font-weight: 600;
-            font-size:0.9em;
-        }.profile-label{
-                     color: darken(#a9a9a9,5) ;
+        margin-top: 1em;
+        p {
+            small {
+                font-size: .7em;
+            }
         }
-
+        .profile-label,
+        .profile-info {
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        .profile-label {
+            color: darken(#a9a9a9, 5);
+        }
     }
     hr {
-
         display: block;
         height: 1px;
         border: 0;
-        border-top: 1px solid lighten(#E13F30,38);
+        border-top: 1px solid lighten(#E13F30, 38);
         margin: 5px 0;
         padding: 0;
     }
-
 }

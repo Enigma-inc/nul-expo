@@ -17,4 +17,8 @@ class Submission extends Model
     {
         return  $this->title." ".$this->name." ".$this->surname;
     }
+    public function abstracts()
+    {
+        return $this->hasMany(AbstractDoc::class);
+    }
 }

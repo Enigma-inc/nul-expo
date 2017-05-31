@@ -26,7 +26,7 @@
 
             <div class="col-xs-12 text-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="col-xs-12 col-sm-12 " style="text-align:justify">
-                    <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <div class="sec-title wow faprofdeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                         <h3 class="header">Message from the Chairperson of the NULSTICE 2018</h3>
                     </div>
                     <div class="text welcome">
