@@ -12,15 +12,18 @@ class AbstractReceived extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $abstract;
     public $user;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($user)
+    public function __construct($abstract,$user)
     {
+        $this->abstract=$abstract;
         $this->user=$user;
+        
 
     }
 
@@ -31,7 +34,9 @@ class AbstractReceived extends Mailable
      */
     public function build()
     {
+       
         return $this->from($this->user->email)
-                    ->markdown('emails.abstract-received')->attach(public_path()."/submitted-abstracts/".$this->user->submission->abstract);
+                    ->markdown('emails.abstract-received')
+                    ->attach(public_path()."/submitted-abstracts/".$this->abstract->doc_path);
     }
 }

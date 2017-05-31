@@ -76,7 +76,7 @@ class AbstractController extends Controller
 
 
         //Add Document To Submitted Docs
-        AbstractDoc::create([
+       $abstract= AbstractDoc::create([
             'doc_path'=>$name,
             'title'=>$request["title"],
             'conference'=>strtoupper($request['conference']),
@@ -86,10 +86,11 @@ class AbstractController extends Controller
 
 
         /// Send email
-      /*  Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
+        Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
               ->bcc(['address'=>'neo@enigma.co.ls'])
-              ->send(new AbstractReceived(Auth::User()));*/
+              ->send(new AbstractReceived($abstract,Auth::User()));
 
+        $request->session()->flash('flash', "Thank you, we have received your message, we will get back soon");
         return redirect()->route('profile');
 
 
