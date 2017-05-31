@@ -6,69 +6,39 @@
     </div>
     @can('view', $abstracts)
       <div class="row">
-    
-        @foreach($abstracts as $abstract)
-            <div class="col-md-4 profile">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <div class=" header"> {{ $abstract->fullName() }}</div>
-                            </div>
-
-                            <div class="panel-body">
-                                <div class="avatar-container" style="height:100px">
-                                    <img class="avatar thumbnail" src="{{ $abstract->country_flag }}"  alt="Image" style="height:100px">
-                                </div>
-
-
-                                <div class="details-container">
-                                    <div class="profile-label">Name</div>
-                                    <div class="profile-info">{{ $abstract->fullName() }}</div>
-                                </div>
-                                <hr>
-
-                                <div class="details-container">
-                                    <div class="profile-label">Organisation</div>
-                                    <div class="profile-info">{{ $abstract->organisation }}</div>
-                                </div>
-                                <hr>
-
-                                <div class="details-container">
-                                    <div class="profile-label">Country</div>
-                                    <div class="profile-info">{{ $abstract->country }}</div>
-                                </div>
-                                <hr>
-
-                                <div class="details-container">
-                                    <div class="profile-label">Phone</div>
-                                    <div class="profile-info">{{$abstract->phone_code . " ".$abstract->phone}}</div>
-                                </div>
-                                <hr>
-
-                                <div class="row ">
-                                    <div class="col-xs-12 text-center">
-                                    @if($abstract->abstract)
-                                         <form action="{{route('abstract.download')}}" method="POST">
-                                            {{csrf_field()}}
-                                            <input type="text" name="file-name" value="{{$abstract->abstract}}" hidden>
-                                            <button type="submit" class="btn btn-primary btn-xs pull-right"> <i class="fa fa-download"></i> Download</button>
-                                        </form>
-                                        @else
-                                        <div class="label label-info">Abstract Not Yet Uploaded</div>
-                                        @endif
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>         
-            @endforeach
-                </div>
-   
+            <table style="margin-bottom: 20px;">
+                    <tr>
+                        <th class="text-center">Names</th>
+                        <th class="text-center">Organisation</th>
+                        <th class="text-center">Country</th>
+                        <th class="text-center">Phone</th>
+                        <th class="text-center">Document</th>
+                    </tr>
+                @foreach($abstracts as $abstract)
+                    <tr>
+                        <td class="text-center">{{ $abstract->fullName() }}</td>
+                        <td class="text-center">{{ $abstract->organisation }}</td>
+                        <td class="text-center">
+                            <img style="height:25px; width:40px;" class="text-center" src="{{$abstract->country_flag}}" alt="Image" >
+                        </td>
+                        <td class="text-center">{{ $abstract->phone_code . " ".$abstract->phone }}</td>
+                        <td class="text-center">
+                            @if($abstract->abstract)
+                            <form action="{{ route('abstract.download') }}" method="POST">
+                                {{ csrf_field() }}
+                                <input type="text" name="file-name" value="{{$abstract->abstract}}" hidden>
+                                <button type="submit" class="btn btn-primary btn-xs pull-right"> <i class="fa fa-download"></i> Download</button>
+                            </form>
+                            @else
+                                <div class="label label-info">Abstract Not Yet Uploaded</div>
+                            @endif
+                        </td>
+                    </tr>
+                @endforeach
+            </table>
         @endcan  
- 
     <div class="row text-center">
-    {{ $abstracts->links() }}
-
+        {{ $abstracts->links() }}
    </div>
 
     @cannot('view', $abstracts)

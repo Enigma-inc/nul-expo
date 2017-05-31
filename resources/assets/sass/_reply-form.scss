@@ -10,3 +10,11 @@ body {
 h1 .btn {
 	font-size:30px;
 }
+
+.abstract-thumbnail{
+  display: block;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border 0.2s ease-in-out;
+}
