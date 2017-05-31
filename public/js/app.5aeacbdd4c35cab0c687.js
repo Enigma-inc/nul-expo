@@ -1653,9 +1653,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 confirmButtonColor: '#E13F30'
             });
         },
-        'fileAdded': function fileAdded(file) {
-            console.log('A file Added...');
-        }
+        'fileAdded': function fileAdded(file) {}
     },
     mounted: function mounted() {}
 });

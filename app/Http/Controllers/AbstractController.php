@@ -80,7 +80,7 @@ class AbstractController extends Controller
             'doc_path'=>$name,
             'title'=>$request["title"],
             'conference'=>strtoupper($request['conference']),
-            'comment'=>$request['comment'],
+            'comment'=>$request['comment'], 
             'submission_id'=>$submission->id
         ]);
 
