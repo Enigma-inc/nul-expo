@@ -40,7 +40,7 @@ class AbstractController extends Controller
     public function profile()
     {
         $abstracts=Submission::where('user_id',Auth::User()->id)->first()
-                    ->abstracts()->paginate(2);
+                    ->abstracts()->latest()->paginate(2);
         return view('profile')->with('abstracts',$abstracts);
     }
 
