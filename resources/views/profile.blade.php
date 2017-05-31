@@ -203,20 +203,26 @@
                             </div>
 
                             <div class="panel-body">
-                                        @foreach ($abstracts as $abstract)
-                            
-                                <div class="file-container">
-                                            <p>This is user {{ $abstract->title }} <br>
-                                            <small class="color-primary">Submission for <strong>{{$abstract->conference}}</strong> </small>
-                                            </p>
-                                             <form action="{{route('abstract.download')}}" method="POST">
-                                                {{csrf_field()}}
-                                                <input type="text" name="file-name" value="{{$abstract->doc_path}}" hidden>
-                                                <button type="submit" class="btn btn-primary btn-xs"> <i class="fa fa-download"></i> Download</button>
-                                            </form>
+                                @foreach ($abstracts as $abstract)
+
+                                <div class="file-container bordered col-xs-12">
+                                        <div class="abstract-details-container col-xs-12">
+                                            
+                                                <div class="abstract-title">{{ $abstract->title }}   </div>
+                                                <div class="abstract-details">
+                                                 <small class="color-primary">Submission for <strong>{{$abstract->conference}}</strong> </small>
+                                                 <small><strong>Submitted on: </strong> {{$abstract->created_at}} | {{$abstract->created_at->diffForHumans()}} </small>
+      
+                                                </div>
+                                        </div>
+                                    
+                                    <form action="{{route('abstract.download')}}" method="POST">
+                                        {{csrf_field()}}
+                                        <input type="text" name="file-name" value="{{$abstract->doc_path}}" hidden>
+                                        <button type="submit" class="btn btn-primary btn-xs"> <i class="fa fa-download"></i> Download</button>
+                                    </form>
 
                                 </div>
-                                <hr>
                                         @endforeach
                                 {{$abstracts->links()}}
                             </div>
