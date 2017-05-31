@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\AbstractReceived;
 use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
+use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
 
 class AbstractController extends Controller
 {
@@ -90,7 +91,11 @@ class AbstractController extends Controller
               ->bcc(['address'=>'neo@enigma.co.ls'])
               ->send(new AbstractReceived($abstract,Auth::User()));
 
-        $request->session()->flash('flash', "Thank you, we have received your message, we will get back soon");
+         LaravelSweetAlert::setMessage([
+                        'title' => 'Success',
+                         'text'=>'Thank you, your abstract was submitted, we shall get back to you<br/>',
+                        'type' => 'success'
+                    ]);
         return redirect()->route('profile');
 
 
