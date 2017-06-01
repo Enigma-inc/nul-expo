@@ -211,7 +211,7 @@
                                                 <div class="abstract-title">{{ $abstract->title }}   </div>
                                                 <div class="abstract-details">
                                                  <small class="color-primary">Submission for <strong>{{$abstract->conference}}</strong> </small>
-                                                 <small><strong>Submitted on: </strong> {{$abstract->created_at}} | {{$abstract->created_at->diffForHumans()}} </small>
+                                                 <small><strong>Submitted on: </strong> {{$abstract->created_at->toFormattedDateString()}} | {{$abstract->created_at->diffForHumans()}} </small>
       
                                                 </div>
                                         </div>
