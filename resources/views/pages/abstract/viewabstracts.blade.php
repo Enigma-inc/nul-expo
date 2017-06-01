@@ -4,7 +4,12 @@
     <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
       <h2 class="header center">Submitted Abstracts</h2>
     </div>
-    @can('view', $abstracts)
+
+    <abstracts inline-template>
+        
+    </abstracts>
+
+    <!--@can('view', $abstracts)
       <div class="row">
             <table style="margin-bottom: 20px;">
                     <tr>
@@ -39,7 +44,7 @@
         @endcan  
     <div class="row text-center">
         {{ $abstracts->links() }}
-   </div>
+   </div>-->
 
     @cannot('view', $abstracts)
         {{ Session::flash('flash', "Sorry, You are not authorised to view that page!") }}

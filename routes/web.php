@@ -29,12 +29,10 @@ Route::get('download', 'PagesController@download');
 Route::get('/messages', 'QueriesController@index');
 Route::get('/all-abstracts', 'AbstractController@index');
 
-Route::get('/contact-us','QueriesController@create')->name('contact.create');;
+Route::get('/contact-us','QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
 Route::post('/replies', 'RepliesController@store')->name('reply.store');
-
-
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -65,6 +63,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/download/abstract', [
         'uses' => 'AbstractController@downloadAbstract',
         'as' => 'abstract.download'
+    ]);
+
+    Route::get('/submission/{id}/abstracts', [
+        'uses' => 'AbstractController@abstracts',
+        'as' => 'retrieve.submission.abstracts'
     ]);
 });
 

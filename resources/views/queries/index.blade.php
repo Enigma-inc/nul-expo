@@ -7,7 +7,7 @@
     <hr class="margin-top-5">
 
     <messages  inline-template>
-      <div class="message-container">
+      <div class="message-container"> 
         <div class="message-menu">
           <ul class="nav nav-pills nav-stacked margin-top-20">
           @can('view', $queries)
