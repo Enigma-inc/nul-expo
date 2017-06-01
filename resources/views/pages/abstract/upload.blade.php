@@ -27,7 +27,8 @@
                             <label for="file" class="col-md-4 control-label">Document <small class="star">*</small></label>
 
                             <div class="col-md-6">
-                                <input id="file" type="file" class="form-control" name="file"  >
+                                <input id="file" type="file" class="form-control" name="file"
+                                 accept="application/msword,application/pdf">
 
                                 @if ($errors->has('file'))
                                     <span class="help-block">
