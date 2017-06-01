@@ -6,45 +6,21 @@
     </div>
 
     <abstracts inline-template>
-        
-    </abstracts>
+        <ul class="nav nav-pills nav-stacked margin-top-20">
+        @can('view', $abstracts)
+        @foreach($abstracts as $abstract)
 
-    <!--@can('view', $abstracts)
-      <div class="row">
-            <table style="margin-bottom: 20px;">
-                    <tr>
-                        <th class="text-center">Names</th>
-                        <th class="text-center">Organisation</th>
-                        <th class="text-center">Country</th>
-                        <th class="text-center">Phone</th>
-                        <th class="text-center">Document</th>
-                    </tr>
-                @foreach($abstracts as $abstract)
-                    <tr>
-                        <td class="text-center">{{ $abstract->fullName() }}</td>
-                        <td class="text-center">{{ $abstract->organisation }}</td>
-                        <td class="text-center">
-                            <img style="height:25px; width:40px;" class="text-center" src="{{$abstract->country_flag}}" alt="Image" >
-                        </td>
-                        <td class="text-center">{{ $abstract->phone_code . " ".$abstract->phone }}</td>
-                        <td class="text-center">
-                            @if($abstract->abstract)
-                            <form action="{{ route('abstract.download') }}" method="POST">
-                                {{ csrf_field() }}
-                                <input type="text" name="file-name" value="{{$abstract->abstract}}" hidden>
-                                <button type="submit" class="btn btn-primary btn-xs pull-right"> <i class="fa fa-download"></i> Download</button>
-                            </form>
-                            @else
-                                <div class="label label-info">Abstract Not Yet Uploaded</div>
-                            @endif
-                        </td>
-                    </tr>
-                @endforeach
-            </table>
-        @endcan  
-    <div class="row text-center">
-        {{ $abstracts->links() }}
-   </div>-->
+            <li role="presentation" class=" button"  v-bind:class="{ 'active' : selectedAbstract =={{$abstract}}}" > <a href="#" @click.prevent="selectedAbstract({{$abstract}})">{{ $abstract->fullName() }}</a> </>
+            </li>
+        @endforeach
+        </ul>
+        <div class="row text-center">
+            {{ $abstracts->links() }}
+        </div>
+        <div class="message-body">
+            <abstract-display></abstract-display>
+        </div>
+    @endcan
 
     @cannot('view', $abstracts)
         {{ Session::flash('flash', "Sorry, You are not authorised to view that page!") }}
@@ -55,7 +31,7 @@
             window.location = "/"
         </script>
     @endcannot
-
+    </abstracts>
   </div>
 </section>
 @stop
