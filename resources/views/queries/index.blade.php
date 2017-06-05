@@ -13,7 +13,7 @@
           @can('view', $queries)
             @foreach($queries as $message)
 
-            <li role="presentation" class=" button"  v-bind:class="{ 'active' : selectedMessage =={{$message}}}" > <a href="#" @click.prevent="displayMessage({{$message}})">{{$message->name }}</a> </>
+            <li role="presentation" class="button"  v-bind:class="{ 'active' : selectedMessage =={{$message}}}" > <a href="#" @click.prevent="displayMessage({{$message}})">{{$message->name }}</a> </>
             </li>
             @endforeach
 

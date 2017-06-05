@@ -1640,13 +1640,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
-        abstract: '';
+        return {
+            abstract: '',
+            abstractDetails: []
+        };
     },
     mounted: function mounted() {
         var self = this;
         EventBus.$on('display-abstract', function (abs) {
             self.abstract = abs;
+            console.log("ABS...", self.abstract.id);
         });
+    },
+
+    methods: {
+        getAbstractDetails: function getAbstractDetails() {
+            var _this = this;
+
+            axios.get('/submission/{id}/abstracts').then(function (response) {
+                _this.abstractDetails;
+            });
+        }
     }
 });
 
@@ -2128,9 +2142,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
 //
 //
 //
@@ -50183,17 +50194,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "role": "alert"
     }
-  }, [_vm._v("Pick name on the left to view the abstract")])]) : _vm._e(), _vm._v(" "), (_vm.message) ? _c('div', {
+  }, [_vm._v("Pick name on the left to view an abstract")])]) : _vm._e(), _vm._v(" "), (_vm.abstract) ? _c('div', {
     staticClass: "panel panel-default margin-20"
   }, [_c('table', {
     staticStyle: {
       "margin-bottom": "20px"
     }
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.abstracts), function(abstract) {
-    return _c('div')
-  }), _vm._v(" "), _c('tr', [_c('td', {
-    staticClass: "text-center"
-  }, [_vm._v(_vm._s(_vm.abstract.fullName()))]), _vm._v(" "), _c('td', {
+  }, [_vm._m(0), _vm._v(" "), _c('tr', [_c('td', {
     staticClass: "text-center"
   }, [_vm._v(_vm._s(_vm.abstract.organisation))]), _vm._v(" "), _c('td', {
     staticClass: "text-center"
@@ -50209,7 +50216,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), _vm._v(" "), _c('td', {
     staticClass: "text-center"
-  }, [_vm._v(_vm._s(_vm.abstract.phone_code + _vm.abstract.phone))])])], 2)]) : _vm._e()])
+  }, [_vm._v(_vm._s(_vm.abstract.phone_code + _vm.abstract.phone))]), _vm._v(" "), _vm._m(1)])])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('tr', [_c('th', {
     staticClass: "text-center"
@@ -50220,6 +50227,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Phone")]), _vm._v(" "), _c('th', {
     staticClass: "text-center"
   }, [_vm._v("Document")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "text-center"
+  }, [_c('button', {
+    staticClass: "text-center btn btn-primary btn-xs  col-xs-4"
+  }, [_c('i', {
+    staticClass: "fa fa-download"
+  }), _vm._v(" Download")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
