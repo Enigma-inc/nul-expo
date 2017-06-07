@@ -30,7 +30,7 @@
                     	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
                         <h3 class="primary-color">Acceptance notification</h3>
 						<blockquote>
-                        <h3>25th August 2017</h3>
+                        <h3>27th October 2017</h3>
                         </blockquote>
                     </article>
                     
@@ -38,8 +38,8 @@
                     	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
                         <h3 class="primary-color">Registration date </h3>
 						<blockquote>
-                        <h3>Early bird – 4th Sept 2017</h3>
-                        <h3>and closes 27th October 2017</h3>
+                        <h3>Early bird – 4th November 2017</h3>
+                        <h3>and closes 27th November 2017</h3>
                         </blockquote>
                     </article>
                     

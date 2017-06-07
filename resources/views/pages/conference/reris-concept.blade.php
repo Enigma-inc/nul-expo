@@ -21,7 +21,7 @@
                     With the aim to foster research cooperation on renewable energy – both between universities in Africa and Europe and between academia, 
                     private and public sector - the Africa-EU Renewable Energy Cooperation Programme (RECP) and the National University of Lesotho (NUL) are jointly 
                     organising the second Africa-EU Symposium on Renewable Energy Research and Innovation (RERIS 2018) from 23–27 January 2018 in Maseru, Lesotho. 
-                    The symposium will take place on the occasion of the NUL International Science and Technology Innovation Conference and Expo (NULSTICE 2018).
+                    The symposium will take place on the occasion of the NUL International Science and Technology Innovation Conference and Expo (NULISTICE 2018).
                 </p>
 
                 <p class="text-align-just">
