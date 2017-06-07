@@ -2,18 +2,19 @@
     <div class="col-md-12">
         <h5 v-if="!abstract"><div class="alert alert-info margin-20" role="alert">Pick name on the left to view an abstract</div></h5>
         <div class="panel panel-default margin-20" v-if="abstract">
-        <table>
+        <table class="header-font">
             <tr>
                 <th>{{ abstract.title }} {{ abstract.name }} {{ abstract.surname }}</th>
                 <th>{{ abstract.organisation }}</th>
+                <th>{{ abstract.country }}</th>
                 <th>{{ abstract.phone_code+abstract.phone }}</th>
             </tr>
         </table>    
             <div class="panel-body">
-            <div v-for="abstractDoc in abstractDetails">
-                <div class="details-container"  >
+            <div v-for="abstractDoc in abstractDetails">            
+                <div v-if="abstractDoc" class="details-container"  >
                     <div class="title" style="flex:1"><p>{{ abstractDoc.title }}</p></div>
-                    <div class="">
+                    <div>
                     <form action="/download/abstract" method="POST">
                         <input type="hidden" name="_token" v-model="token">
                         <input type="hidden" name="file-name" v-model="abstractDoc.doc_path">
@@ -22,8 +23,19 @@
                     </div>                   
                     
                 </div>  
-                    <div v-if="abstractDoc.comment" class=" abstract-comment padding-left-10 padding-right-10" ><p>{{ abstractDoc.comment }}</p></div>
-                    </div>
+                <div class="file-container">
+                <div class="abstract-comment">
+                    <div v-if="abstractDoc.comment" class="padding-left-10 padding-right-10" ><p>{{ abstractDoc.comment }}</p></div>
+                </div>
+                <div class="abstract-details text-center">
+                    <small class="color-primary">Submission for <strong>{{ abstractDoc.conference }}</strong> </small>
+                    <small><strong>Submitted: </strong> {{ freindlyDates }} </small>
+                </div>
+                </div>
+                <hr class="margin-top-10">
+                
+                    
+            </div>
                              
         </div>
 
@@ -48,6 +60,11 @@
                 
             });
         },
+        computed: {
+            freindlyDates: function () {
+                return  moment(this.abstract.created_at, "YYYYMMDD").calendar()
+            }
+        },
         methods:{
             getAbstractDetails(){
                 axios.get(`/submission/${this.abstract.id}/abstracts`).then(response=>{
@@ -59,18 +76,39 @@
 </script> 
 <style lang="scss" scoped>
 
+.header-font{
+    font-size:.9em;
+}
+
+.abstract-details {
+            display: flex;
+            justify-content: space-between;
+            background-color: lighten(#000000, 93%);
+            border-radius: 20px;
+            padding: 3px;
+            padding-left: 10px;
+            margin-top: 10px;
+            small {
+                flex: 1;
+                font-size: .7em;
+            }
+}
+
 .abstract-comment{
  font-size:.8em;
- border-bottom: 1px solid lighten(#e13f30,40%);
 }
+
+.bordered{
+    background-color: #e13f30 !important;    
+}
+
 .details-container{
     display:flex;
     margin-top:10px;
     .title{
         p{
             font-weight: 600;
-            font-size: .9em;
-            
+            font-size: .9em;            
         }
     }
 }
