@@ -44,6 +44,11 @@ class AbstractController extends Controller
         return view('profile')->with('abstracts',$abstracts);
     }
 
+    public function abstracts($submission)
+    {
+       return Submission::where('user_id',$submission)->first()->abstracts()->get();
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -119,7 +124,7 @@ class AbstractController extends Controller
           $submission->phone_code=$request['phone-code'];
           $submission->save();
 
-          //Marked details as Updated
+          //Marked details as Updated 
 
         $currentUser->details_captured=1;
         $currentUser->save();
@@ -140,7 +145,6 @@ class AbstractController extends Controller
     {
         $fileName = Input::get("file-name");
         $filePath = public_path() . "/submitted-abstracts/" . $fileName;
-
 
         if( file_exists($filePath)){
             $headers = array(

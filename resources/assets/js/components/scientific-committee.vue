@@ -22,10 +22,7 @@
                             <li> Mr Rets'elisitsoe Thamae, National University of Lesotho (NUL), Lesotho</li>
                             <li> Mrs Maleshoane Ramoholi, National University of Lesotho (NUL), Lesotho</li>
                             <li> Mr Kebitsamamng Mothibe, National University of Lesotho (NUL), Lesotho</li>
-                            <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li>
-                            
-                            
-                                                        
+                            <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li>                                        
                         </ul>
                     </div>
                 </div>

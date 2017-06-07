@@ -7,13 +7,13 @@
     <hr class="margin-top-5">
 
     <messages  inline-template>
-      <div class="message-container">
+      <div class="message-container"> 
         <div class="message-menu">
           <ul class="nav nav-pills nav-stacked margin-top-20">
           @can('view', $queries)
             @foreach($queries as $message)
 
-            <li role="presentation" class=" button"  v-bind:class="{ 'active' : selectedMessage =={{$message}}}" > <a href="#" @click.prevent="displayMessage({{$message}})">{{$message->name }}</a> </>
+            <li role="presentation" class="button margin-5"  v-bind:class="{ 'active' : selectedMessage =={{$message}}}" > <a href="#" @click.prevent="displayMessage({{$message}})">{{$message->name }}</a> </>
             </li>
             @endforeach
 

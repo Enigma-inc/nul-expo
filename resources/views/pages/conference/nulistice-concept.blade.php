@@ -41,11 +41,11 @@
                 </p>
 
                 <p class="text-align-just">
-                    This 2018 National University of Lesotho International Science and Technology Innovation Conference & Expo (NULSTICE-2018)
+                    This 2018 National University of Lesotho International Science and Technology Innovation Conference & Expo (NULISTICE-2018)
                     is meant to provide an opportunity to turn ideas into action. It is expected that the attending scholars
                     from all over the world will share their basic research findings, lessons in university-industry cooperation,
                     successes and failures in commercialization and policy recommendations in any of the areas mentioned
-                    above. NULSTICE-2018 and the parallel events combined together are going to be bigger in scope and wider
+                    above. NULISTICE-2018 and the parallel events combined together are going to be bigger in scope and wider
                     in reach. While the previous events were just one day expos and workshops, this 2018 event will combine
                     together an International Conference & Expo, student’s competitions (proposed Vodacom-NUL Hackathon),
                     Gala Dinner and a Daytrip for the international visitors.
@@ -59,7 +59,7 @@
                 </p>
                 <img src="{{asset('images/conference/conf.jpg')}}" alt="Conference" class="thumbnail pull-left margin-10 conference-img">
                 <p class="text-align-just">
-                    National University of Lesotho International Science, Technology and Innovation Conference & Expo (NULSTICE-2018) will be
+                    National University of Lesotho International Science, Technology and Innovation Conference & Expo (NULISTICE-2018) will be
                     a convergence of international scholars from many areas of Science and Technology with the theme, “Resource
                     Mobilization and Entrepreneurship Action for Development.” The main areas include Renewable Energy, Biotechnology,
                     Environment and Natural Resources Management, Food and Water Safety, Climate Change Challenges and Mitigation
@@ -130,7 +130,7 @@
                     This competition has been won by a number of NUL students and graduates. However, it is open to all whiz kids from around
                     the country and it is a good example of how to challenge and reward technology leaders of tomorrow. NUL
                     is in talks with Vodacom Lesotho Foundation to find out if the event can be part of a large series of
-                    events within the NULSTICE-2018 week.
+                    events within the NULISTICE-2018 week.
                 </p>
             </div>
 
