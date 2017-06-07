@@ -1643,6 +1643,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['token'],
@@ -1660,6 +1672,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         });
     },
 
+    computed: {
+        freindlyDates: function freindlyDates() {
+            return moment(this.abstract.created_at, "YYYYMMDD").calendar();
+        }
+    },
     methods: {
         getAbstractDetails: function getAbstractDetails() {
             var _this = this;
@@ -4612,7 +4629,7 @@ if (typeof jQuery === 'undefined') {
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")();
-exports.push([module.i, "\n.abstract-comment[data-v-2dedfdf6] {\n  font-size: .8em;\n  border-bottom: 1px solid #fbe4e2;\n}\n.details-container[data-v-2dedfdf6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 10px;\n}\n.details-container .title p[data-v-2dedfdf6] {\n    font-weight: 600;\n    font-size: .9em;\n}\n", ""]);
+exports.push([module.i, "\n.header-font[data-v-2dedfdf6] {\n  font-size: .9em;\n}\n.abstract-details[data-v-2dedfdf6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  background-color: #ededed;\n  border-radius: 20px;\n  padding: 3px;\n  padding-left: 10px;\n  margin-top: 10px;\n}\n.abstract-details small[data-v-2dedfdf6] {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    font-size: .7em;\n}\n.abstract-comment[data-v-2dedfdf6] {\n  font-size: .8em;\n}\n.bordered[data-v-2dedfdf6] {\n  background-color: #e13f30 !important;\n}\n.details-container[data-v-2dedfdf6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 10px;\n}\n.details-container .title p[data-v-2dedfdf6] {\n    font-weight: 600;\n    font-size: .9em;\n}\n", ""]);
 
 /***/ }),
 
@@ -50213,17 +50230,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Pick name on the left to view an abstract")])]) : _vm._e(), _vm._v(" "), (_vm.abstract) ? _c('div', {
     staticClass: "panel panel-default margin-20"
-  }, [_c('table', [_c('tr', [_c('th', [_vm._v(_vm._s(_vm.abstract.title) + " " + _vm._s(_vm.abstract.name) + " " + _vm._s(_vm.abstract.surname))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.organisation))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.phone_code + _vm.abstract.phone))])])]), _vm._v(" "), _c('div', {
+  }, [_c('table', {
+    staticClass: "header-font"
+  }, [_c('tr', [_c('th', [_vm._v(_vm._s(_vm.abstract.title) + " " + _vm._s(_vm.abstract.name) + " " + _vm._s(_vm.abstract.surname))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.organisation))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.country))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.phone_code + _vm.abstract.phone))])])]), _vm._v(" "), _c('div', {
     staticClass: "panel-body"
   }, _vm._l((_vm.abstractDetails), function(abstractDoc) {
-    return _c('div', [_c('div', {
+    return _c('div', [(abstractDoc) ? _c('div', {
       staticClass: "details-container"
     }, [_c('div', {
       staticClass: "title",
       staticStyle: {
         "flex": "1"
       }
-    }, [_c('p', [_vm._v(_vm._s(abstractDoc.title))])]), _vm._v(" "), _c('div', {}, [_c('form', {
+    }, [_c('p', [_vm._v(_vm._s(abstractDoc.title))])]), _vm._v(" "), _c('div', [_c('form', {
       attrs: {
         "action": "/download/abstract",
         "method": "POST"
@@ -50268,9 +50287,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           abstractDoc.doc_path = $event.target.value
         }
       }
-    }), _vm._v(" "), _vm._m(0, true)])])]), _vm._v(" "), (abstractDoc.comment) ? _c('div', {
-      staticClass: " abstract-comment padding-left-10 padding-right-10"
-    }, [_c('p', [_vm._v(_vm._s(abstractDoc.comment))])]) : _vm._e()])
+    }), _vm._v(" "), _vm._m(0, true)])])]) : _vm._e(), _vm._v(" "), _c('div', {
+      staticClass: "file-container"
+    }, [_c('div', {
+      staticClass: "abstract-comment"
+    }, [(abstractDoc.comment) ? _c('div', {
+      staticClass: "padding-left-10 padding-right-10"
+    }, [_c('p', [_vm._v(_vm._s(abstractDoc.comment))])]) : _vm._e()]), _vm._v(" "), _c('div', {
+      staticClass: "abstract-details text-center"
+    }, [_c('small', {
+      staticClass: "color-primary"
+    }, [_vm._v("Submission for "), _c('strong', [_vm._v(_vm._s(abstractDoc.conference))])]), _vm._v(" "), _c('small', [_c('strong', [_vm._v("Submitted: ")]), _vm._v(" " + _vm._s(_vm.freindlyDates) + " ")])])]), _vm._v(" "), _c('hr', {
+      staticClass: "margin-top-10"
+    })])
   }))]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('button', {
