@@ -1605,6 +1605,74 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/abstract-display.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['token'],
+    data: function data() {
+        return {
+            abstract: '',
+            abstractDetails: ''
+        };
+    },
+    mounted: function mounted() {
+        var self = this;
+        EventBus.$on('display-abstract', function (abs) {
+            self.abstract = abs;
+            self.getAbstractDetails();
+        });
+    },
+
+    methods: {
+        getAbstractDetails: function getAbstractDetails() {
+            var _this = this;
+
+            axios.get('/submission/' + this.abstract.id + '/abstracts').then(function (response) {
+                _this.abstractDetails = response.data;
+            });
+        }
+    }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/abstract-upload.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1656,6 +1724,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         'fileAdded': function fileAdded(file) {}
     },
     mounted: function mounted() {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/abstracts.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+
+        return {
+
+            selectedAbstract: {}
+        };
+    },
+
+    methods: {
+        displayAbstract: function displayAbstract(abstract) {
+            this.selectedAbstract = abstract;
+            EventBus.$emit('display-abstract', abstract);
+        }
+    }
 });
 
 /***/ }),
@@ -2056,9 +2149,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
 //
 //
 //
@@ -4515,6 +4605,14 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2dedfdf6\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/abstract-display.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")();
+exports.push([module.i, "\n.abstract-comment[data-v-2dedfdf6] {\n  font-size: .8em;\n  border-bottom: 1px solid #fbe4e2;\n}\n.details-container[data-v-2dedfdf6] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 10px;\n}\n.details-container .title p[data-v-2dedfdf6] {\n    font-weight: 600;\n    font-size: .9em;\n}\n", ""]);
 
 /***/ }),
 
@@ -50102,6 +50200,98 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-2dedfdf6\"}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/abstract-display.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "col-md-12"
+  }, [(!_vm.abstract) ? _c('h5', [_c('div', {
+    staticClass: "alert alert-info margin-20",
+    attrs: {
+      "role": "alert"
+    }
+  }, [_vm._v("Pick name on the left to view an abstract")])]) : _vm._e(), _vm._v(" "), (_vm.abstract) ? _c('div', {
+    staticClass: "panel panel-default margin-20"
+  }, [_c('table', [_c('tr', [_c('th', [_vm._v(_vm._s(_vm.abstract.title) + " " + _vm._s(_vm.abstract.name) + " " + _vm._s(_vm.abstract.surname))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.organisation))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(_vm.abstract.phone_code + _vm.abstract.phone))])])]), _vm._v(" "), _c('div', {
+    staticClass: "panel-body"
+  }, _vm._l((_vm.abstractDetails), function(abstractDoc) {
+    return _c('div', [_c('div', {
+      staticClass: "details-container"
+    }, [_c('div', {
+      staticClass: "title",
+      staticStyle: {
+        "flex": "1"
+      }
+    }, [_c('p', [_vm._v(_vm._s(abstractDoc.title))])]), _vm._v(" "), _c('div', {}, [_c('form', {
+      attrs: {
+        "action": "/download/abstract",
+        "method": "POST"
+      }
+    }, [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (_vm.token),
+        expression: "token"
+      }],
+      attrs: {
+        "type": "hidden",
+        "name": "_token"
+      },
+      domProps: {
+        "value": (_vm.token)
+      },
+      on: {
+        "input": function($event) {
+          if ($event.target.composing) { return; }
+          _vm.token = $event.target.value
+        }
+      }
+    }), _vm._v(" "), _c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (abstractDoc.doc_path),
+        expression: "abstractDoc.doc_path"
+      }],
+      attrs: {
+        "type": "hidden",
+        "name": "file-name"
+      },
+      domProps: {
+        "value": (abstractDoc.doc_path)
+      },
+      on: {
+        "input": function($event) {
+          if ($event.target.composing) { return; }
+          abstractDoc.doc_path = $event.target.value
+        }
+      }
+    }), _vm._v(" "), _vm._m(0, true)])])]), _vm._v(" "), (abstractDoc.comment) ? _c('div', {
+      staticClass: " abstract-comment padding-left-10 padding-right-10"
+    }, [_c('p', [_vm._v(_vm._s(abstractDoc.comment))])]) : _vm._e()])
+  }))]) : _vm._e()])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('button', {
+    staticClass: "btn btn-primary btn-xs margin-right-2",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-download"
+  }), _vm._v(" Download")])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-2dedfdf6", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-2f79700e\"}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/abstract-upload.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -50332,6 +50522,33 @@ if (false) {
   if (module.hot.data) {
      require("vue-hot-reload-api").rerender("data-v-d3180204", module.exports)
   }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2dedfdf6\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/abstract-display.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2dedfdf6\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/abstract-display.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("273b6d50", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2dedfdf6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./abstract-display.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2dedfdf6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./abstract-display.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
 }
 
 /***/ }),
@@ -60435,6 +60652,8 @@ Vue.component('flash-message', __webpack_require__("./resources/assets/js/compon
 Vue.component('messages', __webpack_require__("./resources/assets/js/components/messages.vue"));
 Vue.component('message-display', __webpack_require__("./resources/assets/js/components/message-display.vue"));
 Vue.component('committee', __webpack_require__("./resources/assets/js/components/scientific-committee.vue"));
+Vue.component('abstracts', __webpack_require__("./resources/assets/js/components/abstracts.vue"));
+Vue.component('abstract-display', __webpack_require__("./resources/assets/js/components/abstract-display.vue"));
 
 var app = new Vue({
   el: '#app'
@@ -60497,6 +60716,45 @@ window.axios.defaults.headers.common = {
 
 /***/ }),
 
+/***/ "./resources/assets/js/components/abstract-display.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2dedfdf6\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/abstract-display.vue")
+
+var Component = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")(
+  /* script */
+  __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/abstract-display.vue"),
+  /* template */
+  __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-2dedfdf6\"}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/abstract-display.vue"),
+  /* scopeId */
+  "data-v-2dedfdf6",
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Users\\Developer\\Documents\\Enigma\\Tools\\Projects\\nul-expo\\resources\\assets\\js\\components\\abstract-display.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] abstract-display.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2dedfdf6", Component.options)
+  } else {
+    hotAPI.reload("data-v-2dedfdf6", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./resources/assets/js/components/abstract-upload.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -60528,6 +60786,40 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-2f79700e", Component.options)
   } else {
     hotAPI.reload("data-v-2f79700e", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/abstracts.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")(
+  /* script */
+  __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/abstracts.vue"),
+  /* template */
+  null,
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Users\\Developer\\Documents\\Enigma\\Tools\\Projects\\nul-expo\\resources\\assets\\js\\components\\abstracts.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-65b31393", Component.options)
+  } else {
+    hotAPI.reload("data-v-65b31393", Component.options)
   }
 })()}
 

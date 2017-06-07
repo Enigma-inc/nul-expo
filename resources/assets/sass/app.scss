@@ -121,3 +121,13 @@ td, th {
     }
   
 }
+
+.abstract-container{
+    display: flex;
+    .abstract-menu{
+        flex: 1;
+    }
+    .abstract-body{
+        flex: 2;
+    }
+}
