@@ -146,7 +146,6 @@ class AbstractController extends Controller
         $fileName = Input::get("file-name");
         $filePath = public_path() . "/submitted-abstracts/" . $fileName;
 
-
         if( file_exists($filePath)){
             $headers = array(
                 'Content-Type: '.Storage::mimeType("/submitted-abstracts/" .$fileName),

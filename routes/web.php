@@ -67,7 +67,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/submission/{id}/abstracts', [
         'uses' => 'AbstractController@abstracts',
-        'as' => 'retrieve.submission.abstracts'
+        'as' => 'download.submission.abstracts'
     ]);
 });
 
