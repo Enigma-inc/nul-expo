@@ -1,5 +1,5 @@
 <section>
-    <div  id="app" class="auto-container">
+    <div   class="auto-container">
 
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2 class="header">Latest Stories From Our Blog</h2>

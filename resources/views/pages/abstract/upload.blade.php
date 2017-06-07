@@ -28,7 +28,8 @@
 
                             <div class="col-md-6">
                                 <input id="file" type="file" class="form-control" name="file"
-                                 accept="application/msword,application/pdf">
+                                  accept="application/pdf,application/msword,
+                                  application/vnd.openxmlformats-officedocument.wordprocessingml.document">
 
                                 @if ($errors->has('file'))
                                     <span class="help-block">

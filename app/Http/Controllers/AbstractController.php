@@ -46,7 +46,8 @@ class AbstractController extends Controller
 
     public function abstracts($submission)
     {
-       return Submission::where('user_id',$submission)->first()->abstracts()->get();
+       return Submission::where('user_id',$submission)
+               ->first()->abstracts()->latest()->get();
     }
 
     /**
@@ -91,7 +92,10 @@ class AbstractController extends Controller
             'comment'=>$request['comment'], 
             'submission_id'=>$submission->id
         ]);
-
+         
+         //Update Submission date
+         $submission->updated_at=Carbon::now();
+         $submission->save();
 
         /// Send email
         Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])

@@ -1,3 +1,1 @@
-<div id="app">
-     <committee></committee>    
-</div>
+<committee></committee>    
