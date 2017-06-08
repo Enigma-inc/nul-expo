@@ -93,17 +93,14 @@ class AbstractController extends Controller
             'comment'=>$request['comment'], 
             'submission_id'=>$submission->id
         ]);
-<<<<<<< HEAD
          
          //Update Submission date
          $submission->updated_at=Carbon::now();
          $submission->save();
-=======
 
         //Mark uploaded abstract as updated
           $submission->abstract_uploaded=1;
           $submission->save();
->>>>>>> submitted-section
 
         /// Send email
         Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
