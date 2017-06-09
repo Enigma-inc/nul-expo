@@ -31,8 +31,7 @@ class AbstractController extends Controller
     public function index()
     {
         $abstracts = Submission::orderBy('updated_at','DESC')
-                    ->where('abstract_uploaded','=','1')->paginate(10);
-
+                   ->withCount('abstracts')->paginate(10);
         return view('pages.abstract.viewabstracts', compact('abstracts'));
     }
 
@@ -97,10 +96,6 @@ class AbstractController extends Controller
          //Update Submission date
          $submission->updated_at=Carbon::now();
          $submission->save();
-
-        //Mark uploaded abstract as updated
-          $submission->abstract_uploaded=1;
-          $submission->save();
 
         /// Send email
         Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])

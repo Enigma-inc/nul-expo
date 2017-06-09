@@ -25,7 +25,6 @@ class CreateSubmissionsTable extends Migration
             $table->string('phone')->nullable();
             $table->string('phone_code')->nullable();
             $table->string('physical_address')->nullable();
-            $table->boolean('abstract_uploaded')->default(0);
             $table->string('abstract')->nullable();
             $table->timestamps();
         });

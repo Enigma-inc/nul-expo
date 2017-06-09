@@ -11,9 +11,11 @@
                     <ul class="nav nav-pills nav-stacked margin-top-20">
                         @can('view', $abstracts) 
                         @foreach($abstracts as $abstract)
+                            @if($abstract->abstracts_count >0 )
                             <li role="presentation" class=" button" v-bind:class="{ 'active' : selectedAbstract =={{$abstract}}}" style="display:flex;align-items:center"> 
                             <a style="flex:1"href="#" @click.prevent="displayAbstract({{$abstract}})">{{ $abstract->fullName() }}</a>   
                             <img style="height:25px; width:40px;" src="{{$abstract->country_flag}}" >
+                            @endif
                         @endforeach
                     </ul>
                     <div class="row text-center">
