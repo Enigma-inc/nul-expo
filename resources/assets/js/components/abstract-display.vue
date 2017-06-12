@@ -1,6 +1,6 @@
 <template>
     <div class="col-md-12">
-        <h5 v-if="!abstract"><div class="alert alert-info margin-20" role="alert">Pick name on the left to view an abstract</div></h5>
+        <h5 v-if="!abstract"><div class="alert alert-info margin-20" role="alert">Pick name on the left to view abstracts</div></h5>
         <div class="panel panel-default margin-20" v-if="abstract">
         <table class="header-font">
             <tr>
