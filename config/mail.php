@@ -56,6 +56,7 @@ return [
     */
 
     'from' => [
+        'address' => 'info@nulistice.org.ls', 
         'name' => env('MAIL_FROM_NAME', 'NULISTICE'),
     ],
 
