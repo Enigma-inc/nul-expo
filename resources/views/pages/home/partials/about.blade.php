@@ -27,7 +27,7 @@
             <div class="col-xs-12 text-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="col-xs-12 col-sm-12 " style="text-align:justify">
                     <div class="sec-title wow faprofdeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                        <h3 class="header">Message from the Chairperson of the NULSTICE 2018</h3>
+                        <h3 class="header">Message from the Chairperson of the NULISTICE 2018</h3>
                     </div>
                     <div class="text welcome">
                         <div id="welcome-text">
@@ -43,7 +43,7 @@
                                     On behalf of The National University of Lesotho (NUL), and indeed on my own behalf, it
                                     gives me great pleasure and honour to invite and welcome you to this auspicious occasion
                                     of the NUL International Science and Technology Innovation Conference and Expo also
-                                    known as NULSTICE 2018. Before I delve into the details about the conference, I would
+                                    known as NULISTICE 2018. Before I delve into the details about the conference, I would
                                     like to share a brief history of the NUL.
                                 </p><br>
                                 <p class="text-align-just">

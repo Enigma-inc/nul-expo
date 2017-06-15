@@ -182,8 +182,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 profile">
-                       <div class="row ">
-                       <div id="app" class="auto-container">
+                    <div id="app" class="row auto-container">
                            <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                              <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
                              <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
@@ -193,11 +192,42 @@
                              <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
                              <i class="fa fa-upload"></i> Upload Abstract for RERIS
                              </a>
-                          </div>
+                          </div>                          
+                       </div>
+                       <div id="topics" class="row topics">
+                       
+                       <div class="auto-container">
+                           <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="col-xs-12 col-sm-6">
+                            <div>
+                                <ul>  
+                                    <li> Biotechnology</li>                          
+                                    <li> Environment and Natural resources management</li>
+                                    <li> Food and water safety</li>
+                                    <li> Climate change challenges and mitigation strategies
+                                        for developing countries</li>
+                                    <li> Agriculture and food security</li>
+                                    <li> Material science and nano-technology</li>
+                                    <li> Entrepreneurship and technology</li>
+                                    <li> Information and Communication Technology</li>                                        
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inner col-xs-12 col-sm-6">
+                            <div class="">
+                                <ul>
+                                    <li> Grid connected renewable energy</li>
+                                    <li> Decentralised renewable and household energy solutions</li>
+                                    <li> Energy socioeconomics (e.g. policy, economics, legal, regulatory and social issues)</li> 
+                                    <li> Promotion of energy research, innovation, education and entrepreneurship</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                        </div>
                    </div>
                    @if($abstracts->count()>0)
-                        <div class="panel panel-default">
+                        <div class="panel panel-default margin-top-10">
                             <div class="panel-heading">
                                 <div class=" header">Submitted Abstracts</div>
                             </div>
@@ -281,6 +311,15 @@
             } else {
                 // Nothing is active so it is a new value (or maybe empty value)
             }
+        });
+        //Add slim scroll
+        $(function(){
+            $('#topics').slimScroll({
+                height: '130px',
+                color: '#e13f30',
+                railVisible: true,
+                alwaysVisible: true
+            });
         });
     </script>
 @endsection
