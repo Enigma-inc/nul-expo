@@ -11,7 +11,7 @@
                     <p>
                         <strong class="color-primary">Background</strong>
                     </p>                 
-                    <img src="{{asset('images/conference/reris.jpg')}}" alt="Concept" class="thumbnail pull-left margin-10 conference-img-lg" style="width:300px">
+                    <img src="{{asset('images/conference/reris.jpg')}}" alt="Concept" class="pull-left margin-10 conference-img-lg" style="width:300px">
 
                     With more than 600 million Africans living without access to electricity and over 730 million relying on dangerous, inefficient forms of cooking, 
                     fast but sustainable development of African renewable energy markets is needed. Applied research and innovative business roll-outs play a key role in boosting this development, 
@@ -34,6 +34,7 @@
                     <li style="list-style-type:disc;">Grid connected renewable energy</li>
                     <li style="list-style-type:disc;">Decentralised renewable and household energy solutions</li>
                     <li style="list-style-type:disc;">Energy socioeconomics (e.g. policy, economics, capacity building, legal, regulatory and social issues)</li>
+                    <li style="list-style-type:disc;">Promotion of energy research, innovation, education and entrepreneurship</li>
                 </p>
                 <br></br>
                 <p class="text-align-center">

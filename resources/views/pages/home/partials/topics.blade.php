@@ -29,7 +29,6 @@
                 <hr style="width:120px;">
                     <div class="topics-li">
                         <ul>
-                            <li class="topic-container"><i class="fa fa-check"></i> <p>Renewable energy</p></li>
                             <li class="topic-container"><i class="fa fa-check"></i> <p>Grid connected renewable energy</p></li>
                             <li class="topic-container"><i class="fa fa-check"></i> <p>Decentralised renewable and household energy solutions</p></li>
                             <li class="topic-container"><i class="fa fa-check"></i> <p>Energy socioeconomics (e.g. policy, economics, legal, regulatory and social issues)</p></li>

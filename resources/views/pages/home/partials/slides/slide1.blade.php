@@ -7,7 +7,7 @@
             <h2>
             National University of Lesotho International Science and Technology <br> Innovation Conference and Expo  <br/>
             <span class="with-lg">with</span> <br>
-            Renewable Energy Research and Innovation Symposium
+            Africa-EU Renewable Energy Research and Innovation Symposium
             </h2>
             <div class="divider"></div>
             <span > 
