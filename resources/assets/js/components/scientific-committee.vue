@@ -27,7 +27,7 @@
                 <div class="inner col-xs-12 col-sm-6">
                     <h3 class="header text-center">RERIS</h3>
                     <hr style="width:120px; border:solid 0.1px;">
-                    <div class="">
+                    <div>
                         <ul>
                             <li> Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho</li>
                             <li> Prof. Benmansour Abdelhalim, Université Aboubekr Belkaid de Tlemcen, Algeria</li>

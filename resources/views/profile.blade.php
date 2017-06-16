@@ -199,7 +199,8 @@
                        <div class="auto-container">
                            <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="col-xs-12 col-sm-6">
-                            <div>
+                        <strong><div class="topics-header text-center">NULISTICE Topics</div></strong>
+                            <div class="margin-top-10">
                                 <ul>  
                                     <li> Biotechnology</li>                          
                                     <li> Environment and Natural resources management</li>
@@ -214,7 +215,8 @@
                             </div>
                         </div>
                         <div class="inner col-xs-12 col-sm-6">
-                            <div class="">
+                        <strong><div class="topics-header text-center">RERIS Topics</div></strong>
+                            <div class="margin-top-10">
                                 <ul>
                                     <li> Grid connected renewable energy</li>
                                     <li> Decentralised renewable and household energy solutions</li>
