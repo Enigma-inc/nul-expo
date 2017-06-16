@@ -313,13 +313,13 @@
             }
         });
         //Add slim scroll
-        $(function(){
+      /*  $(function(){
             $('#topics').slimScroll({
                 height: '130px',
                 color: '#e13f30',
                 railVisible: true,
                 alwaysVisible: true
             });
-        });
+        });*/
     </script>
 @endsection
