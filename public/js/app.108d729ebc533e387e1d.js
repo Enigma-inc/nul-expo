@@ -49984,7 +49984,7 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "text-align-center"
+    staticClass: "text-align-centre"
   }, [(_vm.loading) ? _c('div', {
     staticClass: "margin-10"
   }, [_c('span', {
@@ -50036,7 +50036,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
       staticClass: "body-item distance"
-    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, hotel.latitude, hotel.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Center")])])])])
+    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, hotel.latitude, hotel.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Centre")])])])])
   })), _vm._v(" "), _c('div', {
     staticClass: "tab-pane fade",
     attrs: {
@@ -50074,7 +50074,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
       staticClass: "body-item distance"
-    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, lodge.latitude, lodge.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Center")])])])])
+    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, lodge.latitude, lodge.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Centre")])])])])
   })), _vm._v(" "), _c('div', {
     staticClass: "tab-pane fade",
     attrs: {
@@ -50112,7 +50112,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
       staticClass: "body-item distance"
-    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, guestHouse.latitude, guestHouse.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Center")])])])])
+    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, guestHouse.latitude, guestHouse.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Centre")])])])])
   })), _vm._v(" "), _c('div', {
     staticClass: "tab-pane fade",
     attrs: {
@@ -50150,7 +50150,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(" Visit Website")]) : _vm._e()]), _vm._v(" "), _c('div', {
       staticClass: "body-item distance"
-    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, BnB.latitude, BnB.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Center")])])])])
+    }, [_vm._v(_vm._s(_vm.distance(-29.323616, 27.497830, BnB.latitude, BnB.longitude, 'K')) + " km "), _c('span', [_vm._v("from Convention Centre")])])])])
   }))])]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('ul', {

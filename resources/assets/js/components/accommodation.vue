@@ -1,5 +1,5 @@
 <template>
-    <div class="text-align-center">
+    <div class="text-align-centre">
        <div v-if="loading" class="margin-10" >
             <span class="fa fa-spinner fa-4x fa-spin"></span>
         </div>
@@ -21,7 +21,7 @@
                             <div class="body-item phone"><a v-if="hotel.hasPhone" :href="'tel:'+hotel.phone">{{hotel.phone}}</a> </div>
                             <div class="body-item email"> <a v-if="hotel.hasEmail" :href="'mailto:'+hotel.email">{{hotel.email}}</a> </div>
                             <div class="body-item website"> <a v-if="hotel.hasWebsite" :href="'http://'+ (hotel.website).replace(' ', '')" target="_blank"> Visit Website</a> </div>
-                            <div class="body-item distance">{{distance(-29.323616, 27.497830,hotel.latitude,hotel.longitude,'K')}} km <span>from Convention Center</span></div>
+                            <div class="body-item distance">{{distance(-29.323616, 27.497830,hotel.latitude,hotel.longitude,'K')}} km <span>from Convention Centre</span></div>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                             <div class="body-item phone"><a v-if="lodge.hasPhone" :href="'tel:'+lodge.phone">{{lodge.phone}}</a> </div>
                             <div class="body-item email"> <a v-if="lodge.hasEmail" :href="'mailto:'+lodge.email">{{lodge.email}}</a> </div>
                             <div class="body-item website"> <a v-if="lodge.hasWebsite" :href="'http://'+ (lodge.website).replace(' ', '')" target="_blank"> Visit Website</a> </div>
-                            <div class="body-item distance">{{distance(-29.323616, 27.497830,lodge.latitude,lodge.longitude,'K')}} km <span>from Convention Center</span></div>
+                            <div class="body-item distance">{{distance(-29.323616, 27.497830,lodge.latitude,lodge.longitude,'K')}} km <span>from Convention Centre</span></div>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                                 <div class="body-item phone"><a v-if="guestHouse.hasPhone" :href="'tel:'+guestHouse.phone">{{guestHouse.phone}}</a> </div>
                                 <div class="body-item email"> <a v-if="guestHouse.hasEmail" :href="'mailto:'+guestHouse.email">{{guestHouse.email}}</a> </div>
                                 <div class="body-item website"> <a v-if="guestHouse.hasWebsite" :href="'http://'+ (guestHouse.website).replace(' ', '')" target="_blank"> Visit Website</a> </div>
-                                <div class="body-item distance">{{distance(-29.323616, 27.497830,guestHouse.latitude,guestHouse.longitude,'K')}} km <span>from Convention Center</span></div>
+                                <div class="body-item distance">{{distance(-29.323616, 27.497830,guestHouse.latitude,guestHouse.longitude,'K')}} km <span>from Convention Centre</span></div>
                             </div>
                         </div>
                 </div>
@@ -60,7 +60,7 @@
                                 <div class="body-item phone"><a v-if="BnB.hasPhone" :href="'tel:'+BnB.phone">{{BnB.phone}}</a> </div>
                                 <div class="body-item email"> <a v-if="BnB.hasEmail" :href="'mailto:'+BnB.email">{{BnB.email}}</a> </div>
                                 <div class="body-item website"> <a v-if="BnB.hasWebsite" :href="'http://'+ (BnB.website).replace(' ', '')" target="_blank"> Visit Website</a> </div>
-                                <div class="body-item distance">{{distance(-29.323616, 27.497830,BnB.latitude,BnB.longitude,'K')}} km <span>from Convention Center</span></div>
+                                <div class="body-item distance">{{distance(-29.323616, 27.497830,BnB.latitude,BnB.longitude,'K')}} km <span>from Convention Centre</span></div>
                             </div>
                         </div>
                 </div>
