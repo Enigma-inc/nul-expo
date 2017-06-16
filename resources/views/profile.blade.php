@@ -208,8 +208,8 @@
                             </div>
                         </div>
                         <div class="inner col-xs-12 col-sm-6">
-                        <a href="#topics-accordion" data-toggle="collapse"><strong><div class="topics-header text-center">RERIS Topics</div></strong></a>
-                            <div id="topics-accordion" class="collapse margin-top-10">
+                        <strong><div class="topics-header text-center">RERIS Topics</div></strong>
+                            <div class="collapse margin-top-10">
                             <div class="col-xs-12 margin-bottom-20 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                              <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
                              <i class="fa fa-upload"></i> Upload Abstract for RERIS
