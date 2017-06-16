@@ -1,10 +1,5 @@
 {
-<<<<<<< HEAD
-  "/js/app.js": "/js/app.61146a9e12c7cecdf0a5.js",
-  "/css/app.css": "/css/app.781f4d0d1c09ea09fead707cb2e90ee3.css",
-=======
-  "/js/app.js": "/js/app.72a477d3d24a0abc6ec1.js",
-  "/css/app.css": "/css/app.ce52280d65171b985c0c7a873f47821d.css",
->>>>>>> modifications
-  "/css/helpers.css": "/css/helpers.c7673683e839b7e063b46e50ebdc2209.css"
+  "/js/app.js": "/js/app.d7f5dca9b73b2bbd46cd.js",
+  "/css/app.css": "/css/app.dbea55fb591d40145e72.css",
+  "/css/helpers.css": "/css/helpers.dbea55fb591d40145e72.css"
 }

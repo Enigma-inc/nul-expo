@@ -18,6 +18,7 @@
                         </div>
                     </div>
                 </article>
+      
 
                 <article class="team-member" >
                     <div class="inner">
@@ -30,7 +31,16 @@
                         </div>
                     </div>
                 </article>
-
+               <article class="team-member" >
+                    <div class="inner">
+                        <figure class="member-image"><img src="/images/team/niklas.jpg" alt="" title=""></figure>
+                        <div class="lower">
+                            <div class="member-title">
+                                <h5>Mr Niklas Hayek</h5>                    
+                            </div>        
+                        </div>
+                    </div>
+                </article>
                 <article class="team-member" >
                     <div class="inner">
                         <figure class="member-image"><img src="/images/team/mosotho_george.jpg" alt="" title=""></figure>
