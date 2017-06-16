@@ -215,8 +215,8 @@
                             </div>
                         </div>
                         <div class="inner col-xs-12 col-sm-6">
-                        <strong><div class="topics-header text-center">RERIS Topics</div></strong>
-                            <div class="margin-top-10">
+                        <a href="#topics-accordion" data-toggle="collapse"><strong><div class="topics-header text-center">RERIS Topics</div></strong></a>
+                            <div id="topics-accordion" class="collapse margin-top-10">
                                 <ul>
                                     <li> Grid connected renewable energy</li>
                                     <li> Decentralised renewable and household energy solutions</li>
