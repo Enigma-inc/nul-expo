@@ -129,7 +129,7 @@
                 </div>
             @else
                 <div class="row">
-                    <div class="col-md-4 profile">
+                    <div class="col-md-4 profile margin-top-5">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class=" header">{{Auth::user()->fullName()}}</div>
@@ -181,27 +181,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 profile">
-                    <div id="app" class="row auto-container">
-                           <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
-                             </a>
-                           </div>
-                              <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for RERIS
-                             </a>
-                          </div>                          
-                       </div>
+                    <div id="app" class="col-md-8 profile">
                        <div id="topics" class="row topics">
                        
                        <div class="auto-container">
                            <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="col-xs-12 col-sm-6">
-                        <strong><div class="topics-header text-center">NULISTICE Topics</div></strong>
-                            <div class="margin-top-10">
-                                <ul>  
+                         <div class="margin-bottom-20 margin-top-5 text-align-just">
+                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
+                             </a>
+                           </div>
+                        <button type="button" class="topics-header accordion btn btn-default margin-top-10 col-xs-12" >
+                        View NULISTICE Topics
+                        </button>
+                            <div class="topics-panel">
+                                <ul class="margin-top-10">  
                                     <li> Biotechnology</li>                          
                                     <li> Environment and Natural resources management</li>
                                     <li> Food and water safety</li>
@@ -214,10 +209,17 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="inner col-xs-12 col-sm-6">
-                        <strong><div class="topics-header text-center">RERIS Topics</div></strong>
-                            <div class="margin-top-10">
-                                <ul>
+                        <div class="col-xs-12 col-sm-6">
+                           <div class="margin-bottom-20 margin-top-5 text-align-just">
+                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for RERIS
+                             </a>
+                          </div> 
+                        <button type="button" class="topics-header accordion btn btn-default margin-top-10 col-xs-12">
+                        View RERIS Topics
+                        </button>
+                            <div class="topics-panel margin-top-10">
+                                <ul class="margin-top-10">
                                     <li> Grid connected renewable energy</li>
                                     <li> Decentralised renewable and household energy solutions</li>
                                     <li> Energy socioeconomics (e.g. policy, economics, legal, regulatory and social issues)</li> 
@@ -315,13 +317,29 @@
             }
         });
         //Add slim scroll
-        $(function(){
+      /*  $(function(){
             $('#topics').slimScroll({
                 height: '130px',
                 color: '#e13f30',
                 railVisible: true,
                 alwaysVisible: true
             });
-        });
+        });*/
+        //Accordion
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        }
+        }
     </script>
+
 @endsection
