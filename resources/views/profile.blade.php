@@ -182,23 +182,16 @@
                         </div>
                     </div>
                     <div class="col-md-8 profile">
-                    <div id="app" class="row auto-container">
-                           <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
-                             </a>
-                           </div>
-                              <div class="col-xs-12 col-md-6 margin-bottom-20 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for RERIS
-                             </a>
-                          </div>                          
-                       </div>
                        <div id="topics" class="row topics">
                        
                        <div class="auto-container">
                            <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="col-xs-12 col-sm-6">
+                         <div class="col-xs-12 margin-bottom-20 text-align-just  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
+                             </a>
+                           </div>
                         <strong><div class="topics-header text-center">NULISTICE Topics</div></strong>
                             <div class="margin-top-10">
                                 <ul>  
@@ -217,6 +210,13 @@
                         <div class="inner col-xs-12 col-sm-6">
                         <a href="#topics-accordion" data-toggle="collapse"><strong><div class="topics-header text-center">RERIS Topics</div></strong></a>
                             <div id="topics-accordion" class="collapse margin-top-10">
+                            <div class="col-xs-12 margin-bottom-20 text-align-just wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for RERIS
+                             </a>
+                          </div>
+                        <strong><div class="topics-header text-center">RERIS Topics</div></strong>
+                            <div class="margin-top-10">
                                 <ul>
                                     <li> Grid connected renewable energy</li>
                                     <li> Decentralised renewable and household energy solutions</li>
@@ -315,13 +315,13 @@
             }
         });
         //Add slim scroll
-        $(function(){
+      /*  $(function(){
             $('#topics').slimScroll({
                 height: '130px',
                 color: '#e13f30',
                 railVisible: true,
                 alwaysVisible: true
             });
-        });
+        });*/
     </script>
 @endsection
