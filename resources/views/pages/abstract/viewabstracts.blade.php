@@ -5,9 +5,10 @@
             <h2 class="header center">Submitted Abstracts</h2>
         </div>
 
-        <abstracts inline-template>
             <div class="abstract-container">
                 <div class="abstract-menu">
+        <abstracts inline-template>
+                
                     <ul class="nav nav-pills nav-stacked margin-top-20">
                         @can('view', $abstracts) 
                         @foreach($abstracts as $abstract)
@@ -18,6 +19,8 @@
                             @endif
                         @endforeach
                     </ul>
+        </abstracts>
+                    
                     <div class="row text-center">
                         {{ $abstracts->links() }}
                     </div>
@@ -36,7 +39,6 @@
                 </script>
                 @endcannot
             </div>
-        </abstracts>
     </div>
 </section>
 @stop
