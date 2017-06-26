@@ -33,7 +33,8 @@ class AbstractController extends Controller
         // $abstracts = Submission::orderBy('updated_at','DESC')
         //            ->withCount('abstracts')->paginate(5);
 
-        $abstracts= Submission::has('abstracts', '>' , 0)
+        $abstracts= Submission::orderBy('updated_at','DESC')
+               ->has('abstracts', '>' , 0)
                ->with('abstracts')
                ->withCount('abstracts')
                ->paginate(10);
