@@ -30,8 +30,14 @@ class AbstractController extends Controller
      */
     public function index()
     {
-        $abstracts = Submission::orderBy('updated_at','DESC')
-                   ->withCount('abstracts')->paginate(5);
+        // $abstracts = Submission::orderBy('updated_at','DESC')
+        //            ->withCount('abstracts')->paginate(5);
+
+        $abstracts= Submission::orderBy('updated_at','DESC')
+               ->has('abstracts', '>' , 0)
+               ->with('abstracts')
+               ->withCount('abstracts')
+               ->paginate(10);
         return view('pages.abstract.viewabstracts', compact('abstracts'));
     }
 
@@ -98,7 +104,7 @@ class AbstractController extends Controller
          $submission->save();
 
         /// Send email
-        Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
+        Mail::to(['address'=>'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
               ->bcc(['address'=>'neo@enigma.co.ls'])
               ->send(new AbstractReceived($abstract,Auth::User()));
 
