@@ -1,6 +1,6 @@
 
 
-<section class="sponsors">
+<section class="sponsors profile-sponsors">
     	<div class="auto-container">
             <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2 class="color-white header">sponsors and partners</h2>
