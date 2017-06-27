@@ -29,7 +29,7 @@
                 </div>
                 <div class="abstract-details text-center">
                     <small class="color-primary">Submission for <strong>{{ abstractDoc.conference }}</strong> </small>
-                    <small><strong>Submitted: </strong> {{ freindlyDates }} </small>
+                    <small><strong>Submitted: </strong> {{ abstractDoc.created_at|freindlyDates }} </small>
                 </div>
                 </div>
                 <hr class="margin-top-10">
@@ -60,9 +60,9 @@
                 
             });
         },
-        computed: {
-            freindlyDates: function () {
-                return  moment(this.abstract.created_at, "YYYYMMDD").calendar()
+        filters: {
+            freindlyDates: function (date) {
+                return  moment(date, "MMMDoYYYY").calendar()
             }
         },
         methods:{
