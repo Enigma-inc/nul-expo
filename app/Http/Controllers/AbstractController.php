@@ -104,7 +104,7 @@ class AbstractController extends Controller
          $submission->save();
 
         /// Send email
-        Mail::to(['address'=>'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
+        Mail::to(['address'=>'mokoena.n.a@gmail.com','address' => 'saleem@enigma.co.ls'])
               ->bcc(['address'=>'neo@enigma.co.ls'])
               ->send(new AbstractReceived($abstract,Auth::User()));
 
