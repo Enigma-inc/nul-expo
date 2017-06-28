@@ -3,11 +3,17 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class AbstractDoc extends Model
 {
-    protected $guarded=['id'];
+    use SoftDeletes;
+
+    protected $guarded = ['id'];
+
     protected $appends = array('fullDocPath');
+
+    protected $dates = ['deleted_at'];
 
     public function submission(){
         return  $this->belongsTo(Submission::class);
