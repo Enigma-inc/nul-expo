@@ -65,6 +65,11 @@ Route::group(['middleware' => 'auth'], function () {
         'as' => 'abstract.download'
     ]);
 
+    Route::post('/abstracts/{id}/remove', [
+        'uses' => 'AbstractController@removeAbstract',
+        'as' => 'abstract.remove'
+    ]);
+
     Route::get('/submission/{id}/abstracts', [
         'uses' => 'AbstractController@abstracts',
         'as' => 'download.submission.abstracts'

@@ -167,5 +167,18 @@ class AbstractController extends Controller
         }
 
     }
+
+    public function removeAbstract($id)
+    {
+        $deletedAbstract = AbstractDoc::find($id);
+        $deletedAbstract->delete();
+
+        LaravelSweetAlert::setMessage([
+                        'title' => 'Success',
+                         'text'=>'Abstract deleted successfully',
+                        'type' => 'success'
+                    ]);
+        return redirect('/profile');        
+    }
     
 }

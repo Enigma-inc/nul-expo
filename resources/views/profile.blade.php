@@ -249,6 +249,11 @@
       
                                                 </div>
                                         </div>
+                                    <form id="confirm-delete" action="{{route('abstract.remove', $abstract->id)}}" method="POST">
+                                        {{csrf_field()}}
+                                        <input type="text" name="file-name" value="{{$abstract->id}}" hidden>
+                                        <button type="submit" class="btn btn-warning btn-xs margin-right-5"> <i class="fa fa-trash-o"></i> Remove</button>
+                                    </form>
                                     
                                     <form action="{{route('abstract.download')}}" method="POST">
                                         {{csrf_field()}}
@@ -330,7 +335,7 @@
         var i;
 
         for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function() {
+            acc[i].onclick = function() {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight){
@@ -340,6 +345,33 @@
             } 
         }
         }
+
+        //Sweetalert
+        $(document).ready(function(){
+            $( "#confirm-delete" ).submit(function( event ) {
+                event.preventDefault();
+                swal({
+                title: 'Are you sure?',
+                text: "Please click confirm to delete this abstract",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!',
+                cancelButtonText: 'No, cancel!',
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger',
+                buttonsStyling: true}).then(function() {
+                        $("#confirm-delete").off("submit").submit();
+                }, function(dismiss) {
+                // dismiss can be 'cancel', 'overlay',
+                // 'close', and 'timer'
+                if (dismiss === 'cancel') {
+                    swal('Cancelled', 'Delete Cancelled :)', 'error');
+                    }
+                })
+            });
+        });
     </script>
 
 @endsection
