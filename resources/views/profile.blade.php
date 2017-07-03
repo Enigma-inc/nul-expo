@@ -13,12 +13,12 @@
                                     {{ csrf_field() }}
 
                                     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label">Title</label>
+                                        <label for="name" class="col-md-4 control-label">Your Title</label>
 
                                         <div class="col-md-6">
                                             <input id="title" type="text" class="form-control" name="title"
                                                    value="{{(old('title')) ? old('title') : Auth::User()->submission->title}}"
-                                                   required autofocus>
+                                                   required autofocus placeholder="Dr, Mr, Mrs etc">
 
                                             @if ($errors->has('title'))
                                                 <span class="help-block">
