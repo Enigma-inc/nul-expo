@@ -51,8 +51,7 @@ class QueriesController extends Controller
             
         ]);
         
-        Mail::to(['address' => 'thamaetm@gmail.com','address' => 'info@nulistice.org.ls'])
-              ->bcc(['address'=>'neo@enigma.co.ls'])
+        Mail::to(['address' => 'info@nulistice.org.ls'])
             ->send(new QueryReceived($query));
 
            $request->session()->flash('flash', "Thank you, we have received your message, we will get back soon");

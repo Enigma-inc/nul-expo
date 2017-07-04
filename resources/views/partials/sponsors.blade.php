@@ -13,6 +13,7 @@
                 <li><a href="http://www.microenergy-international.com" target="_blank"><img src="/images/sponsors/micro-energy.jpg" alt="" title=""></a></li>
                 <li><a href="http://www.nul.ls" target="_blank"><img src="/images/sponsors/national-university.jpg" alt="" title=""></a></li>
                 <li><a href="#" target="_blank"><img src="/images/sponsors/sacree.jpg" alt="" title=""></a></li>
+                <li><a href="http://lcedn.com/" target="_blank"><img src="/images/sponsors/lcedn.jpg" alt="" title=""></a></li>
 
 
             </ul>

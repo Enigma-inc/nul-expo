@@ -47,7 +47,6 @@
                             <li> Prof. Wikus van Niekerk, Stellenbosch University, South Africa</li>
                             <li> Prof. Armando C. Oliveira, University of Porto, Portugal</li>
                             <li> Prof. Marco Rupprich, MCI - The Entrepreneurial School®, Austria</li>
-                            <li> Prof. Wim Sinke, University of Amsterdam, Netherlands tbc</li>
                             <li> Prof. Abdelilah Slaoui, University of Strasbourg, France</li>
                             <li> Prof. Anthony Staak, Cape Peninsula University of Technology (CPUT), South Africa</li>
                             <li> Dr Dirk Steuerwald, Swiss Academy for Development, Switzerland</li>
@@ -57,7 +56,7 @@
                             <li> Prof. Abdellatif Zerga, Pan African University Institute of Water and Energy Sciences (PAUWES), Algeria</li>
                             <li> Niklas Hayek, Africa-EU Renewable Energy Cooperation Programme (RECP)</li>
                             <li> Prof. Himanshu Narayan, National University of Lesotho (NUL)</li>
-                            <li> Dr Thimothy Thamae, National University of Lesotho (NUL)</li>
+                            <li>Dr Jamie Cross, Senior Lecturer Social Anthropology and Development, University of Edinburgh</li>
                         </ul>
                     </div>
                 </div>
