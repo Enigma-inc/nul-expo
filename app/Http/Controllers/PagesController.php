@@ -10,12 +10,16 @@ class PagesController extends Controller
 {
     public function home()
     {
-        $slideImages= array("slide-1.jpg", "slide-2.jpg", "slide-3.jpg", "slide-4.jpg", 
+        $slideImages= array("slide-1.jpg", "slide-2.jpg", "slide-3.jpg", "slide-4.jpg",
                             "slide-5.jpg", "slide-6.jpg", "slide-7.jpg", "slide-8.jpg");
          shuffle($slideImages);
         return view('pages.home.index')->with('slide', $slideImages[0]);;
     }
 
+    public function committees()
+    {
+        return view('pages.committees.index');
+    }
     public function schedule()
     {
         return view('pages.schedule.index');
@@ -46,7 +50,7 @@ class PagesController extends Controller
         return view('pages.blog.index');
     }
 
-    public function accomodation() 
+    public function accomodation()
     {
         return view('pages.accomodation.index');
     }

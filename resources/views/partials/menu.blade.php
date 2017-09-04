@@ -4,25 +4,26 @@
     	<div class="auto-container clearfix">
         	<!--Logo-->
             <div class="logo"><a href="/"><img height="60px" src="/images/logo.jpg" alt="NUL 2018" title="NUL 2018"></a></div>
-            
+
             <!--Main Menu-->
             <nav class="main-menu">
                 <div class="navbar-header">
-                    <!-- Toggle Button -->      
+                    <!-- Toggle Button -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                
-                <div class="navbar-collapse collapse clearfix">                                                                                              
+
+                <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation">
                         <li class="{{ Request::path() == '/' ? 'current' : '' }}">
-                            <a href="/">Home</a>                           
+                            <a href="/">Home</a>
                         </li>
                         <li class="{{ Request::path() == '#' ? 'current' : '' }}">
-                            <a href="#">Concept Notes</a>
+
+                            <a href="#">About</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
                                     <a href="nulistice-concept">
@@ -33,6 +34,11 @@
                                     <a href="reris-concept">
                                         RERIS Concept
                                     </a>
+                                </li>
+                                <li>
+                                  <a href="committees">
+                                    Committees
+                                  </a>
                                 </li>
                             </ul>
                         </li>
@@ -48,7 +54,7 @@
                         <li  class="{{ Request::path() == 'blog' ? 'current' : '' }}">
                             <a href="blog">Blog</a>
                         </li>
-                        
+
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                         <li class="navigation">
@@ -90,7 +96,7 @@
                                         </form>
                                     </li>
                                 </ul>
-                            </li>      
+                            </li>
                         @endif
                     </li>
                     </ul>

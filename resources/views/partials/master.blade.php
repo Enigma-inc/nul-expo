@@ -21,15 +21,12 @@
 <link href="/css/responsive.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900|Dancing+Script" rel="stylesheet">
-@LaravelSweetAlertCSS
+   @LaravelSweetAlertCSS
 
 <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
 
- @include('partials.seo')
-
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="/js/respond.js"></script><![endif]-->
+   @include('partials.seo')
 </head>
 
 <body>

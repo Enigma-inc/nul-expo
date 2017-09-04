@@ -9,8 +9,8 @@
                     <h3 class="header text-center">NULISTICE</h3>
                     <hr style="width:170px; border:solid 0.1px;">
                     <div>
-                        <ul>  
-                            <li> Prof. Himanshu Narayan, National University of Lesotho (NUL), Lesotho</li>                          
+                        <ul>
+                            <li> Prof. Himanshu Narayan, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Thimothy Thamae, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Mosotho George, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Pulane Nkhabutlane, National University of Lesotho (NUL), Lesotho</li>
@@ -20,7 +20,7 @@
                             <li> Mr Rets'elisitsoe Thamae, National University of Lesotho (NUL), Lesotho</li>
                             <li> Mrs Maleshoane Ramoholi, National University of Lesotho (NUL), Lesotho</li>
                             <li> Mr Kebitsamamng Mothibe, National University of Lesotho (NUL), Lesotho</li>
-                            <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li>                                        
+                            <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li>
                         </ul>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         <ul>
                             <li> Dr Moeketsi Mpholo, Energy Research Centre (ERC) / National University of Lesotho (NUL), Lesotho</li>
                             <li> Prof. Benmansour Abdelhalim, Université Aboubekr Belkaid de Tlemcen, Algeria</li>
-                            <li> Prof. Venkata Ramayya Ancha, Jimma University, Ethiopia</li> 
+                            <li> Prof. Venkata Ramayya Ancha, Jimma University, Ethiopia</li>
                             <li> Dr Ed Brown, Loughborough University, United Kingdom</li>
                             <li> Prof. Thameur Chaibi, National Research Institute for Rural Engineering, Water and Forestry, Tunisia</li>
                             <li> Prof. Seladji Chakib, Université Aboubekr Belkaid de Tlemcen, Algeria</li>
@@ -60,7 +60,7 @@
                         </ul>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
 
@@ -72,7 +72,7 @@ export default{
 }
 $(function(){
     $('#committee').slimScroll({
-        height: '250px',
+        height: '600px',
         color: '#e13f30',
         railVisible: true,
         alwaysVisible: true

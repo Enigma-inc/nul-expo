@@ -13,6 +13,7 @@
 
 Auth::routes();
 Route::get('/', 'PagesController@home');
+Route::get('/committees', 'PagesController@committees');
 Route::get('/schedule', 'PagesController@schedule');
 Route::get('/contacts', 'PagesController@contacts');
 Route::get('/speakers', 'PagesController@speakers');
@@ -39,7 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile', [
         'uses'=>'AbstractController@profile',
         'as'=>'profile'
-    ]); 
+    ]);
 
     Route::post('/abstract/{user}', [
         'uses'=>'AbstractController@uploadAbstract',
@@ -49,7 +50,7 @@ Route::group(['middleware' => 'auth'], function () {
         'uses'=>'AbstractController@abstractUploadPage',
         'as'=>'abstract.upload.page'
     ]);
-    
+
     Route::post('/submit-details', [
         'uses' => 'AbstractController@submitSpeakerDetails',
         'as' => 'submit.speaker.details'
@@ -75,4 +76,3 @@ Route::group(['middleware' => 'auth'], function () {
         'as' => 'download.submission.abstracts'
     ]);
 });
-

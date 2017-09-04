@@ -17,7 +17,7 @@ class QueriesController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     public function index()
     {
         $queries = Query::latest()->paginate(5);
@@ -48,15 +48,15 @@ class QueriesController extends Controller
             'email' => request('email'),
             'subject' => request('subject'),
             'message' => request('message')
-            
+
         ]);
-        
-        Mail::to(['address' => 'info@nulistice.org.ls'])
+
+        Mail::to(['address' => 'mokoena.n.a@gmail.com'])
             ->send(new QueryReceived($query));
 
            $request->session()->flash('flash', "Thank you, we have received your message, we will get back soon");
            return redirect()->back();
-    
+
 
     }
 
