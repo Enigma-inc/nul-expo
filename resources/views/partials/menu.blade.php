@@ -3,7 +3,7 @@
     <header class="main-header">
     	<div class="auto-container clearfix">
         	<!--Logo-->
-            <div class="logo"><a href="/"><img height="60px" src="/images/logo.jpg" alt="NUL 2018" title="NUL 2018"></a></div>
+            <div class="logo"><a href="/"><img height="60px" src="/images/logo.jpg?v=2" alt="NUL 2018" title="NUL 2018"></a></div>
 
             <!--Main Menu-->
             <nav class="main-menu">
