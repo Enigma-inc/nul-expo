@@ -50,7 +50,7 @@
                 font-size: 1.5em;
             }
         }
-        
+
         @media (min-width: 769px) {
             .tp-caption {
                 left: 20px !important;
@@ -112,17 +112,23 @@
                 margin-bottom: 40px !important;
             }
         }
-        
+
         .main-slider {
             display: flex;
             align-items: center;
             justify-content: center;
+            img{
+              width: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+                      }
         }
-        
+
         .big-title {
             flex: 1;
         }
-        
+
         .with-sm {
             text-transform: lowercase !important;
             font-size: 0.8em !important;
@@ -130,7 +136,7 @@
             font-family: 'Dancing Script', cursive;
             color: #a6a6a6;
         }
-        
+
         .with-lg {
             text-transform: lowercase !important;
             font-size: 1.5em !important;
