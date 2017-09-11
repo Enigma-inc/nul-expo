@@ -1,8 +1,8 @@
-@extends('partials.master') @section('content') 
+@extends('partials.master') @section('content')
 <section class="padding-20">
     <div class="auto-container">
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header">National Uniersity of Lesotho International Science and Technology Innovation Conference and Expo (NULISTICE) 2018</h2>
+            <h2 class="header">National University of Lesotho International Science and Technology Innovation Conference and Expo (NULISTICE) 2018</h2>
         </div>
         <div class="row clearfix">
             <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -167,4 +167,4 @@
         </div>
     </div>
 </section>
-@stop 
+@stop

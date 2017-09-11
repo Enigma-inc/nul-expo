@@ -10,7 +10,7 @@ class PagesController extends Controller
 {
     public function home()
     {
-        $slideImages= array("slide-1.jpg","slide-2.jpg","slide-3.jpg","slide-4.jpg","slide-5.jpg");
+        $slideImages= array("slide-2.jpg","slide-3.jpg","slide-4.jpg","slide-5.jpg");
          shuffle($slideImages);
         return view('pages.home.index')->with('slide', $slideImages[0]);;
     }
