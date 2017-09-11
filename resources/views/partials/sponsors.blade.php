@@ -14,6 +14,7 @@
                 <li><a href="http://www.nul.ls" target="_blank"><img src="/images/sponsors/national-university.jpg" alt="" title=""></a></li>
                 <li><a href="#" target="_blank"><img src="/images/sponsors/sacree.jpg" alt="" title=""></a></li>
                 <li><a href="http://lcedn.com/" target="_blank"><img src="/images/sponsors/lcedn.jpg" alt="" title=""></a></li>
+                <li><a href="https://energypedia.info/wiki/Main_Page" target="_blank"><img src="/images/sponsors/energypedia.jpg" alt="" title=""></a></li>
 
 
             </ul>
