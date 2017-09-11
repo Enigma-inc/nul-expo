@@ -29,7 +29,11 @@
                         {{$abstract->title}}
                     </div>
                     <div class="button">
-                      <a href="{{$abstract->fullDocPath}}"></a>
+                      <form action="{{route('abstract.download')}}" method="POST">
+                          {{ csrf_field() }}
+                          <input type="hidden" name="file-name" value="{{$abstract->doc_path}}">
+                          <button type="submit" class="btn btn-primary btn-xs margin-right-2"> <i class="fa fa-download"></i> Download</button>
+                      </form>
                     </div>
                  </div>
                @endforeach
