@@ -17,7 +17,7 @@
                               <span >
                                       NULISTICE 2018 <span class="with-sm"> with</span> RERIS 2018
 
-                                  </span>
+                              </span>
                               <br> <small class="slide-date"><i class="fa fa-calendar"></i> 23 - 26 January 2018</small>
 
                           </div>
