@@ -15,13 +15,14 @@ use App\Mail\AbstractReceived;
 use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
+use Illuminate\Support\Facades\File;
 
 class AbstractController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
-    } 
+    }
 
     /**
      * Display a listing of the resource.
@@ -82,8 +83,10 @@ class AbstractController extends Controller
         'title' => 'required|max:255',
         'file' => 'required',
         ]);
-       
+
         $submission= $user->submission;
+
+        dd($submission);
         $file=$request->file('file');
         $name= str_slug(Carbon::now()->toDayDateTimeString())
                ."-".$file->getClientOriginalName();
@@ -95,10 +98,10 @@ class AbstractController extends Controller
             'doc_path'=>$name,
             'title'=>$request["title"],
             'conference'=>strtoupper($request['conference']),
-            'comment'=>$request['comment'], 
+            'comment'=>$request['comment'],
             'submission_id'=>$submission->id
         ]);
-         
+
          //Update Submission date
          $submission->updated_at=Carbon::now();
          $submission->save();
@@ -134,7 +137,7 @@ class AbstractController extends Controller
           $submission->phone_code=$request['phone-code'];
           $submission->save();
 
-          //Marked details as Updated 
+          //Marked details as Updated
 
         $currentUser->details_captured=1;
         $currentUser->save();
@@ -155,12 +158,22 @@ class AbstractController extends Controller
     {
         $fileName = Input::get("file-name");
         $filePath = public_path() . "/submitted-abstracts/" . $fileName;
+        $docDetails=AbstractDoc::with(['submission'])->where('doc_path','=',$fileName)->first();
+
+          //Build downloaded File Name
+         $fileExt=File::extension("/submitted-abstracts/".$fileName);
+         $conference=$docDetails->conference;
+         $abstractDocName=str_slug($docDetails->title);
+         $author=$docDetails->submission->title.' '.$docDetails->submission->name.' '.$docDetails->submission->surname;
+         $downloadedFileName= substr($conference.'-'.$author.'-'.$abstractDocName,0,100).'.'.$fileExt;
+
 
         if( file_exists($filePath)){
-            $headers = array(
-                'Content-Type: '.Storage::mimeType("/submitted-abstracts/" .$fileName),
-            );
-            return Response::download($filePath, $fileName,$headers);
+            $headers = [
+                'Content-Type: '=> Storage::mimeType("/submitted-abstracts/" .$fileName),
+              //  'Content-Disposition:'=>' attachment; filename="' . $downloadedFileName . '"'
+            ];
+            return Response::download($filePath, $downloadedFileName,$headers);
         }
         else{
             return back();
@@ -178,7 +191,7 @@ class AbstractController extends Controller
                          'text'=>'Abstract deleted successfully',
                         'type' => 'success'
                     ]);
-        return redirect('/profile');        
+        return redirect('/profile');
     }
-    
+
 }

@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'NULISTICE 2018') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -78,10 +78,12 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container">
+          @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('admin-assets/js/app.js') }}"></script>
 </body>
 </html>
