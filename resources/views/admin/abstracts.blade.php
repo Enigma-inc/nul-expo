@@ -83,7 +83,7 @@
      @endif
      @endforeach
       <div class="pagination-links">
-         {{ $submissions->links() }}
+         {{ $submissions->appends($_GET)->links() }}
       </div>
    </div>
 @endsection
