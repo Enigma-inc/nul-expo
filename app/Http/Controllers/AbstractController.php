@@ -86,7 +86,6 @@ class AbstractController extends Controller
 
         $submission= $user->submission;
 
-        dd($submission);
         $file=$request->file('file');
         $name= str_slug(Carbon::now()->toDayDateTimeString())
                ."-".$file->getClientOriginalName();

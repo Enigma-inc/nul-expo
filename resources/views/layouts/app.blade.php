@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'NULISTICE/RERIS 2018') }}</title>
+    <title>NULISTICE/RERIS 2018</title>
 
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-primary navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -35,8 +35,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a class="navbar-brand" href="{{ route('admin.home')}}">
+                        NULISTICE/RERIS 2018 ADMIN
                     </a>
                 </div>
 
