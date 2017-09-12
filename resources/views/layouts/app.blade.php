@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'NULISTICE 2018') }}</title>
+    <title>{{ config('app.name', 'NULISTICE/RERIS 2018') }}</title>
 
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
