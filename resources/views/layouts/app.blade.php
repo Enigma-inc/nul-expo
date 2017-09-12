@@ -84,6 +84,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="{{ mix('admin-assets/js/bundle.js') }}"></script>
     <script src="{{ mix('admin-assets/js/app.js') }}"></script>
 </body>
 </html>

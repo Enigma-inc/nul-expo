@@ -76,7 +76,7 @@ Route::group(['middleware' => 'auth'], function () {
         'as' => 'download.submission.abstracts'
     ]);
 });
-Route::group(['middleware' => 'auth','prefix'=>'admin'],function(){
+Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
     Route::get('/','AdminController@index')->name('admin.home');
     Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
 });
