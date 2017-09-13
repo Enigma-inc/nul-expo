@@ -5,18 +5,37 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Submission;
 use App\AbstractDoc;
+use DB;
 
 class AdminController extends Controller
 {
   public function index($value='')
   {
-      $rerisCount =AbstractDoc::where('conference','=','RERIS')
-                                ->get()
-                                ->count();
-      $nulisticeCount =AbstractDoc::where('conference','=','NULISTICE')
-                                ->get()
-                                ->count();
-      return view('admin.home')->with(['rerisCount'=>$rerisCount,'nulisticeCount'=>$nulisticeCount]);
+      $rerisAbstracts=AbstractDoc::where('conference','=','RERIS')->get();
+      $nulisticeAbstracts=AbstractDoc::where('conference','=','NULISTICE')->get();
+      $rerisCount =$rerisAbstracts->count();
+      $nulisticeCount =$nulisticeAbstracts->count();
+
+      //Aggregate Authors
+      $rerisAuthors=DB::table('submissions')
+           ->join('abstract_docs', 'submissions.id', '=', 'abstract_docs.submission_id')
+           ->select('submissions.id')->where('abstract_docs.conference','=','RERIS')
+           ->groupBy('submissions.id')
+           ->get()->count();
+      $nulisticeAuthors=DB::table('submissions')
+           ->join('abstract_docs', 'submissions.id', '=', 'abstract_docs.submission_id')
+           ->select('submissions.id')->where('abstract_docs.conference','=','NULISTICE')
+           ->groupBy('submissions.id')
+           ->get()->count();
+      $allAuthors=DB::table('submissions')
+           ->join('abstract_docs', 'submissions.id', '=', 'abstract_docs.submission_id')
+           ->select('submissions.id')
+           ->groupBy('submissions.id')
+           ->get()->count();
+
+      return view('admin.home')->with(['rerisCount'=>$rerisCount,'nulisticeCount'=>$nulisticeCount,
+                                       'rerisAuthors'=>$rerisAuthors,'nulisticeAuthors'=>$nulisticeAuthors,
+                                        'allAuthors'=>$allAuthors]);
   }
     public function abstracts(Request $request)
     {

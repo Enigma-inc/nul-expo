@@ -93,6 +93,17 @@
       small{
         color: #e13f30;
         font-weight: 600;
+        font-size: 0.8em;
+      }
+    }
+    .summary-container{
+      display: flex;
+      font-size: 0.5em;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px dotted rgba(0,0,0,.2);
+      .authors{
+
       }
     }
 
