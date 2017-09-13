@@ -5,7 +5,8 @@
     <h3>{{$conference}} Abstracts</h3> <hr>
   </div>
    <div>
-     @foreach ($submissions as $subIndex=>$submission)
+     @foreach ($submissions as $_subIndex=>$submission)
+       @php($subIndex = $_subIndex +($submissions->perPage()*($submissions->currentPage()-1)))
        <div class="panel panel-default ">
          <div class="panel-body admin-abstract-list">
            <div class="image">
