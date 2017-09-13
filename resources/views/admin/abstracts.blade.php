@@ -7,13 +7,14 @@
    <div>
      @foreach ($submissions as $_subIndex=>$submission)
        @php($subIndex = $_subIndex +($submissions->perPage()*($submissions->currentPage()-1)))
-       <div class="panel panel-default ">
-         <div class="panel-body admin-abstract-list">
+         <div class=" admin-abstract-list col-xs-12">
            <div class="image">
              <img width="60px" src="{{$submission->country_flag}}" alt="flag">
               <h2>{{$subIndex+1}}</h2>
            </div>
-              <div class="details">
+           <div class="panel panel-default col-xs-12">
+
+              <div class="details panel-body">
                 <div class="table-header">
                    <div class="head-item">
                      {{$submission->title." ".$submission->name." ".$submission->surname}}
@@ -86,12 +87,12 @@
 
                  @endif
               </div>
-
+            </div>
 
 
 
          </div>
-       </div>
+
      @endforeach
       <div class="pagination-links">
          {{ $submissions->appends($_GET)->links() }}
