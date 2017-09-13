@@ -1,6 +1,13 @@
 .admin-abstract-list{
       display: flex;
       align-items: start;
+      .image{
+        h2{
+          margin-top: 5px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
       .details{
         width: 100%;
         .table-header{
@@ -27,12 +34,21 @@
           margin: 20px 5px;
           .body{
             display: flex;
+            align-items: center;
+            .abstract-count{
+              h4{
+                font-weight: 600;
+                margin-right: 2px;
+                font-size: 1em;
+              }
+            }
           }
           .title{
                 flex: 1;
                 margin-left: 10px;
                 font-weight: 600;
                 font-size: 1.1em;
+                padding-right: 5px;
 
           }
           .conference{
@@ -48,9 +64,11 @@
               text-align: justify;
               border-bottom: 1px dotted lightgray;
               padding-bottom: 10px;
+              margin-left: 130px;
             }
           }
         }
+
       }
 }
 .navbar-brand{
@@ -78,5 +96,10 @@
       }
     }
 
+  }
+}
+.page-title{
+  h3{
+    text-transform: uppercase;
   }
 }

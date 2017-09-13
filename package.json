@@ -17,6 +17,8 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
+    "create-react-app": "^1.4.0",
+    "global": "^4.3.2",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "sweetalert2": "^6.6.2",

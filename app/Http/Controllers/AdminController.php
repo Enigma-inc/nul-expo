@@ -42,7 +42,7 @@ class AdminController extends Controller
                                 ->paginate(10);
       }
     //  return $submissions;
-      return view('admin.abstracts')->with(['submissions'=>$submissions,'conference'=>$conference]);
+      return view('admin.abstracts')->with(['submissions'=>$submissions,'conference'=>ucfirst($conference)]);
     }
 
 

@@ -1,14 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+  <div class="page-title">
+    <h3>{{$conference}} Abstracts</h3> <hr>
+  </div>
    <div>
-     @foreach ($submissions as $submission)
-       @if ($submission->abstracts->count() >0)
-
+     @foreach ($submissions as $subIndex=>$submission)
        <div class="panel panel-default ">
          <div class="panel-body admin-abstract-list">
-           <img width="60px" src="{{$submission->country_flag}}" alt="flag">
-           {{-- <img width="60px" src="../images/seo/og.jpg" alt="flag"> --}}
+           <div class="image">
+             <img width="60px" src="{{$submission->country_flag}}" alt="flag">
+              <h2>{{$subIndex+1}}</h2>
+           </div>
               <div class="details">
                 <div class="table-header">
                    <div class="head-item">
@@ -25,9 +28,13 @@
                    </div>
                 </div>
                  @if ($conference=="NULISTICE" || $conference=="RERIS")
-                   @foreach ($submission->abstracts->whereIn('conference',$conference) as $abstract)
+                   @php($abstractIndex=1)
+                   @foreach ($submission->abstracts->whereIn('conference',$conference) as $index =>$abstract)
                      <div class="abstracts">
                        <div class="body">
+                         <div class="abstract-count">
+                            <h4>{{($subIndex+1).'.'.$abstractIndex}}</h4>
+                         </div>
                          <div class="conference badge">
                            {{$abstract->conference}}
                          </div>
@@ -46,11 +53,15 @@
                            <p class="footer-text">{{$abstract->comment}}</p>
                        </div>
                      </div>
+                     @php($abstractIndex++)
                    @endforeach
                  @else
-                   @foreach ($submission->abstracts as $abstract)
+                   @foreach ($submission->abstracts as $index => $abstract)
                        <div class="abstracts">
                          <div class="body">
+                           <div class="abstract-count">
+                              <h4>{{($subIndex+1).'.'.($index+1)}}</h4>
+                           </div>
                            <div class="conference badge">
                              {{$abstract->conference}}
                            </div>
@@ -80,7 +91,6 @@
 
          </div>
        </div>
-     @endif
      @endforeach
       <div class="pagination-links">
          {{ $submissions->appends($_GET)->links() }}
