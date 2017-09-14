@@ -52,9 +52,9 @@
 <script>
   window.Laravel={csrfToken:'{{csrf_token()}}'}
 </script>
+<script src="/js/jquery.js"></script>
 <script src={{mix('js/app.js')}}></script>
 
-<script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/revolution.min.js"></script>
 <script src="/js/bxslider.js"></script>

@@ -44,3 +44,13 @@ input,
         color: #000;
     }
 }
+
+.btn.disabled{
+  cursor:not-allowed;
+  background: grey;
+    span{
+      color:red;
+    }
+
+
+}

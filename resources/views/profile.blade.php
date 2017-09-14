@@ -1,7 +1,7 @@
 @extends('partials.master')
 @section('content')
     <div class="container">
-        @if(!Auth::guest()) 
+        @if(!Auth::guest())
             @if(!Auth::User()->details_captured)
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
@@ -183,7 +183,7 @@
                     </div>
                     <div id="app" class="col-md-8 profile">
                        <div id="topics" class="row topics">
-                       
+
                        <div class="auto-container">
                            <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="col-xs-12 col-sm-6">
@@ -196,8 +196,8 @@
                         View NULISTICE Topics
                         </button>
                             <div class="topics-panel">
-                                <ul class="margin-top-10">  
-                                    <li> Biotechnology</li>                          
+                                <ul class="margin-top-10">
+                                    <li> Biotechnology</li>
                                     <li> Environment and Natural resources management</li>
                                     <li> Food and water safety</li>
                                     <li> Climate change challenges and mitigation strategies
@@ -205,16 +205,16 @@
                                     <li> Agriculture and food security</li>
                                     <li> Material science and nano-technology</li>
                                     <li> Entrepreneurship and technology</li>
-                                    <li> Information and Communication Technology</li>                                        
+                                    <li> Information and Communication Technology</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                            <div class="margin-bottom-20 margin-top-5 text-align-just">
-                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for RERIS
+                             <a disabled style="background:grey;color:#fff"  class="btn btn-disabled  btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for RERIS <span style="color:red">(closed)</span>
                              </a>
-                          </div> 
+                          </div>
                         <button type="button" class="topics-header accordion btn btn-default margin-top-10 col-xs-12">
                         View RERIS Topics
                         </button>
@@ -222,7 +222,7 @@
                                 <ul class="margin-top-10">
                                     <li> Grid connected renewable energy</li>
                                     <li> Decentralised renewable and household energy solutions</li>
-                                    <li> Energy socioeconomics (e.g. policy, economics, legal, regulatory and social issues)</li> 
+                                    <li> Energy socioeconomics (e.g. policy, economics, legal, regulatory and social issues)</li>
                                     <li> Promotion of energy research, innovation, education and entrepreneurship</li>
                                 </ul>
                             </div>
@@ -241,12 +241,12 @@
 
                                 <div class="file-container bordered col-xs-12">
                                         <div class="abstract-details-container col-xs-12">
-                                            
+
                                                 <div class="abstract-title">{{ $abstract->title }}   </div>
                                                 <div class="abstract-details">
                                                  <small class="color-primary">Submission for <strong>{{$abstract->conference}}</strong> </small>
                                                  <small><strong>Submitted on: </strong> {{$abstract->created_at->toFormattedDateString()}} | {{$abstract->created_at->diffForHumans()}} </small>
-      
+
                                                 </div>
                                         </div>
                                     <form id="confirm-delete" action="{{route('abstract.remove', $abstract->id)}}" method="POST">
@@ -254,7 +254,7 @@
                                         <input type="text" name="file-name" value="{{$abstract->id}}" hidden>
                                         <button type="submit" class="btn btn-warning btn-xs margin-right-5"> <i class="fa fa-trash-o"></i> Remove</button>
                                     </form>
-                                    
+
                                     <form action="{{route('abstract.download')}}" method="POST">
                                         {{csrf_field()}}
                                         <input type="text" name="file-name" value="{{$abstract->doc_path}}" hidden>
@@ -266,7 +266,7 @@
                                 {{$abstracts->links()}}
                             </div>
                         </div>
-                
+
                     @endif
                 </div>
 
@@ -342,7 +342,7 @@
             panel.style.maxHeight = null;
             } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
+            }
         }
         }
 

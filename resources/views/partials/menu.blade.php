@@ -26,6 +26,11 @@
                             <a href="#">About</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
+                                    <a href="welcome">
+                                        Welcome Note
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="nulistice-concept">
                                         NULISTICE Concept
                                     </a>
