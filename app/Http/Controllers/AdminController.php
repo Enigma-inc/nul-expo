@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Submission;
 use App\AbstractDoc;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Transformers\SubmissionExportTransformer;
 use DB;
 
 class AdminController extends Controller
@@ -62,6 +64,53 @@ class AdminController extends Controller
       }
   //   return $submissions->last();
       return view('admin.abstracts')->with(['submissions'=>$submissions,'conference'=>ucfirst($conference)]);
+    }
+
+    public function exportToExcel(Request $request,$conference)
+    {
+
+        $filteredSubmissions=[];
+        $submissions=null;
+
+        if($conference =='RERIS' || $conference =='NULISTICE'){
+          $filteredSubmissions = array_unique(AbstractDoc::whereConference($conference)
+                                ->get()
+                                ->pluck('submission_id')
+                                ->toArray());
+          $submissions=Submission::orderBy('updated_at','DESC')
+                                ->whereIn('id',$filteredSubmissions)
+                                ->has('abstracts', '>' , 0)
+                                ->get();
+        }
+        else{
+          $submissions=Submission::orderBy('updated_at','DESC')
+                                  ->has('abstracts', '>' , 0)
+                                  ->get();
+        }
+        
+      //  return $submissions;
+         $submissionList= SubmissionExportTransformer::transform($submissions);
+
+        Excel::create($conference.'-Abstract-Authors', function($excel) use ($submissionList) {
+                //Add headers
+                array_unshift($submissionList,['Title','Name','Surname','Email','Phone','Organisation','Country']);
+                    // Build the spreadsheet, passing in the payments array
+                $excel->sheet('sheet1', function($sheet) use ($submissionList) {
+                    $sheet->fromArray($submissionList, null, 'A1', false, false);
+
+                        // Set black background
+                        $sheet->row(1, function($row) {
+
+                            // call cell manipulation methods
+                            $row->setBackground('#000000');
+                            $row->setFontColor('#ffffff');
+                            $row->setFontSize(12);
+
+                        });
+                });
+
+        })->export('xlsx');
+
     }
 
 

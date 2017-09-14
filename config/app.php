@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Eduardokum\LaravelMailAutoEmbed\Providers\LaravelMailAutoEmbedServiceProvider::class,
         Riazxrazor\LaravelSweetAlert\LaravelSweetAlertServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -227,7 +228,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'LaravelSweetAlert' => Riazxrazor\LaravelSweetAlert\LaravelSweetAlert::class
+        'LaravelSweetAlert' => Riazxrazor\LaravelSweetAlert\LaravelSweetAlert::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 

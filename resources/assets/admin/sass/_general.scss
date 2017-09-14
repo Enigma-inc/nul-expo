@@ -117,6 +117,8 @@
   }
 }
 .page-title{
+  display: flex;
+  align-items: center;
   h3{
     text-transform: uppercase;
   }
