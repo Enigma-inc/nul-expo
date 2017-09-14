@@ -48,7 +48,7 @@ class AdminController extends Controller
                               ->get()
                               ->pluck('submission_id')
                               ->toArray());
-        $submissions=Submission::with(['abstracts'])
+        $submissions=Submission::with(['abstracts','owner'])
                               ->orderBy('updated_at','DESC')
                               ->whereIn('id',$filteredSubmissions)
                               ->has('abstracts', '>' , 0)
@@ -60,7 +60,7 @@ class AdminController extends Controller
                                 ->has('abstracts', '>' , 0)
                                 ->paginate(10);
       }
-    //  return $submissions;
+  //   return $submissions->last();
       return view('admin.abstracts')->with(['submissions'=>$submissions,'conference'=>ucfirst($conference)]);
     }
 

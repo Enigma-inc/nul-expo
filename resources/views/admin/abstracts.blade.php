@@ -25,8 +25,17 @@
                    <div class="head-item">
                      {{$submission->country}}
                    </div>
-                   <div class="head-item">
-                      {{$submission->phone_code.' '.$submission->phone}}
+                   <div class="head-item ">
+                     <div class="contacts">
+                       <small>
+                         {{$submission->phone_code.' '.$submission->phone}}
+
+                       </small>
+                       <small>
+                          <a href="mailto:{{$submission->owner->email}}">{{$submission->owner->email}}</a>
+                       </small>
+                     </div>
+
                    </div>
                 </div>
                  @if ($conference=="NULISTICE" || $conference=="RERIS")

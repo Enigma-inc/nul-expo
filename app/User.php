@@ -28,9 +28,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-   public function submission()
+   public function submissions()
    {
-       return $this->hasOne(Submission::class);
+       return $this->hasMany(Submission::class);
 
    }
 

@@ -23,6 +23,10 @@ class PagesController extends Controller
     {
       return view('pages.welcome-note.index');
     }
+    public function team()
+    {
+      return view('pages.team.index');
+    }
     public function schedule()
     {
         return view('pages.schedule.index');
