@@ -31,18 +31,18 @@
 
 <body>
 <div class="page-wrapper">
- 	
-   
- 	
+
+
+
      @include('partials.menu')
      @yield('content')
      @include('partials.sponsors')
      @include('partials.footer')
     <!--End Main Header -->
-    
+
     <!-- Main Slider -->
    <!--<app-root>Loading...</app-root> -->
-    
+
 </div>
 
 
@@ -54,7 +54,7 @@
 </script>
 <script src={{mix('js/app.js')}}></script>
 
-<script src="/js/jquery.js"></script> 
+<script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/revolution.min.js"></script>
 <script src="/js/bxslider.js"></script>
@@ -66,6 +66,7 @@
 <script src="js/jquery.slimscroll.min.js"></script>
 <script src="js/bootstrap-3.typehead.min.js"></script>
 <script src="js/ui-block.js"></script>
+<script src="js/shuffle.js"></script>
 
 
 

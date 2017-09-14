@@ -1,5 +1,6 @@
 <script>
     $(document).ready(function () {
+        $.shuffle('.sponsors-slide li');
         var owl =$(".sponsors-slide");
         $(".sponsors-slide").owlCarousel({
             margin: 10,
