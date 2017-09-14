@@ -2,9 +2,8 @@
 
 @section('content')
   <div class="page-title">
-    <h3 class="col-xs-12 col-md-6">{{$conference}} Abstracts</h3>
-      <a class="btn btn-primary col-xs-12 col-md-6 " href="{{route('export-abstracts',['conference'=>$conference])}}">Download Authors Spreadsheet</a>
-     <hr>
+    <h3 >{{$conference}} Abstracts</h3>
+    <a class="btn btn-primary btn-sm" href="{{route('export-abstracts',['conference'=>$conference])}}">Download Authors Spreadsheet</a>
   </div>
    <div>
      @foreach ($submissions as $_subIndex=>$submission)

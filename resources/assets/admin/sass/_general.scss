@@ -118,6 +118,8 @@
 }
 .page-title{
   display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
   align-items: center;
   h3{
     text-transform: uppercase;
