@@ -14,8 +14,8 @@
         "laravel/tinker": "~1.0",
         "maatwebsite/excel": "~2.1.0",
         "predis/predis": "~1.0",
-        "riazxrazor/laravel-sweet-alert": "^1.1",
-        "themsaid/laravel-model-transformers": "^1.1"
+        "themsaid/laravel-model-transformers": "^1.1",
+        "riazxrazor/laravel-sweet-alert": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
