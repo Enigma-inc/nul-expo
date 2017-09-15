@@ -31,7 +31,7 @@ Route::get('/fees', 'PagesController@fees');
 Route::get('download', 'PagesController@download');
 Route::get('/messages', 'QueriesController@index');
 Route::get('/all-abstracts', 'AbstractController@index');
-Route::get('/abstracts/{conference}/export', 'AdminController@exportToExcel')->name('export-abstracts');
+
 
 Route::get('/contact-us','QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
@@ -82,4 +82,8 @@ Route::group(['middleware' => 'auth'], function () {
 Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
     Route::get('/','AdminController@index')->name('admin.home');
     Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
+    Route::get('/statistics/{conference}', 'AdminController@statistics')->name('stats');
+    Route::get('/abstracts/{conference}/export', 'AdminController@exportToExcel')->name('export-abstracts');
+    
+
 });

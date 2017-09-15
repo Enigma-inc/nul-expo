@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
+    {!! Charts::styles() !!}
 
     <!-- Scripts -->
     <script>
@@ -43,7 +44,8 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                       <li><a href="{{route('admin.home')}}">Abstracts</a></li>
+                       <li><a href="{{route('stats',['conference'=>'all'])}}">Statistics</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -86,5 +88,10 @@
     <!-- Scripts -->
     <script src="{{ mix('admin-assets/js/bundle.js') }}"></script>
     <script src="{{ mix('admin-assets/js/app.js') }}"></script>
+    {!! Charts::scripts() !!}
+    @if (isset($chart))
+      {!! $chart->script() !!}
+    @endif
+
 </body>
 </html>

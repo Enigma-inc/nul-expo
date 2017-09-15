@@ -41,8 +41,13 @@
                                     </a>
                                 </li>
                                 <li>
+                                  <a href="team">
+                                    Organising Team
+                                  </a>
+                                </li>
+                                <li>
                                   <a href="committees">
-                                    Committees
+                                    Scientific Committees
                                   </a>
                                 </li>
                             </ul>
