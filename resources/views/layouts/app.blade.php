@@ -45,7 +45,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                        <li><a href="{{route('admin.home')}}">Abstracts</a></li>
-                       <li><a href="{{route('stats',['conference'=>'all'])}}">Statistics</a></li>
+                       {{-- <li><a href="{{route('stats',['conference'=>'all'])}}">Statistics</a></li> --}}
                     </ul>
 
                     <!-- Right Side Of Navbar -->
