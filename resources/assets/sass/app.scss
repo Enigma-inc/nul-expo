@@ -9,6 +9,7 @@
 @import 'accommodation';
 @import 'slider';
 @import 'message-page';
+@import 'menu';
 .text-align-just {
     text-align: justify;
 }
@@ -113,13 +114,13 @@ td, th {
     a{
         color: #e13f30 !important;
     }
-  
+
 }
 .current.admin-menu{
     a{
         color: #fff !important;
     }
-  
+
 }
 
 .abstract-container{

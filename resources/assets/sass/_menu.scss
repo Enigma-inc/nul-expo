@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px) {
+    .reris-left{
+      display: none;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .reris-right{
+      display: none;
+    }
+}
