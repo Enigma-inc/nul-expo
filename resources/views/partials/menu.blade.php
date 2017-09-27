@@ -3,7 +3,7 @@
     <header class="main-header">
     	<div class="auto-container clearfix" style="display:flex;justify-content:space-between;align-items: center;">
         	<!--Logo-->
-            <div class="logo"><a href="/"><img height="60px" src="/images/logo.jpg?v=2" alt="NUL 2018" title="NUL 2018"></a></div>
+            <div class="logo"><a href="/"><img height="60px" src="/images/logo.jpg?v=3" alt="NULISTICE 2018" title="NULISTICE 2018"></a></div>
             <!--Main Menu-->
             <nav class="main-menu">
                 <div class="navbar-header">
