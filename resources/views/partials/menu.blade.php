@@ -3,7 +3,10 @@
     <header class="main-header">
     	<div class="auto-container clearfix" style="display:flex;justify-content:space-between;align-items: center;">
         	<!--Logo-->
-            <div class="logo"><a href="/"><img height="60px" src="/images/logo.jpg?v=3" alt="NULISTICE 2018" title="NULISTICE 2018"></a></div>
+            <div class="logo" style="display:flex">
+              <a href="https://www.africa-eu-renewables.org/" target="_blank"><img height="60px" src="/images/logo-recp.jpg?v=4" alt="RERIS 2018" title="RERIS 2018">
+              <a href="http://www.nul.ls/" target="_blank" ><img height="60px" src="/images/logo-nul.jpg?v=4" alt="NULISTICE 2018" title="NULISTICE 2018">
+              </a></div>
             <!--Main Menu-->
             <nav class="main-menu">
                 <div class="navbar-header">
