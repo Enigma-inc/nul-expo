@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+@include('partials.google-analytics')
 <title>NULISTICE 2018</title>
 <meta name="description" content="National University of Lesotho Science, Technology and Innovation Expo and Conference.">
   <base href="/">
