@@ -1,0 +1,31 @@
+.exhibition-options{
+  .panel-heading{
+    a{
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #e13f30 !important;
+    }
+  }
+  .card{
+    box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
+  .header{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  em{
+        font-size: 0.8em;
+  }
+  // img{
+  //   position: relative;
+  //   z-index: 10;
+  // }
+}
+}
+.pbCaptionText{
+  .title{
+    background: rgba(0,0,0,0.5) !important;
+    text-align: center !important;
+    padding: 5px 10px !important;
+    margin-bottom: 5px !important;
+  }
+}

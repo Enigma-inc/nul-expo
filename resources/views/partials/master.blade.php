@@ -19,6 +19,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="/css/responsive.css" rel="stylesheet">
+<link href="/vendor/photobox/photobox.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900|Dancing+Script" rel="stylesheet">
    @LaravelSweetAlertCSS
@@ -67,6 +68,7 @@
 <script src="js/bootstrap-3.typehead.min.js"></script>
 <script src="js/ui-block.js"></script>
 <script src="js/shuffle.js"></script>
+<script src="vendor/photobox/jquery.photobox.js"></script>
 
 
 
