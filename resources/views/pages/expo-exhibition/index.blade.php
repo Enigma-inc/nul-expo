@@ -36,6 +36,13 @@
                       To join, register and write a brief summary of your product/business in less than 100 words. Payment details will be provided later. The National University of Lesotho (NUL) teachers, students and graduates MAY be subsidized
                       or have their costs covered in full, depending on the available funding.
                   </p>
+                  <div class="row">
+                    <a class="col-xs-12 col-md-6 btn btn-success" href="{{route('expo.register.view')}}" >
+                       Place Your Application for Expo Stall
+                    </a>
+                  </div>
+                  <hr>
+
               </div>
               <div class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                   <div class="row margin-left-10">
@@ -97,7 +104,7 @@
                                 </a>
                               </div>
                               <div class="footer">
-                                 <a class="col-xs-12 btn btn-primary" href="htt://www.enigma.co.ls" >
+                                 <a class="col-xs-12 btn btn-primary" href="{{route('exhibition.register.view',['option'=>'option-a'])}}" >
                                    Register
                                  </a>
                               </div>
@@ -118,7 +125,7 @@
                                 </a>
                               </div>
                               <div class="footer">
-                                 <a class="col-xs-12 btn btn-primary" href="htt://www.enigma.co.ls" >
+                                 <a class="col-xs-12 btn btn-primary" href="{{route('exhibition.register.view',['option'=>'option-b'])}}" >
                                    Register
                                  </a>
                               </div>
@@ -139,7 +146,7 @@
                                 </a>
                               </div>
                               <div class="footer">
-                                 <a class="col-xs-12 btn btn-primary" href="htt://www.enigma.co.ls" >
+                                 <a class="col-xs-12 btn btn-primary" href="{{route('exhibition.register.view',['option'=>'option-c'])}}" >
                                    Register
                                  </a>
                               </div>
@@ -160,7 +167,7 @@
                                 </a>
                               </div>
                               <div class="footer">
-                                 <a class="col-xs-12 btn btn-primary" href="htt://www.enigma.co.ls" >
+                                 <a class="col-xs-12 btn btn-primary" href="{{route('exhibition.register.view',['option'=>'option-d'])}}" >
                                    Register
                                  </a>
                               </div>
@@ -181,7 +188,7 @@
                                 </a>
                               </div>
                               <div class="footer">
-                                 <a class="col-xs-12 btn btn-primary" href="htt://www.enigma.co.ls" >
+                                 <a class="col-xs-12 btn btn-primary" href="{{route('exhibition.register.view',['option'=>'option-e'])}}" >
                                    Register
                                  </a>
                               </div>
