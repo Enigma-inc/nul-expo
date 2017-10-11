@@ -31,7 +31,9 @@ Route::get('/fees', 'PagesController@fees');
 Route::get('download', 'PagesController@download');
 Route::get('/messages', 'QueriesController@index');
 Route::get('/all-abstracts', 'AbstractController@index');
-Route::get('/expo-and-exhibition', 'ExhibitionController@index');
+Route::get('/expo-and-exhibition', 'ExhibitionController@index')->name('page.expo-exhibition');
+Route::get('/expo/register', 'ExhibitionController@registerExpoView');
+Route::post('/expo/register', 'ExhibitionController@submitExpoRegistration')->name('expo.register');
 
 
 Route::get('/contact-us','QueriesController@create')->name('contact.create');
