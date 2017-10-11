@@ -10,14 +10,22 @@
                   <div class="row margin-left-10">
                     <h3 class="header color-primary">Expo</h3><hr class="margin-5">
                   </div>
-                  <div id='expo-setup' class="pull-left" >
+                  <div class="pull-left expo-setup" >
                       <a href="{{asset('images/conference/expo-setup-lg.jpg')}}" >
                           <img  src="{{asset('images/conference/expo-setup-sm.jpg')}}"
                               title="Expo Stalls Arrangement " class="img-responsive  margin-10 conference-img-lg" style="position: relative;z-index: 10;">
+                              <span class="color-primary col-xs-12 text-center">
+                                <em>Click on image to enlarge</em>
+                              </span>
                       </a>
-                      <span class="color-primary col-xs-12 text-center">
-                        <em>Click on image to enlarge</em>
-                      </span>
+                      <a href="{{asset('images/conference/expo-table-lg.jpg')}}" >
+                          <img  src="{{asset('images/conference/expo-table-sm.jpg')}}"
+                              title="Expo Stalls Arrangement " class="img-responsive  margin-10 conference-img-lg" style="position: relative;z-index: 10;">
+                              <span class="color-primary col-xs-12 text-center">
+                                <em>Click on image to enlarge</em>
+                              </span>
+                      </a>
+
                   </div>
                   <div class="">
 
@@ -207,7 +215,7 @@
 @section('scripts')
 <script>
       $(document).ready(function(){
-         $('#expo-setup').photobox('a',{ time:0 });
+         $('.expo-setup').photobox('a',{ time:0 });
          $('#exhibition-setup').photobox('a',{ time:0 });
          $('.option').photobox('a',{ time:0 });
       });
