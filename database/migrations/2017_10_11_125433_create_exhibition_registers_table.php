@@ -16,13 +16,14 @@ class CreateExhibitionRegistersTable extends Migration
         Schema::create('exhibition_register', function (Blueprint $table) {
             $table->increments('id');
             $table->string('names');
-            $table->string('business');
+            $table->string('company');
             $table->string('email');
             $table->string('country');
             $table->string('country_flag');
             $table->string('country_phone_code');
             $table->string('phone');
             $table->text('summary');
+            $table->string('option');
             $table->timestamps();
         });
     }
