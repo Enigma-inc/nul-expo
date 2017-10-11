@@ -45,7 +45,7 @@
                       or have their costs covered in full, depending on the available funding.
                   </p>
                   <div class="row">
-                    <a class="col-xs-12 col-md-6 btn btn-success" href="{{route('expo.register.view')}}" >
+                    <a class="col-xs-12 col-md-6 btn btn-primary" href="{{route('expo.register.view')}}" >
                        Place Your Application for Expo Stall
                     </a>
                   </div>
