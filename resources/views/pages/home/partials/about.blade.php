@@ -15,7 +15,7 @@
                     <a href="abstract" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-download"></span> Download Abstract Guidelines</a>
                     <a href="profile" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-file"></span> Submit Your Abstract</a>
+                                class="fa fa-file"></span> Submit Your Abstract <span class="color-primary">Closed</span></a>
                     <a href="{{route('contact.create')}}" class=" col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-envelope"></span> Contact us</a>
                 </div>

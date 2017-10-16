@@ -23,7 +23,7 @@
                     	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
                         <h3 class="primary-color">Abstract submission deadline</h3>
 						<blockquote>
-                        <h3>30th Sep 2017 (for NULISTICE) <br><small style="color:rgb(228, 84, 71)">(Closed For RERIS)</small></h3>
+                        <h3>30th Sep 2017 <br><small style="color:rgb(228, 84, 71)">(Closed )</small></h3>
                         </blockquote>
                     </article>
                      <article class="feature">

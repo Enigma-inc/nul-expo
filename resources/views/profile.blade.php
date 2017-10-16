@@ -188,8 +188,8 @@
                            <div class="col-xs-12 listing-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="col-xs-12 col-sm-6">
                          <div class="margin-bottom-20 margin-top-5 text-align-just">
-                             <a  class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE
+                             <a disabled style="background:grey;color:#fff" class="btn btn-primary btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'nulistice'])}}">
+                             <i class="fa fa-upload"></i> Upload Abstract for NULISTICE <span style="color:red">(closed)</span>
                              </a>
                            </div>
                         <button type="button" class="topics-header accordion btn btn-default margin-top-10 col-xs-12" >
