@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Submission;
 use App\AbstractDoc;
 use App\ExpoRegister;
+use App\ExhibitionRegister;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Transformers\SubmissionExportTransformer;
 use ConsoleTVs\Charts\Facades\Charts;
@@ -160,8 +161,14 @@ class AdminController extends Controller
 
     public function expoData(){
         $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
-                ->paginate(10);
+                          ->paginate(10);
         return view('admin.expo', ['expoApplications' => $expoApplications]);
+    }
+
+    public function exhibitionData(){
+        $exhibitionApplications = ExhibitionRegister::orderBy('option', 'ASC')
+                                ->paginate(10);
+        return view('admin.exhibition', ['exhibitionApplications' => $exhibitionApplications]);
     }
 
 }

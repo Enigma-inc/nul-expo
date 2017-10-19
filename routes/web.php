@@ -89,6 +89,7 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
     Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
     Route::get('/statistics/{conference}', 'AdminController@statistics')->name('stats');
     Route::get('/abstracts/{conference}/export', 'AdminController@exportToExcel')->name('export-abstracts');
-    Route::get('/expo', 'AdminController@expoData')->name('expo');
-    Route::get('/exhibition', 'AdminController@exhibitionData')->name('exhibition');
+    Route::get('/expo', 'AdminController@expoData')->name('admin.expo');
+    Route::get('/exhibition', 'AdminController@exhibitionData')->name('admin.exhibition');
+    Route::post('/approve/exhibition', 'AdminController@approveExhibition')->name('exhibition.approve');
 });
