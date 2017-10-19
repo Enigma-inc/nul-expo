@@ -89,6 +89,6 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
     Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
     Route::get('/statistics/{conference}', 'AdminController@statistics')->name('stats');
     Route::get('/abstracts/{conference}/export', 'AdminController@exportToExcel')->name('export-abstracts');
-
-
+    Route::get('/expo', 'AdminController@expoData')->name('expo');
+    Route::get('/exhibition', 'AdminController@exhibitionData')->name('exhibition');
 });

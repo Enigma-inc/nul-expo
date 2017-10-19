@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Submission;
 use App\AbstractDoc;
+use App\ExpoRegister;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Transformers\SubmissionExportTransformer;
 use ConsoleTVs\Charts\Facades\Charts;
@@ -154,11 +155,13 @@ class AdminController extends Controller
 
       }
 
-  return $submissions;
-
-
-
+        return $submissions;
     }
 
+    public function expoData(){
+        $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
+                ->paginate(10);
+        return view('admin.expo', ['expoApplications' => $expoApplications]);
+    }
 
 }
