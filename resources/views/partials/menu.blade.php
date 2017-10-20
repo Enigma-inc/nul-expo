@@ -82,7 +82,7 @@
                                 <a href="messages" >Messages</a>
                             </li>
                             <li class="{{ Request::path() == 'all-abstracts' ? 'current' : '' }} admin-menu">
-                                <a href="{{route('admin.home')}}" >Abstracts</a>
+                                <a href="{{route('admin.home')}}" >Admin Panel</a>
                             </li>
                             @endif
                             <li>

@@ -14,7 +14,6 @@
               <h2>{{$subIndex+1}}</h2>
            </div>
            <div class="panel panel-default col-xs-12">
-
               <div class="details panel-body">
                 <div class="table-header">
                    <div class="head-item">

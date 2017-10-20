@@ -2,6 +2,7 @@
 
 @section('content')
    <div>
+   @if($exhibitionApplications->count()>0)
      @foreach ($exhibitionApplications as $index =>$exhibitionApplication)
          <div class=" admin-abstract-list col-xs-12">
            <div class="image">
@@ -35,17 +36,27 @@
                 </div>
 
                 <div class="abstracts">
-                    <div class="body">
+                    <div class="body-flex">
                         <div class="conference badge">
                             {{$exhibitionApplication->option}}
                         </div>
+                        @if($exhibitionApplication->status==0)
                         <div class="button">
-                            <form action="{{route('exhibition.approve')}}" method="POST">
+                            <form action="{{route('exhibition.approve', ['id'=>$exhibitionApplication->id])}}" method="POST">
                                 {{ csrf_field() }}
-                                <input type="hidden" name="file-name" value="">
+                                <input type="hidden" name="file-name" value="$exhibitionApplication->id">
                                 <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-download"></i> Approve</button>
                             </form>
                         </div>
+                        @elseif($exhibitionApplication->status==1)
+                        <div class="button">
+                            <form action="{{route('exhibition.decline', ['id'=>$exhibitionApplication->id])}}" method="POST">
+                                {{ csrf_field() }}
+                                <input type="hidden" name="file-name" value="$exhibitionApplication->id">
+                                <button type="submit" class="btn btn-danger btn-xs margin-right-2"> <i class="fa fa-download"></i> Decline</button>
+                            </form>
+                        </div>
+                        @endif
                     </div>
                     <div class="footer">
                         <p class="footer-text-expo">{{$exhibitionApplication->summary}}</p>
@@ -54,10 +65,15 @@
               </div>
             </div>
          </div>
-
      @endforeach
+     @else
+      <div class="alert alert-info" role="alert">
+          There are no exhibition applications yet.
+      </div>
+      @endif
       <div class="pagination-links">
          {{ $exhibitionApplications->links() }}
       </div>
    </div>
+   
 @endsection

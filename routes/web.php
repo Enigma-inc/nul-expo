@@ -37,7 +37,6 @@ Route::get('/exhibition/register/{option}', 'ExhibitionController@registerExhibi
 Route::post('/expo/register', 'ExhibitionController@submitExpoRegistration')->name('expo.register');
 Route::post('/exhibition/register', 'ExhibitionController@submitExhibitionRegistration')->name('exhibition.register');
 
-
 Route::get('/contact-us','QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
@@ -89,7 +88,11 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
     Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
     Route::get('/statistics/{conference}', 'AdminController@statistics')->name('stats');
     Route::get('/abstracts/{conference}/export', 'AdminController@exportToExcel')->name('export-abstracts');
+
     Route::get('/expo', 'AdminController@expoData')->name('admin.expo');
     Route::get('/exhibition', 'AdminController@exhibitionData')->name('admin.exhibition');
-    Route::post('/approve/exhibition', 'AdminController@approveExhibition')->name('exhibition.approve');
+    Route::post('/exhibition/{id}/approve', 'AdminController@approveExhibition')->name('exhibition.approve');
+    Route::post('/expo/{id}/approve', 'AdminController@approveExpo')->name('expo.approve');
+    Route::post('/exhibition/{id}/decline', 'AdminController@declineExhibition')->name('exhibition.decline');
+    Route::post('/expo/{id}/decline', 'AdminController@declineExpo')->name('expo.decline');
 });

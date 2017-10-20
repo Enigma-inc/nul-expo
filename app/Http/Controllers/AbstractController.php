@@ -142,7 +142,6 @@ class AbstractController extends Controller
         $currentUser->save();
         return redirect('/profile');
 
-
     }
 
     public function enableEditProfile(User $user)
@@ -150,7 +149,6 @@ class AbstractController extends Controller
         $user->details_captured=0;
         $user->save();
         return redirect('/profile');
-
     }
 
     public function downloadAbstract()

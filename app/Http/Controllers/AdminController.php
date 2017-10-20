@@ -171,4 +171,40 @@ class AdminController extends Controller
         return view('admin.exhibition', ['exhibitionApplications' => $exhibitionApplications]);
     }
 
+    public function approveExpo($id){
+        $expo = ExpoRegister::find($id);
+
+        $expo->status=1;
+        $expo->save();
+
+        return redirect()->route('admin.expo');
+    }
+
+    public function declineExpo($id){
+        $expo = ExpoRegister::find($id);
+        
+        $expo->status=0;
+        $expo->save();
+        
+        return redirect()->route('admin.expo');
+    }
+
+    public function approveExhibition($id){
+        $exhibition = ExhibitionRegister::find($id);
+        
+        $exhibition->status=1;
+        $exhibition->save();
+
+        return redirect()->route('admin.exhibition');
+    }
+
+    public function declineExhibition($id){
+        $exhibition = ExhibitionRegister::find($id);
+        
+        $exhibition->status=0;
+        $exhibition->save();
+
+        return redirect()->route('admin.exhibition');
+    }
+    
 }

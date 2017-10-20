@@ -37,6 +37,7 @@ class ExhibitionController extends Controller
        }
 
     }
+    
     public function submitExpoRegistration(ExpoRegisterRequest $request)
     {
 
@@ -66,10 +67,8 @@ class ExhibitionController extends Controller
                          'type' => 'error'
                      ]);
         }
-
-
-
     }
+
     public function submitExhibitionRegistration(ExhibitionRegisterRequest $request)
     {
 
@@ -102,8 +101,5 @@ class ExhibitionController extends Controller
                      ]);
 
         }
-
-
-
     }
 }

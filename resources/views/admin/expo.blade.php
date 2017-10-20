@@ -2,6 +2,7 @@
 
 @section('content')
    <div>
+   @if($expoApplications->count()>0)
      @foreach ($expoApplications as $index =>$expoApplication)
          <div class=" admin-abstract-list col-xs-12">
            <div class="image">
@@ -33,9 +34,23 @@
 
                 <div class="abstracts">
                     <div class="body">
-                    <div class="title">
-                        {{$expoApplication->title}}
-                    </div>
+                        @if($expoApplication->status==0)
+                            <div class="button">
+                                <form action="{{route('expo.approve', ['id'=>$expoApplication->id])}}" method="POST">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="file-name" value="$expoApplication->id">
+                                    <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-download"></i> Approve</button>
+                                </form>
+                            </div>
+                        @elseif($expoApplication->status==1)
+                            <div class="button">
+                                <form action="{{route('expo.decline', ['id'=>$expoApplication->id])}}" method="POST">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="file-name" value="$expoApplication->id">
+                                    <button type="submit" class="btn btn-danger btn-xs margin-right-2"> <i class="fa fa-download"></i> Decline</button>
+                                </form>
+                            </div>
+                        @endif
                     </div>
                     <div class="footer">
                         <p class="footer-text-expo">{{$expoApplication->summary}}</p>
@@ -46,6 +61,11 @@
          </div>
 
      @endforeach
+     @else
+        <div class="alert alert-info" role="alert">
+            There are no exhibition applications yet.
+        </div>         
+      @endif
       <div class="pagination-links">
          {{ $expoApplications->links() }}
       </div>
