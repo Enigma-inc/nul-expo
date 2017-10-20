@@ -161,12 +161,14 @@ class AdminController extends Controller
 
     public function expoData(){
         $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
+                          ->oldest()
                           ->paginate(10);
         return view('admin.expo', ['expoApplications' => $expoApplications]);
     }
 
     public function exhibitionData(){
         $exhibitionApplications = ExhibitionRegister::orderBy('option', 'ASC')
+                                ->oldest()
                                 ->paginate(10);
         return view('admin.exhibition', ['exhibitionApplications' => $exhibitionApplications]);
     }
@@ -182,16 +184,16 @@ class AdminController extends Controller
 
     public function declineExpo($id){
         $expo = ExpoRegister::find($id);
-        
+
         $expo->status=0;
         $expo->save();
-        
+
         return redirect()->route('admin.expo');
     }
 
     public function approveExhibition($id){
         $exhibition = ExhibitionRegister::find($id);
-        
+
         $exhibition->status=1;
         $exhibition->save();
 
@@ -200,11 +202,11 @@ class AdminController extends Controller
 
     public function declineExhibition($id){
         $exhibition = ExhibitionRegister::find($id);
-        
+
         $exhibition->status=0;
         $exhibition->save();
 
         return redirect()->route('admin.exhibition');
     }
-    
+
 }
