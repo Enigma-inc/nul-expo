@@ -9,5 +9,6 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .scripts(['node_modules/jquery/dist/jquery.js',
        'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
    ], 'public/admin-assets/js/bundle.js')
+   .styles('node_modules/font-awesome/css/font-awesome.css', 'public/admin-assets/css/vendor.css')
    .autoload({ 'jquery': ['window.$', 'window.jQuery'] })
-    .version();
+   .version();

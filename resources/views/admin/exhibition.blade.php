@@ -6,7 +6,7 @@
      @foreach ($exhibitionApplications as $index =>$exhibitionApplication)
          <div class=" admin-abstract-list col-xs-12">
            <div class="image">
-             <img width="60px" src="{{$exhibitionApplication->country_flag}}" alt="flag">
+             <img width="100%" src="{{$exhibitionApplication->country_flag}}" alt="flag">
                 <h2>{{$index +1}}</h2>
            </div>
            <div class="panel panel-default col-xs-12">
@@ -45,7 +45,7 @@
                             <form action="{{route('exhibition.approve', ['id'=>$exhibitionApplication->id])}}" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="file-name" value="$exhibitionApplication->id">
-                                <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-download"></i> Approve</button>
+                                <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-check"></i> Approve</button>
                             </form>
                         </div>
                         @elseif($exhibitionApplication->status==1)
@@ -53,7 +53,7 @@
                             <form action="{{route('exhibition.decline', ['id'=>$exhibitionApplication->id])}}" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="file-name" value="$exhibitionApplication->id">
-                                <button type="submit" class="btn btn-danger btn-xs margin-right-2"> <i class="fa fa-download"></i> Decline</button>
+                                <button type="submit" class="btn btn-danger btn-xs margin-right-2"> <i class="fa fa-times"></i> Decline</button>
                             </form>
                         </div>
                         @endif

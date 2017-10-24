@@ -1,0 +1,25 @@
+.panel-exhibition,.panel-expo{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    h1{
+         color:lighten($color: #29323c, $amount: 50%) !important;
+         .summary-container{
+                border-top: 1px dotted rgba(255, 255, 255, 0.1) !important;
+                small{
+                    color: lighten($color: #29323c, $amount: 40%) !important;
+                }
+            }
+    }
+   
+}
+.panel-abstracts{
+    background-image: linear-gradient(60deg, lighten(#29323c,15%) 0%, lighten(#485563,15%) 100%);
+    h1{
+         color:lighten($color: #29323c, $amount: 60%) !important;
+          .summary-container{
+                border-top: 1px dotted rgba(255, 255, 255, 0.1) !important;
+                small{
+                    color: lighten($color: #29323c, $amount: 70%) !important;
+                }
+            }
+    }
+}

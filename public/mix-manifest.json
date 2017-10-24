@@ -1,8 +1,9 @@
 {
   "/js/app.js": "/js/app.d2594dcb32c3fa325280.js",
-  "/css/app.css": "/css/app.868231527864ca6efe48.css",
-  "/admin-assets/css/app.css": "/admin-assets/css/app.868231527864ca6efe48.css",
-  "/css/helpers.css": "/css/helpers.868231527864ca6efe48.css",
+  "/css/app.css": "/css/app.8f1b369fa4c8db5bebd6.css",
+  "/admin-assets/css/app.css": "/admin-assets/css/app.8f1b369fa4c8db5bebd6.css",
+  "/css/helpers.css": "/css/helpers.8f1b369fa4c8db5bebd6.css",
   "/admin-assets/js/app.js": "/admin-assets/js/app.26d4efb72dcf9d573902.js",
-  "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.fbf7658aab397f9970912849bc0f9874.js"
+  "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.fbf7658aab397f9970912849bc0f9874.js",
+  "/admin-assets/css/vendor.css": "/admin-assets/css/vendor.c495654869785bc3df60216616814ad1.css"
 }

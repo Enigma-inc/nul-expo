@@ -21,6 +21,12 @@ class AdminController extends Controller
       $rerisCount =$rerisAbstracts->count();
       $nulisticeCount =$nulisticeAbstracts->count();
 
+      $approvedExpo = ExpoRegister::where('status','=',1)->count();
+      $notApprovedExpo = ExpoRegister::where('status','=',0)->count();
+      $approvedExhbition = ExhibitionRegister::where('status','=',1)->count();
+      $notApprovedExhibition = ExhibitionRegister::where('status','=',0)->count();
+                    
+
       //Aggregate Authors
       $rerisAuthors=DB::table('submissions')
            ->join('abstract_docs', 'submissions.id', '=', 'abstract_docs.submission_id')
@@ -40,7 +46,9 @@ class AdminController extends Controller
 
       return view('admin.home')->with(['rerisCount'=>$rerisCount,'nulisticeCount'=>$nulisticeCount,
                                        'rerisAuthors'=>$rerisAuthors,'nulisticeAuthors'=>$nulisticeAuthors,
-                                        'allAuthors'=>$allAuthors]);
+                                        'allAuthors'=>$allAuthors,
+                                        'approvedExpo'=>$approvedExpo,'notApprovedExpo'=>$notApprovedExpo,
+                                        'approvedExhbition'=>$approvedExhbition,'notApprovedExhibition'=>$notApprovedExhibition]);
   }
     public function abstracts(Request $request)
     {

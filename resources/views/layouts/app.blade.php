@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('admin-assets/css/vendor.css') }}" rel="stylesheet">
     {!! Charts::styles() !!}
 
     <!-- Scripts -->
@@ -23,8 +24,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-primary navbar-static-top">
-            <div class="container">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container sm-margin-5">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -82,7 +83,7 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container sm-padding-right-5">
           @yield('content')
         </div>
     </div>

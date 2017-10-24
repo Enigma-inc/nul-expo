@@ -4,14 +4,14 @@
    <div>
    @if($expoApplications->count()>0)
      @foreach ($expoApplications as $index =>$expoApplication)
-         <div class=" admin-abstract-list col-xs-12">
+         <div class=" admin-abstract-list ">
            <div class="image">
-             <img width="60px" src="{{$expoApplication->country_flag}}" alt="flag">
+             <img width="100%" src="{{$expoApplication->country_flag}}" alt="flag">
                 <h2>{{$index +1}}</h2>
            </div>
-           <div class="panel panel-default col-xs-12">
+           <div class="panel panel-default col-xs-12 padding-0">
 
-              <div class="details panel-body">
+              <div class="details panel-body padding-5">
                 <div class="table-header">
                    <div class="head-item">
                      {{$expoApplication->name.' '.$expoApplication->surname}}
@@ -39,7 +39,7 @@
                                 <form action="{{route('expo.approve', ['id'=>$expoApplication->id])}}" method="POST">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="file-name" value="$expoApplication->id">
-                                    <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-download"></i> Approve</button>
+                                    <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-check"></i> Approve</button>
                                 </form>
                             </div>
                         @elseif($expoApplication->status==1)
@@ -47,7 +47,7 @@
                                 <form action="{{route('expo.decline', ['id'=>$expoApplication->id])}}" method="POST">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="file-name" value="$expoApplication->id">
-                                    <button type="submit" class="btn btn-danger btn-xs margin-right-2"> <i class="fa fa-download"></i> Decline</button>
+                                    <button type="submit" class="btn btn-danger btn-xs margin-right-2"> <i class="fa fa-close"></i> Decline</button>
                                 </form>
                             </div>
                         @endif

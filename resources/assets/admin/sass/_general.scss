@@ -3,10 +3,17 @@
       align-items: start;
       .image{
             margin-top: 15px;
+            width: 60px;
+            @media screen and (max-width:600px){
+                  width: 40px;
+            }
         h2{
           margin-top: 5px;
           text-align: center;
           font-weight: 600;
+          @media screen and (max-width:600px){
+                  font-size:20px;
+            }
         }
       }
       .details{
@@ -26,6 +33,12 @@
             padding: 0 5px;
             flex: 1;
             border-right: 2px solid rgba(0,0,0,.1);
+            @media screen and (max-width:320px){
+              font-size: 0.5em !important;
+            }
+            @media screen and (max-width:600px){
+              font-size: 0.8em !important;
+            }
             .contacts{
               display: flex;
               flex-direction: column;
@@ -80,6 +93,9 @@
               text-align: justify;
               border-bottom: 1px dotted lightgray;
               padding-bottom: 10px;
+              @media screen and (max-width:768px){
+                 margin: 10px !important;
+              }
             }
           }
         }
