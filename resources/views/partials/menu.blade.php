@@ -78,9 +78,9 @@
                             </li>
                         @else
                         @if (Auth::user()->is_admin)
-                            <li class="{{ Request::path() == 'messages' ? 'current' : '' }} admin-menu">
+                            {{-- <li class="{{ Request::path() == 'messages' ? 'current' : '' }} admin-menu">
                                 <a href="messages" >Messages</a>
-                            </li>
+                            </li> --}}
                             <li class="{{ Request::path() == 'all-abstracts' ? 'current' : '' }} admin-menu">
                                 <a href="{{route('admin.home')}}" >Admin Panel</a>
                             </li>

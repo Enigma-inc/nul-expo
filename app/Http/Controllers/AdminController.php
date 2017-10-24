@@ -166,15 +166,18 @@ class AdminController extends Controller
         if($status =='approved'){
             $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
                                             ->where('status','=',1)
+                                            ->latest()
                                             ->paginate(10);
         }
         elseif($status == 'declined'){
             $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
                                             ->where('status','=',0)
+                                            ->latest()
                                             ->paginate(10);
         }
         else{
             $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
+                                             ->latest()
                                             ->paginate(10);
         }
         return view('admin.expo', ['expoApplications' => $expoApplications, 'status' => $status]);
@@ -213,7 +216,7 @@ class AdminController extends Controller
 
     public function declineExpo($id){
         $expo = ExpoRegister::find($id);
-        
+
         $expo->status=0;
         $expo->save();
         
@@ -222,7 +225,7 @@ class AdminController extends Controller
 
     public function approveExhibition($id){
         $exhibition = ExhibitionRegister::find($id);
-        
+
         $exhibition->status=1;
         $exhibition->save();
 
@@ -231,11 +234,11 @@ class AdminController extends Controller
 
     public function declineExhibition($id){
         $exhibition = ExhibitionRegister::find($id);
-        
+
         $exhibition->status=0;
         $exhibition->save();
 
         return redirect()->back();
     }
-    
+
 }
