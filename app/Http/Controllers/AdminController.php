@@ -165,8 +165,8 @@ class AdminController extends Controller
         $status = $request->query('status');
         if($status =='approved'){
             $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
-                                                ->where('status','=',1)
-                                                 ->paginate(10);
+                                            ->where('status','=',1)
+                                            ->paginate(10);
         }
         elseif($status == 'declined'){
             $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
@@ -175,7 +175,7 @@ class AdminController extends Controller
         }
         else{
             $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
-                                         ->paginate(10);
+                                            ->paginate(10);
         }
         return view('admin.expo', ['expoApplications' => $expoApplications, 'status' => $status]);
     }
@@ -186,17 +186,17 @@ class AdminController extends Controller
 
         if($status == 'approved'){
             $exhibitionApplications = ExhibitionRegister::orderBy('updated_at', 'DESC')
-                                                ->where('status','=',1)
-                                                 ->paginate(10);
+                                                        ->where('status','=',1)
+                                                        ->paginate(10);
         }
         elseif($status == 'declined'){
             $exhibitionApplications = ExhibitionRegister::orderBy('updated_at', 'DESC')
-                                            ->where('status','=',0)
-                                            ->paginate(10);
+                                                        ->where('status','=',0)
+                                                        ->paginate(10);
         }
         else{
             $exhibitionApplications = ExhibitionRegister::orderBy('updated_at', 'DESC')
-                                         ->paginate(10);
+                                                        ->paginate(10);
         }
 
         return view('admin.exhibition', ['exhibitionApplications' => $exhibitionApplications, 'status' => $status]);
