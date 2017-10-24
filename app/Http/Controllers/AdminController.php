@@ -167,18 +167,50 @@ class AdminController extends Controller
         return $submissions;
     }
 
-    public function expoData(){
-        $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
-                          ->latest()
-                          ->paginate(10);
-        return view('admin.expo', ['expoApplications' => $expoApplications]);
+    public function expoData(Request $request){
+        $expoApplications =[];
+
+        $status = $request->query('status');
+        if($status =='approved'){
+            $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
+                                            ->where('status','=',1)
+                                            ->latest()
+                                            ->paginate(10);
+        }
+        elseif($status == 'declined'){
+            $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
+                                            ->where('status','=',0)
+                                            ->latest()
+                                            ->paginate(10);
+        }
+        else{
+            $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
+                                             ->latest()
+                                            ->paginate(10);
+        }
+        return view('admin.expo', ['expoApplications' => $expoApplications, 'status' => $status]);
     }
 
-    public function exhibitionData(){
-        $exhibitionApplications = ExhibitionRegister::orderBy('option', 'ASC')
-                                ->oldest()
-                                ->paginate(10);
-        return view('admin.exhibition', ['exhibitionApplications' => $exhibitionApplications]);
+    public function exhibitionData(Request $request){
+        $exhibitionApplications = [];
+        $status = $request->query('status');
+
+        if($status == 'approved'){
+            $exhibitionApplications = ExhibitionRegister::orderBy('updated_at', 'DESC')
+                                                        ->where('status','=',1)
+                                                        ->paginate(10);
+        }
+        elseif($status == 'declined'){
+            $exhibitionApplications = ExhibitionRegister::orderBy('updated_at', 'DESC')
+                                                        ->where('status','=',0)
+                                                        ->paginate(10);
+        }
+        else{
+            $exhibitionApplications = ExhibitionRegister::orderBy('updated_at', 'DESC')
+                                                        ->paginate(10);
+        }
+
+        return view('admin.exhibition', ['exhibitionApplications' => $exhibitionApplications, 'status' => $status]);
     }
 
     public function approveExpo($id){
@@ -187,7 +219,7 @@ class AdminController extends Controller
         $expo->status=1;
         $expo->save();
 
-        return redirect()->route('admin.expo');
+        return redirect()->back();
     }
 
     public function declineExpo($id){
@@ -195,8 +227,8 @@ class AdminController extends Controller
 
         $expo->status=0;
         $expo->save();
-
-        return redirect()->route('admin.expo');
+        
+        return redirect()->back();
     }
 
     public function approveExhibition($id){
@@ -205,7 +237,7 @@ class AdminController extends Controller
         $exhibition->status=1;
         $exhibition->save();
 
-        return redirect()->route('admin.exhibition');
+        return redirect()->back();
     }
 
     public function declineExhibition($id){
@@ -214,7 +246,7 @@ class AdminController extends Controller
         $exhibition->status=0;
         $exhibition->save();
 
-        return redirect()->route('admin.exhibition');
+        return redirect()->back();
     }
 
 }
