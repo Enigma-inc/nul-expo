@@ -1,60 +1,48 @@
-
-       <!-- Main Header -->
-    <header class="main-header">
-    	<div class="auto-container clearfix" style="display:flex;justify-content:space-between;align-items: center;">
+<header class="main-header">
+    	<div class="auto-container clearfix">
         	<!--Logo-->
-            <div class="logo" style="display:flex">
+            <div class="logo  clearfix" style="display:flex">
               <a href="https://www.africa-eu-renewables.org/" target="_blank"><img height="60px" src="/images/logo-recp.jpg?v=4" alt="RERIS 2018" title="RERIS 2018">
               <a href="http://www.nul.ls/" target="_blank" ><img height="60px" src="/images/logo-nul.jpg?v=4" alt="NULISTICE 2018" title="NULISTICE 2018">
-              </a></div>
+              </a>
+            </div>
+            
             <!--Main Menu-->
             <nav class="main-menu">
                 <div class="navbar-header">
-                    <!-- Toggle Button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <!-- Toggle Button -->      
+                    <button type="button" class="navbar-toggle margin-top-10" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-
-                <div class="navbar-collapse collapse clearfix">
+                
+                <div class="navbar-collapse clearfix collapse" aria-expanded="false" style="height: 2px;">                                                                                              
                     <ul class="navigation">
                         <li class="{{ Request::path() == '/' ? 'current' : '' }}">
                             <a href="/">Home</a>
                         </li>
-                        <li class="{{ Request::path() == '#' ? 'current' : '' }}">
-
-                            <a href="#">About</a>
-                            <ul class="dropdown-menu" role="menu">
+                        <li class=" dropdown {{ in_array(Request::path(), array('welcome','nulistice-concept','reris-concept','team','committees')) ? 'current' : '' }}"><a href="#">About</a>
+                            <ul class="submenu padding-left-10">
                                 <li>
-                                    <a href="welcome">
-                                        Welcome Note
-                                    </a>
+                                    <a href="welcome">Welcome Note</a>
                                 </li>
                                 <li>
-                                    <a href="nulistice-concept">
-                                        NULISTICE Concept
-                                    </a>
+                                    <a href="nulistice-concept">NULISTICE Concept</a>
                                 </li>
                                 <li>
-                                    <a href="reris-concept">
-                                        RERIS Concept
-                                    </a>
+                                    <a href="reris-concept">RERIS Concept</a>
                                 </li>
                                 <li>
-                                  <a href="team">
-                                    Organising Team
-                                  </a>
+                                    <a href="team">Organising Team</a>
                                 </li>
                                 <li>
-                                  <a href="committees">
-                                    Scientific Committees
-                                  </a>
+                                    <a href="committees">Scientific Committees</a>
                                 </li>
                             </ul>
                         </li>
-                        <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
+                            <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
                             <a href="schedule">Schedule</a>
                         </li>
                         <li  class="{{ Request::path() == 'fees' ? 'current' : '' }}">
@@ -110,10 +98,10 @@
                                 </ul>
                             </li>
                         @endif
-                    </li>
                     </ul>
                 </div>
             </nav>
-      </div>
-  </header>
             <!--Main Menu End-->
+            
+        </div>
+    </header>

@@ -161,7 +161,7 @@ class AdminController extends Controller
 
     public function expoData(){
         $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
-                          ->oldest()
+                          ->latest()
                           ->paginate(10);
         return view('admin.expo', ['expoApplications' => $expoApplications]);
     }
