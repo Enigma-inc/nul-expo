@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="row col-xs-12" style="margin-bottom:10px">
+        <div class="btn-group">
+        <a href="{{route('admin.exhibition',['status'=>'all'])}}" class="btn  {{ $status=='all' ? 'btn-primary' : '' }}">ALL</a>
+        <a href="{{route('admin.exhibition',['status'=>'approved'])}}"  class="btn {{ $status=='approved' ? 'btn-primary' : '' }}">APPROVED</a>
+        <a href="{{route('admin.exhibition',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">DECLINED</a>
+        </div>
+    </div>
    <div>
    @if($exhibitionApplications->count()>0)
      @foreach ($exhibitionApplications as $index =>$exhibitionApplication)
