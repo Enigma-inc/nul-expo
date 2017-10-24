@@ -14,7 +14,7 @@ class AddStatusColumnToExpoRegistersTable extends Migration
     public function up()
     {
         Schema::table('expo_register', function(Blueprint $table){
-            $table->boolean('status')
+            $table->boolean('status')->default(0)
                   ->after('summary');
         });
     }
