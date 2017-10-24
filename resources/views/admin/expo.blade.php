@@ -71,7 +71,7 @@
      @endforeach
      @else
         <div class="alert alert-info" role="alert">
-            There are no exhibition applications yet.
+            There are no applications on this stage.
         </div>         
       @endif
       <div class="pagination-links">
