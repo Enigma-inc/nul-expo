@@ -2,7 +2,6 @@
 
 @section('content')
 
-   <div>
    <div class="row col-xs-12" style="margin-bottom:10px">
         <div class="btn-group">
         <a href="{{route('admin.expo',['status'=>'all'])}}" class="btn  {{ $status=='all' ? 'btn-primary' : '' }}">ALL</a>
@@ -10,7 +9,8 @@
         <a href="{{route('admin.expo',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">DECLINED</a>
         </div>
     </div>
-   @if($expoApplications->count()>0)
+    <div class="row col-xs-12">
+     @if($expoApplications->count()>0)
      @foreach ($expoApplications as $index =>$expoApplication)
          <div class=" admin-abstract-list ">
            <div class="image">
