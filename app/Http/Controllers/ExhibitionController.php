@@ -50,7 +50,8 @@ class ExhibitionController extends Controller
             'country_phone_code'=>request('phone-code'),
             'phone'=>request('phone'),
             'country_flag'=>request('country-flag'),
-            'summary'=>request('summary')
+            'summary'=>request('summary'),
+            'status'=>0
 
           ]);
           LaravelSweetAlert::setMessage([
@@ -82,7 +83,8 @@ class ExhibitionController extends Controller
             'phone'=>request('phone'),
             'country_flag'=>request('country-flag'),
             'summary'=>request('summary'),
-            'option'=>request('option')
+            'option'=>request('option'),
+            'status'=>0
 
           ]);
           LaravelSweetAlert::setMessage([
