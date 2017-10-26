@@ -54,12 +54,7 @@ class ExhibitionController extends Controller
             'status'=>0
 
           ]);
-          LaravelSweetAlert::setMessage([
-                         'title' => 'Success!',
-                          'text'=>'Application for Expo Stall Recieved.',
-                         'type' => 'success'
-                     ]);
-          return redirect('/expo-and-exhibition');
+          return view('pages.thank-you.index');
 
         } catch (Exception $e) {
           LaravelSweetAlert::setMessage([
@@ -87,12 +82,7 @@ class ExhibitionController extends Controller
             'status'=>0
 
           ]);
-          LaravelSweetAlert::setMessage([
-                         'title' => 'Success',
-                          'text'=>'Application for Exhibition '.ucwords(str_replace('-',' ',request('option'))).' Stall Recieved.',
-                         'type' => 'success'
-                     ]);
-          return redirect('/expo-and-exhibition');
+           return view('pages.thank-you.index');
 
 
         } catch (Exception $e) {
@@ -104,4 +94,11 @@ class ExhibitionController extends Controller
 
         }
     }
+
+    public function thankYou()
+    {
+        return view('pages.thank-you.index');
+    }
+
+   
 }

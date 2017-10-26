@@ -36,6 +36,7 @@ Route::get('/expo/register', 'ExhibitionController@registerExpoView')->name('exp
 Route::get('/exhibition/register/{option}', 'ExhibitionController@registerExhibitionView')->name('exhibition.register.view');
 Route::post('/expo/register', 'ExhibitionController@submitExpoRegistration')->name('expo.register');
 Route::post('/exhibition/register', 'ExhibitionController@submitExhibitionRegistration')->name('exhibition.register');
+//Route::get('/thank-you', 'ExhibitionController@thankYou')->name('exhibition.thanks');
 
 Route::get('/contact-us','QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');

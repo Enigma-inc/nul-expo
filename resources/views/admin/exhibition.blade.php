@@ -52,7 +52,7 @@
                             <form action="{{route('exhibition.approve', ['id'=>$exhibitionApplication->id])}}" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="file-name" value="$exhibitionApplication->id">
-                                <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-check"></i> Approve</button>
+                                <button type="submit" class="btn btn-success btn-xs margin-right-2"> <i class="fa fa-check"></i> Accept</button>
                             </form>
                         </div>
                         @elseif($exhibitionApplication->status==1)

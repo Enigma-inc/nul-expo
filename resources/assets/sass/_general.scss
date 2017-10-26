@@ -54,3 +54,57 @@ input,
 
 
 }
+.thank-you-container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(to top, #f77062 0%, rgb(226, 62, 47) 100%);
+    padding-top: 100px;
+    padding-top: 10vh;
+    img{
+        height: 150px;
+         @media screen and(max-width:560px){
+                    width: 90%;
+                    height: auto;
+                    margin: 0 20px;
+            }
+    }
+    h1{
+            color: #fff;
+            font-size: 3.5em;
+            font-weight: 700;
+            line-height: 0.9em;
+            color: darken(#fff,5%);
+            @media screen and(max-width:560px){
+                    font-size: 2em;
+                     margin-top: 20px;
+            }
+    }
+    h2{
+            line-height: 0.8em;
+            color: darken(#fff,15%);
+            @media screen and(max-width:560px){
+                font-size: 1.1em;
+                margin-top:5px
+            }
+            
+    }
+    a{
+        color: lighten(rgb(241, 99, 84),10);
+        border-bottom: 1px dotted lighten(rgb(241, 99, 84),12);
+        text-decoration: none;
+    }
+}
+
+.main-menu .navbar-collapse > ul > li{
+        a {
+        font-size: 12px !important;
+        //line-height: 10px !important;
+        //padding: 15px 15px !important;
+    
+    }
+}

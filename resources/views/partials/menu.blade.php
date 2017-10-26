@@ -42,7 +42,10 @@
                                 </li>
                             </ul>
                         </li>
-                            <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
+                        <li  class="{{ Request::path() == 'expo-and-exhibition' ? 'current' : '' }}">
+                            <a href="expo-and-exhibition">Expo/Exhibition Register</a>
+                        </li>
+                        <li  class="{{ Request::path() == 'schedule' ? 'current' : '' }}">
                             <a href="schedule">Schedule</a>
                         </li>
                         <li  class="{{ Request::path() == 'fees' ? 'current' : '' }}">
