@@ -10,7 +10,7 @@
               </div>
 
               <div class="owl-carousel team">
-                  <!--Organising Team-->
+                  {{--  <!--Organising Team-->
                   <article class="team-member" >
                       <div class="inner">
                           <figure class="member-image"><img src="/images/team/maluke_letete.jpg" alt="" title=""></figure>
@@ -20,7 +20,7 @@
                               </div>
                           </div>
                       </div>
-                  </article>
+                  </article>  --}}
 
 
                   <article class="team-member" >
@@ -101,7 +101,7 @@
                       </div>
                   </article>
 
-                  <article class="team-member" >
+                  {{--  <article class="team-member" >
                       <div class="inner">
                           <figure class="member-image"><img src="/images/team/joseph_thabana.jpg" alt="" title=""></figure>
                           <div class="lower">
@@ -111,7 +111,7 @@
                               </div>
                           </div>
                       </div>
-                  </article>
+                  </article>  --}}
 
                   <article class="team-member" >
                       <div class="inner">

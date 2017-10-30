@@ -11,7 +11,7 @@
 
               <div class="team">
                   <!--Organising Team-->
-                  <article class="team-member col-xs-12 col-sm-4 col-md-3" >
+                  {{--  <article class="team-member col-xs-12 col-sm-4 col-md-3" >
                       <div class="inner">
                           <figure class="member-image"><img src="/images/team/maluke_letete.jpg" alt="" title=""></figure>
                           <div class="lower">
@@ -20,7 +20,7 @@
                               </div>
                           </div>
                       </div>
-                  </article>
+                  </article>  --}}
 
 
                   <article class="team-member col-xs-12 col-sm-4 col-md-3" >
@@ -102,7 +102,7 @@
                   </article>
 
                   <article class="team-member col-xs-12 col-sm-4 col-md-3" >
-                      <div class="inner">
+                      {{--  <div class="inner">
                           <figure class="member-image"><img src="/images/team/joseph_thabana.jpg" alt="" title=""></figure>
                           <div class="lower">
                               <div class="member-title">
@@ -110,7 +110,7 @@
 
                               </div>
                           </div>
-                      </div>
+                      </div>  --}}
                   </article>
 
                   <article class="team-member col-xs-12 col-sm-4 col-md-3" >

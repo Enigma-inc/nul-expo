@@ -16,11 +16,11 @@
                             <li> Dr Pulane Nkhabutlane, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Puleng Rathimo, National University of Lesotho (NUL), Lesotho</li>
                             <li> Dr Sissay Mekbib, National University of Lesotho (NUL), Lesotho</li>
-                            <li> Mr Joseph Thabana, National University of Lesotho (NUL), Lesotho</li>
+                            <!-- <li> Mr Joseph Thabana, National University of Lesotho (NUL), Lesotho</li> -->
                             <li> Mr Rets'elisitsoe Thamae, National University of Lesotho (NUL), Lesotho</li>
                             <li> Mrs Maleshoane Ramoholi, National University of Lesotho (NUL), Lesotho</li>
                             <li> Mr Kebitsamamng Mothibe, National University of Lesotho (NUL), Lesotho</li>
-                            <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li>
+                            <!-- <li> Dr Maluke Letete, National University of Lesotho (NUL), Lesotho</li> -->
                             <li> Dr Motlalepula Nete, Senior Lecturer, University Of Freestate, Bloenfontein, South Africa</li>
                             <li> Prof. Nelson Torto, African Academy Of Sciences, Nairobi Kenya</li>
                             <li> Prof. Hailemichael Alemu, National University Lesotho, Roma Lesotho</li>
