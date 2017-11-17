@@ -61,7 +61,7 @@ class AdminController extends Controller
     public function exportToExcel(Request $request,$conference)
     {
 
-        $submissions=$this->getConferenceSubmissions($conference);
+        $submissions=$this->getConferenceSubmissions($conference,false);
 
       //  return $submissions;
          $submissionList= SubmissionExportTransformer::transform($submissions);
