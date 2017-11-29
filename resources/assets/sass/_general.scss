@@ -99,7 +99,49 @@ input,
         text-decoration: none;
     }
 }
-
+.application-deadline-home{
+    margin:0 60px;
+    @media screen and (max-width:535px){
+           margin:0;
+         }
+}
+.expo-deadline-container{
+     display: flex;
+     border: dotted 1px rgba(226, 62, 47,0.2);
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     text-decoration: none;
+     flex-wrap:wrap;
+     &:hover{text-decoration: none;}
+     @media screen and (max-width:535px){
+             justify-content: center;
+         }
+     img{
+         height: 70px;
+         @media screen and (max-width:535px){
+             display: none;
+         }
+     }
+     h2{
+             font-size: 1.2em;
+             margin: 5px 0;
+             color: #e13f30;
+              @media screen and (max-width:535px){
+              font-size: 0.9em;
+         }
+     }
+     h1{
+           font-size: 2em;
+            font-weight: 600;
+            margin: 5px 10px 0 0;
+            color: #636b6f;
+             @media screen and (max-width:535px){
+              font-size: 1.4em;
+         }
+            
+     }
+}
 .main-menu .navbar-collapse > ul > li{
         a {
         font-size: 12px !important;

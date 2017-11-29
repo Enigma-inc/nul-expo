@@ -5,6 +5,7 @@
           <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
               <h2 class="header">Expo and Exhibition</h2>
           </div>
+          @include('pages.expo-exhibition.deadline')
           <div class="row clearfix">
               <div class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                   <div class="row margin-left-10">
