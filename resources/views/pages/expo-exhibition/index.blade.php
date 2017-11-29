@@ -37,7 +37,7 @@
                   </p>
 
                   <p class="text-align-just">
-                    Innovators in this category form part of the innovation market which will be held under tents on the grounds of ‘Manthabiseng Convention Centre. Tables,
+                    Innovators in this category form part of the innovation market which will be held at Pioneer Mall. Tables,
                     chairs and poster stands are provided for display. Applicants are encouraged to have posters. However, details on poster dimensions will be provided soon.
                   </p>
 
