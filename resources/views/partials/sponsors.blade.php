@@ -16,6 +16,7 @@
                 <li><a href="http://lcedn.com/" target="_blank"><img src="/images/sponsors/lcedn.jpg" alt="" title=""></a></li>
                 <li><a href="https://energypedia.info/wiki/Main_Page" target="_blank"><img src="/images/sponsors/energypedia.jpg" alt="" title=""></a></li>
                 <li><a href="http://www.boliba.co.ls/index.php" target="_blank"><img src="/images/sponsors/boliba.jpg" alt="Biliba" title=""></a></li>
+                <li><a href="http://www.etl.co.ls" target="_blank"><img src="/images/sponsors/econet.jpg" alt="Econet" title=""></a></li>
             </ul>
         </div>
     </section>
