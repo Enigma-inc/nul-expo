@@ -10,7 +10,7 @@
 <!-- Stylesheets -->
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/css/revolution-slider.css" rel="stylesheet">
-<link href="/css/style.css" rel="stylesheet">
+<link href="/css/style.css?v=2" rel="stylesheet">
 <link href="/css/owl.carousel.min.css" rel="stylesheet" >
 <link  href="/css/owl.theme.default.min.css" rel="stylesheet">
 <link  href="/css/owl.css" rel="stylesheet">
