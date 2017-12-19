@@ -32,14 +32,14 @@
 </head>
 
 <body>
-<div class="page-wrapper">
-
-
-
-     @include('partials.menu')
+<div class="page-wrapper" >
+     <div>
+         @include('partials.menu')
      @yield('content')
-     @include('partials.sponsors')
-     @include('partials.footer')
+     </div>
+     <div>
+        @include('partials.footer')
+     </div>
     <!--End Main Header -->
 
     <!-- Main Slider -->
