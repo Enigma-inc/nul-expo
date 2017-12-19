@@ -46,7 +46,7 @@
                             <a href="expo-and-exhibition">Expo/Exhibition Register</a>
                         </li>
                         <li  class="">
-                            <a href="{{url('download?file-name=schedule')}}">Programme</a>
+                            <a href="{{url('download?file-name=programme')}}">Programme</a>
                         </li>
                         <li  class="{{ Request::path() == 'fees' ? 'current' : '' }}">
                             <a href="fees">Fees</a>

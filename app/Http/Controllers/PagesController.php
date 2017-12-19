@@ -27,10 +27,10 @@ class PagesController extends Controller
     {
       return view('pages.team.index');
     }
-    public function schedule()
-    {
-        return view('pages.schedule.index');
-    }
+    // public function schedule()
+    // {
+    //     return view('pages.schedule.index');
+    // }
 
     public function speakers()
     {

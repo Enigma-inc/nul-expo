@@ -18,6 +18,8 @@
                 <li><a href="http://www.boliba.co.ls/index.php" target="_blank"><img src="/images/sponsors/boliba.jpg" alt="Biliba" title=""></a></li>
                 <li><a href="http://www.etl.co.ls" target="_blank"><img src="/images/sponsors/econet.jpg" alt="Econet" title=""></a></li>
                 <li><a href="http://www.pioneer.co.ls" target="_blank"><img src="/images/sponsors/pioneer.jpg" alt="Pioneer Mall" title=""></a></li>
+                <li><a href="http://coderina.org/" target="_blank"><img src="/images/sponsors/coderina.jpg" alt="Coder In Africa" title=""></a></li>
+                <li><a href="http://www.gov.ls/" target="_blank"><img src="/images/sponsors/code-of-arms.jpg" alt="Government of Lesotho" title=""></a></li>                
             </ul>
         </div>
     </section>
