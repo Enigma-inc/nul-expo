@@ -1,6 +1,8 @@
-
+  <div class="row text-align-center">
+            <h2 class="color-white header">sponsors and partners</h2>
+</div>
 <section class="sponsors profile-sponsors">
-
+    
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.nul.ls" target="_blank"><img src="/images/sponsors/national-university.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="https://www.africa-eu-renewables.org" target="_blank"><img src="/images/sponsors/recp.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="https://www.giz.de/en/html/index.html" target="_blank"><img src="/images/sponsors/giz.jpg" alt="" title=""></a>
