@@ -12,10 +12,8 @@
                     <p>23 January, 2018</p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 text-right margin-bottom-20">
-                    <a href="abstract" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-download"></span> Download Abstract Guidelines</a>
-                    <a href="profile" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-file"></span> Submit Your Abstract <span class="color-primary">Closed</span></a>
+                    <a href="{{url('download?file-name=schedule')}}" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
+                                class="fa fa-download"></span> Download Programme</a>
                     <a href="{{route('contact.create')}}" class=" col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-envelope"></span> Contact us</a>
                 </div>
