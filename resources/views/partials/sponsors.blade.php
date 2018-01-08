@@ -9,7 +9,7 @@
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="https://energypedia.info/wiki/Main_Page" target="_blank"><img src="/images/sponsors/energypedia.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.unipid.fi" target="_blank"><img src="/images/sponsors/inipid.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.microenergy-international.com" target="_blank"><img src="/images/sponsors/micro-energy.jpg" alt="" title=""></a>
-    	        <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.enigma.co.ls" target="_blank"><img src="/images/sponsors/enigma.jpg" alt="" title=""></a>
+    	          <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.enigma.co.ls" target="_blank"><img src="/images/sponsors/enigma.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="#" target="_blank"><img src="/images/sponsors/sacree.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://lcedn.com/" target="_blank"><img src="/images/sponsors/lcedn.jpg" alt="" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.boliba.co.ls/index.php" target="_blank"><img src="/images/sponsors/boliba.jpg" alt="Biliba" title=""></a>
@@ -18,5 +18,8 @@
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://coderina.org/" target="_blank"><img src="/images/sponsors/coderina.jpg" alt="Coder In Africa" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.gov.ls/" target="_blank"><img src="/images/sponsors/coat-of-arms.jpg" alt="Government of Lesotho" title=""></a>
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="https://www.globalshapers.org/hubs/maseru-hub" target="_blank"><img src="/images/sponsors/global-shapers.jpg" alt="Global Shapers" title=""></a>                                         
+                <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="https://www.thepost.co.ls/" target="_blank"><img src="/images/sponsors/the-post.jpg" alt="The Post" title=""></a>                                         
+                <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="#" target="_blank"><img src="/images/sponsors/maseru-mall.jpg" alt="Maseru Mall" title=""></a>                                         
+                <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.lpb.co.ls/" target="_blank"><img src="/images/sponsors/post-bank.jpg" alt="Post Bank" title=""></a>                                         
         
     </section>
