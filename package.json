@@ -24,6 +24,8 @@
     "moment": "^2.18.1",
     "sweetalert2": "^6.6.2",
     "vue2-dropzone": "^2.2.6",
-    "vuelidate": "^0.4.2"
+    "vuebar": "^0.0.17",
+    "vuelidate": "^0.4.2",
+    "vuetify": "^0.17.6"
   }
 }

@@ -99,6 +99,10 @@ class ExhibitionController extends Controller
     {
         return view('pages.thank-you.index');
     }
+    public function live()
+    {
+        return view('pages.live');
+    }
 
    
 }

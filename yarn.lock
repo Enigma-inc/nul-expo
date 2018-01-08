@@ -5804,11 +5804,19 @@ vue@^2.0.0, vue@^2.1.10:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.2.6.tgz#451714b394dd6d4eae7b773c40c2034a59621aed"
 
+vuebar@^0.0.17:
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/vuebar/-/vuebar-0.0.17.tgz#62de08ffed46291d34588201013d887aa5d332fe"
+
 vuelidate@^0.4.2:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/vuelidate/-/vuelidate-0.4.3.tgz#421a532359e63beb9822788c4f2d2036536d9ba2"
   dependencies:
     babel-plugin-transform-inline-environment-variables "^0.0.2"
+
+vuetify@^0.17.6:
+  version "0.17.6"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.17.6.tgz#09197c0baba675a13ea749e326ff47df367b21a8"
 
 ware@^1.2.0:
   version "1.3.0"

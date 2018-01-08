@@ -1,5 +1,7 @@
 <?php
 
+use App\NulisticeEvent;
+
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -20,5 +22,24 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(NulisticeEvent::class, function (Faker\Generator $faker) {
+
+    return [
+        'title' => "NULISTICE.III.1: ENTREPRENEURSHIP AND INFORMATION TECHNOLOGY",
+        'room' => "MACHACHE",
+        'body' => $faker->paragraph,
+        'time' => $faker->word,
+    ];
+});
+$factory->define(NulisticeEvent::class, function (Faker\Generator $faker) {
+
+    return [
+        'title' => "RERIS.II.2: DECENTRALISED RENEWABLE AND HOUSEHOLD ENERGY SOLUTIONS II",
+        'room' => "PHUTHIATSANA 2",
+        'body' => $faker->paragraph,
+        'time' => $faker->word,
     ];
 });

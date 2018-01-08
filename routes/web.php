@@ -1,5 +1,7 @@
 <?php
 
+use App\ExhibitionRegister;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,6 +38,7 @@ Route::get('/exhibition/register/{option}', 'ExhibitionController@registerExhibi
 Route::post('/expo/register', 'ExhibitionController@submitExpoRegistration')->name('expo.register');
 Route::post('/exhibition/register', 'ExhibitionController@submitExhibitionRegistration')->name('exhibition.register');
 Route::get('/thank-you', 'ExhibitionController@thankYou')->name('exhibition.thanks');
+Route::get('live', 'ExhibitionController@live')->name('expo.live');
 
 Route::get('/contact-us','QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
