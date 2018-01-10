@@ -7,10 +7,12 @@
 require('./bootstrap');
 import Vuetify from 'vuetify';
 import Vuebar from 'vuebar';
+import Carousel3d  from 'vue-carousel-3d';
 
 
 Vue.use(Vuetify)
 Vue.use(Vuebar)
+Vue.use(Carousel3d)
 
 Vue.component('layout',require("./components/live/layout.vue")) ;
 

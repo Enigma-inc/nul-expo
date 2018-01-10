@@ -7,7 +7,7 @@
         <a href="{{route('admin.exhibition',['status'=>'approved'])}}"  class="btn {{ $status=='approved' ? 'btn-primary' : '' }}">APPROVED</a>
         <a href="{{route('admin.exhibition',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">DECLINED</a>
         </div>
-    </div>
+    </div> 
    <div class="row col-xs-12">
    @if($exhibitionApplications->count()>0)
      @foreach ($exhibitionApplications as $index =>$exhibitionApplication)
