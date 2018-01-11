@@ -5,7 +5,12 @@
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch-poll": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "cleanup": "rimraf public/css/app*.css   public/js/app*.js public/admin-assets/js/app*.js public/admin-assets/css/app*.css",
+    "predev": "npm run cleanup",
+    "prewatch": "npm run cleanup",
+    "prehot": "npm run cleanup",
+    "preproduction": "npm run cleanup"
   },
   "devDependencies": {
     "axios": "^0.15.3",
@@ -22,6 +27,7 @@
     "global": "^4.3.2",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
+    "rimraf": "^2.6.2",
     "sweetalert2": "^6.6.2",
     "vue-carousel": "^0.6.5",
     "vue-carousel-3d": "^0.1.19",

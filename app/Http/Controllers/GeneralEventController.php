@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\GeneralEvent;
+use App\RerisEvent;
+use App\NulisticeEvent;
 use Illuminate\Http\Request;
 
 class GeneralEventController extends Controller
@@ -19,11 +21,12 @@ class GeneralEventController extends Controller
      */
     public function index(Request $request)
     {
-        $generalEvents = GeneralEvent::latest()->get();
-
+       
         if($request->wantsJson()){
+            $generalEvents = GeneralEvent::where('status','=',1)->latest()->get();
             return $generalEvents;
         }
+        $generalEvents = GeneralEvent::latest()->get();
         return view('admin.events.general.index')
                 ->with('generalEvents', $generalEvents);
     }
@@ -116,5 +119,30 @@ class GeneralEventController extends Controller
         return redirect()->route('generalEvents.index');
 
 
+    }
+
+    public function toggleStatus($type,$id){
+
+         if($type == "nulistice"){
+
+            $event = NulisticeEvent::findorfail($id);
+            $event->status =! $event->status;
+            $event->save();
+            return $event;
+
+         }else if($type == "reris"){
+
+            $event = RerisEvent::findorfail($id);
+            $event->status =! $event->status;
+            $event->save();
+            return $event;
+
+         }
+         else{
+            $event = GeneralEvent::findorfail($id);
+            $event->status =!$event->status;
+            $event->save();
+            return $event;
+         }
     }
 }
