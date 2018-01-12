@@ -17,3 +17,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('events/nulistice','NulisticeEventController@index');
+Route::get('events/general','GeneralEventController@index');
+Route::get('events/reris','RerisEventController@index');

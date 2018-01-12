@@ -208,4 +208,33 @@ import general from './general';
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
     background-color: rgba(255, 255, 255,.5);
 }
+
+
+.fade-enter-active,
+.fade-leave-active,
+.fade-leave-to {
+	animation: flipOutX;
+}
+
+.fade-enter,
+.fade-leave,
+.fade-leave-to {
+	animation: flipOutX;
+}
+@keyframes flipOutX {
+  from {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
 </style>

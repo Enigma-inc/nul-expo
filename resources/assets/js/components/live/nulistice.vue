@@ -55,14 +55,15 @@
 export default{
     data(){
         return{
-            event:null
+            events: [],
+            src:'#'
         }
     },
     mounted(){
       
         axios.get('../api/events/nulistice').then(response=>{
             
-            this.event=response.data;
+            this.events=response.data;
     });
     },
     methods:{

@@ -87,6 +87,7 @@ Route::group(['middleware' => 'auth'], function () {
     ]);
 });
 Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
+    //Abstracts
     Route::get('/','AdminController@index')->name('admin.home');
     Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
     Route::get('/statistics/{conference}', 'AdminController@statistics')->name('stats');
@@ -101,5 +102,32 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
     Route::get('/exhibition', 'AdminController@exhibitionData')->name('admin.exhibition');
     Route::post('/exhibition/{id}/approve', 'AdminController@approveExhibition')->name('exhibition.approve');
     Route::post('/exhibition/{id}/decline', 'AdminController@declineExhibition')->name('exhibition.decline');
+
+
+    Route::group(['middleware' => ['auth']], function () {
+        //General Events
+        Route::get('/general-events', 'GeneralEventController@index')->name('generalEvents.index');
+        Route::get('general-events/create', 'GeneralEventController@create')->name('generalEvent.create');
+        Route::post('/general-events/store', 'GeneralEventController@store')->name('generalEvent.store');
+        Route::get('/general-events/{id}/edit', 'GeneralEventController@edit')->name('generalEvent.edit');
+        Route::patch('/general-events/{generalEvent}/update', 'GeneralEventController@update')->name('generalEvent.update');
+        Route::post('/general-events/{id}/destroy', 'GeneralEventController@destroy')->name('generalEvent.destroy');
+
+        //Nulistice Events
+        Route::get('/nulistice-events', 'NulisticeEventController@index')->name('nulisticeEvents.index');
+        Route::get('nulistice-events/create', 'NulisticeEventController@create')->name('nulisticeEvent.create');
+        Route::post('/nulistice-events/store', 'NulisticeEventController@store')->name('nulisticeEvent.store');
+        Route::get('/nulistice-events/{id}/edit', 'NulisticeEventController@edit')->name('nulisticeEvent.edit');
+        Route::patch('/nulistice-events/{nulisticeEvent}/update', 'NulisticeEventController@update')->name('nulisticeEvent.update');
+        Route::post('/nulistice-events/{id}/destroy', 'NulisticeEventController@destroy')->name('nulisticeEvent.destroy');
+
+        //Reris Events
+        Route::get('/reris-events', 'RerisEventController@index')->name('rerisEvents.index');
+        Route::get('reris-events/create', 'RerisEventController@create')->name('rerisEvent.create');
+        Route::post('/reris-events/store', 'RerisEventController@store')->name('rerisEvent.store');
+        Route::get('/reris-events/{id}/edit', 'RerisEventController@edit')->name('rerisEvent.edit');
+        Route::patch('/reris-events/{nulisticeEvent}/update', 'RerisEventController@update')->name('rerisEvent.update');
+        Route::post('/reris-events/{id}/destroy', 'RerisEventController@destroy')->name('rerisEvent.destroy');
+    });
 });
 

@@ -1,53 +1,46 @@
 <template>
-<v-flex class="event" v-if="event">
-   <v-card color="blue-grey darken-2" class="white--text event-card" >
+<v-flex class="event" v-if="events.length>0"> 
+<carousel-3d  :perspective="180" :controls-visible="true" :width="600" :animationSpeed=900 :autoplay="true" :autoplay-timeout="5000" :display="1">
+   <slide  class="card white--text event-card"  v-for="event,index in events" :key="event.id" :index="index">
             <v-card-title primary-title>
-              <div class="headline">
-                  <div class="title">Corporate Pitch Session</div>
-                  <div class="details">
-                      <div class="time">09:00</div>
-                      <div class="room">MACHACHE</div>
-                  </div>
-              </div>
-              <div id="nulistice" class="body" v-bar="{
+                <div class="headline">
+                    <div class="title">{{event.title}}</div>
+                    <div class="details">
+                        <div class="time">{{event.time}}</div>
+                        <div class="room">{{event.room}}</div>
+                    </div>
+                </div>
+                <div id="nulistice" class="body" v-bar="{
                   preventParentScroll:false,
                   scrollThrottle:30
               }" >
-                   <div class="scrollable">
-                    <p><b>Chair:</b> Dr Moeketsi Mpholo, NUL</p>
-                   <p> Dr Timothy Thamae, NUL
-                    Mr Niklas Hayek, RECP
-                    Dr Ed Brown, LECDN
-                    Ms Eva Kagiri, UniPID
-                    Ms Ranisha Banset, Energypedia
-                    Ms Noara Kebir, Microenergy Systems
-                    Mr Kuda Ndhlukula, SACREEE
-                    Prof. Abdellatif Zerga, PAUWES
-                    Mr Saleem Ismail, Enigma
-                    Mr Phelane Phomane, Tangerine
-                    Mr Lebohang Ramaisa, Econet Telecom Lesotho
-                    </p>
-                   </div>
-              </div>
+                    <div class="scrollable">
+                        {{event.body}}
+                    </div>
+                </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn flat dark>View Full Program</v-btn>
+                <v-btn flat dark>View Full Program</v-btn>
             </v-card-actions>
-    </v-card>
+   </slide>
+</carousel-3d>
+  
  </v-flex>
 </template>
 <script>
 export default{
     data(){
         return{
-            event:null
+            events:[],
+            src:'#'
         }
     },
     mounted(){
       
-        axios.get('../api/events/nulistice').then(response=>{
+        axios.get('../api/events/general').then(response=>{
             
-            this.event=response.data;
+            this.events=response.data;
+            
     });
     },
     methods:{

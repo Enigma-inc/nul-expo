@@ -21,7 +21,7 @@ class CreateNulisticeEventsTable extends Migration
             $table->text('body')->nullable();
             $table->timestamps();
         });
-    }
+    } 
 
     /**
      * Reverse the migrations.
