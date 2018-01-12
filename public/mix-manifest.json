@@ -1,16 +1,11 @@
 {
-  "/js/app.js": "/js/app.c2a80f8ca3961a791902.js",
+  "/js/app.js": "/js/app.afc865efc31d1e480622.js",
   "/css/app.css": "/css/app.3a9a49d134e08b4046a1d12fcf082fe7.css",
   "/admin-assets/css/app.css": "/admin-assets/css/app.71a18f1798e30f5fb7388b75a16a455f.css",
-  "/css/helpers.css": "/css/helpers.c7673683e839b7e063b46e50ebdc2209.css",
-  "/js/app-live.js": "/js/app-live.a79b34f83c98e09c783c.js",
-  "/admin-assets/js/app.js": "/admin-assets/js/app.f87319f0c8a586681ef2.js",
+  "/css/helpers.css": "/css/helpers.132581ea27cf9ef8e06509e273e58b69.css",
+  "/js/app-live.js": "/js/app-live.94db7ae40e2ece0e154a.js",
+  "/admin-assets/js/app.js": "/admin-assets/js/app.b02e037eb34cb7291693.js",
   "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.fbf7658aab397f9970912849bc0f9874.js",
   "/admin-assets/css/vendor.css": "/admin-assets/css/vendor.c495654869785bc3df60216616814ad1.css",
   "/css/vuetify.css": "/css/vuetify.4c2629d5e12ab0c66b5c3fd1b3a90a19.css",
-  "/js/compiled/app.js": "/js/compiled/app.731bd9d16088f521c146.js",
-  "/css/compiled/app.css": "/css/compiled/app.496c5dcfb30c1c2d530b0a3f4105cd8d.css",
-  "/admin-assets/css/compiled/app.css": "/admin-assets/css/compiled/app.cd6cdc9b0014ced8d8848f56607f73ea.css",
-  "/js/compiled/app-live.js": "/js/compiled/app-live.94db7ae40e2ece0e154a.js",
-  "/admin-assets/js/compiled/app.js": "/admin-assets/js/compiled/app.b02e037eb34cb7291693.js"
 }

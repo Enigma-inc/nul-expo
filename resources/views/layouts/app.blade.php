@@ -47,7 +47,10 @@
                     <ul class="nav navbar-nav">
                        <li><a href="{{route('admin.home')}}">Abstracts</a></li>
                        <li><a href="{{route('admin.expo')}}">Expo Applications</a></li>
-                       <li><a href="{{route('admin.exhibition')}}">Exhibition Applications</a></li>                       
+                       <li><a href="{{route('admin.exhibition')}}">Exhibition Applications</a></li>
+                       <li><a href="{{route('generalEvents.index')}}">General</a></li>                       
+                       <li><a href="{{route('nulisticeEvents.index')}}">Nulistice</a></li>                       
+                       <li><a href="{{route('rerisEvents.index')}}">Reris</a></li>                                                                     
                        {{-- <li><a href="{{route('stats',['conference'=>'all'])}}">Statistics</a></li> --}}
                     </ul>
 
