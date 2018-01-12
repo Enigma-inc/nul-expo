@@ -24,11 +24,11 @@
     <v-content>
       <v-container>
         <v-layout wrap >
-          <nulistice></nulistice>  
-          <reris></reris> 
+          <nulistice></nulistice>              
+          <reris></reris>
         </v-layout >
         <v-layout wrap>
-          <general></general>
+          <!-- <general></general> -->
         </v-layout>
       </v-container>
     </v-content>
@@ -51,34 +51,89 @@ import general from './general';
 </script>
 
 <style lang="scss">
+ .color-dark{
+    color:lighten(#000,10%);
+ }
   .event-card{
            margin: 5px;
+       .card__title{
+          padding:0;
+        }
+        .card__text{
+          padding:0;
+        }
         .headline{
                 width: 100%;
                 .title{
-                    font-size: 1.2rem !important;
+                    font-size: 1rem !important;
                     font-weight: 600 !important;
-                    padding-bottom: 8px;
+                    padding: 10px 5px;
+                    
                 }
                 .details{
                     display: flex;
                     justify-content:space-between;
                     background: darken(rgb(106, 171, 62),3%);
-                    font-size: 1.1rem;
+                    font-size: 0.9rem;
                     font-weight: 600;
-                    color:lighten(#000,30%);
-                    padding: 0 10px;
+                    padding: 0 7px;
+                    .icon{
+                      color:rgba(255,255,255,0.3);
+                    }
                 }
             
         }
    .body{
-                 text-align: justify;
-                 padding-top: 20px;
-                 .scrollable{
-                     height: 200px !important;
-                 padding-right: 20px;
-                     
+           display: flex;
+           flex-direction: column;
+           margin-top: 8px;
+           .chair,.presentation{
+               display: flex;
+               align-items: center;
+               .flag{
+                  
+                  margin-right: 10px;
+                  align-self: flex-start;
+                  
+                  img{
+                     width: 60px;
+                      width: 60px;
+                    }
+               }
+               .details{
+                     display: flex;
+                     align-items: flex-start;
+                     flex-direction: column;
+                  .title{
+                    text-transform: uppercase;
+                    font-size: 0.9rem !important;
+                    font-weight: 600;
+                    margin-right: 5px;
+                  }
+               }
+               .name{
+                     font-weight: 300;
+               }
+               .presenter{
+                 display: flex;
+                 align-items: flex-start;
+                 padding-left:15px;
+                 span{
+                   padding-bottom: 3px;
+                   line-height:16px;
+                   margin-right: 5px;
                  }
+                p{
+                   font-weight: 400;
+                   font-size: 0.9rem;
+                   font-style: italic;
+                }
+               }
+           }
+           .presentation{
+             margin-top: 30px;
+             
+           }
          }
  
 
