@@ -3,7 +3,7 @@
         <h5 v-if="!abstract"><div class="alert alert-info margin-20" role="alert">Pick name on the left to view abstracts</div></h5>
         <div class="panel panel-default margin-20" v-if="abstract">
         <table class="header-font">
-            <tr>
+            <tr> 
                 <th>{{ abstract.title }} {{ abstract.name }} {{ abstract.surname }}</th>
                 <th>{{ abstract.organisation }}</th>
                 <th>{{ abstract.country }}</th>

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="col-md-12">
     <a v-if="status" @click="changeStatus" class="btn btn-xs btn-success">Change Status</a>
 </div>
 </template>
@@ -8,7 +8,8 @@
         props:['type'],
         data(){
             return{
-                status: ''
+                status: '',
+                eventStatus: ''
             }
         }, 
         mounted(){
