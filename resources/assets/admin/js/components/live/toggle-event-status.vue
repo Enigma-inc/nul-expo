@@ -1,24 +1,23 @@
 <template>
-<div class="col-md-12">
-    <a v-if="status" @click="changeStatus" class="btn btn-xs btn-success">Change Status</a>
+<div>
+    <a  @click="changeStatus" class="btn btn-success btn-xs margin-right-5">Change Status</a>
 </div>
 </template>
 <script>
     export default{
-        props:['type'],
+        props:['type','event'],
         data(){
             return{
-                status: '',
-                eventStatus: ''
+                
             }
         }, 
         mounted(){
-            
+            console.log('status changed');
         },
         methods: {
             changeStatus(){
-                axios.get(`/events/${this.status}`).then(response=>{
-                    this.eventStatus=response.data;
+                axios.post(`../api/events/${this.event.id}/toggle-status`,{type:this.type}).then(response=>{
+                     
                 });
             }
         }

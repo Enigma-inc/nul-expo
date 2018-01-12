@@ -128,6 +128,11 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
         Route::get('/reris-events/{id}/edit', 'RerisEventController@edit')->name('rerisEvent.edit');
         Route::patch('/reris-events/{nulisticeEvent}/update', 'RerisEventController@update')->name('rerisEvent.update');
         Route::post('/reris-events/{id}/destroy', 'RerisEventController@destroy')->name('rerisEvent.destroy');
+
+
+
+       
+
     });
 });
 

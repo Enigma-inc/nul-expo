@@ -122,7 +122,9 @@ class GeneralEventController extends Controller
 
     }
 
-    public function toggleStatus($type,$id){
+    public function toggleStatus(Request $request,$id){
+
+        $type=request('type');
 
          if($type == "nulistice"){
 
