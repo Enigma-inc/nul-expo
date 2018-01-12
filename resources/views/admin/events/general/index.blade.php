@@ -51,6 +51,7 @@
                                                 <input type="text" name="file-name"class="" value="{{$generalEvent->id}}" hidden>
                                                 <button type="submit" class="btn btn-danger btn-xs margin-right-5"> Remove</button>
                                             </form>
+                                            <toggle-status type="general"></toggle-status>
                                         </div>
                                     </td>
                                 </tr>

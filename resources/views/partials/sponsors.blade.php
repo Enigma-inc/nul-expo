@@ -21,5 +21,5 @@
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="https://www.thepost.co.ls/" target="_blank"><img src="/images/sponsors/the-post.jpg" alt="The Post" title=""></a>                                         
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="#" target="_blank"><img src="/images/sponsors/maseru-mall.jpg" alt="Maseru Mall" title=""></a>                                         
                 <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.lpb.co.ls/" target="_blank"><img src="/images/sponsors/post-bank.jpg" alt="Post Bank" title=""></a>                                         
-        
+                <a class="col-xs-3 col-sm-2 col-md-1 margin-bottom-10 margin-0" href="http://www.metropolitan.co.ls/" target="_blank"><img src="/images/sponsors/metropolitan.jpg" alt="Metropolitan" title=""></a>                                                 
     </section>

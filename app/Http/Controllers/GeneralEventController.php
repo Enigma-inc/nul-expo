@@ -26,9 +26,10 @@ class GeneralEventController extends Controller
             $generalEvents = GeneralEvent::where('status','=',1)->latest()->get();
             return $generalEvents;
         }
+        
         $generalEvents = GeneralEvent::latest()->get();
         return view('admin.events.general.index')
-                ->with('generalEvents', $generalEvents);
+               ->with('generalEvents', $generalEvents);
     }
 
     /**

@@ -13,7 +13,22 @@ class AddStatusPresenterChairColumnsToRerisEventsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('reris_events', function(Blueprint $table){
+            $table->boolean('status')->default(0)
+                  ->after('body');
+            $table->string('presenter')
+                  ->after('status');   
+            $table->string('presenter_country')
+                  ->after('presenter');   
+            $table->string('presenter_country_flag')
+                  ->after('presenter_country');   
+            $table->string('chair')
+                  ->after('presenter_country_flag');
+            $table->string('chair_country')
+                  ->after('chair');
+            $table->string('chair_country_flag')
+                  ->after('chair_country');
+        });
     }
 
     /**
@@ -23,6 +38,14 @@ class AddStatusPresenterChairColumnsToRerisEventsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('reris_events', function(Blueprint $table){
+            $table->dropColumn('status');
+            $table->dropColumn('presenter');
+            $table->dropColumn('presenter_country');
+            $table->dropColumn('presenter_country_flag');
+            $table->dropColumn('chair');
+            $table->dropColumn('chair_country');            
+            $table->dropColumn('chair_country_flag');            
+        });
     }
 }
