@@ -51,6 +51,9 @@
                                                 <input type="text" name="file-name"class="" value="{{$nulisticeEvent->id}}" hidden>
                                                 <button type="submit" class="btn btn-danger btn-xs margin-right-5"> Remove</button>
                                             </form>
+                                            <toggle-event-status :type="'nulistice'" :event="{{$nulisticeEvent}}">
+                                                
+                                            </toggle-event-status>
                                         </div>
                                     </td>
                                 </tr>

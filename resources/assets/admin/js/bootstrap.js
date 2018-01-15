@@ -27,7 +27,7 @@ window.EventBus = new Vue();
 
 window.axios = require('axios');
 window.swal = require('sweetalert2');
-window.moment=require('moment');
+window.moment = require('moment');
 
 
 window.axios.defaults.headers.common = {
