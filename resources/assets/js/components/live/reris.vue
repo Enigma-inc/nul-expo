@@ -1,9 +1,9 @@
 <template>
-<v-flex class="event" v-if="event">
+<v-flex class="event" >
    <v-card color="blue-grey darken-2" class="white--text event-card" hover>
             <v-card-title primary-title>
               <div class="headline">
-                  <div class="title ">{{event.title}}</div>
+                  <div class="title ">SESION TITLE</div>
                   <div class="details">
                       <div class="time">
                           <v-icon left>access_time</v-icon>
