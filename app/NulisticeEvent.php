@@ -11,5 +11,6 @@ class NulisticeEvent extends Model
 
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['title', 'room', 'time', 'body'];
+    protected $fillable = ['title', 'room', 'time', 'session_title', 'chair', 
+                           'chair_country', 'presenter', 'presenter_country'];
 }

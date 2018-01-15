@@ -15,7 +15,7 @@ use App\Mail\AbstractReceived;
 use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
-use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\File; 
 
 class AbstractController extends Controller
 {

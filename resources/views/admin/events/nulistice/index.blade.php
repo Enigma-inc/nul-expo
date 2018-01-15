@@ -54,6 +54,7 @@
                                             <toggle-event-status :type="'nulistice'" :event="{{$nulisticeEvent}}">
                                                 
                                             </toggle-event-status>
+                                            
                                         </div>
                                     </td>
                                 </tr>

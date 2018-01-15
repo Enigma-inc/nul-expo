@@ -51,7 +51,7 @@ class GeneralEventController extends Controller
     public function store(Request $request)
     {
         $generalEventObject = GeneralEvent::create([
-            'title' => request('title'),
+            'presentation_title' => request('presentation_title'),
             'room' => request('room'),
             'time' => request('time'),
             'body' => request('body')
@@ -96,7 +96,7 @@ class GeneralEventController extends Controller
     {
         $generalEvent = GeneralEvent::find($id);
 
-        $generalEvent->title = $request->input('title');
+        $generalEvent->presentation_title = $request->input('presentation_title');
         $generalEvent->room = $request->input('room');
         $generalEvent->time = $request->input('time');
         $generalEvent->body = $request->input('body');

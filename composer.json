@@ -8,6 +8,7 @@
         "php": ">=5.6.4",
         "aws/aws-sdk-php": "~3.0",
         "consoletvs/charts": "5.*",
+        "doctrine/dbal": "^2.6",
         "eduardokum/laravel-mail-auto-embed": "^1.0",
         "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.4.*",

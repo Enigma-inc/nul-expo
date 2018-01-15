@@ -75,7 +75,7 @@
                                                 </span>
                                             @endif
                                         </div>
-                                    </div>
+                                    </div> 
 
                                     <div class="form-group{{ $errors->has('country') ? ' has-error' : '' }}">
                                         <label for="country" class="col-md-4 control-label">Country</label>
