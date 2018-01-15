@@ -181,6 +181,7 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
+        \Eduardokum\LaravelMailAutoEmbed\ServiceProvider::class,
 
     ],
 
