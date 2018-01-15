@@ -48,7 +48,7 @@
                             </div>
         
                             <div class="form-group label-floating padding-right-10 {{ $errors->has('body') ? ' has-error' : '' }}">
-                                <label for="body" class=" control-label">Description</label>
+                                <label for="body" class="control-label">Description</label>
         
                                 <div class="">
                                     <textarea rows="5" required id="body" type="text" class="form-control" name="body">{{ $generalEventObject->body }}</textarea>

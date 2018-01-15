@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="container">
-        <div class"row">
             <form class="form-horizontal" role="form" method="POST" action="{{route('nulisticeEvent.store')}}">
                 {{ csrf_field() }}
 
@@ -86,7 +85,7 @@
                     </div>
 
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('chair_country') ? ' has-error' : ''}}">
-                        <label for="chair_country" class="control-label">Chair</label>
+                        <label for="chair_country" class="control-label">Chair Country</label>
 
                         <div class="">
                             <input required id="chair_country" type="text" class="form-control" name="chair_country" value="{{ old('chair_country') }}">
@@ -96,7 +95,7 @@
                                 </span>
                             @endif
                         </div>
-                    </div>
+                    </div>                    
 
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('presenter') ? ' has-error' : ''}}">
                         <label for="presenter" class="control-label">Presenter</label>
@@ -111,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group label-floating padding-right-10 {{ $errors->has('presenterV_country') ? ' has-error' : ''}}">
+                    <div class="form-group label-floating padding-right-10 {{ $errors->has('presenter_country') ? ' has-error' : ''}}">
                         <label for="presenter_country" class="control-label">Presenter Country</label>
 
                         <div class="">
@@ -126,8 +125,6 @@
 
                 </div> 
 
-                
-
                 <div class="modal-footer-ftth">
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -135,6 +132,5 @@
                     </div>
                 </div>
             </form>
-        </div>
     </div>
 @endsection

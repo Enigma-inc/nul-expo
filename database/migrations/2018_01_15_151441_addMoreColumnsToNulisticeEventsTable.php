@@ -16,7 +16,7 @@ class AddMoreColumnsToNulisticeEventsTable extends Migration
         Schema::table('nulistice_events', function(Blueprint $table){
             $table->string('session_title')
                   ->after('time');
-            $table->text('keynote')
+            $table->text('keynote')->nullable()
                   ->after('session_title');
             $table->boolean('status')->default(0)
                   ->after('keynote');
