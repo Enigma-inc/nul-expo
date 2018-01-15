@@ -347,29 +347,33 @@
         },
         {
             "name": "eduardokum/laravel-mail-auto-embed",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eduardokum/laravel-mail-auto-embed.git",
-                "reference": "64852471a06f17ea74c8ac8edf5106c87a97fd39"
+                "reference": "918c3aff220d965fbaee96ae4d48a09036381bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eduardokum/laravel-mail-auto-embed/zipball/64852471a06f17ea74c8ac8edf5106c87a97fd39",
-                "reference": "64852471a06f17ea74c8ac8edf5106c87a97fd39",
+                "url": "https://api.github.com/repos/eduardokum/laravel-mail-auto-embed/zipball/918c3aff220d965fbaee96ae4d48a09036381bdf",
+                "reference": "918c3aff220d965fbaee96ae4d48a09036381bdf",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "~5.3.0|~5.4.0",
-                "illuminate/mail": "~5.3.0|~5.4.0",
-                "illuminate/support": "~5.3.0|~5.4.0",
+                "illuminate/contracts": ">=5.3",
+                "illuminate/mail": ">=5.3",
+                "illuminate/support": ">=5.3",
                 "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~5.0|~6.0"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Eduardokum\\LaravelMailAutoEmbed\\Providers\\LaravelMailAutoEmbedServiceProvider"
+                        "Eduardokum\\LaravelMailAutoEmbed\\ServiceProvider"
                     ]
                 }
             },
@@ -394,7 +398,7 @@
                 "eduardokum",
                 "laravel-mail-auto-embed"
             ],
-            "time": "2017-06-23T18:30:07+00:00"
+            "time": "2017-09-21T12:11:32+00:00"
         },
         {
             "name": "erusev/parsedown",

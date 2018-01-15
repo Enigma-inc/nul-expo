@@ -176,12 +176,13 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Eduardokum\LaravelMailAutoEmbed\Providers\LaravelMailAutoEmbedServiceProvider::class,
+        // Eduardokum\LaravelMailAutoEmbed\Providers\LaravelMailAutoEmbedServiceProvider::class,
         Riazxrazor\LaravelSweetAlert\LaravelSweetAlertServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
         \Eduardokum\LaravelMailAutoEmbed\ServiceProvider::class,
+        
 
     ],
 
