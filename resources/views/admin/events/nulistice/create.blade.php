@@ -7,7 +7,7 @@
 
                 <div class="col-xs-12 col-md-12">
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('title') ? ' has-error' : '' }}">
-                        <label for="title" class="control-label">Title</label>
+                        <label for="title" class="control-label">Presentation Title</label>
 
                         <div class="">
                             <input required id="title" type="text" class="form-control" name="title" value="{{ old('title') }}"> 
@@ -87,8 +87,10 @@
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('chair_country') ? ' has-error' : ''}}">
                         <label for="chair_country" class="control-label">Chair Country</label>
 
-                        <div class="">
-                            <input required id="chair_country" type="text" class="form-control" name="chair_country" value="{{ old('chair_country') }}">
+                        <div class="country-flex">
+                            <input hidden id="flag" name="chair-country-flag" type="text" value="">
+                            <img  height="36px" id="chair-country-flag" src="" class="image-flex">
+                            <input required class="country-flag-flex" id="chair-country" type="text" class="form-control" name="chair_country" value="" data-provide="typeahead">
                             @if ($errors->has('chair_country'))
                                 <span class"help-block">
                                     <strong>{{ $errors->first('chair_country') }}</strong>
@@ -113,8 +115,10 @@
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('presenter_country') ? ' has-error' : ''}}">
                         <label for="presenter_country" class="control-label">Presenter Country</label>
 
-                        <div class="">
-                            <input required id="presenter_country" type="text" class="form-control" name="presenter_country" value="{{ old('presenter_country') }}">
+                        <div class="country-flex">
+                                <input hidden id="flag" name="chair-country-flag" type="text" value="">
+                                <img  height="36px" id="chair-country-flag" src="" class="image-flex">
+                                <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="" data-provide="">
                             @if ($errors->has('presenter_country'))
                                 <span class"help-block">
                                     <strong>{{ $errors->first('presenter_country') }}</strong>
@@ -123,14 +127,66 @@
                         </div>
                     </div>
 
-                </div> 
-
-                <div class="modal-footer-ftth">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                  
+                    <div class="modal-footer-ftth">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                  
+                        </div>
                     </div>
-                </div>
+
+                </div> 
             </form>
     </div>
+@endsection
+
+@section('scripts')
+    <script>
+          $(document).ready(function(){
+
+            var input = $("#chair-country");
+            var flag = $('#chair-country-flag');
+    
+            if(!flag.val()){
+                flag.hide();
+            }
+    
+            $.get("https://restcountries.eu/rest/v2/all", function (data) {
+            console.log($("#chair-country").typeahead());
+            
+                
+                input.typeahead({
+                    source: data,
+                    autoSelect: true
+                });
+    
+            }, 'json');
+    
+    
+            $input.change(function () {
+                var current = $input.typeahead("getActive");
+                if (current) {
+                    // Some item from your model is active!
+                    if (current.name == $input.val()) {
+
+                        $('#flag').val(current.flag);
+
+                        var flag = $('#chair-country-flag');
+
+                        if(!flag.val()){
+                            flag.hide();
+                        }
+                        if (current.flag) {
+                            flag.attr('src', current.flag).show();
+                        }
+                        // This means the exact match is found. Use toLowerCase() if you want case insensitive match.
+                    } else {
+                        // This means it is only a partial match, you can either add a new item
+                        // or take the active if you don't want new items
+                    }
+                } else {
+                    // Nothing is active so it is a new value (or maybe empty value)
+                }
+            });
+          })
+    </script>
 @endsection

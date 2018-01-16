@@ -154,3 +154,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+.country-flex{
+  display: flex;
+  justify-content: space-between;
+            .image-flex{
+              flex: 1;
+            }
+            .country-flag-flex{
+              flex: 6;
+            }
+}

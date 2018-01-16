@@ -9,7 +9,7 @@
 
                     <div class="col-xs-12 col-md-12">
                             <div class="form-group label-floating padding-right-10 {{ $errors->has('title') ? ' has-error' : '' }}">
-                                <label for="title" class="control-label">Title</label>
+                                <label for="title" class="control-label">Presentation Title</label>
         
                                 <div class="">
                                     <input required id="title" type="text" class="form-control" name="title" value="{{ $nulisticeEventObject->title}}" autofocus> 
@@ -46,19 +46,87 @@
                                     @endif
                                 </div>
                             </div>
-        
-                            <div class="form-group label-floating padding-right-10 {{ $errors->has('body') ? ' has-error' : '' }}">
-                                <label for="body" class=" control-label">Description</label>
+
+                            <div class="form-group label-floating padding-right-10 {{ $errors->has('session_title') ? ' has-error' : ''}}">
+                                <label for="session_title" class="control-label">Session Title</label>
         
                                 <div class="">
-                                    <textarea rows="5" required id="body" type="text" class="form-control" name="body">{{ $nulisticeEventObject->body }}</textarea>
-                                    @if ($errors->has('body'))
+                                    <input required id="session_title" type="text" class="form-control" name="session_title" value="{{$nulisticeEventObject->session_title}}">
+                                    @if ($errors->has('session_title'))
+                                        <span class"help-block">
+                                            <strong>{{ $errors->first('session_title') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+        
+                            <div class="form-group label-floating padding-right-10 {{ $errors->has('keynote') ? ' has-error' : '' }}">
+                                <label for="keynote" class=" control-label">Keynote</label>
+        
+                                <div class="">
+                                    <textarea rows="5" required id="keynote" type="text" class="form-control" name="keynote">{{ $nulisticeEventObject->keynote }}</textarea>
+                                    @if ($errors->has('keynote'))
                                         <span class="help-block">
-                                            <strong>{{ $errors->first('body') }}</strong>
+                                            <strong>{{ $errors->first('keynote') }}</strong>
                                         </span> 
                                     @endif
                                 </div>
                             </div>
+
+                        <div class="form-group label-floating padding-right-10 {{ $errors->has('chair') ? ' has-error' : ''}}">
+                            <label for="chair" class="control-label">Chair</label>
+    
+                            <div class="">
+                                <input required id="chair" type="text" class="form-control" name="chair" value="{{$nulisticeEventObject->chair}}">
+                                @if ($errors->has('chair'))
+                                    <span class"help-block">
+                                        <strong>{{ $errors->first('chair') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group label-floating padding-right-10 {{ $errors->has('chair_country') ? ' has-error' : ''}}">
+                            <label for="chair_country" class="control-label">Chair Country</label>
+    
+                            <div class="country-flex">
+                                <input hidden id="flag" name="chair-country-flag" type="text" value="">
+                                <img  height="36px" id="chair-country-flag" src="" class="image-flex">
+                                <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="" data-provide="typeahead">
+                                @if ($errors->has('chair_country'))
+                                    <span class"help-block">
+                                        <strong>{{ $errors->first('chair_country') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group label-floating padding-right-10 {{ $errors->has('presenter') ? ' has-error' : ''}}">
+                            <label for="presenter" class="control-label">Presenter</label>
+    
+                            <div class="">
+                                <input required id="presenter" type="text" class="form-control" name="presenter" value="{{$nulisticeEventObject->presenter}}">
+                                @if ($errors->has('presenter'))
+                                    <span class"help-block">
+                                        <strong>{{ $errors->first('presenter') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group label-floating padding-right-10 {{ $errors->has('presenter_country') ? ' has-error' : ''}}">
+                                <label for="presenter_country" class="control-label">Presenter Country</label>
+        
+                                <div class="country-flex">
+                                        <input hidden id="flag" name="chair-country-flag" type="text" value="">
+                                        <img  height="36px" id="chair-country-flag" src="" class="image-flex">
+                                        <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="" data-provide="">
+                                    @if ($errors->has('presenter_country'))
+                                        <span class"help-block">
+                                            <strong>{{ $errors->first('presenter_country') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
                         </div>
                         
                         <div class="modal-footer-ftth">
@@ -67,6 +135,7 @@
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                  
                             </div>
                         </div>
+                    </div>                                         
                 </form>
         </div>
     </div>

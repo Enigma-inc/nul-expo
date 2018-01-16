@@ -2,13 +2,12 @@
 
 @section('content')
     <div class="container">
-        <div class"row">
             <form class="form-horizontal" role="form" method="POST" action="{{route('rerisEvent.store')}}">
                 {{ csrf_field() }}
 
                 <div class="col-xs-12 col-md-12">
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('title') ? ' has-error' : '' }}">
-                        <label for="title" class="control-label">Title</label>
+                        <label for="title" class="control-label">Presentation Title</label>
 
                         <div class="">
                             <input required id="title" type="text" class="form-control" name="title" value="{{ old('title') }}"> 
@@ -124,17 +123,13 @@
                         </div>
                     </div>
                     
-                </div> 
-
-                
-
                 <div class="modal-footer-ftth">
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                  
                     </div>
                 </div>
-            </form>
-        </div>
+            </div> 
+        </form>
     </div>
 @endsection

@@ -7,7 +7,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .sass('resources/assets/admin/sass/app.scss', 'public/admin-assets/css')
     .sass('resources/assets/sass/helpers.scss', 'public/css')
-    .scripts(['node_modules/jquery/dist/jquery.js',
+    .scripts([
+        'node_modules/jquery/dist/jquery.js',
        'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
    ], 'public/admin-assets/js/bundle.js')
    .styles('node_modules/font-awesome/css/font-awesome.css', 'public/admin-assets/css/vendor.css')
