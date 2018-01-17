@@ -46,11 +46,17 @@ class NulisticeEventController extends Controller
      */
     public function store(Request $request)
     {
+        
         $nulisticeEventObject = NulisticeEvent::create([
             'title' => request('title'),
             'room' => request('room'),
             'time' => request('time'),
-            'body' => request('body')
+            'chair' => request('chair'),
+            'chair_country' => request('chair_country'),
+            'chair_country_flag' => request('chair_country_flag'),
+            'presenter' => request('presenter'),
+            'presenter_country' => request('presenter_country'),
+            'presenter_country_flag' => request('presenter_country_flag')
         ]);
 
         return redirect()->route('nulisticeEvents.index');
@@ -92,10 +98,9 @@ class NulisticeEventController extends Controller
     {
         $nulisticeEvent = NulisticeEvent::find($id);
 
-        $nulisticeEvent->title = $request->input('title');
+        $nulisticeEvent->presentation_title = $request->input('presentation_title');
         $nulisticeEvent->room = $request->input('room');
         $nulisticeEvent->time = $request->input('time');
-        $nulisticeEvent->body = $request->input('body');
 
         $nulisticeEvent->save();
 

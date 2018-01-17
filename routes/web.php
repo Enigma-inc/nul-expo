@@ -62,7 +62,7 @@ Route::group(['middleware' => 'auth'], function () {
     ]);
 
     Route::post('/submit-details', [
-        'uses' => 'AbstractController@submitSpeakerDetails',
+        'uses' => 'AbstractController@submitSpeakerDetails', 
         'as' => 'submit.speaker.details'
     ]);
 

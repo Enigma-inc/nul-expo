@@ -47,10 +47,9 @@ class RerisEventController extends Controller
     public function store(Request $request)
     { 
         $rerisEventObject = RerisEvent::create([
-            'title' => request('title'),
+            'presentation_title' => request('presentation_title'),
             'room' => request('room'),
             'time' => request('time'),
-            'body' => request('body')
         ]);
 
         return redirect()->route('rerisEvents.index');
@@ -92,10 +91,9 @@ class RerisEventController extends Controller
     {
         $rerisEvent = RerisEvent::find($id);
 
-        $rerisEvent->title = $request->input('title');
+        $rerisEvent->presentation_title = $request->input('presentation_title');
         $rerisEvent->room = $request->input('room');
         $rerisEvent->time = $request->input('time');
-        $rerisEvent->body = $request->input('body');
 
         $rerisEvent->save();
 

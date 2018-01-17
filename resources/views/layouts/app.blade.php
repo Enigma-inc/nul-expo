@@ -92,12 +92,15 @@
     </div>
 
     <!-- Scripts -->
+    
     <script src="{{ mix('admin-assets/js/bundle.js') }}"></script>
     <script src="{{ mix('admin-assets/js/app.js') }}"></script>
+    <script src="{{asset('js/bootstrap-3.typehead.min.js')}}"></script>
     {!! Charts::scripts() !!}
     @if (isset($chart))
       {!! $chart->script() !!}
     @endif
+    @yield('scripts')
 
 </body>
 </html>
