@@ -21,8 +21,29 @@
                                     Time
                                 </td> 
                                 <td>
-                                    Body
+                                    Session Title
                                 </td> 
+                                <td>
+                                    Keynote
+                                </td>
+                                <td>
+                                    Chair
+                                </td>
+                                <td>
+                                    Chair Country
+                                </td>
+                                <td>
+                                    Chair Country Flag
+                                </td>
+                                <td>
+                                    Presenter
+                                </td>
+                                <td>
+                                    Presenter Country
+                                </td>
+                                <td>
+                                    Presenter Country Flag
+                                </td>
                                 <td>
                                     Action
                                 </td>
@@ -41,7 +62,28 @@
                                         {{ $rerisEvent->time }}
                                     </td>
                                     <td>
-                                        {{ $rerisEvent->body }}
+                                        {{ $rerisEvent->session_title }}
+                                    </td>
+                                    <td>
+                                        {{ $rerisEvent->keynote }}
+                                    </td>
+                                    <td>
+                                        {{ $rerisEvent->chair }}
+                                    </td>
+                                    <td>
+                                        {{ $rerisEvent->chair_country }}
+                                    </td>
+                                    <td>
+                                        {{ $rerisEvent->chair_country_flag }}
+                                    </td>
+                                    <td>
+                                        {{ $rerisEvent->presenter }}
+                                    </td>
+                                    <td>
+                                        {{ $rerisEvent->presenter_country }}
+                                    </td>
+                                    <td>
+                                        {{$rerisEvent->presenter_country_flag}}
                                     </td>
                                     <td>
                                         <div class="col-xs-12 button-flex">

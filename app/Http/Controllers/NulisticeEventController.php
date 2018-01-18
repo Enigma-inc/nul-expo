@@ -100,9 +100,18 @@ class NulisticeEventController extends Controller
     {
         $nulisticeEvent = NulisticeEvent::find($id);
 
-        $nulisticeEvent->presentation_title = $request->input('presentation_title');
+        $nulisticeEvent->title = $request->input('title');
         $nulisticeEvent->room = $request->input('room');
         $nulisticeEvent->time = $request->input('time');
+        $nulisticeEvent->keynote = $request->input('keynote');
+        $nulisticeEvent->session_title = $request->input('session_title');
+        $nulisticeEvent->chair = $request->input('chair');
+        $nulisticeEvent->chair_country = $request->input('chair_country');
+        $nulisticeEvent->chair_country_flag = $request->input('chair-country-flag');
+        $nulisticeEvent->presenter = $request->input('presenter');
+        $nulisticeEvent->presenter_country = $request->input('presenter_country');
+        $nulisticeEvent->presenter_country_flag = $request->input('presenter-country-flag');
+        
 
         $nulisticeEvent->save();
 

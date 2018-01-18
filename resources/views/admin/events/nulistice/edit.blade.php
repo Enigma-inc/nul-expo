@@ -90,9 +90,9 @@
                             <label for="chair_country" class="control-label">Chair Country</label>
     
                             <div class="country-flex">
-                                <input hidden id="flag" name="chair-country-flag" type="text" value="">
-                                <img  height="36px" id="chair-country-flag" src="" class="image-flex">
-                                <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="" data-provide="typeahead">
+                                <input hidden id="flag" name="chair-country-flag" type="text" value="chair_country_flag">
+                                <img  height="36px" id="chair-country-flag" src="chair_country_flag" class="image-flex">
+                                <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="{{$nulisticeEventObject->chair_country}}" data-provide="typeahead">
                                 @if ($errors->has('chair_country'))
                                     <span class"help-block">
                                         <strong>{{ $errors->first('chair_country') }}</strong>
@@ -118,14 +118,14 @@
                                 <label for="presenter_country" class="control-label">Presenter Country</label>
         
                                 <div class="country-flex">
-                                        <input hidden id="flag" name="chair-country-flag" type="text" value="">
-                                        <img  height="36px" id="chair-country-flag" src="" class="image-flex">
-                                        <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="" data-provide="">
-                                    @if ($errors->has('presenter_country'))
-                                        <span class"help-block">
-                                            <strong>{{ $errors->first('presenter_country') }}</strong>
-                                        </span>
-                                    @endif
+                                        <input hidden id="flag" name="presenter-country-flag" type="text" value="presenter_country_flag">
+                                        <img  height="36px" id="presenter-country-flag" src="presenter_country_flag" class="image-flex">
+                                        <input required class="country-flag-flex" id="presenter_country" type="text" class="form-control" name="presenter_country" value="{{$nulisticeEventObject->presenter_country}}" data-provide="">
+                                        @if ($errors->has('presenter_country'))
+                                            <span class"help-block">
+                                                <strong>{{ $errors->first('presenter_country') }}</strong>
+                                            </span>
+                                        @endif
                                 </div>
                         </div>
                         

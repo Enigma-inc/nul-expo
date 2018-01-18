@@ -21,8 +21,29 @@
                                     Time
                                 </td> 
                                 <td>
-                                    Body
+                                    Session Title
                                 </td> 
+                                <td>
+                                    Keynote
+                                </td>
+                                <td>
+                                    Chair
+                                </td>
+                                <td>
+                                    Chair Country
+                                </td>
+                                <td>
+                                    Chair Country Flag
+                                </td>
+                                <td>
+                                    Presenter
+                                </td>
+                                <td>
+                                    Presenter Country
+                                </td>
+                                <td>
+                                    Presenter Country Flag
+                                </td>
                                 <td>
                                     Action
                                 </td>
@@ -42,6 +63,27 @@
                                     </td>
                                     <td>
                                         {{ $nulisticeEvent->session_title }}
+                                    </td>
+                                    <td>
+                                        {{ $nulisticeEvent->keynote }}
+                                    </td>
+                                    <td>
+                                        {{ $nulisticeEvent->chair }}
+                                    </td>
+                                    <td>
+                                        {{ $nulisticeEvent->chair_country }}
+                                    </td>
+                                    <td>
+                                        {{ $nulisticeEvent->chair_country_flag }}
+                                    </td>
+                                    <td>
+                                        {{ $nulisticeEvent->presenter }}
+                                    </td>
+                                    <td>
+                                        {{ $nulisticeEvent->presenter_country }}
+                                    </td>
+                                    <td>
+                                        {{$nulisticeEvent->presenter_country_flag}}
                                     </td>
                                     <td>
                                         <div class="col-xs-12 button-flex">
