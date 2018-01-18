@@ -15,10 +15,19 @@ class CreateNulisticeEventsTable extends Migration
     {
         Schema::create('nulistice_events', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('session_title');
             $table->string('title');
             $table->string('room')->nullable();
             $table->string('time');
             $table->text('body')->nullable();
+            $table->text('keynote')->nullable();
+            $table->boolean('status')->default(0);
+            $table->string('presenter');   
+            $table->string('presenter_country');
+            $table->string('presenter_country_flag');
+            $table->string('chair');
+            $table->string('chair_country');
+            $table->string('chair_country_flag');
             $table->timestamps();
         });
     } 

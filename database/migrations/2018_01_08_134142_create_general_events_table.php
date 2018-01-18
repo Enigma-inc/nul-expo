@@ -19,6 +19,7 @@ class CreateGeneralEventsTable extends Migration
             $table->string('room')->nullable();
             $table->string('time');
             $table->text('body')->nullable();
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }

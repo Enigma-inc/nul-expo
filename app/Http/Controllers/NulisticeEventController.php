@@ -48,15 +48,19 @@ class NulisticeEventController extends Controller
     {
         
         $nulisticeEventObject = NulisticeEvent::create([
+            'session_title'=>request('session_title'),
             'title' => request('title'),
             'room' => request('room'),
             'time' => request('time'),
             'chair' => request('chair'),
-            'chair_country' => request('chair_country'),
+            // 'chair_country' => request('chair_country'),
+            'chair_country' => 'presenter_country_flag',
             'chair_country_flag' => request('chair_country_flag'),
             'presenter' => request('presenter'),
             'presenter_country' => request('presenter_country'),
-            'presenter_country_flag' => request('presenter_country_flag')
+            'presenter_country_flag' => 'presenter_country_flag'
+            // 'presenter_country' => request('presenter_country'),
+            // 'presenter_country_flag' => request('presenter_country_flag')
         ]);
 
         return redirect()->route('nulisticeEvents.index');
