@@ -10,7 +10,7 @@ class NulisticeEvent extends Model
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
-
-    protected $fillable = ['title', 'room', 'time', 'session_title', 'chair', 
-                           'chair_country', 'presenter', 'presenter_country'];
+ 
+    protected $fillable = ['title', 'room', 'time', 'session_title', 'keynote', 'chair', 'chair_country', 
+                           'chair_country_flag', 'presenter', 'presenter_country', 'presenter_country_flag'];
 }

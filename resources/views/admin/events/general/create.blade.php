@@ -4,7 +4,7 @@
     <div class="container">
             <form class="form-horizontal" role="form" method="POST" action="{{route('generalEvent.store')}}">
                 {{ csrf_field() }}
-
+ 
                 <div class="col-xs-12 col-md-12">
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('title') ? ' has-error' : '' }}">
                         <label for="title" class="control-label">Presentation Title</label>

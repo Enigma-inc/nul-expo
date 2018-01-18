@@ -41,7 +41,7 @@
                                         {{ $nulisticeEvent->time }}
                                     </td>
                                     <td>
-                                        {{ $nulisticeEvent->body }}
+                                        {{ $nulisticeEvent->session_title }}
                                     </td>
                                     <td>
                                         <div class="col-xs-12 button-flex">
