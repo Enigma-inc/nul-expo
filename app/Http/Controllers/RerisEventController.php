@@ -47,9 +47,17 @@ class RerisEventController extends Controller
     public function store(Request $request)
     { 
         $rerisEventObject = RerisEvent::create([
-            'presentation_title' => request('presentation_title'),
+            'title' => request('title'),
             'room' => request('room'),
             'time' => request('time'),
+            'session_title' => request('session_title'),
+            'keynote' => request('keynote'),
+            'chair' => request('chair'),
+            'chair_country' => request('chair_country'),
+            'chair_country_flag' => request('chair-country-flag'),
+            'presenter' => request('presenter'),
+            'presenter_country' => request('presenter_country'),
+            'presenter_country_flag' => request('presenter-country-flag')
         ]);
 
         return redirect()->route('rerisEvents.index');
@@ -91,9 +99,17 @@ class RerisEventController extends Controller
     {
         $rerisEvent = RerisEvent::find($id);
 
-        $rerisEvent->presentation_title = $request->input('presentation_title');
+        $rerisEvent->title = $request->input('title');
         $rerisEvent->room = $request->input('room');
         $rerisEvent->time = $request->input('time');
+        $rerisEvent->keynote = $request->input('keynote');
+        $rerisEvent->session_title = $request->input('session_title');
+        $rerisEvent->chair = $request->input('chair');
+        $rerisEvent->chair_country = $request->input('chair_country');
+        $rerisEvent->chair_country_flag = $request->input('chair-country-flag');
+        $rerisEvent->presenter = $request->input('presenter');
+        $rerisEvent->presenter_country = $request->input('presenter_country');
+        $rerisEvent->presenter_country_flag = $request->input('presenter-country-flag');
 
         $rerisEvent->save();
 
