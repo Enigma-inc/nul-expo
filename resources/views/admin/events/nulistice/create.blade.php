@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('keynote') ? ' has-error' : '' }}">
-                        <label for="keynote" class=" control-label">Keynote</label>
+                        <label for="keynote" class="control-label">Keynote</label>
 
                         <div class="">
                             <textarea rows="5" required id="keynote" type="text" class="form-control" name="keynote" value="{{ old('keynote') }}"></textarea>
@@ -88,9 +88,9 @@
                         <label for="chair_country" class="control-label">Chair Country</label>
 
                         <div class="country-flex">
-                            <input hidden id="flag" name="chair-country-flag" type="text" value="">
-                            <img  height="36px" id="chair-country-flag" src="" class="image-flex">
-                            <input required class="country-flag-flex" id="chair-country" type="text" class="form-control" name="chair_country" value="" data-provide="typeahead">
+                            <input hidden id="flag" name="chair-country-flag" type="text" value="chair_country_flag">
+                            <img  height="36px" id="chair-country-flag" src="chair_country_flag" class="image-flex">
+                            <input required class="country-flag-flex" id="chair-country" type="text" class="form-control" name="chair_country" value="" data-provide="">
                             @if ($errors->has('chair_country'))
                                 <span class"help-block">
                                     <strong>{{ $errors->first('chair_country') }}</strong>
@@ -116,14 +116,14 @@
                         <label for="presenter_country" class="control-label">Presenter Country</label>
 
                         <div class="country-flex">
-                                <input hidden id="flag" name="chair-country-flag" type="text" value="">
-                                <img  height="36px" id="chair-country-flag" src="" class="image-flex">
-                                <input required class="country-flag-flex" id="chair_country" type="text" class="form-control" name="chair_country" value="" data-provide="">
-                            @if ($errors->has('presenter_country'))
-                                <span class"help-block">
-                                    <strong>{{ $errors->first('presenter_country') }}</strong>
-                                </span>
-                            @endif
+                                <input hidden id="flag" name="presenter-country-flag" type="text" value="presenter_country_flag">
+                                <img  height="36px" id="presenter-country-flag" src="presenter_country_flag" class="image-flex">
+                                <input required class="country-flag-flex" id="presenter_country" type="text" class="form-control" name="presenter_country" value="" data-provide="">
+                                @if ($errors->has('presenter_country'))
+                                    <span class"help-block">
+                                        <strong>{{ $errors->first('presenter_country') }}</strong>
+                                    </span>
+                                @endif
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
     </div>
 @endsection
 
-@section('scripts')
+<!-- @section('scripts')
     <script>
           $(document).ready(function(){
 
@@ -158,7 +158,7 @@
                     source: data,
                     autoSelect: true
                 });
-    
+     
             }, 'json');
     
     
@@ -189,4 +189,4 @@
             });
           })
     </script>
-@endsection
+@endsection -->

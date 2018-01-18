@@ -52,15 +52,14 @@ class NulisticeEventController extends Controller
             'title' => request('title'),
             'room' => request('room'),
             'time' => request('time'),
+            'session_title' => request('session_title'),
+            'keynote' => request('keynote'),
             'chair' => request('chair'),
-            // 'chair_country' => request('chair_country'),
-            'chair_country' => 'presenter_country_flag',
-            'chair_country_flag' => request('chair_country_flag'),
+            'chair_country' => request('chair_country'),
+            'chair_country_flag' => request('chair-country-flag'),
             'presenter' => request('presenter'),
             'presenter_country' => request('presenter_country'),
-            'presenter_country_flag' => 'presenter_country_flag'
-            // 'presenter_country' => request('presenter_country'),
-            // 'presenter_country_flag' => request('presenter_country_flag')
+            'presenter_country_flag' => request('presenter-country-flag')
         ]);
 
         return redirect()->route('nulisticeEvents.index');
