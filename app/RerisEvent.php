@@ -11,7 +11,7 @@ class RerisEvent extends Model
 
     protected $dates = ['deleted_at'];
 
-    protected $fillabe = ['title', 'room', 'time', 'session_title', 'keynote', 'chair', 'chair_country', 
-                          'chair_country_flag', 'presenter', 'presenter_country', 'presenter_country_flag'];
+    protected $fillable = ['title', 'room', 'time', 'session_title', 'keynote', 'chair', 'chair_country', 
+                           'chair_country_flag', 'presenter', 'presenter_country', 'presenter_country_flag'];
 }
 

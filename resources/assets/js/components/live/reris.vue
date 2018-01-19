@@ -60,11 +60,8 @@ export default{
         }
     },
     mounted(){
-      
-        axios.get('../api/events/reris').then(response=>{
-            
-            this.events=response.data;
-    });
+            this.getActiveEvents();
+            this.listen();
     },
     methods:{
         

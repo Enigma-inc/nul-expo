@@ -60,12 +60,10 @@ export default{
     mounted(){
         this.getActiveEvents();
         this.listen();
-      
-
     },
     methods:{
         getActiveEvents(){
-                    axios.get('../events/nulistice/1').then(response=>{            
+            axios.get('../events/nulistice/1').then(response=>{            
             this.events=response.data;
       });
         },
