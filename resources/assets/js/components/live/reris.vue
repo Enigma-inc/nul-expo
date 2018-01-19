@@ -64,7 +64,19 @@ export default{
             this.listen();
     },
     methods:{
-        
+        getActiveEvents(){
+            axios.get('../events/nulistice/1').then(response=>{            
+            this.events=response.data;
+            });
+        },
+        listen(){
+            
+        //REGISTER EVENT LISTENERS
+        Echo.channel('nulisticeEvents')
+            .listen('.statusChange', () => {
+                this.getActiveEvents();
+            });
+        }
     }
 }
     
