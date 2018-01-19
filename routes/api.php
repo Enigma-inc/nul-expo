@@ -16,10 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('events/nulistice','NulisticeEventController@index');
 Route::get('events/general','GeneralEventController@index');
 Route::get('events/reris','RerisEventController@index');
 
  //Live 
  Route::post('/events/{id}/toggle-status','GeneralEventController@toggleStatus')->middleware('auth:api');
- Route::get('/events/nulistice/{status}','NulisticeEventController@getEventsByStatus')->middleware('auth:api');
+ Route::get('/events/nulistice/{status}','NulisticeEventController@index')->middleware('auth:api');

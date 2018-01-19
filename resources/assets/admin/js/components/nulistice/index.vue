@@ -73,21 +73,23 @@ export default{
         }
     },
     mounted(){
-        this.getActiveEvents();
-        this.getInActiveEvents();
+        this.getEvents();
+        this.listen();
     },
     methods:{
-        doSomething(index){
-            console.log(index);
-        },
-        getActiveEvents(){
+        getEvents(){
             axios.get(`../../api/events/nulistice/1`).then(response=>{
                 this.activeEvents=response.data;
             });
-        },
-        getInActiveEvents(){
-            axios.get(`../../api/events/nulistice/0`).then(response=>{
+             axios.get(`../../api/events/nulistice/0`).then(response=>{
                 this.inActiveEvents = response.data;
+            });
+        },
+        listen(){
+            
+            //LISTEN FOR EVENTBUS NOTIFICATIONS
+            EventBus.$on('refreshNulisticeEvents',()=>{
+                   this.getEvents();
             });
         }
     }

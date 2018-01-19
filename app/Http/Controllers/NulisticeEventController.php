@@ -17,9 +17,9 @@ class NulisticeEventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(Request $request,$status=1)
     {
-        $nulisticeEvents = NulisticeEvent::latest()->get();
+        $nulisticeEvents = NulisticeEvent::where('status', '=', $status)->get();
 
         if($request->wantsJson()){
             return $nulisticeEvents;
@@ -132,13 +132,6 @@ class NulisticeEventController extends Controller
         
         return redirect()->route('nulisticeEvents.index');
 
-
-    }
-
-    public function getEventsByStatus($status=1)
-    {
-       $events=NulisticeEvent::where('status','=',$status)->get();
-        return $events;
 
     }
 }

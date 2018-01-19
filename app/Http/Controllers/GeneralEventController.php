@@ -6,6 +6,7 @@ use App\GeneralEvent;
 use App\RerisEvent;
 use App\NulisticeEvent;
 use Illuminate\Http\Request;
+use App\Events\NulisticeEventStatusChange;
 
 class GeneralEventController extends Controller
 {
@@ -131,6 +132,7 @@ class GeneralEventController extends Controller
             $event = NulisticeEvent::findorfail($id);
             $event->status =! $event->status;
             $event->save();
+            broadcast(new NulisticeEventStatusChange());
             return $event;
 
          }else if($type == "reris"){

@@ -11,10 +11,13 @@
                 
             }
         },
+        mounted(){
+        
+        },
         methods: {
             changeStatus(){
                 axios.post(`../api/events/${this.event.id}/toggle-status`,{type:this.type}).then(response=>{
-                        window.location.reload();
+                       EventBus.$emit('refreshNulisticeEvents');
                 });
             }
         }
