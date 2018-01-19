@@ -5,6 +5,9 @@
  */
 
 require('./bootstrap');
+import VueGoodTable from 'vue-good-table';
+
+Vue.use(VueGoodTable);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -13,6 +16,8 @@ require('./bootstrap');
  */
 
 Vue.component('toggle-event-status', require('./components/live/toggle-event-status.vue'));
+Vue.component('nulistice-admin-page', require('./components/nulistice'));
+
 
 const app = new Vue({
     el: '#app'

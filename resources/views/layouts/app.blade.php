@@ -92,10 +92,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+    {{--  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>  --}}
     <script src="{{ mix('admin-assets/js/bundle.js') }}"></script>
     <script src="{{ mix('admin-assets/js/app.js') }}"></script>
-    <script src="{{asset('js/bootstrap-3.typehead.min.js')}}"></script>
+    {{--  <script src="{{asset('js/bootstrap-3.typehead.min.js')}}"></script>  --}}
     {!! Charts::scripts() !!}
     @if (isset($chart))
       {!! $chart->script() !!}

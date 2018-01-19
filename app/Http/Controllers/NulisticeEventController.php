@@ -134,4 +134,11 @@ class NulisticeEventController extends Controller
 
 
     }
+
+    public function getEventsByStatus($status=1)
+    {
+       $events=NulisticeEvent::where('status','=',$status)->get();
+        return $events;
+
+    }
 }
