@@ -1,7 +1,7 @@
 <template>
-<div>
-    <v-flex class="event"  v-for="event in events" :key="event.id">
-         <v-card color="blue-grey darken-2" class="white--text event-card" hover>
+ <transition-group name="list" tag="div">
+    <v-flex class="event"  v-for="event in events" :key="event.id" >
+         <v-card color="blue-grey darken-2" class="white--text event-card" hover >
                 <v-card-title primary-title>
                   <div class="headline">
                       <div class="title ">{{event.session_title}}</div>
@@ -47,9 +47,10 @@
                 </v-card-text>
         </v-card>
      </v-flex>
-</div>
+ </transition-group>
 </template>
 <script>
+require('vue-animate/dist/vue-animate.min.css')
 export default{
     data(){
         return{
@@ -65,7 +66,7 @@ export default{
     },
     methods:{
         getActiveEvents(){
-                    axios.get('../events/nulistice/1').then(response=>{            
+                    axios.get('../../api/events/nulistice/1').then(response=>{            
             this.events=response.data;
       });
         },
@@ -86,6 +87,9 @@ export default{
       background-color: rgba(118, 184, 61,0.9) !important;
 
 }
+
+
+
 
 </style>
 

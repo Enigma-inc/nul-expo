@@ -5794,6 +5794,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-animate@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue-animate/-/vue-animate-0.0.4.tgz#bf7afcdfec4694e4d19147a75f6761ecf3735f8f"
+
 vue-carousel-3d@^0.1.19:
   version "0.1.19"
   resolved "https://registry.yarnpkg.com/vue-carousel-3d/-/vue-carousel-3d-0.1.19.tgz#b817d06531e88f41e06faacfd92c262d9bfb42f3"
