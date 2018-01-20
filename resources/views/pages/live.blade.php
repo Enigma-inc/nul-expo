@@ -45,7 +45,7 @@
 
 <script src="/js/jquery.js"></script>
 <script src={{mix('js/app-live.js')}}></script>
-<script src="vendor/photobox/jquery.photobox.js"></script>
+{{--  <script src="vendor/photobox/jquery.photobox.js"></script>  --}}
 
 
 

@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\File;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Response;
 use App\GalleryImage;
+use App\Transformers\GalleryImageTransformer;
+use App\Events\GalleryImageAddedEvent;
 
 class ImageGalleryController extends Controller
 {
@@ -20,13 +22,13 @@ class ImageGalleryController extends Controller
     }
 
 
-    public function index()
+    public function index(Request $request)
     {
         // $images = GalleryImage::where('status', '=', $status)->get();
         
         if ($request->wantsJson()) {
-            $images = GalleryImage::latest()->take(10)->get();
-            return $images;
+            $images = GalleryImage::latest()->take(6)->get();
+            return GalleryImageTransformer::transform($images);
         }
         return view('admin.events.gallery.index');
     }
@@ -55,6 +57,7 @@ class ImageGalleryController extends Controller
             'thumbnail'=> $thumnailPath
         ]);
 
+         broadcast(new GalleryImageAddedEvent());
         return Response::json(['Image Uploaded'], 200);
 
     }
@@ -65,13 +68,13 @@ class ImageGalleryController extends Controller
                // dd(sprintf("%/%s", $this->baseDir, $this->$image));
 
         $imageStream = Image::make($image)
-            ->fit(1044, 800)
+            ->fit(800)
             ->stream()
             ->detach();
 
         //Create a thumbnail
         $imageThumbnailStream = Image::make($image)
-            ->fit(150, 150)
+            ->fit(150)
             ->stream()
             ->detach();
 

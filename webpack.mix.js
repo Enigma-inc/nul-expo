@@ -14,6 +14,6 @@ mix.js('resources/assets/js/app.js', 'public/js')
    ], 'public/admin-assets/js/bundle.js')
    .styles('node_modules/font-awesome/css/font-awesome.css', 'public/admin-assets/css/vendor.css')
    .styles('node_modules/vuetify/dist/vuetify.css', 'public/css/vuetify.css')
-   .autoload({ 'jquery': ['window.$', 'window.jQuery'] })
+    .autoload({ 'jquery': ['$', 'window.jQuery', 'jQuery'] })
    .sourceMaps()
    .version();

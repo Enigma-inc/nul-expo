@@ -30,6 +30,9 @@
         <v-layout wrap>
           <!-- <general></general> -->
         </v-layout>
+        <v-layout wrap>
+            <image-gallery></image-gallery>
+        </v-layout>
       </v-container>
     </v-content>
   </v-app>
@@ -41,7 +44,7 @@ import nulistice from './nulistice';
 import general from './general';
 import imageGallery from './image-gallery';
   export default {
-      components:{nulistice, reris,general},
+      components:{nulistice, reris,general,imageGallery},
     data: () => ({
 
     }),

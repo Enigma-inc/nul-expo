@@ -1,5 +1,5 @@
 <template class="Testing">
-<transition-group name="list" tag="div" class="test">
+<transition-group name="list" tag="div" >
     <v-flex class="event"  v-for="event in events" :key="event.id">
        <v-card color="blue-grey darken-2" class="white--text event-card" hover>
                 <v-card-title primary-title>
