@@ -17,15 +17,15 @@ class RerisEventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(Request $request, $status = 1)
     {
-        $rerisEvents = RerisEvent::latest()->get();
+        $rerisEvents = RerisEvent::where('status', '=', $status)->get();
 
-        if($request->wantsJson()){
+        if ($request->wantsJson()) {
             return $rerisEvents;
         }
         return view('admin.events.reris.index')
-                ->with('rerisEvents', $rerisEvents);
+            ->with('rerisEvents', $rerisEvents);
     }
 
     /**

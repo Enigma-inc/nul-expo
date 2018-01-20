@@ -130,6 +130,12 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
         Route::post('/reris-events/{id}/destroy', 'RerisEventController@destroy')->name('rerisEvent.destroy');
 
 
+        //Gallery
+        Route::get('/gallery/images/add', 'ImageGalleryController@add')->name('events.gallery.add');
+        Route::get('/gallery/images', 'ImageGalleryController@index')->name('events.gallery');
+        
+
+
 
        
 

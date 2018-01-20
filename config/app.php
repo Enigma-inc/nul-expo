@@ -182,6 +182,7 @@ return [
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
         \Eduardokum\LaravelMailAutoEmbed\ServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
         
 
     ],
@@ -235,6 +236,7 @@ return [
         'LaravelSweetAlert' => Riazxrazor\LaravelSweetAlert\LaravelSweetAlert::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 

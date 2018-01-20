@@ -24,7 +24,7 @@
     <v-content>
       <v-container>
         <v-layout wrap >
-          <nulistice></nulistice>              
+          <nulistice class="test"></nulistice>              
           <reris></reris>
         </v-layout >
         <v-layout wrap>
@@ -39,6 +39,7 @@
 import reris from "./reris";
 import nulistice from './nulistice';
 import general from './general';
+import imageGallery from './image-gallery';
   export default {
       components:{nulistice, reris,general},
     data: () => ({

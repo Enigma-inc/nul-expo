@@ -10,7 +10,7 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class GeneralEventStatusChange
+class GeneralEventStatusChange implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -31,6 +31,10 @@ class GeneralEventStatusChange
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new Channel('generalEvents');
+    }
+    public function broadcastAs()
+    {
+        return "statusChange";
     }
 }
