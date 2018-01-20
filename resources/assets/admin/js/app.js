@@ -17,7 +17,7 @@ Vue.use(VueGoodTable);
 
 Vue.component('toggle-event-status', require('./components/live/toggle-event-status.vue'));
 Vue.component('nulistice-admin-page', require('./components/nulistice'));
-
+Vue.component('reris-admin-page', require('./components/reris'));
 
 const app = new Vue({
     el: '#app'

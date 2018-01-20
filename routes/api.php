@@ -22,3 +22,5 @@ Route::get('events/reris','RerisEventController@index');
  //Live 
  Route::post('/events/{id}/toggle-status','GeneralEventController@toggleStatus')->middleware('auth:api');
  Route::get('/events/nulistice/{status}','NulisticeEventController@index')->middleware('auth:api');
+ Route::get('/events/reris/{status}','NulisticeEventController@index')->middleware('auth:api');
+ 

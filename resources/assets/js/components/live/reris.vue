@@ -60,14 +60,23 @@ export default{
         }
     },
     mounted(){
-      
-        axios.get('../api/events/reris').then(response=>{
-            
-            this.events=response.data;
-    });
+            this.getActiveEvents();
+            this.listen();
     },
     methods:{
-        
+        getActiveEvents(){
+            axios.get('../events/nulistice/1').then(response=>{            
+            this.events=response.data;
+            });
+        },
+        listen(){
+            
+        //REGISTER EVENT LISTENERS
+        Echo.channel('nulisticeEvents')
+            .listen('.statusChange', () => {
+                this.getActiveEvents();
+            });
+        }
     }
 }
     

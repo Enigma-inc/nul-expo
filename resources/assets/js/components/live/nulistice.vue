@@ -61,14 +61,12 @@ export default{
     mounted(){
         this.getActiveEvents();
         this.listen();
-      
-
     },
     methods:{
         getActiveEvents(){
-                    axios.get('../../api/events/nulistice/1').then(response=>{            
-            this.events=response.data;
-      });
+            axios.get('../../api/events/nulistice/1').then(response=>{            
+                          this.events=response.data;
+            });
         },
         listen(){
             
