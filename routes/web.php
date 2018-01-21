@@ -116,7 +116,7 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
         //Nulistice Events
         Route::get('/nulistice-events', 'NulisticeEventController@index')->name('nulisticeEvents.index');
         Route::get('nulistice-events/create', 'NulisticeEventController@create')->name('nulisticeEvent.create');
-        Route::post('/nulistice-events/store', 'NulisticeEventController@store')->name('nulisticeEvent.store');
+        //Route::post('/nulistice-events/store', 'NulisticeEventController@store')->name('nulisticeEvent.store');
         Route::get('/nulistice-events/{id}/edit', 'NulisticeEventController@edit')->name('nulisticeEvent.edit');
         Route::patch('/nulistice-events/{nulisticeEvent}/update', 'NulisticeEventController@update')->name('nulisticeEvent.update');
         Route::post('/nulistice-events/{id}/destroy', 'NulisticeEventController@destroy')->name('nulisticeEvent.destroy');

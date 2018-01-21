@@ -37,11 +37,13 @@
     "vue-animate": "^0.0.4",
     "vue-carousel": "^0.6.5",
     "vue-carousel-3d": "^0.1.19",
+    "vue-form-wizard": "^0.8.2",
     "vue-good-table": "^1.19.1",
     "vue-images": "^1.1.0",
+    "vue-select": "^2.4.0",
     "vue2-dropzone": "^3.0.3",
     "vuebar": "^0.0.17",
-    "vuelidate": "^0.4.2",
+    "vuelidate": "^0.6.1",
     "vuetify": "^0.17.6",
     "vuex": "^3.0.1"
   }

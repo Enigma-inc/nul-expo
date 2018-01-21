@@ -6,7 +6,12 @@
 
 require('./bootstrap');
 import VueGoodTable from 'vue-good-table';
+import VueFormWizard from 'vue-form-wizard';
+import 'vue-form-wizard/dist/vue-form-wizard.min.css';
+import Vuelidate from 'vuelidate';
 
+Vue.use(Vuelidate)
+Vue.use(VueFormWizard);
 Vue.use(VueGoodTable);
 
 /**
@@ -19,6 +24,7 @@ Vue.component('toggle-event-status', require('./components/live/toggle-event-sta
 Vue.component('nulistice-admin-page', require('./components/nulistice'));
 Vue.component('reris-admin-page', require('./components/reris'));
 Vue.component('upload-gallery-image',require('./components/gallery/upload.vue'));
+Vue.component('add-edit-nulistice-event',require('./components/nulistice/addEdit.vue'));
 
 const app = new Vue({
     el: '#app'

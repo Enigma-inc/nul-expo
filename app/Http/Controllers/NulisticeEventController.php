@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\NulisticeEvent;
 use Illuminate\Http\Request;
+use App\Http\Requests\ConferenceEventRequest;
 
 class NulisticeEventController extends Controller
 {
@@ -44,22 +45,21 @@ class NulisticeEventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ConferenceEventRequest $request)
     {
         
         $nulisticeEventObject = NulisticeEvent::create([
-            'session_title'=>request('session_title'),
-            'title' => request('title'),
+            'session_title'=>request('sessionTitle'),
+            'title' => request('presentationTitle'),
             'room' => request('room'),
             'time' => request('time'),
-            'session_title' => request('session_title'),
             'keynote' => request('keynote'),
             'chair' => request('chair'),
-            'chair_country' => request('chair_country'),
-            'chair_country_flag' => request('chair-country-flag'),
+            'chair_country' => request('chairCountry'),
+            'chair_country_flag' => request('chairCountryFlag'),
             'presenter' => request('presenter'),
-            'presenter_country' => request('presenter_country'),
-            'presenter_country_flag' => request('presenter-country-flag')
+            'presenter_country' => request('presenterCountry'),
+            'presenter_country_flag' => request('presenterCountryFlag')
         ]);
 
         return redirect()->route('nulisticeEvents.index');

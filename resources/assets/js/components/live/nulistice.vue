@@ -21,28 +21,24 @@
                     <div class="body">
                      <div class="chair">
                             <div class="flag">
-                                <img :src="'https://restcountries.eu/data/lso.svg'" />
+                                <img :src="event.chair_country_flag" />
                             </div>
                             <div class="details">
                                 <h4 class="title color-dark">Chair</h4>
-                                <h4 class="name">Dr Mosotho George, Head, Department of Chemistry
-                                    and Chemical Technology, National University of Lesotho</h4>
+                                <h4 class="name">{{event.chair}}</h4>
                             </div>
                         </div>
                     <v-divider></v-divider>
                      <div class="presentation">
                             <div class="flag">
-                                <img :src="'https://restcountries.eu/data/mda.svg'" />
+                                <img :src="event.presenter_country_flag" />
                             </div>
                             <div class="details">
                                 <h4 class="title color-dark">Presentation</h4>
-                                <h3 class="presentation-title">Evaluation of Animal Manure as a Feedstock for the Production
-                                    of Biogas in comparison with Sewage Water
-                                    Microalgae</h3>
+                                <h3 class="presentation-title">{{event.title}}</h3>
                                 <div class="presenter ">
                                     <span class="color-dark">&mdash;</span>
-                                    <p class="color-dark">Dr Mosotho George, Head, Department of Chemistry
-                                    and Chemical Technology, National University of Lesotho</p>
+                                    <p class="color-dark">{{event.presenter}}</p>
                                     </div>
                             </div>
                         </div>

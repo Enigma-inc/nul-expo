@@ -26,6 +26,9 @@ Route::get('events/reris','RerisEventController@index');
  
  //Gallery
 Route::get('/events/gallery/images', 'ImageGalleryController@index');
-Route::post('/events/gallery/images', 'ImageGalleryController@upload')->middleware('auth:api');;
+Route::post('/events/gallery/images', 'ImageGalleryController@upload')->middleware('auth:api');
+
+// EVENTS ADMIN
+Route::post('/events/nulistice', 'NulisticeEventController@store')->middleware('auth:api');
 
  
