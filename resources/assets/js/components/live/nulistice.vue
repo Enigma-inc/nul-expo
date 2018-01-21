@@ -1,6 +1,6 @@
 <template class="Testing">
 <transition-group name="list" tag="div" >
-    <v-flex class="event"  v-for="event in events" :key="event.id">
+    <v-flex class="event"  v-for="event in nulisticeEvents" :key="event.id">
        <v-card color="blue-grey darken-2" class="white--text event-card" hover>
                 <v-card-title primary-title>
                   <div class="headline">
@@ -54,40 +54,29 @@
 </transition-group>
 </template>
 <script>
+import {mapGetters} from 'vuex';
+import {mapActions} from 'vuex';
 export default{
     data(){
         return{
-            events: [],
             src:'#'
         }
     },
     mounted(){
-            this.getActiveEvents();
-            this.listen();
+            this.getNulisticeEvents();
     },
     methods:{
-        getActiveEvents(){
-            axios.get('../../api/events/nulistice/1').then(response=>{            
-                 this.events=response.data;
-            });
-        },
-        listen(){
-            
-        //REGISTER EVENT LISTENERS
-        Echo.channel('nulisticeEvents')
-            .listen('.statusChange', () => {
-                this.getActiveEvents();
-            });
+        ...mapActions(['getNulisticeEvents']),
+ 
+    },
+    computed:{
+              ...mapGetters(['nulisticeEvents'])
         }
-    }
 }
+    
     
 </script>
 <style lang="scss" scoped>
-    //   .color-dark{
-    //       color:lighten(#000,10%) !important;
-          
-    //   }
 .card{
       background-color: rgba(238, 114, 29,0.9) !important;
       .headline{

@@ -1,6 +1,6 @@
 <template>
  <transition-group name="list" tag="div">
-    <v-flex class="event"  v-for="event in events" :key="event.id" >
+    <v-flex class="event"  v-for="event in rerisEvents" :key="event.id" >
          <v-card color="blue-grey darken-2" class="white--text event-card" hover >
                 <v-card-title primary-title>
                   <div class="headline">
@@ -50,32 +50,21 @@
  </transition-group>
 </template>
 <script>
-require('vue-animate/dist/vue-animate.min.css')
+ import {mapGetters,mapActions} from 'vuex';
 export default{
     data(){
         return{
-            events: [],
             src:'#'
         }
     },
     mounted(){
-        this.getActiveEvents();
-        this.listen();
+        this.getRerisEvents();
     },
     methods:{
-        getActiveEvents(){
-            axios.get('../../api/events/reris/1').then(response=>{            
-                          this.events=response.data;
-            });
-        },
-        listen(){
-            
-        //REGISTER EVENT LISTENERS
-        Echo.channel('rerisEvents')
-            .listen('.statusChange', () => {
-                this.getActiveEvents();
-            });
-        }
+        ...mapActions(['getRerisEvents'])
+    },
+    computed:{
+        ...mapGetters(['rerisEvents']),
     }
 }
     
