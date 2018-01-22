@@ -16,8 +16,7 @@ class CreateGeneralEventsTable extends Migration
         Schema::create('general_events', function(Blueprint $table){
             $table->increments('id');
             $table->string('title');
-            $table->string('room')->nullable();
-            $table->string('time');
+            $table->string('time')->nullable();
             $table->text('body')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();

@@ -4,7 +4,7 @@
                              @on-complete="submit"
                              :title="getPageTitle" :subtitle="''">
             <tab-content title="Session Details" :beforeChange="()=>validateSessionDetails($v)">
-               
+
                   <div class="col-xs-12">
                     <div class="form-group label-floating padding-right-10"  
                     :class="{'has-error':$v.sessionDetails.sessionTitle.$invalid}">
@@ -146,56 +146,64 @@
                 </div>
             </tab-content>
             <tab-content title="Summary">
-                <div class="details-container">
-                    <div class="title">Session</div>
-                    <div class="content">{{sessionDetails.sessionTitle}}</div>
+                <div class="busy" v-if="submitting">
+                    <trinity-rings-spinner  :animation-duration="1500" :size="66" color="#eb443b" />                    
+                    <span>Please Wait...</span>
                 </div>
-                <div class="details-container">
-                    <div class="title">Keynote</div>
-                    <div class="content">{{sessionDetails.keynote}}</div>
-                </div>
-                <div class="details-container">
-                    <div class="title">Chair</div>
-                    <div class="content">{{sessionDetails.chair}}</div>
-                </div>
-                <div class="details-container separator">
-                    <div class="title">Chair Country</div>
-                    <div class="content">
-                        <div>{{sessionDetails.chairCountry}}</div>
-                         <div class="summary-flag" v-if="sessionDetails.chairCountryFlag">
-                             <img :src="sessionDetails.chairCountryFlag" >
+                <div v-if="!submitting">
+                    <div class="details-container">
+                        <div class="title">Session</div>
+                        <div class="content">{{sessionDetails.sessionTitle}}</div>
+                    </div>
+                    <div class="details-container">
+                        <div class="title">Keynote</div>
+                        <div class="content">{{sessionDetails.keynote}}</div>
+                    </div>
+                    <div class="details-container">
+                        <div class="title">Chair</div>
+                        <div class="content">{{sessionDetails.chair}}</div>
+                    </div>
+                    <div class="details-container separator">
+                        <div class="title">Chair Country</div>
+                        <div class="content">
+                            <div>{{sessionDetails.chairCountry}}</div>
+                             <div class="summary-flag" v-if="sessionDetails.chairCountryFlag">
+                                 <img :src="sessionDetails.chairCountryFlag" >
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="details-container">
-                    <div class="title">Presention Title</div>
-                    <div class="content">{{presentationDetails.presentationTitle}}</div>
-                </div>
-                <div class="details-container">
-                    <div class="title">Location</div>
-                    <div class="content">{{presentationDetails.time +' | '+presentationDetails.room}}</div>
-                </div>
-                <div class="details-container">
-                    <div class="title">Presenter</div>
-                    <div class="content">{{presentationDetails.presenter}}</div>
-                </div>
-                <div class="details-container">
-                    <div class="title">Presenter Country</div>
-                    <div class="content flex">
-                        <div>{{presentationDetails.presenterCountry}}</div>
-                         <div class="summary-flag" v-if="presentationDetails.presenterCountryFlag">
-                                    <img :src="presentationDetails.presenterCountryFlag" >
+                    <div class="details-container">
+                        <div class="title">Presention Title</div>
+                        <div class="content">{{presentationDetails.presentationTitle}}</div>
+                    </div>
+                    <div class="details-container">
+                        <div class="title">Location</div>
+                        <div class="content">{{presentationDetails.time +' | '+presentationDetails.room}}</div>
+                    </div>
+                    <div class="details-container">
+                        <div class="title">Presenter</div>
+                        <div class="content">{{presentationDetails.presenter}}</div>
+                    </div>
+                    <div class="details-container">
+                        <div class="title">Presenter Country</div>
+                        <div class="content flex">
+                            <div>{{presentationDetails.presenterCountry}}</div>
+                             <div class="summary-flag" v-if="presentationDetails.presenterCountryFlag">
+                                        <img :src="presentationDetails.presenterCountryFlag" >
+                            </div>
                         </div>
                     </div>
+    
                 </div>
-
             </tab-content>
+            
             </form-wizard>
  </form>
 </template>
 <script>
 import { required } from 'vuelidate/lib/validators';
 import vSelect  from 'vue-select';
+import { TrinityRingsSpinner  } from 'epic-spinners';
 export default{
     props:{
         conference:{
@@ -208,7 +216,7 @@ export default{
             required:false
             },
     },
-    components:{vSelect},
+    components:{vSelect,TrinityRingsSpinner},
     data(){
         return{
             sessionDetails:{
@@ -228,7 +236,8 @@ export default{
             },
             countries: [ ],
             selectedChairCountry:null,
-            selectedPresenterCountry:null
+            selectedPresenterCountry:null,
+            submitting:false
         }
     },
   mounted(){
@@ -319,6 +328,7 @@ export default{
             });
       },
         submit(){
+            this.submitting=true;
             //Define Endpoints
             let createNewUrl='';
             let updateUrl='';
@@ -335,12 +345,14 @@ export default{
            if(!this.isEditmode){
                 axios.post(createNewUrl,
                         Object.assign(this.presentationDetails,this.sessionDetails)).then(response=>{
+                             this.submitting=false;
                              this.$swal( 'Success!','Event Added', 'success').then(()=>{
                                   window.location='./';
                              });
 
 
                             }).catch(error=>{
+                                 this.submitting=false;
                                 this.$swal( 'Oops...','Something went wrong!', 'error');
                                 console.log(error);
                             });
@@ -348,11 +360,13 @@ export default{
            else{
                  axios.post(updateUrl,
                         Object.assign(this.presentationDetails,this.sessionDetails)).then(response=>{
+                             this.submitting=false;
                              this.$swal( 'Success!','Event Updated', 'success').then(()=>{
-                                 window.location='./';
+                                 window.location='../';
                              })
 
             }).catch(error=>{
+                 this.submitting=false;
                  this.$swal( 'Oops...','Something went wrong!', 'error');
                 console.log(error);
             });
@@ -425,6 +439,13 @@ export default{
 
 </script>
 <style lang="scss" scope>
+   .busy{
+           width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+   }
    .country{
        display: flex;
        .list{

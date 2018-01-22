@@ -30,8 +30,11 @@ class ImageGalleryController extends Controller
             $images = GalleryImage::latest()->take(6)->get();
             return GalleryImageTransformer::transform($images);
         }
-        return view('admin.events.gallery.index');
+         
+        $images=GalleryImage::latest()->take(30)->paginate(8);
+        return view('admin.events.gallery.index')->with(['images'=>$images]);
     }
+
     
     public function add()
     {

@@ -10,7 +10,7 @@
                         <label for="title" class="control-label">Presentation Title</label>
 
                         <div class="">
-                            <input required id="title" type="text" class="form-control" name="title" value="{{ old('title') }}"> 
+                            <input  id="title" type="text" class="form-control" name="title" value="{{ old('title') }}"> 
                             @if ($errors->has('title'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('title') }}</strong>
@@ -19,24 +19,12 @@
                         </div>
                     </div> 
 
-                    <div class="form-group label-floating padding-right-10 {{ $errors->has('room') ? ' has-error' : ''}}">
-                        <label for="room" class="control-label">Room</label>
-
-                        <div class="">
-                            <input required id="room" type="text" class="form-control" name="room" value="{{ old('room') }}">
-                            @if ($errors->has('room'))
-                                <span class"help-block">
-                                    <strong>{{ $errors->first('room') }}</strong>
-                                </span>
-                            @endif
-                        </div>
-                    </div>
 
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('time') ? ' has-error' : ''}}">
                         <label for="time" class="control-label">Time</label>
 
                         <div class="">
-                            <input required id="time" type="text" class="form-control" name="time" value="{{ old('time') }}">
+                            <input  id="time" type="text" class="form-control" name="time" value="{{ old('time') }}">
                             @if ($errors->has('time'))
                                 <span class"help-block">
                                     <strong>{{ $errors->first('time') }}</strong>
@@ -46,10 +34,10 @@
                     </div>
 
                     <div class="form-group label-floating padding-right-10 {{ $errors->has('body') ? ' has-error' : '' }}">
-                        <label for="body" class=" control-label">Description</label>
+                        <label for="body" class=" control-label">Body</label>
 
                         <div class="">
-                            <textarea rows="5" required id="body" type="text" class="form-control" name="body" value="{{ old('body') }}"></textarea>
+                            <textarea rows="5"  id="body" type="text" class="form-control" name="body" value="{{ old('body') }}"></textarea>
                             @if ($errors->has('body'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('body') }}</strong>

@@ -13,7 +13,8 @@
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('admin-assets/css/vendor.css') }}" rel="stylesheet">
-    {!! Charts::styles() !!}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    {{--  {!! Charts::styles() !!}  --}}
 
     <!-- Scripts -->
     <script>
@@ -48,10 +49,19 @@
                        <li><a href="{{route('admin.home')}}">Abstracts</a></li>
                        <li><a href="{{route('admin.expo')}}">Expo Applications</a></li>
                        <li><a href="{{route('admin.exhibition')}}">Exhibition Applications</a></li>
-                       <li><a href="{{route('generalEvents.index')}}">General</a></li>                       
-                       <li><a href="{{route('nulisticeEvents.index')}}">Nulistice</a></li>                       
-                       <li><a href="{{route('rerisEvents.index')}}">Reris</a></li>                                                                     
-                       {{-- <li><a href="{{route('stats',['conference'=>'all'])}}">Statistics</a></li> --}}
+                       <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                     Live<span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                   <li><a href="{{route('generalEvents.index')}}">General Events</a></li>
+                                   <li><a href="{{route('rerisEvents.index')}}">Reris Events</a></li>                                                                     
+                                   <li><a href="{{route('nulisticeEvents.index')}}">Nulistice Events</a></li>
+                                   <li><a href="{{route('events.gallery')}}">Photo Gallery</a></li>
+                                   <li><a href="{{route('events.gallery.add')}}">Add Images to Gallery</a></li>
+                                </ul>
+                            </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -92,14 +102,13 @@
     </div>
 
     <!-- Scripts -->
-    {{--  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>  --}}
     <script src="{{ mix('admin-assets/js/bundle.js') }}"></script>
     <script src="{{ mix('admin-assets/js/app.js') }}"></script>
-    {{--  <script src="{{asset('js/bootstrap-3.typehead.min.js')}}"></script>  --}}
-    {!! Charts::scripts() !!}
+    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    {{--  {!! Charts::scripts() !!}
     @if (isset($chart))
-      {!! $chart->script() !!}
-    @endif
+      {!! $chart->script() !!}  --}}
+    {{--  @endif  --}}
     @yield('scripts')
 
 </body>

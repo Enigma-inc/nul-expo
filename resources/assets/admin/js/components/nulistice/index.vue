@@ -21,7 +21,7 @@
           <div class="event-field">
               <div class="header"></div>
               <div class="details">
-                   <toggle-event-status :toggle-text="'Deactivate'" :type="'nulistice'" :event="event"> </toggle-event-status>
+                   <event-buttons :toggle-text="'Deactivate'" :type="'nulistice'" :event="event"> </event-buttons>
               </div>
           </div>
       </div>
@@ -32,7 +32,7 @@
                 :globalSearch="true">
                 <template slot="table-row-after" scope="props">
                     <td>
-                       <toggle-event-status :toggle-text="'Activate'" :type="'nulistice'" :event="props.row"> </toggle-event-status>
+                       <event-buttons :toggle-text="'Activate'" :type="'nulistice'" :event="props.row"> </event-buttons>
                     </td>
                 </template>
     </vue-good-table>

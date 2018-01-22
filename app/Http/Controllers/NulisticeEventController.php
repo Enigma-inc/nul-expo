@@ -63,7 +63,7 @@ class NulisticeEventController extends Controller
             'presenter_country_flag' => request('presenterCountryFlag')
         ]);
         if ($request->wantsJson()) {
-            return $ $nulisticeEventObject;
+            return  $nulisticeEventObject;
         }
         return redirect()->route('nulisticeEvents.index');
     }

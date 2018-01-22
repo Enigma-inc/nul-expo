@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Events\NulisticeEventStatusChange;
 use App\Events\RerisEventStatusChange;
 use App\Events\GeneralEventStatusChange;
+use App\Http\Requests\GeneralEventRequest;
 
 class GeneralEventController extends Controller
 {
@@ -22,11 +23,11 @@ class GeneralEventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(Request $request,$status=1)
     {
        
         if($request->wantsJson()){
-            $generalEvents = GeneralEvent::where('status','=',1)->latest()->get();
+            $generalEvents = GeneralEvent::where('status','=',$status)->latest()->get();
             return $generalEvents;
         }
         
@@ -51,11 +52,10 @@ class GeneralEventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(GeneralEventRequest $request)
     {
         $generalEventObject = GeneralEvent::create([
             'title' => request('title'),
-            'room' => request('room'),
             'time' => request('time'),
             'body' => request('body')
         ]);
@@ -95,12 +95,11 @@ class GeneralEventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(GeneralEventRequest $request, $id)
     {
         $generalEvent = GeneralEvent::find($id);
 
         $generalEvent->title = $request->input('title');
-        $generalEvent->room = $request->input('room');
         $generalEvent->time = $request->input('time');
         $generalEvent->body = $request->input('body');
 

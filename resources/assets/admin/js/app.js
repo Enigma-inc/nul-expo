@@ -22,9 +22,10 @@ Vue.use(VueGoodTable);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('toggle-event-status', require('./components/live/toggle-event-status.vue'));
+Vue.component('event-buttons', require('./components/live/event-buttons.vue'));
 Vue.component('nulistice-admin-page', require('./components/nulistice'));
 Vue.component('reris-admin-page', require('./components/reris'));
+Vue.component('general-events-admin-page', require('./components/general'));
 Vue.component('upload-gallery-image',require('./components/gallery/upload.vue'));
 Vue.component('add-edit-nulistice-event',require('./components/nulistice/addEdit.vue'));
 

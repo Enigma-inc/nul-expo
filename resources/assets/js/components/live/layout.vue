@@ -36,9 +36,9 @@
         <v-layout wrap>
           <!-- <general></general> -->
         </v-layout>
-        <!-- <v-layout wrap>
+        <v-layout wrap>
             <image-gallery></image-gallery>
-        </v-layout> -->
+        </v-layout>
       </v-container>
     </v-content>
   </v-app>

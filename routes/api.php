@@ -23,6 +23,7 @@ Route::get('events/reris','RerisEventController@index');
  Route::post('/events/{id}/toggle-status','GeneralEventController@toggleStatus')->middleware('auth:api');
  Route::get('/events/nulistice/{status}','NulisticeEventController@index')->middleware('auth:api');
  Route::get('/events/reris/{status}','RerisEventController@index')->middleware('auth:api');
+ Route::get('/events/general/{status}','GeneralEventController@index')->middleware('auth:api');
  
  //Gallery
 Route::get('/events/gallery/images', 'ImageGalleryController@index');

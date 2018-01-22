@@ -6,10 +6,10 @@
                   <div class="headline">
                       <div class="title ">{{event.session_title}}</div>
                       <div class="details">
-                          <div class="time">
+                          <!-- <div class="time">
                               <v-icon left>access_time</v-icon>
                               <span class="color-dark">{{event.time}}</span>
-                         </div>
+                         </div> -->
                           <div class="room">
                               <v-icon left>home</v-icon>
                             <span class="color-dark">{{event.room}}</span>
@@ -21,7 +21,7 @@
                     <div class="body">
                      <div class="chair">
                             <div class="flag">
-                                <img :src="'https://restcountries.eu/data/zaf.svg'" />
+                                <img :src="event.chair_country_flag" />
                             </div>
                             <div class="details">
                                 <h4 class="title color-dark">Chair</h4>
@@ -31,7 +31,7 @@
                     <v-divider></v-divider>
                      <div class="presentation">
                             <div class="flag">
-                                <img :src="'https://restcountries.eu/data/usa.svg'" />
+                                <img :src="event.presenter_country_flag" />
                             </div>
                             <div class="details">
                                 <h4 class="title color-dark">Presentation</h4>
