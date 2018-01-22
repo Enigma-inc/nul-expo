@@ -1,15 +1,14 @@
 <template>
  <form class="form-horizontal" role="form" >
             <form-wizard :finishButtonText="'Submit'" :color="'#eb443b'"
-                             @on-complete="submit">
+                             @on-complete="submit"
+                             :title="getPageTitle" :subtitle="''">
             <tab-content title="Session Details" :beforeChange="()=>validateSessionDetails($v)">
-                
                
                   <div class="col-xs-12">
                     <div class="form-group label-floating padding-right-10"  
                     :class="{'has-error':$v.sessionDetails.sessionTitle.$invalid}">
                         <label for="title" class="control-label">Session Title</label>
-
                         <div class="">
                             <input required  type="text" class="form-control" 
                                  v-model.trim="sessionDetails.sessionTitle"  @input="$v.sessionDetails.sessionTitle.$touch()"  > 
@@ -25,7 +24,7 @@
 
                         <div class="">
                             <input required  type="text" class="form-control" 
-                                 v-model.trim="sessionDetails.keynote"  @input="$v.sessionDetails.keynote.$touch()"  > 
+                                 v-model="sessionDetails.keynote"   > 
                         </div>
                     </div>  
                   </div>
@@ -149,7 +148,7 @@
             <tab-content title="Summary">
                 <div class="details-container">
                     <div class="title">Session</div>
-                    <div class="content">{{sessionDetails.sessionTile}}</div>
+                    <div class="content">{{sessionDetails.sessionTitle}}</div>
                 </div>
                 <div class="details-container">
                     <div class="title">Keynote</div>
@@ -198,21 +197,32 @@
 import { required } from 'vuelidate/lib/validators';
 import vSelect  from 'vue-select';
 export default{
+    props:{
+        conference:{
+            type:String,
+            required:true
+            },
+        eventId:{
+            type:Number,
+            default:0, //Add new event by default
+            required:false
+            },
+    },
     components:{vSelect},
     data(){
         return{
             sessionDetails:{
-                sessionTitle:'Session Title with flags',
-                keynote:'Keynote speakers',
-                chair:'Session Chair',
+                sessionTitle:'',
+                keynote:'',
+                chair:'',
                 chairCountry:'',
                 chairCountryFlag:''
             },
             presentationDetails:{
-                presentationTitle:'Prese Title with flag',
-                time:'10:00',
-                room:'Machache',
-                presenter:'Preseter names',
+                presentationTitle:'',
+                time:'',
+                room:'',
+                presenter:'',
                 presenterCountry:'',
                 presenterCountryFlag:'',
             },
@@ -223,6 +233,7 @@ export default{
     },
   mounted(){
       this.getCountries();
+     
   },
   validations: {
           sessionDetails:{
@@ -261,25 +272,115 @@ export default{
           },
         },
     methods:{
+        getEvent(){
+                if(this.isNulisticeEvent())
+                    {
+                        axios.get(`../../../api/events/nulistice/${this.eventId}/edit`).then(response=>{
+                                this.setEventForEdit(response.data)
+                            }); 
+                    }
+                    else{
+                         axios.get(`../../../api/events/reris/${this.eventId}/edit`).then(response=>{
+                                this.setEventForEdit(response.data)
+                            }); 
+                    }
+        },
+        setEventForEdit(event){
+                
+                this.sessionDetails.sessionTitle=event.session_title;
+                this.sessionDetails.keynote=event.keynote;
+                this.sessionDetails.chair=event.chair;
+                this.sessionDetails.chairCountry=event.chair_country;
+                this.sessionDetails.chairCountryFlag=event.chair_country_flag;
+
+                this.presentationDetails.presentationTitle=event.title;
+                this.presentationDetails.time=event.time;
+                this.presentationDetails.room=event.room;
+                this.presentationDetails.presenter=event.presenter;
+                this.presentationDetails.presenterCountry=event.presenter_country;
+                this.presentationDetails.presenterCountryFlag=event.presenter_country_flag;
+
+                //Set Selected chair and presenter Countries
+                this.selectedChairCountry= this.countries.filter(country=>{
+                    return country.name==this.sessionDetails.chairCountry;
+                },this)[0];
+                this.selectedPresenterCountry= this.countries.filter(country=>{
+                    return country.name==this.presentationDetails.presenterCountry;
+                },this)[0];
+        },
         getCountries(){
             axios.get(`../../../../data/countries.json`).then(response=>{
                 this.countries=response.data;
+                //get event details
+                 if(this.isEditmode){
+                        this.getEvent();
+                    }
+
             });
       },
         submit(){
-            axios.post(`../../../api/events/nulistice`,
+            //Define Endpoints
+            let createNewUrl='';
+            let updateUrl='';
+            if(this.isNulisticeEvent())
+            {
+                createNewUrl=`../../../api/events/nulistice`;
+                updateUrl=`../../../api/events/nulistice/${this.eventId}?_method=PATCH`;
+            }
+            else{
+                 createNewUrl=`../../../api/events/reris`;
+                updateUrl=`../../../api/events/reris/${this.eventId}?_method=PATCH`;
+            }
+
+           if(!this.isEditmode){
+                axios.post(createNewUrl,
                         Object.assign(this.presentationDetails,this.sessionDetails)).then(response=>{
-                    console.log(response);
+                             this.$swal( 'Success!','Event Added', 'success').then(()=>{
+                                  window.location='./';
+                             });
+
+
+                            }).catch(error=>{
+                                this.$swal( 'Oops...','Something went wrong!', 'error');
+                                console.log(error);
+                            });
+           }
+           else{
+                 axios.post(updateUrl,
+                        Object.assign(this.presentationDetails,this.sessionDetails)).then(response=>{
+                             this.$swal( 'Success!','Event Updated', 'success').then(()=>{
+                                 window.location='./';
+                             })
+
             }).catch(error=>{
+                 this.$swal( 'Oops...','Something went wrong!', 'error');
                 console.log(error);
             });
+           }
         },
         validateSessionDetails($v){
             return !$v.sessionDetails.$invalid;
         },
         validatePresentionDetails($v){
             return !$v.presentationDetails.$invalid;
+        },
+        isNulisticeEvent(){
+            return this.conference =='nulistice' || this.conference =='Nulistice' ||this.conference =='NULISTICE';
+        },
+        resetFields(){
+                this.sessionDetails.sessionTitle='',
+                this.sessionDetails.keynote='';
+                this.sessionDetails.chair='';
+                this.sessionDetails.chairCountry='';
+                this.sessionDetails.chairCountryFlag='';         
+                this.presentationDetails.presentationTitle='';
+                this.presentationDetails.time='';
+                this.presentationDetails.room='';
+                this.presentationDetails.presenter='';
+                this.presentationDetails.presenterCountry='';
+                this.presentationDetails.presenterCountryFlag='';
         }
+
     },
     watch:{
         selectedChairCountry:function(newCountry,oldCountry){
@@ -302,9 +403,26 @@ export default{
                 this.presentationDetails.presenterCountryFlag="";
              }
         }
-    }
-}
+    },
+     computed:{
+     isEditmode(){
+                return this.eventId!=0;
+            },
+    getPageTitle(){
+                    let pageTile="";
+                    if(this.isNulisticeEvent()){
+                        this.isEditmode?pageTile="Editing NULISTICE Event":pageTile="Creating NULISTICE Event";
+                    }
+                    else{
+                        this.isEditmode?pageTile="Editing RERIS Event":pageTile="Creating RERIS Event";
+                    }
+
+                    return pageTile;
+                }
+        },
     
+}
+
 </script>
 <style lang="scss" scope>
    .country{

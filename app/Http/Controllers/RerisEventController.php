@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\RerisEvent;
 use Illuminate\Http\Request;
+use App\Events\RerisEventStatusChange;
 
 class RerisEventController extends Controller
 {
@@ -47,19 +48,22 @@ class RerisEventController extends Controller
     public function store(Request $request)
     { 
         $rerisEventObject = RerisEvent::create([
-            'title' => request('title'),
+            'title' => request('presentationTitle'),
             'room' => request('room'),
             'time' => request('time'),
-            'session_title' => request('session_title'),
+            'session_title' => request('sessionTitle'),
             'keynote' => request('keynote'),
             'chair' => request('chair'),
-            'chair_country' => request('chair_country'),
-            'chair_country_flag' => request('chair-country-flag'),
+            'chair_country' => request('chairCountry'),
+            'chair_country_flag' => request('chairCountryFlag'),
             'presenter' => request('presenter'),
-            'presenter_country' => request('presenter_country'),
-            'presenter_country_flag' => request('presenter-country-flag')
+            'presenter_country' => request('presenterCountry'),
+            'presenter_country_flag' => request('presenterCountryFlag')
         ]);
 
+        if ($request->wantsJson()) {
+            return $rerisEventObject;
+        }
         return redirect()->route('rerisEvents.index');
     }
 
@@ -80,9 +84,12 @@ class RerisEventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request,$id)
     {
         $rerisEventObject = RerisEvent::find($id);
+        if ($request->wantsJson()) {
+            return $rerisEventObject;
+        }
 
         return view('admin.events.reris.edit')
                ->with('rerisEventObject', $rerisEventObject);
@@ -97,21 +104,26 @@ class RerisEventController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $rerisEvent = RerisEvent::find($id);
+        $rerisEvent = RerisEvent::findorfail($id);
 
-        $rerisEvent->title = $request->input('title');
+        $rerisEvent->title = $request->input('presentationTitle');
         $rerisEvent->room = $request->input('room');
         $rerisEvent->time = $request->input('time');
         $rerisEvent->keynote = $request->input('keynote');
-        $rerisEvent->session_title = $request->input('session_title');
+        $rerisEvent->session_title = $request->input('sessionTitle');
         $rerisEvent->chair = $request->input('chair');
-        $rerisEvent->chair_country = $request->input('chair_country');
-        $rerisEvent->chair_country_flag = $request->input('chair-country-flag');
+        $rerisEvent->chair_country = $request->input('chairCountry');
+        $rerisEvent->chair_country_flag = $request->input('chairCountryFlag');
         $rerisEvent->presenter = $request->input('presenter');
-        $rerisEvent->presenter_country = $request->input('presenter_country');
-        $rerisEvent->presenter_country_flag = $request->input('presenter-country-flag');
-
+        $rerisEvent->presenter_country = $request->input('presenterCountry');
+        $rerisEvent->presenter_country_flag = $request->input('presenterCountryFlag');
         $rerisEvent->save();
+
+        broadcast(new RerisEventStatusChange());
+
+        if ($request->wantsJson()) {
+            return $rerisEvent;
+        }
 
         return redirect()->route('rerisEvents.index');
     }

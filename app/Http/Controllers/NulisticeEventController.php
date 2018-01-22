@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\NulisticeEvent;
 use Illuminate\Http\Request;
 use App\Http\Requests\ConferenceEventRequest;
+use App\Events\NulisticeEventStatusChange;
 
 class NulisticeEventController extends Controller
 {
@@ -61,7 +62,9 @@ class NulisticeEventController extends Controller
             'presenter_country' => request('presenterCountry'),
             'presenter_country_flag' => request('presenterCountryFlag')
         ]);
-
+        if ($request->wantsJson()) {
+            return $ $nulisticeEventObject;
+        }
         return redirect()->route('nulisticeEvents.index');
     }
 
@@ -82,10 +85,13 @@ class NulisticeEventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request,$id)
     {
+        
         $nulisticeEventObject = NulisticeEvent::find($id);
-
+        if ($request->wantsJson()) {
+            return $nulisticeEventObject;
+        }
         return view('admin.events.nulistice.edit')
                ->with('nulisticeEventObject', $nulisticeEventObject);
     }
@@ -97,24 +103,28 @@ class NulisticeEventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ConferenceEventRequest $request, $id)
     {
-        $nulisticeEvent = NulisticeEvent::find($id);
+        $nulisticeEvent = NulisticeEvent::findorfail($id);
 
-        $nulisticeEvent->title = $request->input('title');
+        $nulisticeEvent->title = $request->input('presentationTitle');
         $nulisticeEvent->room = $request->input('room');
         $nulisticeEvent->time = $request->input('time');
         $nulisticeEvent->keynote = $request->input('keynote');
-        $nulisticeEvent->session_title = $request->input('session_title');
+        $nulisticeEvent->session_title = $request->input('sessionTitle');
         $nulisticeEvent->chair = $request->input('chair');
-        $nulisticeEvent->chair_country = $request->input('chair_country');
-        $nulisticeEvent->chair_country_flag = $request->input('chair-country-flag');
+        $nulisticeEvent->chair_country = $request->input('chairCountry');
+        $nulisticeEvent->chair_country_flag = $request->input('chairCountryFlag');
         $nulisticeEvent->presenter = $request->input('presenter');
-        $nulisticeEvent->presenter_country = $request->input('presenter_country');
-        $nulisticeEvent->presenter_country_flag = $request->input('presenter-country-flag');
-        
-
+        $nulisticeEvent->presenter_country = $request->input('presenterCountry');
+        $nulisticeEvent->presenter_country_flag = $request->input('presenterCountryFlag');     
         $nulisticeEvent->save();
+        
+        broadcast(new NulisticeEventStatusChange());
+
+        if ($request->wantsJson()) {
+            return $nulisticeEvent;
+        }
 
         return redirect()->route('nulisticeEvents.index');
     }

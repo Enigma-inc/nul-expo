@@ -29,6 +29,14 @@ Route::get('/events/gallery/images', 'ImageGalleryController@index');
 Route::post('/events/gallery/images', 'ImageGalleryController@upload')->middleware('auth:api');
 
 // EVENTS ADMIN
+//NULISTIE
+Route::get('/events/nulistice/{id}/edit', 'NulisticeEventController@edit')->middleware('auth:api');
 Route::post('/events/nulistice', 'NulisticeEventController@store')->middleware('auth:api');
+Route::patch('/events/nulistice/{id}', 'NulisticeEventController@update')->middleware('auth:api');
+
+//RERIS
+Route::get('/events/reris/{id}/edit', 'RerisEventController@edit')->middleware('auth:api');
+Route::post('/events/reris', 'RerisEventController@store')->middleware('auth:api');
+Route::patch('/events/reris/{id}', 'RerisEventController@update')->middleware('auth:api');
 
  
