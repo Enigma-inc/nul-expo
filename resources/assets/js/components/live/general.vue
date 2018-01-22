@@ -1,33 +1,30 @@
 <template>
-<v-flex class="event" v-if="events.length>0"> 
-<carousel-3d  :perspective="180" :controls-visible="true" :width="600" :animationSpeed=900 :autoplay="true" :autoplay-timeout="5000" :display="1">
-   <slide  class="card white--text event-card"  v-for="event,index in events" :key="event.id" :index="index">
+<v-flex class="event"> 
+<transition-group name="list" tag="div" >
+   <v-card  class="white--text general-card"  v-for="event in generalEvents" :key="event.id" >
             <v-card-title primary-title>
                 <div class="headline">
-                    <div class="title">{{event.title}}</div>
-                    <div class="details">
-                        <div class="time">{{event.time}}</div>
-                        <div class="room">{{event.room}}</div>
-                    </div>
-                </div>
-                <div id="nulistice" class="body" v-bar="{
-                  preventParentScroll:false,
-                  scrollThrottle:30
-              }" >
-                    <div class="scrollable">
-                        {{event.body}}
+                    <div class="title">
+                        <span class="time">{{event.time}}</span>                        
+                        {{event.title}}
+
                     </div>
                 </div>
             </v-card-title>
+            <v-card-text v-if="event.body">
+                    <div>{{event.body}}</div>
+            </v-card-text>
             <v-card-actions>
-                <v-btn flat dark>View Full Program</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn flat dark @click="downloadProgram()"><v-icon left>cloud_download</v-icon> Full Programme</v-btn>
             </v-card-actions>
-   </slide>
-</carousel-3d>
+   </v-card>
   
+ </transition-group>
  </v-flex>
 </template>
 <script>
+import {mapGetters,mapActions} from 'vuex';
 export default{
     data(){
         return{
@@ -36,25 +33,32 @@ export default{
         }
     },
     mounted(){
-      
-        axios.get('../api/events/general').then(response=>{
-            
-            this.events=response.data;
-            
-    });
     },
     methods:{
+        ...mapActions(['downloadProgram'])
+    },
+    computed:{
+            ...mapGetters(['generalEvents'])
     }
 }
     
 </script>
 <style lang="scss" scoped>
-.card{
+.general-card{
       background-color: rgba(0, 144, 161,0.9) !important;
-      .details{
-          background: darken(rgb(0, 144, 161),10%);
-          color:lighten(#000,60%);
-      }
+      .card__title{padding-top:10px !important;}
+      .headline{
+              width: 100%;
+                display: flex;
+                justify-content: center;
+                .title{
+                        font-size: 2rem !important;
+                       font-weight: 300;
+                       .time{
+                           color: darken(#fff, 30%)
+                       }
+                }
+         }
 
 }
 

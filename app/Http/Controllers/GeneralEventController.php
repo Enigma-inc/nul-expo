@@ -104,6 +104,7 @@ class GeneralEventController extends Controller
         $generalEvent->body = $request->input('body');
 
         $generalEvent->save();
+        broadcast(new GeneralEventStatusChange());
 
         return redirect()->route('generalEvents.index');
     }

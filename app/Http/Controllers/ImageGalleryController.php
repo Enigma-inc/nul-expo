@@ -22,12 +22,12 @@ class ImageGalleryController extends Controller
     }
 
 
-    public function index(Request $request)
+    public function index(Request $request,$count=6)
     {
         // $images = GalleryImage::where('status', '=', $status)->get();
         
         if ($request->wantsJson()) {
-            $images = GalleryImage::latest()->take(6)->get();
+            $images = GalleryImage::latest()->take($count)->get();
             return GalleryImageTransformer::transform($images);
         }
          

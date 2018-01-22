@@ -20,11 +20,18 @@
                   <div class="color-container reris"></div>
                   <small class="text">RERIS</small>
               </div>
+              <div class="conference">
+                  <div class="color-container general"></div>
+                  <small class="text">GENERAL</small>
+              </div>
           </div>
       </v-layout>
     </v-toolbar>
     <v-content>
       <v-container>
+        <v-layout wrap>
+          <general v-if="generalEventsAvaibale"></general>
+        </v-layout>
         <v-layout wrap >
            <transition name="fade">
                <nulistice class="events-container" v-if="nulisticeEventsAvaibale"></nulistice>              
@@ -33,12 +40,9 @@
              <reris class="events-container" v-if="rerisEventsAvaibale"></reris>
            </transition>
         </v-layout >
-        <v-layout wrap>
-          <!-- <general></general> -->
-        </v-layout>
-        <v-layout wrap>
-            <image-gallery></image-gallery>
-        </v-layout>
+
+        <image-gallery></image-gallery>
+        <signature></signature>
       </v-container>
     </v-content>
   </v-app>
@@ -49,22 +53,24 @@ import reris from "./reris";
 import nulistice from './nulistice';
 import general from './general';
 import imageGallery from './image-gallery';
+import signature from './signature';
 import  {mapGetters,mapActions} from 'vuex';
   export default {
      props: {
       source: String
     },
-     components:{nulistice, reris,general,imageGallery},
+     components:{nulistice, reris,general,imageGallery,signature},
     data: () => ({
             logo:'./images/logos/logo-landscape.svg'
     }),
     mounted(){
         this.getNulisticeEvents();
         this.getRerisEvents();
+        this.getGeneralEvents();
         this.listen();
     },
     methods:{
-        ...mapActions(['getNulisticeEvents','getRerisEvents']),
+        ...mapActions(['getNulisticeEvents','getRerisEvents','getGeneralEvents']),
         listen(){            
                     //REGISTER EVENT LISTENERS
                     Echo.channel('nulisticeEvents')
@@ -75,15 +81,24 @@ import  {mapGetters,mapActions} from 'vuex';
                     .listen('.statusChange', () => {
                         this.getRerisEvents();
                     });
+                    Echo.channel('generalEvents')
+                    .listen('.statusChange', () => {
+                        this.getGeneralEvents();
+                    });
             }
     },
     computed:{
-       ...mapGetters(['nulisticeEventsAvaibale','rerisEventsAvaibale'])
+       ...mapGetters(['nulisticeEventsAvaibale','rerisEventsAvaibale',
+                      'generalEventsAvaibale']),
+            showImageGallery(){
+              return (this.nulisticeEventsAvaibale||this.rerisEventsAvaibale) && this.generalEventsAvaibale
+            }
     }
   }
 </script>
 
 <style lang="scss">
+   
     .color-dark{
         color:lighten(#000,10%);
     }
@@ -102,6 +117,7 @@ import  {mapGetters,mapActions} from 'vuex';
           }
           .reris{ background: #7da93b;}
           .nulistice{ background: darken(orange,7%);}
+          .general{background:rgb(0, 133, 149)}
           .text{
             margin-left: 5px;
             font-weight: 600;
@@ -113,7 +129,7 @@ import  {mapGetters,mapActions} from 'vuex';
     }
       .event-card{
               margin: 5px;
-              min-height: 290px;
+              min-height: 300px;
               min-width: 320px;
           .card__title{
               padding:0;
@@ -290,6 +306,9 @@ import  {mapGetters,mapActions} from 'vuex';
     }
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
       opacity: 0;
+    }
+    .container{
+      padding-bottom: 110px !important;
     }
 
 </style>

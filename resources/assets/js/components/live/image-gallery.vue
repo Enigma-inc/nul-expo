@@ -1,11 +1,20 @@
 <template>
-  <div id='gallery' >
-    <a class="card" v-for="item in images" :key="item.id" :href="item.image">
-        <img :src="item.thumbnail" :title="item.caption">
-    </a>
-</div>
+<v-layout wrap>
+     <v-flex id='gallery-large'  class="large-gallery" v-if="!showSmallGallery">
+        <a class="" v-for=" item in images" :key="item.id" :href="item.image">
+            <img :src="item.thumbnail" :title="item.caption">
+        </a>
+     </v-flex>
+    <v-flex id='gallery-small'  class="small-gallery" v-if="showSmallGallery">
+        <a class="card" v-for="(item,index) in images" :key="item.id" :href="item.image">
+            <img :src="item.thumbnail" :title="item.caption" v-if="index<6">
+        </a>
+     </v-flex> 
+ </v-layout>
+
 </template>
 <script>
+import {mapGetters} from 'vuex';
 import vueImages from 'vue-images';
 require('../../../vendor/photobox/jquery.photobox.js');
 export default{
@@ -24,11 +33,13 @@ export default{
     },
     methods:{
         getImages(){
-                axios.get(`../api/events/gallery/images`).then(response=>{
+                axios.get(`../api/events/gallery/images/16`).then(response=>{
                 this.images=response.data
                 setTimeout(() => {
-                       $("#gallery").unbind().removeData();
-                       $("#gallery").photobox();                    
+                       $("#gallery-small").unbind().removeData();
+                       $("#gallery-small").photobox();                    
+                       $("#gallery-large").unbind().removeData();
+                       $("#gallery-large").photobox();                    
                 }, 100);
             });
         },
@@ -41,20 +52,39 @@ export default{
             });
         }
         
+    },
+    computed:{
+         ...mapGetters(['nulisticeEventsAvaibale','rerisEventsAvaibale',
+                      'generalEventsAvaibale']),
+        showSmallGallery(){
+            return this.nulisticeEventsAvaibale || this.rerisEventsAvaibale;
+        }
     }
 }
     
 </script>
 <style lang="scss" scoped>
-    #gallery{
-        display: flex;
-        justify-content: center;
-         width: 100%;
-         height: 100px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
+   .large-gallery{
+               display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                margin-top:20px;
+                a{
+                    margin:2px;
+                }
+   }
+   .small-gallery{
+               display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+   }
+    #gallery-small{
+
         @media screen and (max-width: 620px) {
              height: 70px !important;
         }

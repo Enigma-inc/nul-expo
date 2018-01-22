@@ -5953,10 +5953,6 @@ vue-animate@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/vue-animate/-/vue-animate-0.0.4.tgz#bf7afcdfec4694e4d19147a75f6761ecf3735f8f"
 
-vue-carousel-3d@^0.1.19:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/vue-carousel-3d/-/vue-carousel-3d-0.1.19.tgz#b817d06531e88f41e06faacfd92c262d9bfb42f3"
-
 vue-carousel@^0.6.5:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.6.5.tgz#f04e4485ce6ac2404eaff186923f7ad057839205"
@@ -6036,13 +6032,13 @@ vue2-dropzone@^3.0.3:
   dependencies:
     dropzone "^5.2.0"
 
-vue@^2.1.0, vue@^2.1.10:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.2.6.tgz#451714b394dd6d4eae7b773c40c2034a59621aed"
-
-vue@^2.5.9:
+vue@^2.1.0, vue@^2.5.9:
   version "2.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
+
+vue@^2.1.10:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.2.6.tgz#451714b394dd6d4eae7b773c40c2034a59621aed"
 
 vuebar@^0.0.17:
   version "0.0.17"

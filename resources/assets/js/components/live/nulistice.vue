@@ -45,6 +45,10 @@
                     </div>
     
                 </v-card-text>
+            <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn small flat dark @click="downloadProgram()"><v-icon left>cloud_download</v-icon> Full Programme</v-btn>
+            </v-card-actions>
         </v-card>
      </v-flex>
 </transition-group>
@@ -62,7 +66,7 @@ export default{
             this.getNulisticeEvents();
     },
     methods:{
-        ...mapActions(['getNulisticeEvents']),
+        ...mapActions(['getNulisticeEvents','downloadProgram']),
  
     },
     computed:{
