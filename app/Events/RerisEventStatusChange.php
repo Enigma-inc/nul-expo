@@ -31,6 +31,10 @@ class RerisEventStatusChange
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new Channel('rerisEvents');
+    }
+
+    public function broadcastAs(){
+        return "statusChange";
     }
 }

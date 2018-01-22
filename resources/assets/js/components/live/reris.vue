@@ -65,14 +65,14 @@ export default{
     },
     methods:{
         getActiveEvents(){
-            axios.get('../events/nulistice/1').then(response=>{            
+            axios.get('../events/reris/1').then(response=>{            
             this.events=response.data;
             });
         },
         listen(){
             
         //REGISTER EVENT LISTENERS
-        Echo.channel('nulisticeEvents')
+        Echo.channel('rerisEvents')
             .listen('.statusChange', () => {
                 this.getActiveEvents();
             });
