@@ -1,8 +1,8 @@
 <template>
-  <div class="signature">
+  <a class="signature" href="http://www.enigma.co.ls" target="_blank">
       <span>Designed By</span>
       <img :src="enigma" alt="Enigma">
-  </div>
+  </a>
 </template>
 <script>
 export default{
@@ -25,6 +25,7 @@ export default{
             position: fixed;
             bottom: 5px;
             right: 5px;
+            text-decoration: none;
             span{
                     font-size: 0.6rem;
                    font-style: italic;
