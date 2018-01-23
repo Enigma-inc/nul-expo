@@ -25,6 +25,8 @@
                   <small class="text">GENERAL</small>
               </div>
           </div>
+          <v-spacer></v-spacer>
+          <v-btn flat small @click="goToWebsite">Continue to Website</v-btn>
       </v-layout>
     </v-toolbar>
     <v-content>
@@ -70,7 +72,7 @@ import  {mapGetters,mapActions} from 'vuex';
         this.listen();
     },
     methods:{
-        ...mapActions(['getNulisticeEvents','getRerisEvents','getGeneralEvents']),
+        ...mapActions(['getNulisticeEvents','getRerisEvents','getGeneralEvents','goToWebsite']),
         listen(){            
                     //REGISTER EVENT LISTENERS
                     Echo.channel('nulisticeEvents')

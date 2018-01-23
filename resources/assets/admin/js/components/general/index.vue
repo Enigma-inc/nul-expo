@@ -9,7 +9,7 @@
           </div>
           <div class="event-field">
               <div class="header">Body</div>
-              <div class="details">{{event.body}}</div>
+              <div class="details" v-html="event.body">}</div>
           </div>
           
           <div class="event-field">
@@ -48,6 +48,7 @@ export default{
                             label: 'Body',
                             field: 'body',
                             filterable: true,
+                            html:true
                             },
                             {
                             label: 'Actions',

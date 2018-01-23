@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Response;
 
 class PagesController extends Controller
 {
+    public function live()
+    {
+        return view('pages.live');
+    }
     public function home()
     {
         $slideImages= array("slide-2.jpg","slide-3.jpg","slide-4.jpg","slide-5.jpg");

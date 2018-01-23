@@ -12,7 +12,7 @@
                 </div>
             </v-card-title>
             <v-card-text v-if="event.body">
-                    <div>{{event.body}}</div>
+                    <div v-html="event.body" class="body"></div>
             </v-card-text>
             <v-card-actions>
                   <v-spacer></v-spacer>
@@ -59,6 +59,9 @@ export default{
                        }
                 }
          }
+        .body{
+            padding-left: 20px;
+        }
 
 }
 

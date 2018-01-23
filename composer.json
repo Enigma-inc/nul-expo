@@ -21,7 +21,8 @@
         "prettus/l5-repository": "^2.6",
         "pusher/pusher-php-server": "~2.6",
         "riazxrazor/laravel-sweet-alert": "^1.1",
-        "themsaid/laravel-model-transformers": "^1.1"
+        "themsaid/laravel-model-transformers": "^1.1",
+        "unisharp/laravel-ckeditor": "^4.7"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

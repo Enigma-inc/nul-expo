@@ -105,6 +105,8 @@
     <script src="{{ mix('admin-assets/js/bundle.js') }}"></script>
     <script src="{{ mix('admin-assets/js/app.js') }}"></script>
     <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+    <script src="{{asset('/vendor/unisharp/laravel-ckeditor/adapters/jquery.js')}}"></script>
     {{--  {!! Charts::scripts() !!}
     @if (isset($chart))
       {!! $chart->script() !!}  --}}

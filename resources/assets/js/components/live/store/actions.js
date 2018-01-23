@@ -40,5 +40,8 @@ export default{
     },
     downloadProgram({commit}) {
         window.location = "http://www.nulistice.org.ls/download?file-name=programme";
+    },
+    goToWebsite({commit}) {
+        window.location = "http://www.nulistice.org.ls/home";
     }
 }

@@ -183,6 +183,7 @@ return [
         Laravel\Passport\PassportServiceProvider::class,
         \Eduardokum\LaravelMailAutoEmbed\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
         
 
     ],
