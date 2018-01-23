@@ -4,7 +4,7 @@
     id="inspire"
   >
     <v-toolbar color="red" dense fixed clipped-left app>
-      <v-toolbar-title
+      <v-toolbar-title hidden-xs-only
         :style="$vuetify.breakpoint.width > 1264 && 'width: 300px'"
         class="ml-0 pl-3"
         :class="$vuetify.breakpoint.width <= 1264 && 'pr-3'" >

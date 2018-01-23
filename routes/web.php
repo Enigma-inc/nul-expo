@@ -14,8 +14,8 @@ use App\ExhibitionRegister;
 */
 
 Auth::routes();
-Route::get('/', 'PagesController@live');
-Route::get('/home', 'PagesController@home');
+Route::get('/live', 'PagesController@live');
+Route::get('/', 'PagesController@home');
 Route::get('/committees', 'PagesController@committees');
 Route::get('/team', 'PagesController@team');
 Route::get('/welcome', 'PagesController@welcomeNote');
