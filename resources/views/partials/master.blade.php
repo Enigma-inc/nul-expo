@@ -21,6 +21,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="/css/responsive.css" rel="stylesheet">
 <link href="/vendor/photobox/photobox.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fh-3.1.3/r-2.2.1/sc-1.4.4/datatables.min.css">
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900|Dancing+Script" rel="stylesheet">
    @LaravelSweetAlertCSS
@@ -54,7 +55,8 @@
 <script>
   window.Laravel={csrfToken:'{{csrf_token()}}'}
 </script>
-<script src="/js/jquery.js"></script>
+{{-- <script src="/js/jquery.js"></script> --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src={{mix('js/app.js')}}></script>
 
 <script src="/js/bootstrap.min.js"></script>
@@ -70,6 +72,7 @@
 <script src="js/ui-block.js"></script>
 <script src="js/shuffle.js"></script>
 <script src="vendor/photobox/jquery.photobox.js"></script>
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 
 
 

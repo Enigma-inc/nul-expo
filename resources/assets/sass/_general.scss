@@ -150,3 +150,32 @@ input,
     
     }
 }
+#table_id_filter{
+    label{
+            width: 100%;
+            input{
+                    width:95%;
+                    border-radius: 0px;
+                    border-width: 0px;
+                    color: rgb(119, 119, 119);
+                    background-color: darken(rgb(248, 248, 248),10%);
+                    border-color: rgb(231, 231, 231);
+                    box-shadow: none;
+                    outline: none;
+                    padding: 16px 12px;
+                    font-size: 14pt;
+                    font-style: italic;
+                    color: rgb(160, 160, 160);
+                    box-shadow: none;
+            }
+    }
+  
+}
+  #table_id{
+        tr{
+            td{
+                    padding: 3px;
+                    font-size: 1.3rem !important;
+            }
+        }
+    }

@@ -1,0 +1,140 @@
+[
+    {
+        "index": 1,
+        "authors": "",
+        "title": "Front Cover",
+        "doc": "00.A.FrontCover-F.pdf"
+    },
+    {
+        "index": 2,
+        "authors": "",
+        "title": "Speeches",
+        "doc": "00.B.Speeches-F.pdf"
+    },
+    {
+        "index": 3,
+        "authors": "",
+        "title": "Keynote",
+        "doc": "00.Keynote.01-05F.pdf"
+    },
+    {
+        "index": 4,
+        "authors": "P.E. Mosebi, M.P. Ntakatsane, P.A. Matebesi-Ranthimo, R. Makata",
+        "title": "Production and Utilization of Conserved Barley and Oat Grass as Fodder for Merino Sheep",
+        "doc": "01.AC.MosebiEtAl.06-09F.pdf"
+    },
+    {
+        "index": 5,
+        "authors": "‘Mammatli Kompi , S.B. Mekbib1 , M.J. George",
+        "title": "Evaluation of Microalgae Sludge as Biofertilizer for Growth of Maize Under Greenhouse Trials",
+        "doc": "02.AC.KompiEtAl.10-12F.pdf"
+    },
+    {
+        "index": 6,
+        "authors": "Matlosa T., George M.J., Mekbib S.B.",
+        "title": "Evaluation of animal manure as a feedstock for the production of biogas in comparison with sewage water microalgae",
+        "doc": "03.AC.MatlosaEtAl.13-16F.pdf"
+    },
+    {
+        "index": 7,
+        "authors": "Teboho Lekatsa, Kebitsamang Joseph Mothibe , `Mamakase Sello, Puseletso Lekhema",
+        "title": "Bacteriological Properties of Commercially Available Fermented Sorghum Beverages (Motoho) Against Selected Spoilage Microorganisms in Maseru",
+        "doc": "04.AC.LekatsaEtAl.17-19F.pdf"
+    },
+    {
+        "index": 8,
+        "authors": "K.E. Molefe , S.B. Mekbib, L.Williams , M.J. George",
+        "title": "Physicochemical and Microbiological Quality Assessment of Different Brands of Bottled Water in Maseru, Lesotho",
+        "doc": "05.BF.MolefeEtAl.20-25F.pdf"
+    },
+    {
+        "index": 9,
+        "authors": "Teboho Lekatsa , Mothibe Kebitsamang Joseph, `Mamakase Sello",
+        "title": "Deploying Novel Forms of Nisin to Control Listeria Monocytogenes in Food Industry",
+        "doc": "06.BF.LekatsaEtAl.26-28F.pdf"
+    },
+    {
+        "index": 10,
+        "authors": "Mosisili Sebotsa",
+        "title": "Language, Science and Translation within a Socio-Developmental Context in Lesotho",
+        "doc": "07.EIT.Sebotsa.29-33F.pdf"
+    },
+    {
+        "index": 11,
+        "authors": "Thabiso Letseka, Mosotho J. George",
+        "title": "Screening and Extraction of Essential Oils from Different Indigenous Non-food Plants for Detergent Production",
+        "doc": "08.EIT.LeksatsaEtAl.34-37F.pdf"
+    },
+    {
+        "index": 12,
+        "authors": "S.E. Aiyuk , R.N. Molomo, A.M. George",
+        "title": "Wastewater Stabilization Pond Technology: Effectiveness and Efficiency at the Ratjomose Sewage Treatment Plant, Maseru, Lesotho",
+        "doc": "09.ENM.AiyukEtAl.38-41F.pdf"
+    },
+    {
+        "index": 13,
+        "authors": "Amelia Mashea, Motsoanku ‘Mefane , ‘Mantsane Tsoloane-Bolepo , Nkeme Sehalahala",
+        "title": "National Action Plan for Reducing Maternal Mortality in Lesotho",
+        "doc": "10.ENM.MasheaEtAl.42-44F.pdf"
+    },
+    {
+        "index": 14,
+        "authors": "S.B. Mekbib , M.J. George , M.V. Marake",
+        "title": "Bioenergy for Africa - The Quest for Energy Independence and Food Security",
+        "doc": "11.ENM.MekbibEtAl.45-50F.pdf"
+    },
+    {
+        "index": 15,
+        "authors": "Mohale B. Mabaleha, Susan L. Bonnet, Anke Wilhelm",
+        "title": "Lesotho Medicinal Plants of the Acteraceae Family: A Review of the Ethnobotany, Chemistry and Conservation Status",
+        "doc": "12.ENM.MabalehaEtAl.51-56F.pdf"
+    },
+    {
+        "index": 16,
+        "authors": "Aiyuk, S.* , Khants’i B., Moeti T.",
+        "title": "Producing Sustainable Clean Energy & Ensuring Sanitation Through Blackwater Management",
+        "doc": "13.ENM.AiyukEtAl.57-59F.pdf"
+    },
+    {
+        "index": 17,
+        "authors": "S. Aiyuk, T. Siimane, R. Hlabana , K. Mothibe",
+        "title": "The VIP Latrine in Lesotho: Addressing Technical Flaws From the Qachas’Nek District Experience",
+        "doc": "14.ENM.AiyukEtAl.60-62F.pdf"
+    },
+    {
+        "index": 18,
+        "authors": "M. Nete, L. P. Mona, W. Purcell",
+        "title": "Mineral Production & Processing and Associated Environmental Issues in Sub-Saharan Africa",
+        "doc": "15.ENM.NeteEtAl.63-66F.pdf"
+    },
+    {
+        "index": 19,
+        "authors": "Gertrude Mothibe, Nomalima Tshabalala",
+        "title": "The Effects of Traditional Medicines in Pregnant Women: A Case Study in Lesotho",
+        "doc": "16.ENM.MothibeEtAl.67-69F.pdf"
+    },
+    {
+        "index": 20,
+        "authors": "Hailemicheal Alemu, Lineo F. Maxakaza, Himanshu Narayan",
+        "title": "Synthesis and Characterization of Copper Oxide Nanoparticles and their Application as Electrode Modifiers",
+        "doc": "17.MNT.AlemuEtAl.70-75F.pdf"
+    },
+    {
+        "index": 21,
+        "authors": "Amrita Singh, Brijesh Gaud, Himanshu Narayan, Rinkesh Kurkure,Sandesh Jaybhaye",
+        "title": "Eco-Friendly Synthesis of Zinc Oxide Nanoparticles for Rayon Pulp",
+        "doc": "18.MNT.AmritaEtAl.76-80F.pdf"
+    },
+    {
+        "index": 22,
+        "authors": "M. Singh",
+        "title": "Modelling of Thermal Expansion Coefficient and Specific Heat of Nanomaterials",
+        "doc": "19.MNT.Singh.81-84F.pdf"
+    },
+    {
+        "index": 23,
+        "authors": "",
+        "title": "Back Cover",
+        "doc": "99.Cover-Last-F.pdf"
+    }
+]

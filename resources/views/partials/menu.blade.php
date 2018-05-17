@@ -42,18 +42,18 @@
                                 </li>
                             </ul>
                         </li>
-                        <li  class="{{ Request::path() == 'expo-and-exhibition' ? 'current' : '' }}">
+                        {{-- <li  class="{{ Request::path() == 'expo-and-exhibition' ? 'current' : '' }}">
                             <a href="expo-and-exhibition">Expo/Exhibition Register</a>
+                        </li> --}}
+                        <li  class="{{ Request::path() == 'proceedings' ? 'current' : '' }}">
+                            <a href="/proceedings">Proceedings</a>
                         </li>
-                        <li  class="">
-                            <a href="{{url('download?file-name=programme')}}">Programme</a>
-                        </li>
-                        <li  class="{{ Request::path() == 'fees' ? 'current' : '' }}">
+                        {{-- <li  class="{{ Request::path() == 'fees' ? 'current' : '' }}">
                             <a href="fees">Fees</a>
-                        </li>
-                        <li  class="{{ Request::path() == 'accommodation' ? 'current' : '' }}">
+                        </li> --}}
+                        {{-- <li  class="{{ Request::path() == 'accommodation' ? 'current' : '' }}">
                             <a href="accommodation">Accommodation</a>
-                        </li>
+                        </li> --}}
                         <li  class="{{ Request::path() == 'blog' ? 'current' : '' }}">
                             <a href="blog">Blog</a>
                         </li>

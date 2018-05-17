@@ -5,7 +5,7 @@ window._ = require('lodash');
  * for JavaScript based Bootstrap features such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
  */
-window.$ = window.jQuery = require('jquery');
+// window.$ = window.jQuery = require('jquery');
 
 require('bootstrap-sass');
 
@@ -27,7 +27,7 @@ window.EventBus = new Vue();
 
 window.axios = require('axios');
 window.swal = require('sweetalert2');
-window.moment=require('moment');
+window.moment = require('moment');
 
 
 window.axios.defaults.headers.common = {

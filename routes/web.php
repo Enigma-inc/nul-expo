@@ -11,7 +11,7 @@ use App\ExhibitionRegister;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Auth::routes();
 Route::get('/live', 'PagesController@live');
@@ -31,6 +31,8 @@ Route::get('/abstract', 'PagesController@loadAbstractPage');
 Route::get('/abstract/submit', 'AbstractController@create');
 Route::get('/fees', 'PagesController@fees');
 Route::get('download', 'PagesController@download');
+Route::get('/proceedings/download', 'PagesController@downloadProceedings');
+Route::get('proceedings', 'PagesController@proceedings')->name('proceedings');
 Route::get('/messages', 'QueriesController@index');
 Route::get('/all-abstracts', 'AbstractController@index');
 Route::get('/expo-and-exhibition', 'ExhibitionController@index')->name('page.expo-exhibition');
@@ -41,7 +43,7 @@ Route::post('/exhibition/register', 'ExhibitionController@submitExhibitionRegist
 Route::get('/thank-you', 'ExhibitionController@thankYou')->name('exhibition.thanks');
 Route::get('live', 'ExhibitionController@live')->name('expo.live');
 
-Route::get('/contact-us','QueriesController@create')->name('contact.create');
+Route::get('/contact-us', 'QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
 Route::post('/replies', 'RepliesController@store')->name('reply.store');
@@ -49,21 +51,21 @@ Route::post('/replies', 'RepliesController@store')->name('reply.store');
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/profile', [
-        'uses'=>'AbstractController@profile',
-        'as'=>'profile'
+        'uses' => 'AbstractController@profile',
+        'as' => 'profile'
     ]);
 
     Route::post('/abstract/{user}', [
-        'uses'=>'AbstractController@uploadAbstract',
-        'as'=>'abstract.upload'
+        'uses' => 'AbstractController@uploadAbstract',
+        'as' => 'abstract.upload'
     ]);
     Route::get('/abstract/upload/{conference}', [
-        'uses'=>'AbstractController@abstractUploadPage',
-        'as'=>'abstract.upload.page'
+        'uses' => 'AbstractController@abstractUploadPage',
+        'as' => 'abstract.upload.page'
     ]);
 
     Route::post('/submit-details', [
-        'uses' => 'AbstractController@submitSpeakerDetails', 
+        'uses' => 'AbstractController@submitSpeakerDetails',
         'as' => 'submit.speaker.details'
     ]);
 
@@ -87,16 +89,16 @@ Route::group(['middleware' => 'auth'], function () {
         'as' => 'download.submission.abstracts'
     ]);
 });
-Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
+Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
     //Abstracts
-    Route::get('/','AdminController@index')->name('admin.home');
-    Route::get('/abstracts','AdminController@abstracts')->name('admin.abstracts');
+    Route::get('/', 'AdminController@index')->name('admin.home');
+    Route::get('/abstracts', 'AdminController@abstracts')->name('admin.abstracts');
     Route::get('/statistics/{conference}', 'AdminController@statistics')->name('stats');
     Route::get('/abstracts/{conference}/export', 'AdminController@exportToExcel')->name('export-abstracts');
 
     //Expo
-    Route::get('/expo', 'AdminController@expoData')->name('admin.expo');    
-    Route::post('/expo/{id}/approve', 'AdminController@approveExpo')->name('expo.approve');    
+    Route::get('/expo', 'AdminController@expoData')->name('admin.expo');
+    Route::post('/expo/{id}/approve', 'AdminController@approveExpo')->name('expo.approve');
     Route::post('/expo/{id}/decline', 'AdminController@declineExpo')->name('expo.decline');
     
     //Exhibition
@@ -135,11 +137,11 @@ Route::group(['middleware' => ['auth','admin'],'prefix'=>'admin'],function(){
         //Gallery
         Route::get('/gallery/images/add', 'ImageGalleryController@add')->name('events.gallery.add');
         Route::get('/gallery/images', 'ImageGalleryController@index')->name('events.gallery');
-        
 
 
 
-       
+
+
 
     });
 });

@@ -3,9 +3,9 @@
 @section('content')
     <div class="preloader"></div>
     @include('pages.home.partials.slider')
-    <div class="application-deadline-home">
+    {{-- <div class="application-deadline-home">
          @include('pages.expo-exhibition.deadline')
-    </div>
+    </div> --}}
     @include('pages.home.partials.about')
     @include('pages.home.partials.importantdates')
     @include('pages.home.partials.topics')

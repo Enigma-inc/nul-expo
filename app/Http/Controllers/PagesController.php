@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
+use App\Proceeding;
 
 class PagesController extends Controller
 {
@@ -14,8 +15,8 @@ class PagesController extends Controller
     }
     public function home()
     {
-        $slideImages= array("slide-2.jpg","slide-3.jpg","slide-4.jpg","slide-5.jpg");
-         shuffle($slideImages);
+        $slideImages = array("slide-2.jpg", "slide-3.jpg", "slide-4.jpg", "slide-5.jpg");
+        shuffle($slideImages);
         return view('pages.home.index')->with('slide', $slideImages[0]);;
     }
 
@@ -25,11 +26,11 @@ class PagesController extends Controller
     }
     public function welcomeNote()
     {
-      return view('pages.welcome-note.index');
+        return view('pages.welcome-note.index');
     }
     public function team()
     {
-      return view('pages.team.index');
+        return view('pages.team.index');
     }
     // public function schedule()
     // {
@@ -71,7 +72,8 @@ class PagesController extends Controller
         return view('pages.conference.nulistice-concept');
     }
 
-    public function reris_concept(){
+    public function reris_concept()
+    {
         return view('pages.conference.reris-concept');
     }
 
@@ -92,16 +94,36 @@ class PagesController extends Controller
         $fileName = Input::get("file-name");
 
         $filePath = public_path() . "/docs/" . $fileName . ".pdf";
-        if( file_exists($filePath)){
+        if (file_exists($filePath)) {
             $headers = array(
                 'Content-Type: application/pdf',
             );
             return Response::download($filePath, $fileName . '.pdf', $headers);
-        }
-        else{
-           return back();
+        } else {
+            return back();
         }
 
 
+    }
+    public function downloadProceedings()
+    {
+        $fileName = Input::get("file-name");
+
+        $filePath = public_path() . "/docs/nulistice-2018-proceedings/" . $fileName;
+        if (file_exists($filePath)) {
+            $headers = array(
+                'Content-Type: application/pdf',
+            );
+            return Response::download($filePath, $fileName, $headers);
+        } else {
+            return back();
+        }
+
+
+    }
+    public function proceedings()
+    {
+        $proceedings = Proceeding::orderBy('index')->get();
+        return view('pages.proceedings.index')->with(['proceedings' => $proceedings]);
     }
 }

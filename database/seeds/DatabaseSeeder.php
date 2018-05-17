@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 class DatabaseSeeder extends Seeder
 {
     private $tables = [
-        'nulistice_events',
+        'proceedings',
 
 
     ];
@@ -21,16 +21,16 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
         $this->cleanDatabase();
 
-         $this->call(NulisticeEventSeeder::class);
+        $this->call(ProceedingsTableSeeder::class);
 
         Model::reguard();
-        
+
     }
 
 
     public function cleanDatabase()
     {
-        
+
         DB::statement("SET foreign_key_checks=0");
         foreach ($this->tables as $table) {
             // DB::statement("ALTER TABLE ".$table." DISABLE TRIGGER ALL;");
