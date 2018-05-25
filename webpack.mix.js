@@ -8,12 +8,12 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/admin/sass/app.scss', 'public/admin-assets/css')
     .sass('resources/assets/sass/helpers.scss', 'public/css')
     .scripts([
-         'node_modules/jquery/dist/jquery.js',
+        'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
         'node_modules/typehead/typehead.js'
-   ], 'public/admin-assets/js/bundle.js')
-   .styles('node_modules/font-awesome/css/font-awesome.css', 'public/admin-assets/css/vendor.css')
-   .styles('node_modules/vuetify/dist/vuetify.css', 'public/css/vuetify.css')
+    ], 'public/admin-assets/js/bundle.js')
+    //    .styles('node_modules/font-awesome/css/font-awesome.css', 'public/admin-assets/css/vendor.css')
+    .styles('node_modules/vuetify/dist/vuetify.css', 'public/css/vuetify.css')
     .autoload({ 'jquery': ['$', 'window.jQuery', 'jQuery'] })
-   .sourceMaps()
-   .version();
+    .sourceMaps()
+    .version();

@@ -1,8 +1,8 @@
 <section class="default-section">
     <div class="auto-container">
-        <div class="counter-section">
+        <div class="counter-section padding-5">
             <div class="row clearfix">
-                <div class="col-md-5 col-sm-12 col-xs-12 margin-top-25">
+                {{-- <div class="col-md-5 col-sm-12 col-xs-12 margin-top-25">
                     <div class="countdown" id="countdown-timer">
 
                     </div>
@@ -10,14 +10,13 @@
                 <div class="col-md-3 col-sm-12 col-xs-12 counter-text margin-top-25">
                     <h3>TIME TO EVENT</h3>
                     <p>23 January, 2018</p>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 text-right margin-bottom-20">
-                    <a href="{{url('download?file-name=programme')}}" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-download"></span> Download Programme</a>
-                    {{--  <a href="profile" class="col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-file"></span> Submit Your Abstract <span class="color-primary">Closed</span></a>  --}}
-                    <a href="{{route('contact.create')}}" class=" col-xs-12 theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-envelope"></span> Contact us</a>
+                </div> --}}
+                <div class="col-xs-12 text-right margin-bottom-20">
+                    <a href="{{url('proceedings')}}" class="col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
+                                class="fa fa-file"></span> Download Proccedings (Single Files)</a>
+                    <a href="{{url('docs/nulistice-2018-proceedings/NULISTICE - Proceedings.zip')}}" class=" col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
+                                class="fa fa-file-archive"></span> Download Proccedings (Zip File)
+                    </a>
                 </div>
             </div>
         </div>

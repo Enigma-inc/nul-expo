@@ -25,7 +25,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900|Dancing+Script" rel="stylesheet">
    @LaravelSweetAlertCSS
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
 

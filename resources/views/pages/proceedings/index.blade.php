@@ -6,9 +6,11 @@
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h2 class="header">NULISTICE 2018 Proceedings</h2>
         </div>
-       <!-- <div class="sec-text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <p>For a full list of prices please take a look at our table of pricing plans.</p>
-        </div>-->
+        <div class="col-xs-12 text-right margin-bottom-20">
+                    <a href="{{url('docs/nulistice-2018-proceedings/NULISTICE - Proceedings.zip')}}" class=" col-xs-6 text-center pull-right theme-btn btn-style-one hvr-bounce-to-right text-left"><span
+                                class="fa fa-file-archive"></span> Download All (Zip File)
+                    </a>
+        </div>
 
 
         <div class="row clearfix">
