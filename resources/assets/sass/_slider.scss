@@ -1,4 +1,8 @@
         @media (max-width: 768px) {
+            .sec-title > .header {
+                font-size: 20px !important;
+            }
+
             .tp-caption {
                 width: 100vw;
                 text-align: center;
@@ -32,7 +36,7 @@
             }
             .fees-header {
                 flex: 1;
-                font-size: 1em;
+                font-size: 0.8em;
                 color: #e13f30;
                 line-height: 1em;
                 font-weight: 600;
@@ -40,7 +44,7 @@
             }
             .fees-body {
                 flex: 1;
-                font-size: 1em;
+                font-size: 0.9em;
                 line-height: 3em;
                 font-weight: 600;
                 margin-top: 20px;
@@ -84,7 +88,7 @@
             }
             .fees-header {
                 flex: 1;
-                font-size: 1.3em;
+                font-size: 0.9em;
                 color: #e13f30;
                 line-height: 1.3em;
                 font-weight: 600;
@@ -99,7 +103,7 @@
                 border: 1px #a6a6a6 solid;
             }
             .fees-body>span {
-                font-size: 2em;
+                font-size: 1.3em;
             }
             .slide-date {
                 color: #fff;

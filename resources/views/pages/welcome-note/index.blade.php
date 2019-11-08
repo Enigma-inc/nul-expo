@@ -18,19 +18,17 @@
                           </div>
 
                           <p class="text-align-just"><strong>Dear Prospective Delegate</strong> <br>
-                              On behalf of The National University of Lesotho (NUL), and indeed on my own behalf, it
-                              gives me great pleasure and honour to invite and welcome you to this auspicious occasion
-                              of the NUL International Science and Technology Innovation Conference and Expo also
-                              known as NULISTICE 2018. Before I delve into the details about the conference, I would
-                              like to share a brief history of the NUL.
+                              On behalf of the National University of Lesotho, we are pleased to invite you to National 
+                              University of Lesotho International Science, Technology and Innovation Conference and 
+                              Expo (NULSTICE 2020, a bi-annual event. Unlike NULISTICE 2018, this year’s event is much 
+                              more focused but no less important. It includes (a) An Expo at the Pioneer Mall, (b) The 
+                              NUL Innovation Hub_ Vodacom Hackathon at the NUL and (c) the Gala Dinner at Maseru Avani.
                           </p><br>
                           <p class="text-align-just">
-                              The National University of Lesotho, situated about 34km from Maseru, the Capital of the
-                              Kingdom of Lesotho, has its origin back to 8th April, 1945 when a Catholic University
-                              College, the Pius XII College, was founded at Roma, a semi-urban place in Lesotho by the
-                              Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in
-                              the history of the University have taken place both in terms of physical infrastructure
-                              development and growth in students' enrolment.
+                              Through NULISTICE, our primary objective remains the same— to encourage the spirit of 
+                              entrepreneurship among our staff members, students and graduates and to expose their 
+                              innovation and creativity to the outside world with the sole aim of creating sustainable 
+                              jobs to curb youth unemployment in Lesotho. 
                           </p>
                           <p class="text-align-just">
                               On 1st January, 1964, the Pius XII College became an integral part of the independent,
@@ -98,12 +96,11 @@
                               environment.
                           </p>
                           <p style="text-align: justify">
-                              <strong>We are very much confident that you will enjoy your stay in the MOUNTAIN
-                                  KINGDOM!!!</strong>
+                              <strong>We believe you will continue to enjoy this year’s event.</strong>
                           </p>
                           <p>Sincerely, <br>
-                            <b>Prof. H.M. Lephoto</b><br>
-                              NUL PVC and Chairperson of the NULISTICE 2018
+                            <b>Prof. K Mosito</b><br>
+                              NUL Pro-Vice Chancellor and Chairperson of NULSTICE 2020
                           </p>
                       </div>
                   </div>

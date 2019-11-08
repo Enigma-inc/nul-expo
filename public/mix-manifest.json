@@ -1,10 +1,10 @@
 {
-  "/admin-assets/js/app.js": "/admin-assets/js/app.220a3cf0b3f3d4c6ec4e.js",
-  "/js/app-live.js": "/js/app-live.3d3456f6e5fba99cb900.js",
-  "/js/app.js": "/js/app.57d45ca4f1b1384d5cf5.js",
-  "/css/app.css": "/css/app.5d740eaa5c92b022d3f7.css",
-  "/admin-assets/css/app.css": "/admin-assets/css/app.5d740eaa5c92b022d3f7.css",
-  "/css/helpers.css": "/css/helpers.5d740eaa5c92b022d3f7.css",
-  "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.fbf7658aab397f9970912849bc0f9874.js",
-  "/css/vuetify.css": "/css/vuetify.4c2629d5e12ab0c66b5c3fd1b3a90a19.css"
+    "/admin-assets/js/app.js": "/admin-assets/js/app.js?id=d742861f93425b36208a",
+    "/js/app.js": "/js/app.js?id=ad4d20cc4e141953a275",
+    "/css/app.css": "/css/app.css?id=23bb8003bc9a693bfe5d",
+    "/admin-assets/css/app.css": "/admin-assets/css/app.css?id=a1f842e6f19e5edbe92f",
+    "/css/helpers.css": "/css/helpers.css?id=6ec7e2e1f7f1c1922b79",
+    "/js/app-live.js": "/js/app-live.js?id=b8dea5d096660ff47c12",
+    "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.js?id=12e6e371718cbf998f10",
+    "/css/vuetify.css": "/css/vuetify.css?id=cf1af773942288734d63"
 }

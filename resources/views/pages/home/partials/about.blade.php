@@ -32,26 +32,24 @@
                         <div >
                             <div class="padding-right-15">
                                 <p class="text-align-just">
-                                <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
+                                {{--  <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
                                     <img width="100%" src="/images/team/manthoto_lephoto.png" style="margin-bottom: 7px;"
                                          alt="PVC" title="PVC" class="">
                                     <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2018 </em>
-                                </div>
+                                </div>  --}}
 
                                 <p class="text-align-just"><strong>Dear Prospective Delegate</strong> <br>
-                                    On behalf of The National University of Lesotho (NUL), and indeed on my own behalf, it
-                                    gives me great pleasure and honour to invite and welcome you to this auspicious occasion
-                                    of the NUL International Science and Technology Innovation Conference and Expo also
-                                    known as NULISTICE 2018. Before I delve into the details about the conference, I would
-                                    like to share a brief history of the NUL.
+                                    On behalf of the National University of Lesotho, we are pleased to invite you to National 
+                                    University of Lesotho International Science, Technology and Innovation Conference and Expo 
+                                    (NULSTICE 2020, a bi-annual event. Unlike NULISTICE 2018, this year’s event is much more 
+                                    focused but no less important. It includes (a) An Expo at the Pioneer Mall, (b) The NUL 
+                                    Innovation Hub_ Vodacom Hackathon at the NUL and (c) the Gala Dinner at Maseru Avani.
                                 </p><br>
                                 <p class="text-align-just">
-                                    The National University of Lesotho, situated about 34km from Maseru, the Capital of the
-                                    Kingdom of Lesotho, has its origin back to 8th April, 1945 when a Catholic University
-                                    College, the Pius XII College, was founded at Roma, a semi-urban place in Lesotho by the
-                                    Roman Catholic Hierarchy of Southern Africa. Since 1945, various major developments in
-                                    the history of the University have taken place both in terms of physical infrastructure
-                                    development and growth in students' enrolment. <a href="/welcome">read more</a>
+                                    Through NULISTICE, our primary objective remains the same— to encourage the spirit of 
+                                    entrepreneurship among our staff members, students and graduates and to expose their 
+                                    innovation and creativity to the outside world with the sole aim of creating sustainable 
+                                    jobs to curb youth unemployment in Lesotho.  <a href="/welcome">read more</a>
                                 </p>
 
                             </div>

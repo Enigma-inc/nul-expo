@@ -2112,7 +2112,7 @@ p{
 
 
 
-.sponsors > a > img{
+.sponsors > .center > a > img{
 	display:inline-block;
 	color:#fff;
 	width: 80px;
@@ -2120,14 +2120,14 @@ p{
 }
 
 @media only screen and (max-width: 340px) {
-	.sponsors > a > img{
+	.sponsors > .center  > a > img{
 		width: 60px;
-	
 	}
 }
+
 @media only screen and (min-width: 1460px) {
-	.sponsors > a > img{
-		width: 120px;
+	.sponsors > .center > a > img{
+		width: 60px;
 	
 	}
 }
@@ -2396,11 +2396,19 @@ p{
 
 ***/
 
+
 .sponsors{
 	position:relative;
 	text-align:center;
 	background:#e13f30;
-	padding:22px 0px;	
+	padding:22px 0px;
+}
+
+.sponsors > .center{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
 }
 
 .sponsors.style-two{
