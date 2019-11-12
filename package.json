@@ -43,7 +43,7 @@
     "moment": "^2.18.1",
     "pusher-js": "^4.2.2",
     "rimraf": "^2.6.2",
-    "sweetalert2": "^6.6.2",
+    "sweetalert2": "^6.11.5",
     "typeahead": "^0.2.2",
     "vue-animate": "^0.0.4",
     "vue-carousel": "^0.6.5",
