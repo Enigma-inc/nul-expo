@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>NULISTICE/RERIS 2018</title>
+    <title>NULISTICE 2020</title>
 
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
@@ -39,7 +39,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('admin.home')}}">
-                        NULISTICE/RERIS 2018 ADMIN
+                        NULISTICE/RERIS 2020 ADMIN
                     </a>
                 </div>
 

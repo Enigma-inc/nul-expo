@@ -42,12 +42,14 @@
             }
         },
         mounted() {
+            console.log('Mounted......');
             this.loading=true;
             axios.get('http://nulresearchandinnovations.co.ls/blog/api/articles/featured').then(response => {
 
                 this.articles = response.data;
                 this.loading=false;
             });
+
         }
     }
 

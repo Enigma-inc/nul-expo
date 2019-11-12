@@ -12,7 +12,7 @@
                       <div class="padding-right-15">
                           <p class="text-align-just">
                           <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
-                              <img width="100%" src="../images/team/nulistice.jpeg" style="margin-bottom: 7px;"
+                              <img width="100%" src="{{asset('images/logos/logo.jpeg')}}" style="margin-bottom: 7px;"
                                    alt="PVC" title="PVC" class="">
                               {{-- <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2020 </em> --}}
                           </div>
