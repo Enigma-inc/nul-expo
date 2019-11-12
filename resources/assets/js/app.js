@@ -12,16 +12,16 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('blog-brief', require('./components/blog-brief.vue'));
-Vue.component('blog', require('./components/blog.vue'));
-Vue.component('accommodation', require('./components/accommodation.vue'));
-Vue.component('abstract-upload', require('./components/abstract-upload.vue'));
-Vue.component('flash-message', require('./components/flash-message.vue'));
-Vue.component('messages', require('./components/messages.vue'));
-Vue.component('message-display', require('./components/message-display.vue'));
-Vue.component('committee', require('./components/scientific-committee.vue'));
-Vue.component('abstracts', require('./components/abstracts.vue'));
-Vue.component('abstract-display', require('./components/abstract-display.vue'));
+Vue.component('blog-brief', require('./components/blog-brief.vue').default);
+Vue.component('blog', require('./components/blog.vue').default);
+Vue.component('accommodation', require('./components/accommodation.vue').default);
+Vue.component('abstract-upload', require('./components/abstract-upload.vue').default);
+Vue.component('flash-message', require('./components/flash-message.vue').default);
+Vue.component('messages', require('./components/messages.vue').default);
+Vue.component('message-display', require('./components/message-display.vue').default);
+Vue.component('committee', require('./components/scientific-committee.vue').default);
+Vue.component('abstracts', require('./components/abstracts.vue').default);
+Vue.component('abstract-display', require('./components/abstract-display.vue').default);
 
 const app = new Vue({
     el: '#app'

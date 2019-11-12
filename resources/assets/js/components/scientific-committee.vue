@@ -76,14 +76,14 @@
 export default{
 
 }
-$(function(){
-    $('#committee').slimScroll({
-        height: '600px',
-        color: '#e13f30',
-        railVisible: true,
-        alwaysVisible: true
-    });
-});
+// $(function(){
+//     $('#committee').slimScroll({
+//         height: '600px',
+//         color: '#e13f30',
+//         railVisible: true,
+//         alwaysVisible: true
+//     });
+// });
 </script>
 
 <style scoped>

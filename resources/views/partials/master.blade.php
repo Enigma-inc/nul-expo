@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<div class="page-wrapper" >
+<div id="app" class="page-wrapper" >
      <div>
          @include('partials.menu')
      @yield('content')
