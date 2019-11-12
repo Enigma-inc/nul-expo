@@ -11,18 +11,6 @@
 
               <div class="team">
                   <!--Organising Team-->
-                  {{--  <article class="team-member col-xs-12 col-sm-4 col-md-3" >
-                      <div class="inner">
-                          <figure class="member-image"><img src="/images/team/maluke_letete.jpg" alt="" title=""></figure>
-                          <div class="lower">
-                              <div class="member-title">
-                                  <h5>Dr Maluke Letete</h5>
-                              </div>
-                          </div>
-                      </div>
-                  </article>  --}}
-
-
                   <article class="team-member col-xs-12 col-sm-4 col-md-3" >
                       <div class="inner">
                           <figure class="member-image"><img src="/images/team/moeketsi_mpholo.jpg" alt="" title=""></figure>
@@ -30,16 +18,6 @@
                               <div class="member-title">
                                   <h5>Dr Moeketsi Mpholo</h5>
 
-                              </div>
-                          </div>
-                      </div>
-                  </article>
-                 <article class="team-member col-xs-12 col-sm-4 col-md-3" >
-                      <div class="inner">
-                          <figure class="member-image"><img src="/images/team/niklas.jpg" alt="" title=""></figure>
-                          <div class="lower">
-                              <div class="member-title">
-                                  <h5>Mr Niklas Hayek</h5>
                               </div>
                           </div>
                       </div>
@@ -99,18 +77,6 @@
                               </div>
                           </div>
                       </div>
-                  </article>
-
-                  <article class="team-member col-xs-12 col-sm-4 col-md-3" >
-                      {{--  <div class="inner">
-                          <figure class="member-image"><img src="/images/team/joseph_thabana.jpg" alt="" title=""></figure>
-                          <div class="lower">
-                              <div class="member-title">
-                                  <h5>Mr Joseph Thabana</h5>
-
-                              </div>
-                          </div>
-                      </div>  --}}
                   </article>
 
                   <article class="team-member col-xs-12 col-sm-4 col-md-3" >

@@ -2,8 +2,8 @@
     	<div class="auto-container clearfix">
         	<!--Logo-->
             <div class="logo  clearfix" style="display:flex">
-              <a href="http://www.nulresearchandinnovations.co.ls/" target="_blank"><img height="60px" src="/images/logo-ih.jpg?v=4" alt="NUL INNOVATION HUB 2020" title="NUL INNOVATION HUB 2020">
-              <a href="http://www.nul.ls/" target="_blank" ><img height="60px" src="/images/logo-nul.jpg?v=4" alt="NULISTICE 2020" title="NULISTICE 2020">
+              <a href="{{route('home')}}"><img height="60px" src="/images/logo-ih.jpg?v=4" alt="NULISTICE 2020" title="NULISTICE 2020">
+              <a href="{{route('home')}}"><img height="60px" src="/images/logo-nul.jpg?v=4" alt="NULISTICE 2020" title="NULISTICE 2020">
               </a>
             </div>
             
@@ -23,16 +23,13 @@
                         <li class="{{ Request::path() == '/' ? 'current' : '' }}">
                             <a href="/">Home</a>
                         </li>
-                        <li class=" dropdown {{ in_array(Request::path(), array('welcome','nulistice-concept','reris-concept','team','committees')) ? 'current' : '' }}"><a href="#">About</a>
+                        <li class=" dropdown {{ in_array(Request::path(), array('welcome','nulistice-concept','team','committees')) ? 'current' : '' }}"><a href="#">About</a>
                             <ul class="submenu padding-left-10">
                                 <li>
                                     <a href="welcome">Welcome Note</a>
                                 </li>
                                 <li>
                                     <a href="nulistice-concept">NULISTICE Concept</a>
-                                </li>
-                                <li>
-                                    <a href="reris-concept">RERIS Concept</a>
                                 </li>
                                 <li>
                                     <a href="team">Organising Team</a>

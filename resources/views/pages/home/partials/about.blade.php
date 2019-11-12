@@ -26,16 +26,16 @@
             <div class="col-xs-12 text-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="col-xs-12 col-sm-12 " style="text-align:justify">
                     <div class="sec-title wow faprofdeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                        <h3 class="header">Message from the Chairperson of the NULISTICE 2018</h3>
+                        <h3 class="header">Message from the Chairperson of the NULISTICE 2020</h3>
                     </div>
                     <div class="text welcome">
                         <div >
                             <div class="padding-right-15">
                                 <p class="text-align-just">
-                                {{--  <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
-                                    <img width="100%" src="/images/team/manthoto_lephoto.png" style="margin-bottom: 7px;"
+                                 {{-- <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
+                                    <img width="100%" src="/images/team/nulistice.jpeg" style="margin-bottom: 7px;"
                                          alt="PVC" title="PVC" class="">
-                                    <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2018 </em>
+                                    <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2020 </em>
                                 </div>  --}}
 
                                 <p class="text-align-just"><strong>Dear Prospective Delegate</strong> <br>
