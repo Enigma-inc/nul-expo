@@ -126,4 +126,8 @@ class PagesController extends Controller
         $proceedings = Proceeding::orderBy('index')->get();
         return view('pages.proceedings.index')->with(['proceedings' => $proceedings]);
     }
+
+    public function stalls(){
+        return view('pages.stalls.index');
+    }
 }

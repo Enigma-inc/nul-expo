@@ -46,6 +46,8 @@ Route::get('live', 'ExhibitionController@live')->name('expo.live');
 Route::get('/contact-us', 'QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
+Route::get('/stalls', 'PagesController@stalls')->name('stalls');
+
 Route::post('/replies', 'RepliesController@store')->name('reply.store');
 
 Route::group(['middleware' => 'auth'], function () {

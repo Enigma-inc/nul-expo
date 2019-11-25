@@ -1,0 +1,79 @@
+.stall-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.stall-card-right {
+    padding: 0px;
+    flex: 1;
+    margin-right: 10px;
+    .stall-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buy-ticket-btn {
+        place-self: flex-end;
+        margin-top: -30px;
+    }
+}
+
+.stall-card-left {
+    margin-right: 20px;
+    img{
+        width: 370px;
+        height: 362px;
+    }
+}
+
+.stall-card-left>img {
+    border-radius: 4px;
+}
+
+.stall-card-title {
+    color: #222;
+    font-size: 1.2em;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.stall-card-subtitle {
+    font-weight: 600;
+}
+
+.stall-card-title>h3 {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .stall-card {
+        flex-direction: column;
+        height: auto !important;
+        width: 100%;
+    }
+
+    .stall-card-left {
+        img {
+            width: 100% !important;
+            height: auto;
+        }
+    }
+
+    .stall-card-right {
+        padding: 10px !important;
+        margin: 0 !important;
+        
+        .stall-header{
+            display: flex;
+            flex-direction: column;
+        }
+        .buy-ticket-btn{
+            place-self: flex-end;
+        }
+    }
+}

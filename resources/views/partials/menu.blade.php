@@ -37,6 +37,9 @@
                                 <li>
                                     <a href="committees">Scientific Committees</a>
                                 </li>
+                                <li>
+                                    <a href="{{route('stalls')}}">Stalls</a>
+                                </li>
                             </ul>
                         </li>
                         {{-- <li  class="{{ Request::path() == 'expo-and-exhibition' ? 'current' : '' }}">
