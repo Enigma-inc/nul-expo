@@ -37,10 +37,10 @@
                                 <li>
                                     <a href="committees">Scientific Committees</a>
                                 </li>
-                                <li>
-                                    <a href="{{route('events')}}">Stalls</a>
-                                </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="{{route('events')}}">Events</a>
                         </li>
                         {{-- <li  class="{{ Request::path() == 'expo-and-exhibition' ? 'current' : '' }}">
                             <a href="expo-and-exhibition">Expo/Exhibition Register</a>
