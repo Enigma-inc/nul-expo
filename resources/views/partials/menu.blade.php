@@ -38,7 +38,7 @@
                                     <a href="committees">Scientific Committees</a>
                                 </li>
                                 <li>
-                                    <a href="{{route('stalls')}}">Stalls</a>
+                                    <a href="{{route('events')}}">Stalls</a>
                                 </li>
                             </ul>
                         </li>

@@ -127,7 +127,7 @@ class PagesController extends Controller
         return view('pages.proceedings.index')->with(['proceedings' => $proceedings]);
     }
 
-    public function stalls(){
-        return view('pages.stalls.index');
+    public function events(){
+        return view('pages.events.index');
     }
 }
