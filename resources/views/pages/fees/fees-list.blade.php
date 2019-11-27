@@ -3,6 +3,8 @@
 
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h3 class="header">Fee structure for stalls registration</h3>
+           <a href="#" class="btn-xs btn-primary">Buy tickets</a>
+
         </div>
         <div class="fees-container">
            <div class="fees-header">Category</div>
@@ -17,6 +19,7 @@
 
         <div class="sec-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
             <h3 class="header">Fee structure for gala dinner registration</h3>
+           <a href="#" class="btn-xs btn-primary">Buy tickets</a>
         </div>
         <div class="fees-container">
            <div class="fees-header">Category</div>
@@ -33,7 +36,6 @@
 
          <div class="col-xs-12">
            <p>For more information <a href="{{route('contact.create')}}">contact us</a></p>
-             
         </div>
         </div>
 
