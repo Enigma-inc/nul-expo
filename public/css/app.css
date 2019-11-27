@@ -8485,6 +8485,17 @@ input,
   font-size: 1.3rem !important;
 }
 
+.sponsor-img {
+  margin-left: 10px;
+  width: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sponsor-img {
+    margin-left: 0px;
+  }
+}
+
 .profile .header {
   text-transform: capitalize;
   font-weight: 600;
