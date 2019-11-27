@@ -9,8 +9,9 @@
                             <div class="panel-heading">Personal Details</div>
                             <div class="panel-body">
                                 <form class="form-horizontal" role="form" method="POST"
-                                      action="{{ route('submit.speaker.details') }}">
-                                    {{ csrf_field() }}
+                                        action="{{ route('submit.speaker.details') }}">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        {{ csrf_field() }}
 
                                     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                                         <label for="name" class="col-md-4 control-label">Your Title</label>

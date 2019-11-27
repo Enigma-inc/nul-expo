@@ -18,7 +18,7 @@
             <!--Table Column-->
             <blog></blog>
 
-        </div>
+        </div> 
 
     </div>
 </section>

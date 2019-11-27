@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 @include('partials.google-analytics')
-<title>NULISTICE/RERIS 2018</title>
+<title>NULISTICE 2020</title>
 <meta name="description" content="National University of Lesotho Science, Technology and Innovation Expo and Conference.">
   <base href="/">
  <link rel="icon" type="image/x-icon" href="favicon.ico">

@@ -15,7 +15,7 @@ use App\ExhibitionRegister;
 
 Auth::routes();
 Route::get('/live', 'PagesController@live');
-Route::get('/', 'PagesController@home');
+Route::get('/', 'PagesController@home')->name('home');
 Route::get('/committees', 'PagesController@committees');
 Route::get('/team', 'PagesController@team');
 Route::get('/welcome', 'PagesController@welcomeNote');
@@ -45,6 +45,8 @@ Route::get('live', 'ExhibitionController@live')->name('expo.live');
 
 Route::get('/contact-us', 'QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
+
+Route::get('/events', 'PagesController@events')->name('events');
 
 Route::post('/replies', 'RepliesController@store')->name('reply.store');
 

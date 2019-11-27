@@ -30,10 +30,10 @@
 **********************************************/
 
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,300italic,300);
 
 @import url('font-awesome.css');
 @import url('hover.css');
@@ -1886,7 +1886,7 @@ p{
 
 .main-footer{
 	position:relative;
-	background:#44da08;
+	background:#e13f30;
 }
 
 .main-footer .footer-upper{
@@ -2112,7 +2112,7 @@ p{
 
 
 
-.sponsors > a > img{
+.sponsors > .center > a > img{
 	display:inline-block;
 	color:#fff;
 	width: 80px;
@@ -2120,14 +2120,14 @@ p{
 }
 
 @media only screen and (max-width: 340px) {
-	.sponsors > a > img{
+	.sponsors > .center  > a > img{
 		width: 60px;
-	
 	}
 }
+
 @media only screen and (min-width: 1460px) {
-	.sponsors > a > img{
-		width: 120px;
+	.sponsors > .center > a > img{
+		width: 60px;
 	
 	}
 }
@@ -2396,11 +2396,19 @@ p{
 
 ***/
 
+
 .sponsors{
 	position:relative;
 	text-align:center;
 	background:#e13f30;
-	padding:22px 0px;	
+	padding:22px 0px;
+}
+
+.sponsors > .center{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
 }
 
 .sponsors.style-two{
