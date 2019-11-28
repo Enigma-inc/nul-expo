@@ -2314,14 +2314,14 @@ p{
 }
 
 .two-column .image-side{
-	position:absolute;
+	/* position:absolute; */
 	left:0px;
 	top:0px;
 	width:50%;
 	height:100%;
 	background-position:center top;
 	background-repeat:no-repeat;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .two-column .content-side{

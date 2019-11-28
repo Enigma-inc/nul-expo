@@ -10,7 +10,15 @@
 
                 <!--Content Side-->
                 <div class="col-md-6 col-sm-6 col-xs-12 pull-right content-side wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
-                	<h2 class="header">Important Dates</h2>
+
+                    {{-- <div class="video-bg">
+                        <video poster="{{asset('videos/video-poster.jpg')}}" playsinline="" autoplay="" muted="" loop="">
+                            <source src="{{asset('videos/bg-video.mp4')}}" type="video/mp4">
+                        </video>
+                    </div> --}}
+
+                    
+                    <h2 class="header">Important Dates</h2>
 
                      <article class="feature">
                     	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>

@@ -30,7 +30,7 @@
                 :paginate="true"
                 :rows="inActiveEvents"
                 :globalSearch="true">
-                <template slot="table-row-after" scope="props">
+                <template slot="table-row-after" slot-scope="props">
                     <td>
                        <event-buttons :toggle-text="'Activate'" :type="'nulistice'" :event="props.row"> </event-buttons>
                     </td>
