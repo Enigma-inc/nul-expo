@@ -14,7 +14,7 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">INNOVATION STALLS</h3>  
-                        <a href="#" class="buy-ticket-btn btn-xs btn-primary">Buy Tickets</a>
+                        <a href="{{route('stall.request')}}" class="buy-ticket-btn btn-xs btn-primary">Request Stall</a>
                     </div>
 
                     <h5 class="stall-card-subtitle">
@@ -75,7 +75,7 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">NUL-VODACOM HACKATHON</h3>
-                        <a href="#" class="buy-ticket-btn btn-xs btn-primary">Buy Tickets</a>                                                
+                        <a href="{{route('hackathon.apply')}}" class="buy-ticket-btn btn-xs btn-primary">Apply for Hackathon</a>                                                
                     </div>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>

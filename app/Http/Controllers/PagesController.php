@@ -5,7 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
+
+use Illuminate\Support\Facades\Mail;
+use App\Mail\StallBought;
+use App\Mail\HackathonBooked;
+use Flash;
 use App\Proceeding;
+use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
 {
@@ -129,5 +135,69 @@ class PagesController extends Controller
 
     public function events(){
         return view('pages.events.index');
+    }
+
+    public function buyStall()
+    {
+        return view('pages.events.stalls.buy-stall');
+    }
+
+    public function hackathonApply()
+    {
+        return view('pages.events.hackathon.apply');
+    }
+
+    public function submitStallRequest(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'surname' => 'required|string|max:255',
+            'email' => 'required|string|email|max:30',
+            'description' => 'required|string'
+            // 'g-recaptcha-response' => 'required|captcha',
+        ]);
+
+        // dd($request->all());
+
+        if ($validator->fails()) {
+            // Flash::error('Email not sent. Please confirm all required fields.');
+            return redirect(route('events'))
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $stall = $request->all();
+
+        Mail::to('info@gmail.com')->send(new StallBought($stall));
+
+        // Flash::success('Email sent successfully. Our consultant will get back to you as soon as possible.');
+        return redirect(route('events'));
+    }
+
+    public function applyForHackathon(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'surname' => 'required|string|max:255',
+            'email' => 'required|string|email|max:30',
+            'members' => 'required|integer|between:1,5'
+            // 'g-recaptcha-response' => 'required|captcha',
+        ]);
+
+        // dd($request->all());
+
+        if ($validator->fails()) {
+            // Flash::error('Email not sent. Please confirm all required fields.');
+            return redirect(route('events'))
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $hackathon = $request->all();
+
+        Mail::to('info@gmail.com')->send(new HackathonBooked($hackathon));
+
+        // Flash::success('Email sent successfully. Our consultant will get back to you as soon as possible.');
+        return redirect(route('events'));
     }
 }
