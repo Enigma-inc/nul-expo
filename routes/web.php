@@ -36,7 +36,7 @@ Route::get('proceedings', 'PagesController@proceedings')->name('proceedings');
 Route::get('/messages', 'QueriesController@index');
 Route::get('/all-abstracts', 'AbstractController@index');
 Route::get('/expo-and-exhibition', 'ExhibitionController@index')->name('page.expo-exhibition');
-Route::get('/expo/register', 'ExhibitionController@registerExpoView')->name('expo.register.view');
+Route::get('/expo/register', 'ExhibitionController@registerExpoView')->name('expo.register.view'); 
 Route::get('/exhibition/register/{option}', 'ExhibitionController@registerExhibitionView')->name('exhibition.register.view');
 Route::post('/expo/register', 'ExhibitionController@submitExpoRegistration')->name('expo.register');
 Route::post('/exhibition/register', 'ExhibitionController@submitExhibitionRegistration')->name('exhibition.register');

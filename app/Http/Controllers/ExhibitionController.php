@@ -9,6 +9,9 @@ use App\ExpoRegister;
 use App\ExhibitionRegister;
 use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
 
+use Illuminate\Support\Facades\Mail;
+use App\Mail\StallBought;
+
 class ExhibitionController extends Controller
 {
     public function index()
@@ -42,7 +45,7 @@ class ExhibitionController extends Controller
     {
 
         try {
-          ExpoRegister::create([
+          $stall = ExpoRegister::create([
             'name'=>request('name'),
             'surname'=>request('surname'),
             'email'=>request('email'),
@@ -52,16 +55,17 @@ class ExhibitionController extends Controller
             'country_flag'=>request('country-flag'),
             'summary'=>request('summary'),
             'status'=>0
-
           ]);
+
+          Mail::to('info@gmail.com')->send(new StallBought($stall));
           return view('pages.thank-you.index');
 
         } catch (Exception $e) {
           LaravelSweetAlert::setMessage([
-                         'title' => 'Oops!',
-                          'text'=>'An error occured please try again',
-                         'type' => 'error'
-                     ]);
+                'title' => 'Oops!',
+                'text'=>'An error occured please try again',
+                'type' => 'error'
+            ]);
         }
     }
 

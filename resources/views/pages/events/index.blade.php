@@ -14,7 +14,7 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">INNOVATION STALLS</h3>  
-                        <a href="{{route('stall.request')}}" class="buy-ticket-btn btn-xs btn-primary">Request Stall</a>
+                        <a href="{{route('expo.register.view')}}" class="buy-ticket-btn btn-xs btn-primary">Request Stall</a>
                     </div>
 
                     <h5 class="stall-card-subtitle">

@@ -3,7 +3,7 @@
 
     <b>First Name:</b> {{ $stall['surname'] }} <br>
     <b>Email:</b> {{ $stall['email'] }} <br>
-    @if ($stall['description'])
-    <b>Message:</b> {{ $stall['description'] }}
+    @if ($stall['summary'])
+    <b>Message:</b> {{ $stall['summary'] }}
     @endif
 @endcomponent
