@@ -15,8 +15,15 @@
 				</div>
 				<div class="stall-card-right">
                     <div class="stall-header">
-                        <h3 class="stall-card-title">INNOVATION STALLS</h3>  
-                        <a href="{{route('stall.request')}}" class="buy-ticket-btn btn-xs btn-primary">Request Stall</a>
+                        <h3 class="stall-card-title">Expo STALLS</h3>  
+                        <div class="buttons">
+                            <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
+                             <img src="{{asset('compiled/images/register-stall.svg')}}">
+                            </a>
+                            <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
+                             <img src="{{asset('compiled/images/get-tickets-blue.svg')}}">
+                        </a>
+                        </div> 
                     </div>
 
                     <h5 class="stall-card-subtitle">
@@ -28,7 +35,7 @@
                         Venue: Pioneer Mall ground and first floor corridors
                     </h5>
 					<p style="text-align: justify;">
-                        The stalls will display tangible business products by NUL lecturers, students, graduates, and interested businesses from outside the NUL. Please note that only businesses that do value addition are accepted. We dont take businesses that buy and sell. Submission: Please submit an introduction of your businesls or product in less than 150 words. Put in your full contact details including email and cell phone (preferaly whatsapp). 
+                        The stalls will display tangible business products by NUL lecturers, students, graduates, and interested businesses from outside the NUL. Please note that only businesses that do value addition are accepted. We dont take businesses that buy and sell. Submission: Please submit an introduction of your businesls or product (Just a sentence). Put in your full contact details including email and cell phone (preferaly whatsapp). 
                     </p>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-clock" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
@@ -47,7 +54,9 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">GALA DINNER</h3>
-                        <a href="#" class="buy-ticket-btn btn-xs btn-primary">Buy Tickets</a>                        
+                        <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
+                             <img src="{{asset('compiled/images/get-tickets-yellow.svg')}}">
+                        </a>                        
                     </div>
 					<h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
@@ -77,7 +86,9 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">NUL-VODACOM HACKATHON</h3>
-                        <a href="{{route('hackathon.apply')}}" class="buy-ticket-btn btn-xs btn-primary">Apply for Hackathon</a>                                                
+                        <a href="{{route('hackathon.apply')}}" >
+                            <img src="{{asset('compiled/images/apply.svg')}}">
+                        </a>                                                
                     </div>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>

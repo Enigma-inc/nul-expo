@@ -8945,9 +8945,8 @@ video {
 .stall-card-right .stall-header {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .stall-card-right .buy-ticket-btn {
@@ -9006,17 +9005,35 @@ video {
   .stall-card-right .stall-header {
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-            flex-direction: unset;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  .stall-card-right .stall-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
   }
 
+  .stall-card-right .stall-header .stall-card-title {
+    text-align: center;
+  }
+
+  .stall-card-right .stall-header img {
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .stall-card-right .buy-ticket-btn {
     place-self: flex-end;
   }
 }
 
-.header {
+.header,
+.stall-card-title {
   color: rgba(0, 0, 0, 0.5) !important;
   text-transform: uppercase !important;
   font-weight: 700 !important;
@@ -9112,6 +9129,7 @@ video {
 }
 
 .page-title {
+  width: 100vw;
   height: 200px;
   background: url("/compiled/images/sun-set.svg") no-repeat;
   background-position: bottom;
@@ -9129,6 +9147,23 @@ video {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 768px) {
+  .page-title {
+    background-size: contain;
+  }
+
+  .page-title h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .page-title {
+    background-size: cover;
+  }
 }
 
 .main-footer {
