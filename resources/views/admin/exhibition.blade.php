@@ -66,7 +66,7 @@
                         @endif
                     </div>
                     <div class="footer">
-                        <p class="footer-text-expo">{{$exhibitionApplication->summary}}</p>
+                        <p class="footer-text-expo">{{$exhibitionApplication->members}}</p>
                     </div>
                 </div>
               </div>

@@ -81,7 +81,7 @@
                 <div class="panel-footer" style="text-align: right;">
                     <div>
                         Wanna showcase something?
-                        <a class="btn btn-primary btn-xs" href="{{ route('stall.request') }}">
+                        <a class="btn btn-primary btn-xs" href="{{ route('expo.register.view') }}">
                             Buy stall
                         </a>
                     </div>

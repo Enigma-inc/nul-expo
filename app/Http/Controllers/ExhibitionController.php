@@ -11,6 +11,7 @@ use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
 
 use Illuminate\Support\Facades\Mail;
 use App\Mail\StallBought;
+use App\Mail\HackathonBooked;
 
 class ExhibitionController extends Controller
 {
@@ -22,22 +23,24 @@ class ExhibitionController extends Controller
     {
         return view('pages.expo-exhibition.register-expo');
     }
-    public function registerExhibitionView($option)
+    public function registerExhibitionView()
     {
-      $options = collect(['option-a','option-b','option-c','option-d','option-e']);
-       if($options->contains($option))
-       {
-         return view('pages.expo-exhibition.register-exhibition')
-                 ->with(['option'=>$option]);
-       }
-       else{
-         LaravelSweetAlert::setMessage([
-                        'title' => 'Oops!',
-                         'text'=>'Invalid option selected',
-                        'type' => 'error'
-                    ]);
-          return redirect('/expo-and-exhibition');
-       }
+      // $options = collect(['option-a','option-b','option-c','option-d','option-e']);
+      //  if($options->contains($option))
+      //  {
+      //    return view('pages.expo-exhibition.register-exhibition')
+      //            ->with(['option'=>$option]);
+      //  }
+      //  else{
+      //    LaravelSweetAlert::setMessage([
+      //                   'title' => 'Oops!',
+      //                    'text'=>'Invalid option selected',
+      //                   'type' => 'error'
+      //               ]);
+      //     return redirect('/expo-and-exhibition');
+      //  }
+
+      return view('pages.expo-exhibition.register-exhibition');
 
     }
     
@@ -57,7 +60,7 @@ class ExhibitionController extends Controller
             'status'=>0
           ]);
 
-          Mail::to('info@gmail.com')->send(new StallBought($stall));
+          Mail::to(env('MAIL_TO'))->send(new StallBought($stall));
           return view('pages.thank-you.index');
 
         } catch (Exception $e) {
@@ -72,29 +75,33 @@ class ExhibitionController extends Controller
     public function submitExhibitionRegistration(ExhibitionRegisterRequest $request)
     {
 
+
         try {
-          ExhibitionRegister::create([
+          $hackathon = ExhibitionRegister::create([
             'names'=>request('names'),
-            'company'=>request('company'),
+            'members'=>request('members'),
             'email'=>request('email'),
             'country'=>request('country'),
             'country_phone_code'=>request('phone-code'),
             'phone'=>request('phone'),
             'country_flag'=>request('country-flag'),
-            'summary'=>request('summary'),
-            'option'=>request('option'),
+            // 'summary'=>request('summary'),
+            // 'option'=>request('option'),
             'status'=>0
 
           ]);
+
+          Mail::to(env('MAIL_TO'))->send(new HackathonBooked($hackathon));
+
            return view('pages.thank-you.index');
 
 
         } catch (Exception $e) {
           LaravelSweetAlert::setMessage([
-                         'title' => 'Oops!',
-                          'text'=>'An error occured please try again',
-                         'type' => 'error'
-                     ]);
+              'title' => 'Oops!',
+              'text'=>'An error occured please try again',
+              'type' => 'error'
+          ]);
 
         }
     }

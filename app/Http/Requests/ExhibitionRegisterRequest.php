@@ -25,15 +25,12 @@ class ExhibitionRegisterRequest extends FormRequest
     {
       return [
           'names'=>'required',
-          'company'=>'required',
           'email'=>'required|email',
           'phone'=>'required',
           'phone-code'=>'required',
           'country'=>'required',
           'country-flag'=>'required',
-          'summary'=>'required',
-          'option'=>'required'
-
+          'members'=>'required'
       ];
     }
 }

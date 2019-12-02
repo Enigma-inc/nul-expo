@@ -1,7 +1,7 @@
 @component('mail::message')
-    New booking for hackathon from <b>{{ $hackathon['name'] }}</b>.<br><br>
+    New booking for hackathon from <b>{{ $hackathon['names'] }}</b>.<br><br>
 
-    <b>First Name:</b> {{ $hackathon['surname'] }} <br>
-    <b>Email:</b> {{ $hackathon['email'] }} <br>
-    <b>Message:</b> {{ $hackathon['members'] }}
+    Names: {{ $hackathon['names'] }} <br>
+    Email: {{ $hackathon['email'] }} <br>
+    Members: {{ $hackathon['members'] }}
 @endcomponent

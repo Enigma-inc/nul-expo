@@ -48,7 +48,7 @@
                     <ul class="nav navbar-nav">
                        <li><a href="{{route('admin.home')}}">Abstracts</a></li>
                        <li><a href="{{route('admin.expo')}}">Expo Applications</a></li>
-                       <li><a href="{{route('admin.exhibition')}}">Exhibition Applications</a></li>
+                       <li><a href="{{route('admin.exhibition')}}">Hackathon Applications</a></li>
                        <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                      Live<span class="caret"></span>
