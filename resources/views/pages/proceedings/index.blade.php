@@ -2,12 +2,14 @@
 @section('content')
 <section>
     <div class="page-title">
-        <h1>NULISTICE 2020 Proceedings</h1>
+        <h1>NULISTICE 2018 Proceedings</h1>
     </div>
 </section>
 <section class="padding-20">
     <div  id="app" class="auto-container">
         <div class="col-xs-12 text-right margin-bottom-20">
+            <a href="{{url('proceedings')}}" class="col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
+                                class="fa fa-file"></span> Download Proccedings (Single Files)</a>
                     <a href="{{url('docs/nulistice-2018-proceedings/NULISTICE - Proceedings.zip')}}" class=" col-xs-6 text-center pull-right theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-file-archive"></span> Download All (Zip File)
                     </a>

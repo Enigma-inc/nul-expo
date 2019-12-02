@@ -3,7 +3,7 @@
 <section class="default-section">
     <div class="auto-container">
         <div class="counter-section padding-5">
-            <div class="row clearfix">
+            {{-- <div class="row clearfix">
                 <div class="col-xs-12 text-right margin-bottom-20">
                     <a href="{{url('proceedings')}}" class="col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-file"></span> Download Proccedings (Single Files)</a>
@@ -11,7 +11,7 @@
                                 class="fa fa-file-archive"></span> Download Proccedings (Zip File)
                     </a>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="row clearfix">
@@ -19,7 +19,7 @@
             <div class="col-xs-12 text-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="col-xs-12 col-sm-12 " style="text-align:justify">
                     <div class="sec-title wow faprofdeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                        <h3 class="header">Message from the Chairperson of the NULISTICE 2020</h3>
+                        <h3 class="header text-align-left">Message from the Chairperson of the NULISTICE 2020</h3>
                     </div>
                     <div class="text welcome">
                         <div >
@@ -37,7 +37,11 @@
                                     Through NULISTICE, our primary objective remains the same— to encourage the spirit of 
                                     entrepreneurship among our staff members, students and graduates and to expose their 
                                     innovation and creativity to the outside world with the sole aim of creating sustainable 
-                                    jobs to curb youth unemployment in Lesotho.  <a href="/welcome">read more</a>
+                                    jobs to curb youth unemployment in Lesotho.  
+                                </p>
+                                <p>Sincerely, <br>
+                                    <span class="signature">Prof. K. Mosito</span><br>
+                                    NUL Pro-Vice Chancellor and Chairperson of NULSTICE 2020
                                 </p>
 
                             </div>
