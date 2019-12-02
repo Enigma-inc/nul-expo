@@ -3,7 +3,7 @@
 @section('content')
 <section>
     <div class="page-title">
-        <h1>NULISTICE EXPO & Gala Dinner</h1>
+        <h1>NULISTICE EXPO, Gala Dinner & Hackathon</h1>
     </div>
 </section>
 <section class="padding-20">
@@ -17,7 +17,7 @@
                     <div class="stall-header">
                         <h3 class="stall-card-title">Expo STALLS</h3>  
                         <div class="buttons">
-                            <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
+                            <a href="{{ route('expo.register.view')}}">
                              <img src="{{asset('compiled/images/register-stall.svg')}}">
                             </a>
                             <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
