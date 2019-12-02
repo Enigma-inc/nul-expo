@@ -6,23 +6,10 @@
           <div class="auto-container">
 
               <div class="sec-title">
-                  <h2 align="center" class="header">organising Team</h2>
+                  <h2 align="center" class="header">Organising Team</h2>
               </div>
 
               <div class="owl-carousel team">
-                  {{--  <!--Organising Team-->
-                  <article class="team-member" >
-                      <div class="inner">
-                          <figure class="member-image"><img src="/images/team/maluke_letete.jpg" alt="" title=""></figure>
-                          <div class="lower">
-                              <div class="member-title">
-                                  <h5>Dr Maluke Letete</h5>
-                              </div>
-                          </div>
-                      </div>
-                  </article>  --}}
-
-
                   <article class="team-member" >
                       <div class="inner">
                           <figure class="member-image"><img src="/images/team/moeketsi_mpholo.jpg" alt="" title=""></figure>

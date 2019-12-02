@@ -1,11 +1,11 @@
 {
-    "/admin-assets/js/app.js": "/admin-assets/js/app.js?id=ee1ae739cbb230c00a4a",
-    "/js/app.js": "/js/app.js?id=ba051cb286eb6a9dde61",
-    "/css/app.css": "/css/app.css?id=cd626a72dcac789f4790",
-    "/admin-assets/css/app.css": "/admin-assets/css/app.css?id=7cfa37461f8f45efc3fa",
-    "/css/helpers.css": "/css/helpers.css?id=6ec7e2e1f7f1c1922b79",
-    "/compiled/css/2020-theme.css": "/compiled/css/2020-theme.css?id=d09053d67dafcab60e14",
-    "/js/app-live.js": "/js/app-live.js?id=41cb39eb2647d5a01e39",
-    "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.js?id=12e6e371718cbf998f10",
-    "/css/vuetify.css": "/css/vuetify.css?id=cf1af773942288734d63"
+  "/admin-assets/js/app.js": "/admin-assets/js/app.js?id=ee1ae739cbb230c00a4a",
+  "/js/app.js": "/js/app.js?id=ba051cb286eb6a9dde61",
+  "/css/app.css": "/css/app.css?id=cd626a72dcac789f4790",
+  "/admin-assets/css/app.css": "/admin-assets/css/app.css?id=7cfa37461f8f45efc3fa",
+  "/css/helpers.css": "/css/helpers.css?id=6ec7e2e1f7f1c1922b79",
+  "/compiled/css/2020-theme.css": "/compiled/css/2020-theme.css?id=d09053d67dafcab60e14",
+  "/js/app-live.js": "/js/app-live.js?id=41cb39eb2647d5a01e39",
+  "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.js?id=12e6e371718cbf998f10",
+  "/css/vuetify.css": "/css/vuetify.css?id=cf1af773942288734d63"
 }

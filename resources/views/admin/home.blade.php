@@ -77,7 +77,7 @@
         <div class="panel panel-exhibition col-xs-12 col-sm-5 col-sm-offset-2">
           <a href="{{route('admin.exhibition')}}">
           <div class="panel-body">
-              <h1>Exhibition Applications<br>
+              <h1>Hackathon Applications<br>
                 <div class="summary-container">
                   <div class="authors">
                     <span>Approved</span>

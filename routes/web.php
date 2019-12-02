@@ -36,8 +36,8 @@ Route::get('proceedings', 'PagesController@proceedings')->name('proceedings');
 Route::get('/messages', 'QueriesController@index');
 Route::get('/all-abstracts', 'AbstractController@index');
 Route::get('/expo-and-exhibition', 'ExhibitionController@index')->name('page.expo-exhibition');
-Route::get('/expo/register', 'ExhibitionController@registerExpoView')->name('expo.register.view');
-Route::get('/exhibition/register/{option}', 'ExhibitionController@registerExhibitionView')->name('exhibition.register.view');
+Route::get('/expo/register', 'ExhibitionController@registerExpoView')->name('expo.register.view'); 
+Route::get('/hackathon/register', 'ExhibitionController@registerExhibitionView')->name('hackathon.apply');
 Route::post('/expo/register', 'ExhibitionController@submitExpoRegistration')->name('expo.register');
 Route::post('/exhibition/register', 'ExhibitionController@submitExhibitionRegistration')->name('exhibition.register');
 Route::get('/thank-you', 'ExhibitionController@thankYou')->name('exhibition.thanks');
@@ -47,10 +47,10 @@ Route::get('/contact-us', 'QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
 Route::get('/events', 'PagesController@events')->name('events');
-Route::get('/buy-stalls', 'PagesController@buyStall')->name('stall.request');
-Route::post('/buy-stalls', 'PagesController@submitStallRequest')->name('stall.buy');
-Route::get('/apply-for-hackathon', 'PagesController@hackathonApply')->name('hackathon.apply');
-Route::post('/apply-for-hackathon', 'PagesController@applyForHackathon')->name('hackathon.sent-application');
+// Route::get('/buy-stalls', 'PagesController@buyStall')->name('stall.request');
+// Route::post('/buy-stalls', 'PagesController@submitStallRequest')->name('stall.buy');
+// Route::get('/apply-for-hackathon', 'PagesController@hackathonApply')->name('hackathon.apply');
+// Route::post('/apply-for-hackathon', 'PagesController@applyForHackathon')->name('hackathon.sent-application');
 
 Route::post('/replies', 'RepliesController@store')->name('reply.store');
 
@@ -108,9 +108,9 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function 
     Route::post('/expo/{id}/decline', 'AdminController@declineExpo')->name('expo.decline');
     
     //Exhibition
-    Route::get('/exhibition', 'AdminController@exhibitionData')->name('admin.exhibition');
-    Route::post('/exhibition/{id}/approve', 'AdminController@approveExhibition')->name('exhibition.approve');
-    Route::post('/exhibition/{id}/decline', 'AdminController@declineExhibition')->name('exhibition.decline');
+    Route::get('/hackathon', 'AdminController@exhibitionData')->name('admin.exhibition');
+    Route::post('/hackathon/{id}/approve', 'AdminController@approveExhibition')->name('exhibition.approve');
+    Route::post('/hackathon/{id}/decline', 'AdminController@declineExhibition')->name('exhibition.decline');
 
 
     Route::group(['middleware' => ['auth']], function () {

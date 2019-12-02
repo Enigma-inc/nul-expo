@@ -1,9 +1,13 @@
-@extends('partials.master') @section('content')
+@extends('partials.master') 
+
+@section('content')
+<section>
+    <div class="page-title">
+        <h1>NULISTICE 2020 Concept</h1>
+    </div>
+</section>
 <section class="padding-20">
     <div class="auto-container">
-        <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header">National University of Lesotho International Science and Technology Innovation Conference and Expo (NULISTICE) 2018</h2>
-        </div>
         <div class="row clearfix">
             <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <img src="{{asset('images/conference/nul-roma.jpg')}}" alt="Concept" class="thumbnail pull-left margin-10 conference-img-lg">

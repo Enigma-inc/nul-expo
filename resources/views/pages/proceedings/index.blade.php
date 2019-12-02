@@ -1,11 +1,12 @@
 @extends('partials.master')
 @section('content')
-<section >
+<section>
+    <div class="page-title">
+        <h1>NULISTICE 2020 Proceedings</h1>
+    </div>
+</section>
+<section class="padding-20">
     <div  id="app" class="auto-container">
-
-        <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header">NULISTICE 2018 Proceedings</h2>
-        </div>
         <div class="col-xs-12 text-right margin-bottom-20">
                     <a href="{{url('docs/nulistice-2018-proceedings/NULISTICE - Proceedings.zip')}}" class=" col-xs-6 text-center pull-right theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-file-archive"></span> Download All (Zip File)
