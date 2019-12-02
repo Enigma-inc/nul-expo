@@ -2168,9 +2168,8 @@ p{
 .main-footer .footer-bottom{
 	position:relative;
 	padding:0px 0px 15px;
-	color:#5B5B5B;	
-	background: #E13F30;
-	
+	color:#5B5B5B;
+	background: transparent;
 }
 
 .main-footer .footer-lower {
@@ -2314,19 +2313,19 @@ p{
 }
 
 .two-column .image-side{
-	position:absolute;
+	/* position:absolute; */
 	left:0px;
 	top:0px;
 	width:50%;
 	height:100%;
 	background-position:center top;
 	background-repeat:no-repeat;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .two-column .content-side{
-	position:relative;
-	padding:0px 15px 0px 25px;	
+	/* position:relative; */
+	/* padding:0px 15px 0px 25px; */
 }
 
 .two-column .content-side h2{
@@ -2379,7 +2378,7 @@ p{
 .two-column .feature .icon img{
 	position:relative;
 	display:inline-block;
-	max-width:100%;	
+	/* max-width:100%; */
 }
 
 .two-column .feature h3{
@@ -2400,7 +2399,7 @@ p{
 .sponsors{
 	position:relative;
 	text-align:center;
-	background:#e13f30;
+	background: #748EA1;
 	padding:22px 0px;
 }
 
