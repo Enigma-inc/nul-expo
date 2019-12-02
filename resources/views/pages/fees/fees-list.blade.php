@@ -15,7 +15,7 @@
         </div>
 
         <div class="buy-button">
-           <a href="#">
+           <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
            <img src="{{asset('compiled/images/get-tickets-blue.svg')}}" alt="" srcset="">
 
            </a>
@@ -35,7 +35,7 @@
           <div class="fees-body">M <span>3, 500</span></div>
         </div>
         <div  class="buy-button">
-           <a href="#">
+           <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner">
            <img src="{{asset('compiled/images/get-tickets-yellow.svg')}}" alt="" srcset="">
 
            </a>
