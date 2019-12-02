@@ -120,7 +120,7 @@ class AbstractController extends Controller
 
     }
 
-
+ 
     public function submitSpeakerDetails(SubmitSpeakerDetailsRequest $request)
     {
          $currentUser=Auth::User();

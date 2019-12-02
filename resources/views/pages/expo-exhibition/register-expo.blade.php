@@ -91,7 +91,7 @@
                             </div>
                             <div>
                                 <label for="phone" class="col-md-4 control-label"></label>
-                                <div class="g-recaptcha col-md-6" data-sitekey="6LfOkMUUAAAAABP02YYkHRC8s8f-8o48L3vPhxP2"></div>
+                                <div class="g-recaptcha col-md-6" data-sitekey="6LfOkMUUAAAAABP02YYkHRC8s8f-8o48L3vPhxP2" required></div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">

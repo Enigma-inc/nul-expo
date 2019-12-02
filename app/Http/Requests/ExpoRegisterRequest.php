@@ -32,7 +32,7 @@ class ExpoRegisterRequest extends FormRequest
             'country'=>'required',
             'country-flag'=>'required',
             'summary'=>'required',
-
+            'g-recaptcha-response' => 'required',
         ];
     }
 }

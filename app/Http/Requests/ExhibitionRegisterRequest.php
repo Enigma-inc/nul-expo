@@ -24,13 +24,14 @@ class ExhibitionRegisterRequest extends FormRequest
     public function rules()
     {
       return [
-          'names'=>'required',
-          'email'=>'required|email',
-          'phone'=>'required',
-          'phone-code'=>'required',
-          'country'=>'required',
-          'country-flag'=>'required',
-          'members'=>'required'
+        'names'=>'required',
+        'email'=>'required|email',
+        'phone'=>'required',
+        'phone-code'=>'required',
+        'country'=>'required',
+        'country-flag'=>'required',
+        'members'=>'required',
+        'g-recaptcha-response' => 'required|captcha',
       ];
     }
 }

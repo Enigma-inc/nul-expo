@@ -35,7 +35,7 @@
                         Deadline: 30 December 2019
                     </h5>
                     <p style="font-style: italic;">
-                        Buy a stall electronically here or put it into the following NUL account (Send a proof of payment to: ketsi.motlatsi@gmail.com). 
+                        Buy a stall electronically here or put it into the following <a href="#" data-toggle="modal" data-target="#exampleModal">NUL account</a> (Send a proof of payment to: ketsi.motlatsi@gmail.com). 
                     </p>
 				</div>
             </div>
@@ -99,7 +99,34 @@
                         Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
                     </p>
 				</div>
-			</div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Banking Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <strong>Bank</strong>: Standard Lesotho Bank <br>
+                            <strong>Account</strong>: Current Account <br>
+                            <strong>Account Number</strong>: 9080002587781 <br>
+                            <strong>Branch</strong>: Roma <br>
+                            <strong>Branch Code</strong>: 062867 <br>
+                            <strong>Swift Address</strong>: SBICLSMX <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

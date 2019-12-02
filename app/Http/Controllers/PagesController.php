@@ -154,13 +154,10 @@ class PagesController extends Controller
             'surname' => 'required|string|max:255',
             'email' => 'required|string|email|max:30',
             'description' => 'required|string'
-            // 'g-recaptcha-response' => 'required|captcha',
         ]);
 
-        // dd($request->all());
 
         if ($validator->fails()) {
-            // Flash::error('Email not sent. Please confirm all required fields.');
             return redirect(route('events'))
                 ->withErrors($validator)
                 ->withInput();
@@ -170,7 +167,6 @@ class PagesController extends Controller
 
         Mail::to('info@gmail.com')->send(new StallBought($stall));
 
-        // Flash::success('Email sent successfully. Our consultant will get back to you as soon as possible.');
         return redirect(route('events'));
     }
 
@@ -181,13 +177,10 @@ class PagesController extends Controller
             'surname' => 'required|string|max:255',
             'email' => 'required|string|email|max:30',
             'members' => 'required|integer|between:1,5'
-            // 'g-recaptcha-response' => 'required|captcha',
         ]);
 
-        // dd($request->all());
 
         if ($validator->fails()) {
-            // Flash::error('Email not sent. Please confirm all required fields.');
             return redirect(route('events'))
                 ->withErrors($validator)
                 ->withInput();
@@ -197,7 +190,6 @@ class PagesController extends Controller
 
         Mail::to('info@gmail.com')->send(new HackathonBooked($hackathon));
 
-        // Flash::success('Email sent successfully. Our consultant will get back to you as soon as possible.');
         return redirect(route('events'));
     }
 }
