@@ -37,7 +37,11 @@
                                     Through NULISTICE, our primary objective remains the same— to encourage the spirit of 
                                     entrepreneurship among our staff members, students and graduates and to expose their 
                                     innovation and creativity to the outside world with the sole aim of creating sustainable 
-                                    jobs to curb youth unemployment in Lesotho.  <a href="/welcome">read more</a>
+                                    jobs to curb youth unemployment in Lesotho.  
+                                </p>
+                                <p>Sincerely, <br>
+                                    <span class="signature">Prof. K. Mosito</span><br>
+                                    NUL Pro-Vice Chancellor and Chairperson of NULSTICE 2020
                                 </p>
 
                             </div>
