@@ -1,7 +1,7 @@
 @extends('partials.master')
 
 @section('content')
-    <div class="preloader"></div>
+    {{-- <div class="preloader"></div> --}}
     @include('pages.home.partials.slider')
     {{-- <div class="application-deadline-home">
          @include('pages.expo-exhibition.deadline')

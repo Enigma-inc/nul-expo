@@ -1,21 +1,19 @@
 @extends('partials.master')
 @section('content')
-  <div class="row clearfix">
+<section>
+    <div class="page-title">
+        <h1>Message from the Chairperson</h1>
+    </div>
+</section>
+  <section class="padding-20">
+      <div class="row clearfix">
 
       <div class="col-xs-12 text-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
           <div class="col-xs-12 col-sm-12 " style="text-align:justify">
-              <div class="sec-title wow faprofdeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                  <h3 class="header">Message from the Chairperson of the NULISTICE 2018</h3>
-              </div>
               <div class="text welcome">
                   <div >
                       <div class="padding-right-15">
                           <p class="text-align-just">
-                          <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
-                              <img width="100%" src="{{asset('images/logos/logo.jpeg')}}" style="margin-bottom: 7px;"
-                                   alt="PVC" title="PVC" class="">
-                              {{-- <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2020 </em> --}}
-                          </div>
 
                           <p class="text-align-just"><strong>Dear Prospective Delegate</strong> <br>
                               On behalf of the National University of Lesotho, we are pleased to invite you to National 
@@ -34,7 +32,7 @@
                               <strong>We believe you will continue to enjoy this year’s event.</strong>
                           </p>
                           <p>Sincerely, <br>
-                            <b>Prof. K Mosito</b><br>
+                            <span class="signature">Prof. K. Mosito</span><br>
                               NUL Pro-Vice Chancellor and Chairperson of NULSTICE 2020
                           </p>
                       </div>
@@ -46,4 +44,5 @@
       </div>
 
   </div>
+  </section>
 @endsection
