@@ -24,10 +24,13 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fh-3.1.3/r-2.2.1/sc-1.4.4/datatables.min.css">
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Cinzel:900|Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
    @LaravelSweetAlertCSS
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+<link href="{{mix('compiled/css/2020-theme.css')}}" rel="stylesheet">
+
 
    @include('partials.seo')
 </head>

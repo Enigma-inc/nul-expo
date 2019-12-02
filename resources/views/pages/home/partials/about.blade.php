@@ -4,15 +4,6 @@
     <div class="auto-container">
         <div class="counter-section padding-5">
             <div class="row clearfix">
-                {{-- <div class="col-md-5 col-sm-12 col-xs-12 margin-top-25">
-                    <div class="countdown" id="countdown-timer">
-
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 counter-text margin-top-25">
-                    <h3>TIME TO EVENT</h3>
-                    <p>23 January, 2018</p>
-                </div> --}}
                 <div class="col-xs-12 text-right margin-bottom-20">
                     <a href="{{url('proceedings')}}" class="col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
                                 class="fa fa-file"></span> Download Proccedings (Single Files)</a>
@@ -34,11 +25,6 @@
                         <div >
                             <div class="padding-right-15">
                                 <p class="text-align-just">
-                                 {{-- <div style="float:left; font-size: 0.7em; text-align:center;" class="thumbnail margin-10">
-                                    <img width="100%" src="/images/team/nulistice.jpeg" style="margin-bottom: 7px;"
-                                         alt="PVC" title="PVC" class="">
-                                    <em>Prof H.M. Lephoto <br>NUL PVC and Chairperson of the NULISTICE 2020 </em>
-                                </div>  --}}
 
                                 <p class="text-align-just"><strong>Dear Prospective Delegate</strong> <br>
                                     On behalf of the National University of Lesotho, we are pleased to invite you to National 

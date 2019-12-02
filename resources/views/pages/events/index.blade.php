@@ -1,11 +1,13 @@
 @extends('partials.master') 
 
 @section('content')
+<section>
+    <div class="page-title">
+        <h1>NULISTICE EXPO & Gala Dinner</h1>
+    </div>
+</section>
 <section class="padding-20">
     <div class="auto-container">
-        <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h3 class="header">EXPO 2020</h3>
-        </div>
         <div class="row clearfix">            
             <div class="stall-card">
 				<div class="stall-card-left">
