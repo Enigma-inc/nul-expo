@@ -24,7 +24,7 @@
                      {{$exhibitionApplication->names}}
                    </div>
                    <div class="head-item">
-                     {{$exhibitionApplication->company}}
+                     {{$exhibitionApplication->members}}
                    </div>
                    <div class="head-item">
                      {{$exhibitionApplication->country}}
@@ -64,9 +64,6 @@
                             </form>
                         </div>
                         @endif
-                    </div>
-                    <div class="footer">
-                        <p class="footer-text-expo">{{$exhibitionApplication->members}}</p>
                     </div>
                 </div>
               </div>

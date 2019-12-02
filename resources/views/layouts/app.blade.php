@@ -12,9 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('admin-assets/css/app.css') }}" rel="stylesheet">
-    {{--  <link href="{{ mix('admin-assets/css/vendor.css') }}" rel="stylesheet">  --}}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
-    {{--  {!! Charts::styles() !!}  --}}
 
     <!-- Scripts -->
     <script>

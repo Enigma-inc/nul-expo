@@ -9,7 +9,6 @@
                         <form class="form-horizontal" role="form" method="POST"
                                 action="{{ route('exhibition.register') }}">
                             {{ csrf_field() }}
-                            {{-- <div class="col-xs-12 col-md-6"> --}}
                                 <div class="form-group{{ $errors->has('names') ? ' has-error' : '' }}">
                                     <label for="names" class="col-md-4 control-label">Contact Person Names</label>
 
@@ -87,27 +86,12 @@
                                         @endif
                                     </div>
                                 </div>
-                            {{-- </div> --}}
-                            {{-- <div class="col-xs-12 col-md-6">
-                            <div class="form-group{{ $errors->has('summary') ? ' has-error' : '' }}">
-                                <label for="summary" class="col-md-4 control-label">Product/Business Summary</label>
-
-                                <div class="col-md-8">
-                                    <textarea id="summary" type="text" rows="8" class="form-control" name="summary"
-                                            required placeholder="Write a brief summary of your product/business in less than 100 words. ">{{old('summary')}}</textarea>
-
-                                    </textarea/>
-
-                                    @if ($errors->has('summary'))
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first('summary') }}</strong>
-                                        </span>
-                                    @endif
+                                <div>
+                                    <label for="phone" class="col-md-4 control-label"></label>
+                                    <div class="g-recaptcha col-md-6" data-sitekey="6LfOkMUUAAAAABP02YYkHRC8s8f-8o48L3vPhxP2"></div>
                                 </div>
-                            </div>
-                            </div> --}}
                             <div class="form-group">
-                                <div class="col-md-6 col-md-offset-4">
+                                <div style="padding-top:10px;" class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
                                         Submit
                                     </button>
@@ -129,6 +113,7 @@
     </div>
 @endsection
 @section('scripts')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         var $input = $("#country");
         var flag = $('#country-flag');
