@@ -39,7 +39,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="{{ Request::path() == 'events' ? 'current' : '' }}">
                             <a href="{{route('events')}}">Events</a>
                         </li>
                         {{-- <li  class="{{ Request::path() == 'expo-and-exhibition' ? 'current' : '' }}">

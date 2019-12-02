@@ -47,6 +47,10 @@ Route::get('/contact-us', 'QueriesController@create')->name('contact.create');
 Route::post('/contact-us', 'QueriesController@store')->name('contact.store');
 
 Route::get('/events', 'PagesController@events')->name('events');
+Route::get('/buy-stalls', 'PagesController@buyStall')->name('stall.request');
+Route::post('/buy-stalls', 'PagesController@submitStallRequest')->name('stall.buy');
+Route::get('/apply-for-hackathon', 'PagesController@hackathonApply')->name('hackathon.apply');
+Route::post('/apply-for-hackathon', 'PagesController@applyForHackathon')->name('hackathon.sent-application');
 
 Route::post('/replies', 'RepliesController@store')->name('reply.store');
 
