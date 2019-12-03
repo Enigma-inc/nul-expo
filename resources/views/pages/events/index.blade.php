@@ -17,12 +17,20 @@
                     <div class="stall-header">
                         <h3 class="stall-card-title">Expo STALLS</h3>  
                         <div class="buttons">
-                            <a href="{{ route('expo.register.view')}}">
-                             <img src="{{asset('compiled/images/register-stall.svg')}}">
-                            </a>
+                            @if (date('d/m/Y') > date('30/12/2019'))
+                                <button class="btn btn-xs btn-primary">
+                                    Applications closed.
+                                </button>
+                                @else
+                                <a href="{{ route('expo.register.view')}}">
+                                    <img src="{{asset('compiled/images/register-stall.svg')}}">
+                                </a>
+                            @endif
+
+                            
                             <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">
-                             <img src="{{asset('compiled/images/get-tickets-blue.svg')}}">
-                        </a>
+                                <img src="{{asset('compiled/images/get-tickets-blue.svg')}}">
+                            </a>
                         </div> 
                     </div>
 
