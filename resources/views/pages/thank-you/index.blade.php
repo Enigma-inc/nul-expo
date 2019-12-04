@@ -38,7 +38,7 @@
 
      @include('partials.menu')
        <div class="thank-you-container">
-            {{-- <img src="{{asset('images/logos/logo.svg')}}" alt="logo"> --}}
+            <img src="{{asset('compiled/images/nulihub.png')}}" style="height: 100px;" alt="logo">
             <h1>Thank You</h1>
             <h2>We have received your application</h2>
             <a href="/">Home</a>

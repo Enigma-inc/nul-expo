@@ -64,9 +64,9 @@ input,
   padding-top: 100px;
   padding-top: 10vh;
   img {
-    height: 150px;
+    height: 100px;
     @media screen and(max-width:560px) {
-      width: 90%;
+      width: 60%;
       height: auto;
       margin: 0 20px;
     }

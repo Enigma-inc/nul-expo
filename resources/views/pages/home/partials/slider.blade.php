@@ -15,10 +15,10 @@
                               </h2>
                               <div class="divider"></div>
                               <span >
-                                      NULISTICE 2018 <span class="with-sm"> with</span> RERIS 2018
+                                      NULISTICE 2020 <span class="with-sm"> with</span> RERIS 2020
 
                               </span>
-                              <br> <small class="slide-date"><i class="fa fa-calendar"></i> 23 - 26 January 2018</small>
+                              <br> <small class="slide-date"><i class="fa fa-calendar"></i> 23 - 26 January 2020</small>
 
                           </div>
                       </div>
