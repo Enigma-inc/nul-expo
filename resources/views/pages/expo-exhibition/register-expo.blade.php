@@ -2,9 +2,9 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Expo Registration</div>
+                <center class="panel-heading">Expo Registration</center>
                 <div class="panel-body">
                     @if (date('d/m/Y') > date('30/12/2019'))
                         Applications closed.                        
@@ -12,7 +12,6 @@
                         <form class="form-horizontal" role="form" method="POST"
                                 action="{{ route('expo.register') }}">
                             {{ csrf_field() }}
-                            <div class="col-xs-12 col-md-6">
                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                     <label for="name" class="col-md-4 control-label">Name</label>
 
@@ -92,12 +91,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div>
-                                    <label for="phone" class="col-md-4 control-label"></label>
-                                    <div class="g-recaptcha col-md-6" data-sitekey="6LfOkMUUAAAAABP02YYkHRC8s8f-8o48L3vPhxP2" required></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
+                        
                                 <div class="form-group{{ $errors->has('summary') ? ' has-error' : '' }}">
                                     <label for="summary" class="col-md-4 control-label">Product/Business Summary</label>
 
@@ -114,7 +108,12 @@
                                         @endif
                                     </div>
                                 </div>
-                            </div>
+
+                                <div>
+                                    <label class="col-md-4 control-label"></label>
+                                    <div class="g-recaptcha col-md-6" data-sitekey="6LfOkMUUAAAAABP02YYkHRC8s8f-8o48L3vPhxP2" required></div>
+                                </div>
+
                             <div class="form-group">
                                 <div style="padding-top:10px;" class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">

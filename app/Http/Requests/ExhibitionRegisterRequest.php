@@ -31,7 +31,7 @@ class ExhibitionRegisterRequest extends FormRequest
         'country'=>'required',
         'country-flag'=>'required',
         'members'=>'required',
-        'g-recaptcha-response' => 'required|captcha',
+        'g-recaptcha-response' => 'required',
       ];
     }
 }

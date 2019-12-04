@@ -25,23 +25,7 @@ class ExhibitionController extends Controller
     }
     public function registerExhibitionView()
     {
-      // $options = collect(['option-a','option-b','option-c','option-d','option-e']);
-      //  if($options->contains($option))
-      //  {
-      //    return view('pages.expo-exhibition.register-exhibition')
-      //            ->with(['option'=>$option]);
-      //  }
-      //  else{
-      //    LaravelSweetAlert::setMessage([
-      //                   'title' => 'Oops!',
-      //                    'text'=>'Invalid option selected',
-      //                   'type' => 'error'
-      //               ]);
-      //     return redirect('/expo-and-exhibition');
-      //  }
-
       return view('pages.expo-exhibition.register-exhibition');
-
     }
     
     public function submitExpoRegistration(ExpoRegisterRequest $request)

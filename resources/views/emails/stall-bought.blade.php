@@ -1,8 +1,8 @@
 @component('mail::message')
     New booking for stall from <b>{{ $stall['name'] }}</b>.<br><br>
 
-    Names: {{ $stall['name'] }} <br>
-    Email: {{ $stall['email'] }} <br>
+    Names: {{ $stall['name'] }} 
+    Email: {{ $stall['email'] }} 
     @if ($stall['summary'])
         Summary: {{ $stall['summary'] }}
     @endif
