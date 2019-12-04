@@ -3,7 +3,5 @@
 
     Names: {{ $stall['name'] }} 
     Email: {{ $stall['email'] }} 
-    @if ($stall['summary'])
-        Summary: {{ $stall['summary'] }}
-    @endif
+    Summary: {{ $stall['summary'] }}
 @endcomponent

@@ -7,18 +7,18 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class HackathonBooked extends Mailable
+class StallApplication extends Mailable
 {
     use Queueable, SerializesModels;
-    public $hackathon;
+    public $stall;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($hackathon)
+    public function __construct($stall)
     {
-        $this->hackathon = $hackathon;
+        $this->stall = $stall;
     }
 
     /**
@@ -28,7 +28,7 @@ class HackathonBooked extends Mailable
      */
     public function build()
     {
-        return $this->from($this->hackathon['email'])
-            ->markdown('emails.hackathon-booked');
+        return $this->from($this->stall['email'])
+            ->markdown('emails.stall-application');
     }
 }

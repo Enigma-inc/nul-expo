@@ -10,8 +10,8 @@ use App\ExhibitionRegister;
 use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
 
 use Illuminate\Support\Facades\Mail;
-use App\Mail\StallBought;
-use App\Mail\HackathonBooked;
+use App\Mail\StallApplication;
+use App\Mail\HackathonApplication;
 
 class ExhibitionController extends Controller
 {
@@ -44,7 +44,7 @@ class ExhibitionController extends Controller
             'status'=>0
           ]);
 
-          Mail::to(env('MAIL_TO'))->send(new StallBought($stall));
+          Mail::to(env('MAIL_TO'))->send(new StallApplication($stall));
           return view('pages.thank-you.index');
 
         } catch (Exception $e) {
@@ -73,7 +73,7 @@ class ExhibitionController extends Controller
 
           ]);
 
-          Mail::to(env('MAIL_TO'))->send(new HackathonBooked($hackathon));
+          Mail::to(env('MAIL_TO'))->send(new HackathonApplication($hackathon));
 
            return view('pages.thank-you.index');
 
