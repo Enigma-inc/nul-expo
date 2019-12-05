@@ -1,7 +1,7 @@
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="National University of Lesotho Science, Technology and Innovation Expo and Conference, 18 - 24 Jan 2020">
-    <meta name="twitter:title" content="NULISTICE: 26th Jan 2018">
+    <meta name="twitter:title" content="NULISTICE: 18 - 24 Jan 2020">
     <meta name="twitter:description" content="National University of Lesotho Science, Technology and Innovation Expo and Conference, 18 - 24 Jan 2020">
     <meta name="twitter:image" content="{{asset('images/seo/twitter.jpg')}}">
 

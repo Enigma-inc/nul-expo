@@ -210,24 +210,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                           <div class="margin-bottom-20 margin-top-5 text-align-just">
-                             <a disabled style="background:grey;color:#fff"  class="btn btn-disabled  btn-sm col-xs-12 " href="{{route('abstract.upload.page',['conference'=>'reris'])}}">
-                             <i class="fa fa-upload"></i> Upload Abstract for RERIS <span style="color:red">(closed)</span>
-                             </a>
-                          </div>
-                        <button type="button" class="topics-header accordion btn btn-default margin-top-10 col-xs-12">
-                        View RERIS Topics
-                        </button>
-                            <div class="topics-panel margin-top-10">
-                                <ul class="margin-top-10">
-                                    <li> Grid connected renewable energy</li>
-                                    <li> Decentralised renewable and household energy solutions</li>
-                                    <li> Energy socioeconomics (e.g. policy, economics, legal, regulatory and social issues)</li>
-                                    <li> Promotion of energy research, innovation, education and entrepreneurship</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                        </div>
                    </div>

@@ -2,7 +2,7 @@
 @section('content')
 <section>
     <div class="page-title">
-        <h1>NULISTICE 2018 Proceedings</h1>
+        <h1>NULISTICE 2020 Proceedings</h1>
     </div>
 </section>
 <section class="padding-20">

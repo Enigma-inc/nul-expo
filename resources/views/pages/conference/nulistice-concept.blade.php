@@ -45,14 +45,14 @@
                 </p>
 
                 <p class="text-align-just">
-                    This 2018 National University of Lesotho International Science and Technology Innovation Conference & Expo (NULISTICE-2018)
+                    This 2020 National University of Lesotho International Science and Technology Innovation Conference & Expo (NULISTICE-2020)
                     is meant to provide an opportunity to turn ideas into action. It is expected that the attending scholars
                     from all over the world will share their basic research findings, lessons in university-industry cooperation,
                     successes and failures in commercialization and policy recommendations in any of the areas mentioned
-                    above. NULISTICE-2018 and the parallel events combined together are going to be bigger in scope and wider
-                    in reach. While the previous events were just one day expos and workshops, this 2018 event will combine
+                    above. NULISTICE-2020 and the parallel events combined together are going to be bigger in scope and wider
+                    in reach. While the previous events were just one day expos and workshops, this 2020 event will combine
                     together an International Conference & Expo, student’s competitions (proposed Vodacom-NUL Hackathon),
-                    Gala Dinner and a Daytrip for the international visitors.
+                    Gala Dinner.
                 </p>
             </div>
 
@@ -63,7 +63,7 @@
                 </p>
                 <img src="{{asset('images/conference/conf.jpg')}}" alt="Conference" class="thumbnail pull-left margin-10 conference-img">
                 <p class="text-align-just">
-                    National University of Lesotho International Science, Technology and Innovation Conference & Expo (NULISTICE-2018) will be
+                    National University of Lesotho International Science, Technology and Innovation Conference & Expo (NULISTICE-2020) will be
                     a convergence of international scholars from many areas of Science and Technology with the theme, “Resource
                     Mobilization and Entrepreneurship Action for Development.” The main areas include Renewable Energy, Biotechnology,
                     Environment and Natural Resources Management, Food and Water Safety, Climate Change Challenges and Mitigation
@@ -97,7 +97,7 @@
                 </p>
                 <img src="{{asset('images/conference/expo.jpg')}}" alt="Expo" class="thumbnail pull-left margin-10 conference-img">
                 <p class="text-align-just">
-                    The 2018 Expo will be the continuation of the first two (held in 2015 and 2016). This event is mainly targeting the local
+                    The 2020 Expo will be the continuation of the first two (held in 2015 and 2016). This event is mainly targeting the local
                     audience and it is meant to help the society appreciate an important role that can be played by science
                     and technology in daily life and to help attract funding and commercialization of academic projects.
                 </p>
@@ -134,7 +134,7 @@
                     This competition has been won by a number of NUL students and graduates. However, it is open to all whiz kids from around
                     the country and it is a good example of how to challenge and reward technology leaders of tomorrow. NUL
                     is in talks with Vodacom Lesotho Foundation to find out if the event can be part of a large series of
-                    events within the NULISTICE-2018 week.
+                    events within the NULISTICE-2020 week.
                 </p>
             </div>
 
@@ -147,25 +147,6 @@
                     The last day of the conference will be marked by a Gala Dinner which will be attended by the NUL Vice Chancellor and dignitaries
                     from the government of Lesotho. The event will give the participants some time to unwind and reflect
                     towards the end of the whole thing.
-                </p>
-            </div>
-
-            <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <p class="text-align-left color-primary">
-                    <strong>The Daytrip</strong>
-                </p>
-                <img src="{{asset('images/conference/kome.jpg')}}" alt="Kome" class="thumbnail pull-left margin-10 conference-img">
-                <p class="text-align-just">
-                    Lesotho (The Forgotten Kingdom, as one movie maker would define it) is so small a country; many people around the world just
-                    haven’t heard anything about it. The fact that it is “hidden” within South Africa, and completely surrounded
-                    by it, does not help either. The result is a country with so many good things that is almost unknown
-                    to the outside world.
-                </p>
-
-                <p class="text-align-just">
-                    The Daytrip will be a one-day short trip around the country meant to give the international tourists a feel of this tiny
-                    Mountain Kingdom. Given the time of the year, it is hoped that the visitors will have an opportunity
-                    to enjoy the scenery of the country and the way of life of the Basotho people at a prime time.
                 </p>
             </div>
         </div>

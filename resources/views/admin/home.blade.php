@@ -2,25 +2,25 @@
 
  @section('content')
     <div class="admin-home">
-        <div class="panel panel-abstracts  col-xs-12 col-sm-12">
+        {{-- <div class="panel panel-abstracts  col-xs-12 col-sm-12">
           <a href="{{route('admin.abstracts',['conference'=>'all'])}}">
-          <div class="panel-body">
-              <h1>ALL Abstracts
-                <div class="summary-container">
-                  <div class="authors">
-                    <span>Authors</span>
-                    <small>({{$allAuthors}})</small>
+            <div class="panel-body">
+                <h1>ALL Abstracts
+                  <div class="summary-container">
+                    <div class="authors">
+                      <span>Authors</span>
+                      <small>({{$allAuthors}})</small>
+                    </div>
+                    <div class="abstracts">
+                      <span>Abstracts</span>
+                      <small>({{$nulisticeCount+ $rerisCount}})</small>
+                    </div>
                   </div>
-                  <div class="abstracts">
-                    <span>Abstracts</span>
-                    <small>({{$nulisticeCount+ $rerisCount}})</small>
-                  </div>
-                </div>
-              </h1>
-          </div>
-        </a>
-        </div>
-        <div class="panel panel-abstracts col-xs-12 col-sm-5 ">
+                </h1>
+            </div>
+          </a>
+        </div> --}}
+        {{-- <div class="panel panel-abstracts col-xs-12 col-sm-5 ">
           <a href="{{route('admin.abstracts',['conference'=>'nulistice'])}}">
             <div class="panel-body">
                 <h1>NULISTICE Abstracts
@@ -37,8 +37,8 @@
                 </h1>
             </div>
           </a>
-        </div>
-        <div class="panel panel-abstracts col-xs-12 col-sm-5 col-sm-offset-2">
+        </div> --}}
+        {{-- <div class="panel panel-abstracts col-xs-12 col-sm-5 col-sm-offset-2">
           <a href="{{route('admin.abstracts',['conference'=>'reris'])}}">
           <div class="panel-body">
               <h1>RERIS Abstracts<br>
@@ -55,14 +55,14 @@
               </h1>
           </div>
         </a>
-        </div>
+        </div> --}}
         <div class="panel panel-expo col-xs-12 col-sm-5 ">
           <a href="{{route('admin.expo')}}">
             <div class="panel-body">
                 <h1>Expo Applications
                   <div class="summary-container">
                     <div class="authors">
-                      <span>Approve</span>
+                      <span>Approved</span>
                       <small>({{$approvedExpo}})</small>
                     </div>
                     <div class="abstracts">

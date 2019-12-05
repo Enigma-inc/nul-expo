@@ -22,11 +22,11 @@
                 
                 <!--Tab Buttons-->
                 <ul class="tab-buttons clearfix">
-                    <li class="tab-btn" data-id="#monday"><span class="day">Monday</span><span class="date">22/01/2018</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#tuesday"><span class="day">Tuesday</span><span class="date">23/01/2018</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#wednesday"><span class="day">Wednesday</span><span class="date">24/01/2018</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#thursday"><span class="day">Thursday</span><span class="date">25/01/2018</span><span class="curve"></span></li>
-                    <li class="tab-btn" data-id="#friday"><span class="day">Friday</span><span class="date">26/01/2018</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#monday"><span class="day">Monday</span><span class="date">22/01/2020</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#tuesday"><span class="day">Tuesday</span><span class="date">23/01/2020</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#wednesday"><span class="day">Wednesday</span><span class="date">24/01/2020</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#thursday"><span class="day">Thursday</span><span class="date">25/01/2020</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#friday"><span class="day">Friday</span><span class="date">26/01/2020</span><span class="curve"></span></li>
                 </ul>
                 
                 <!--Tabs Box-->
