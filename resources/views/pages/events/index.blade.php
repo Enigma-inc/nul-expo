@@ -113,7 +113,7 @@
                     </p>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-clock" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Deadline: 30th of January 2020
+                        Deadline: 30th of December 2019
                     </h5>
                     <p style="font-style: italic;">
                         Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
