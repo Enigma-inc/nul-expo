@@ -100,7 +100,7 @@
 				</div>
 				<div class="stall-card-right">
                     <div class="stall-header">
-                        <h3 class="stall-card-title">NUL-VODACOM HACKATHON</h3>
+                        <h3 class="stall-card-title">NUL-UNDP-VODACOM HACKATHON</h3>
                         @if (date('d/m/Y') > date('30/12/2019'))
                             <button class="btn btn-xs btn-primary">
                                 Applications closed.
