@@ -51,7 +51,7 @@
                     successes and failures in commercialization and policy recommendations in any of the areas mentioned
                     above. NULISTICE-2018 and the parallel events combined together are going to be bigger in scope and wider
                     in reach. While the previous events were just one day expos and workshops, this 2018 event will combine
-                    together an International Conference & Expo, student’s competitions (proposed Vodacom-NUL Hackathon),
+                    together an International Conference & Expo, student’s competitions (proposed NUL-UNDP-Vodacom Hackathon),
                     Gala Dinner and a Daytrip for the international visitors.
                 </p>
             </div>
@@ -120,7 +120,7 @@
 
             <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <p class="text-align-left color-primary">
-                    <strong>Vodacom-NUL Hackathon </strong>
+                    <strong>NUL-UNDP-Vodacom </strong>
                 </p>
                 <img src="{{asset('images/conference/hackathon.jpg')}}" alt="Hackathon" class="thumbnail pull-left margin-10 conference-img">
                 <p class="text-align-just">
