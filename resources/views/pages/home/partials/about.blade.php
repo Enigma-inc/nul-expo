@@ -44,8 +44,8 @@
         </div>
     </div>
 </section>
-<section id="app">
+{{-- <section id="app">
     <div class="auto-container">
       <gala-dinner></gala-dinner>
     </div>
-</section>
+</section> --}}
