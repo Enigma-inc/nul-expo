@@ -37,14 +37,13 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('admin.home')}}">
-                        NULISTICE/RERIS 2020 ADMIN
+                        NULISTICE 2020 ADMIN
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                       <li><a href="{{route('admin.home')}}">Abstracts</a></li>
                        <li><a href="{{route('admin.expo')}}">Expo Applications</a></li>
                        <li><a href="{{route('admin.exhibition')}}">Hackathon Applications</a></li>
                        <li class="dropdown">
@@ -54,7 +53,6 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                    <li><a href="{{route('generalEvents.index')}}">General Events</a></li>
-                                   <li><a href="{{route('rerisEvents.index')}}">Reris Events</a></li>                                                                     
                                    <li><a href="{{route('nulisticeEvents.index')}}">Nulistice Events</a></li>
                                    <li><a href="{{route('events.gallery')}}">Photo Gallery</a></li>
                                    <li><a href="{{route('events.gallery.add')}}">Add Images to Gallery</a></li>

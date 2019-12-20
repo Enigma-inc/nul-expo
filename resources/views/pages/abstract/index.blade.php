@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header">Abstract Submission Format NULISTICE 2018</h2>
+            <h2 class="header">Abstract Submission Format NULISTICE 2020</h2>
         </div>
 
         <div>

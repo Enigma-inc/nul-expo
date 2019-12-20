@@ -3,7 +3,7 @@
 <section class="padding-20">
     <div class="auto-container">
         <div class="sec-title wow fadeInUp text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-            <h2 class="header">Africa-EU Renewable Energy Research and Innovation Symposium (RERIS) 2018</h2>
+            <h2 class="header">Africa-EU Renewable Energy Research and Innovation Symposium (RERIS) 2020</h2>
         </div>
         <div class="row clearfix">
             <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -20,8 +20,8 @@
                 <p class="text-align-just">
                     With the aim to foster research cooperation on renewable energy – both between universities in Africa and Europe and between academia, 
                     private and public sector - the Africa-EU Renewable Energy Cooperation Programme (RECP) and the National University of Lesotho (NUL) are jointly 
-                    organising the second Africa-EU Symposium on Renewable Energy Research and Innovation (RERIS 2018) from 23–27 January 2018 in Maseru, Lesotho. 
-                    The symposium will take place on the occasion of the NUL International Science and Technology Innovation Conference and Expo (NULISTICE 2018).
+                    organising the second Africa-EU Symposium on Renewable Energy Research and Innovation (RERIS 2020) from 23–27 January 2020 in Maseru, Lesotho. 
+                    The symposium will take place on the occasion of the NUL International Science and Technology Innovation Conference and Expo (NULISTICE 2020).
                 </p>
 
                 <p class="text-align-just">

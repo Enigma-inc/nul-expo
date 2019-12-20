@@ -10,8 +10,8 @@ use App\ExhibitionRegister;
 use Riazxrazor\LaravelSweetAlert\LaravelSweetAlert;
 
 use Illuminate\Support\Facades\Mail;
-use App\Mail\StallBought;
-use App\Mail\HackathonBooked;
+use App\Mail\StallApplication;
+use App\Mail\HackathonApplication;
 
 class ExhibitionController extends Controller
 {
@@ -25,23 +25,7 @@ class ExhibitionController extends Controller
     }
     public function registerExhibitionView()
     {
-      // $options = collect(['option-a','option-b','option-c','option-d','option-e']);
-      //  if($options->contains($option))
-      //  {
-      //    return view('pages.expo-exhibition.register-exhibition')
-      //            ->with(['option'=>$option]);
-      //  }
-      //  else{
-      //    LaravelSweetAlert::setMessage([
-      //                   'title' => 'Oops!',
-      //                    'text'=>'Invalid option selected',
-      //                   'type' => 'error'
-      //               ]);
-      //     return redirect('/expo-and-exhibition');
-      //  }
-
       return view('pages.expo-exhibition.register-exhibition');
-
     }
     
     public function submitExpoRegistration(ExpoRegisterRequest $request)
@@ -60,7 +44,7 @@ class ExhibitionController extends Controller
             'status'=>0
           ]);
 
-          Mail::to(env('MAIL_TO'))->send(new StallBought($stall));
+          Mail::to(env('MAIL_TO'))->send(new StallApplication($stall));
           return view('pages.thank-you.index');
 
         } catch (Exception $e) {
@@ -85,13 +69,11 @@ class ExhibitionController extends Controller
             'country_phone_code'=>request('phone-code'),
             'phone'=>request('phone'),
             'country_flag'=>request('country-flag'),
-            // 'summary'=>request('summary'),
-            // 'option'=>request('option'),
             'status'=>0
 
           ]);
 
-          Mail::to(env('MAIL_TO'))->send(new HackathonBooked($hackathon));
+          Mail::to(env('MAIL_TO'))->send(new HackathonApplication($hackathon));
 
            return view('pages.thank-you.index');
 
