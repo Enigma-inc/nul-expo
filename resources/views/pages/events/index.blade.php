@@ -17,7 +17,7 @@
                     <div class="stall-header">
                         <h3 class="stall-card-title">Expo STALLS</h3>  
                         <div class="buttons">
-                            @if (date('d/m/Y') > date('30/12/2019'))
+                            @if (date('d/m/Y') > date('15/01/2020'))
                                 <button class="btn btn-xs btn-primary">
                                     Applications closed.
                                 </button>
@@ -63,7 +63,7 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">GALA DINNER</h3>
-                        @if (date('d/m/Y') > date('30/12/2019'))
+                        @if (date('d/m/Y') > date('15/01/2020'))
                             <button class="btn btn-xs btn-primary">
                                 Applications closed.
                             </button>
@@ -101,7 +101,7 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">NUL-UNDP-VODACOM HACKATHON</h3>
-                        @if (date('d/m/Y') > date('30/12/2019'))
+                        @if (date('d/m/Y') > date('15/01/2020'))
                             <button class="btn btn-xs btn-primary">
                                 Applications closed.
                             </button>
