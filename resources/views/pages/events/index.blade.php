@@ -17,20 +17,20 @@
                     <div class="stall-header">
                         <h3 class="stall-card-title">Expo STALLS</h3>  
                         <div class="buttons">
-                            @if (date('d/m/Y') > date('30/12/2019'))
+                            {{--  @if (date('d/m/Y') < date('30/12/2019'))  --}}
                                 <button class="btn btn-xs btn-primary">
                                     Applications closed.
                                 </button>
-                                @else
-                                <a href="{{ route('expo.register.view')}}">
+                                {{--  @else  --}}
+                                {{--  <a href="{{ route('expo.register.view')}}">
                                     <img src="{{asset('compiled/images/register-stall.svg')}}">
-                                </a>
-                            @endif
+                                </a>  --}}
+                            {{--  @endif  --}}
 
                             
-                            <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">
+                            {{--  <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">
                                 <img src="{{asset('compiled/images/get-tickets-blue.svg')}}">
-                            </a>
+                            </a>  --}}
                         </div> 
                     </div>
 
@@ -51,8 +51,11 @@
                         Deadline: 30 December 2019
                     </h5>
                     <p style="font-style: italic;">
-                        Buy a stall electronically <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">here</a> or put it into the following <a href="#" data-toggle="modal" data-target="#exampleModal">NUL account</a> (Send a proof of payment to: ketsi.motlatsi@gmail.com). 
+                        Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
                     </p>
+                    {{--  <p style="font-style: italic;">
+                        Buy a stall electronically <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">here</a> or put it into the following <a href="#" data-toggle="modal" data-target="#exampleModal">NUL account</a> (Send a proof of payment to: ketsi.motlatsi@gmail.com). 
+                    </p>  --}}
 				</div>
             </div>
 
@@ -63,15 +66,15 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">GALA DINNER</h3>
-                        @if (date('d/m/Y') > date('30/12/2019'))
+                        {{--  @if (date('d/m/Y') > date('30/12/2019'))  --}}
                             <button class="btn btn-xs btn-primary">
                                 Applications closed.
                             </button>
-                            @else
-                            <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">
+                            {{--  @else  --}}
+                            {{--  <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">
                                 <img src="{{asset('compiled/images/get-tickets-yellow.svg')}}">
-                            </a>   
-                        @endif                     
+                            </a>     --}}
+                        {{--  @endif                       --}}
                     </div>
 					<h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
@@ -89,7 +92,7 @@
                         Deadline: 30 December 2019
                     </h5>
                     <p style="font-style: italic;">
-                        Buy Gala Dinner tickets <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">here</a> electronically or find paper tickets at the NUL Innovation Hub. Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
+                        Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
                     </p>
 				</div>
             </div>
@@ -101,15 +104,15 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">NUL-VODACOM HACKATHON</h3>
-                        @if (date('d/m/Y') > date('30/12/2019'))
+                        {{--  @if (date('d/m/Y') > date('30/12/2019'))  --}}
                             <button class="btn btn-xs btn-primary">
                                 Applications closed.
                             </button>
-                            @else
-                            <a href="{{route('hackathon.apply')}}" >
+                            {{--  @else  --}}
+                            {{--  <a href="{{route('hackathon.apply')}}" >
                                 <img src="{{asset('compiled/images/apply.svg')}}">
-                            </a> 
-                        @endif                                               
+                            </a>   --}}
+                        {{--  @endif --}}
                     </div>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
