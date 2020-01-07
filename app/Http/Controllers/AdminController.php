@@ -169,17 +169,17 @@ class AdminController extends Controller
 
         $status = $request->query('status');
         if ($status == 'approved') {
-            $expoApplications = ExpoRegister::orderBy('updated_at', 'ASC')
+            $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
                 ->where('status', '=', 1)
                 ->whereDate('created_at', '>', '2019-08-01')
                 ->paginate(10);
         } elseif ($status == 'declined') {
-            $expoApplications = ExpoRegister::orderBy('updated_at', 'ASC')
+            $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
                 ->where('status', '=', 0)
                 ->whereDate('created_at', '>', '2019-08-01')
                 ->paginate(10);
         } else {
-            $expoApplications = ExpoRegister::orderBy('updated_at', 'ASC')
+            $expoApplications = ExpoRegister::orderBy('updated_at', 'DESC')
                 ->whereDate('created_at', '>', '2019-08-01')
                 ->paginate(10);
         }
