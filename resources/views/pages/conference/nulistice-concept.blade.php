@@ -120,7 +120,7 @@
 
             <div class="row wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <p class="text-align-left color-primary">
-                    <strong>Vodacom-NUL Hackathon </strong>
+                    <strong>NUL-UNDP-Vodacom </strong>
                 </p>
                 <img src="{{asset('images/conference/hackathon.jpg')}}" alt="Hackathon" class="thumbnail pull-left margin-10 conference-img">
                 <p class="text-align-just">

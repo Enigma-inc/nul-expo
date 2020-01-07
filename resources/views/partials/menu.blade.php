@@ -60,13 +60,13 @@
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                        {{-- <li class="navigation">
+                        <li class="navigation">
                             <li class="{{ Request::path() == 'login' ? 'current' : '' }}">
                                 <a href="login">Sign In</a>
                             </li>
                             <li class="{{ Request::path() == 'register' ? 'current' : '' }}">
                                 <a href="register">Sign Up</a>
-                            </li> --}}
+                            </li>
                         @else
                         @if (Auth::user()->is_admin)
                             {{-- <li class="{{ Request::path() == 'messages' ? 'current' : '' }} admin-menu">

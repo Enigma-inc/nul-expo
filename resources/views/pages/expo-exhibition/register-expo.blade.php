@@ -6,7 +6,7 @@
             <div class="panel panel-default">
                 <center class="panel-heading">Expo Registration</center>
                 <div class="panel-body">
-                    @if (date('d/m/Y') > date('30/12/2019'))
+                    @if (date('d/m/Y') > date('15/01/2020'))
                         Applications closed.                        
                         @else
                         <form class="form-horizontal" role="form" method="POST"

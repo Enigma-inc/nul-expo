@@ -2,17 +2,6 @@
 
 <section class="default-section">
     <div class="auto-container">
-        <div class="counter-section padding-5">
-            {{-- <div class="row clearfix">
-                <div class="col-xs-12 text-right margin-bottom-20">
-                    <a href="{{url('proceedings')}}" class="col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-file"></span> Download Proccedings (Single Files)</a>
-                    <a href="{{url('docs/nulistice-2018-proceedings/NULISTICE - Proceedings.zip')}}" class=" col-xs-6 text-center theme-btn btn-style-one hvr-bounce-to-right text-left"><span
-                                class="fa fa-file-archive"></span> Download Proccedings (Zip File)
-                    </a>
-                </div>
-            </div> --}}
-        </div>
 
         <div class="row clearfix">
 
@@ -55,3 +44,8 @@
         </div>
     </div>
 </section>
+{{-- <section id="app">
+    <div class="auto-container">
+      <gala-dinner></gala-dinner>
+    </div>
+</section> --}}
