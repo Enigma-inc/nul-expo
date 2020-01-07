@@ -16,14 +16,14 @@ class AdminController extends Controller
 {
     public function index($value = '')
     {
-        $rerisAbstracts = AbstractDoc::where('conference', '=', 'RERIS')->get();
-        $nulisticeAbstracts = AbstractDoc::where('conference', '=', 'NULISTICE')->get();
-        $rerisCount = $rerisAbstracts
+        $rerisAbstracts = AbstractDoc::where('conference', '=', 'RERIS')
             ->whereDate('created_at', '>', '2019-08-01')
-            ->count();
-        $nulisticeCount = $nulisticeAbstracts
+            ->get();
+        $nulisticeAbstracts = AbstractDoc::where('conference', '=', 'NULISTICE')
             ->whereDate('created_at', '>', '2019-08-01')
-            ->count();
+            ->get();
+        $rerisCount = $rerisAbstracts->count();
+        $nulisticeCount = $nulisticeAbstracts->count();
 
         $approvedExpo = ExpoRegister::where('status', '=', 1)
             ->whereDate('created_at', '>', '2019-08-01')
