@@ -7,10 +7,6 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Apply for Hackathon</div>
                 <div class="panel-body">
-                    {{--  <div class="text-center">
-                        <em><strong>You will need to have an account for you to upload or modify your abstract</strong></em>
-                        <hr>
-                    </div>  --}}
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('hackathon.sent-application') }}">
                         {{ csrf_field() }}
 

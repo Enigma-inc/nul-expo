@@ -48,10 +48,13 @@
                     </p>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-clock" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Deadline: 30 December 2019
+                        Deadline: 15th of January 2020
                     </h5>
                     <p style="font-style: italic;">
                         Buy a stall electronically <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">here</a> or put it into the following <a href="#" data-toggle="modal" data-target="#exampleModal">NUL account</a> (Send a proof of payment to: ketsi.motlatsi@gmail.com). 
+                    </p>
+                    <p style="font-style: italic;">
+                        Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
                     </p>
 				</div>
             </div>
@@ -79,17 +82,17 @@
                     </h5>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-building" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Vanue: Avani Maseru
+                        Venue: Avani Maseru
                     </h5>
 					<p style="text-align: justify;">
                         The Conference will be in the form of a Science, Technology and Innovation Forum at the Gala Dinner. The Gala will be a time to enjoy and reflect on the journey of innovation.
                     </p>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-clock" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Deadline: 30 December 2019
+                        Deadline: 15th of January 2020
                     </h5>
                     <p style="font-style: italic;">
-                        Buy Gala Dinner tickets <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">here</a> electronically or find paper tickets at the NUL Innovation Hub. Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
+                        Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
                     </p>
 				</div>
             </div>
@@ -114,11 +117,11 @@
                     </div>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Date: Midday and of the 18th January 2020 to Midday of the 19th January 2020
+                        Date: Midday of the 18th January 2020 to Midday of the 19th January 2020
                     </h5>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-building" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Vanue: NUL, Roma
+                        Venue: NUL, Roma
                     </h5>
 					<p style="text-align: justify;">
                         This will be a 24 hour coding marathon (hackathon) where computer gurus and thinkers from other disciplines in Lesotho and South Africa's higher education institutions will battle it out, solving the most interesting problems of our time. Students and graduates from NUL, LIMKOKWING, LEROTHOLI, BOTHO etc, and South Africa Universities are invited to apply. <br>
