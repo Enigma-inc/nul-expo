@@ -6,7 +6,7 @@
         <div class="btn-group">
         <a href="{{route('admin.expo',['status'=>'all'])}}" class="btn  {{ $status=='all' ? 'btn-primary' : '' }}">ALL</a>
         <a href="{{route('admin.expo',['status'=>'approved'])}}"  class="btn {{ $status=='approved' ? 'btn-primary' : '' }}">Accept</a>
-        <a href="{{route('admin.expo',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">DECLINED</a>
+        <a href="{{route('admin.expo',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">NOT APPROVED</a>
         </div>
     </div>
     <div class="row col-xs-12">
@@ -16,7 +16,7 @@
            <div class="image" style="text-align:center">
              <img width="100%" src="{{$expoApplication->country_flag}}" alt="flag">
                 <h2>{{$index +1}}</h2>
-                 <small >{{$exhibitionApplication->created_at->diffForHumans()}}</small>
+                 <small >{{$expoApplication->created_at->diffForHumans()}}</small>
            </div>
            <div class="panel panel-default col-xs-12 padding-0">
 

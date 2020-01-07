@@ -5,7 +5,7 @@
         <div class="btn-group">
         <a href="{{route('admin.exhibition',['status'=>'all'])}}" class="btn  {{ $status=='all' ? 'btn-primary' : '' }}">ALL</a>
         <a href="{{route('admin.exhibition',['status'=>'approved'])}}"  class="btn {{ $status=='approved' ? 'btn-primary' : '' }}">APPROVED</a>
-        <a href="{{route('admin.exhibition',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">DECLINED</a>
+        <a href="{{route('admin.exhibition',['status'=>'declined'])}}"  class="btn {{ $status=='declined' ? 'btn-primary' : '' }}">NOT APPROVED</a>
         </div>
     </div> 
    <div class="row col-xs-12">
