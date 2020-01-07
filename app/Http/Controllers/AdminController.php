@@ -18,13 +18,25 @@ class AdminController extends Controller
     {
         $rerisAbstracts = AbstractDoc::where('conference', '=', 'RERIS')->get();
         $nulisticeAbstracts = AbstractDoc::where('conference', '=', 'NULISTICE')->get();
-        $rerisCount = $rerisAbstracts->count();
-        $nulisticeCount = $nulisticeAbstracts->count();
+        $rerisCount = $rerisAbstracts
+            ->whereDate('created_at', '>', '2019-08-01')
+            ->count();
+        $nulisticeCount = $nulisticeAbstracts
+            ->whereDate('created_at', '>', '2019-08-01')
+            ->count();
 
-        $approvedExpo = ExpoRegister::where('status', '=', 1)->count();
-        $notApprovedExpo = ExpoRegister::where('status', '=', 0)->count();
-        $approvedExhbition = ExhibitionRegister::where('status', '=', 1)->count();
-        $notApprovedExhibition = ExhibitionRegister::where('status', '=', 0)->count();
+        $approvedExpo = ExpoRegister::where('status', '=', 1)
+            ->whereDate('created_at', '>', '2019-08-01')
+            ->count();
+        $notApprovedExpo = ExpoRegister::where('status', '=', 0)
+            ->whereDate('created_at', '>', '2019-08-01')
+            ->count();
+        $approvedExhbition = ExhibitionRegister::where('status', '=', 1)
+            ->whereDate('created_at', '>', '2019-08-01')
+            ->count();
+        $notApprovedExhibition = ExhibitionRegister::where('status', '=', 0)
+            ->whereDate('created_at', '>', '2019-08-01')
+            ->count();
 
 
         //Aggregate Authors
