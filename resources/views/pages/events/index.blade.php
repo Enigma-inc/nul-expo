@@ -101,6 +101,7 @@
 				<div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">NUL-UNDP-VODACOM HACKATHON</h3>
+
                         @if (date('d/m/Y') > date('15/01/2020'))
                             <button class="btn btn-xs btn-primary">
                                 Applications closed.
@@ -120,7 +121,7 @@
                         Vanue: NUL, Roma
                     </h5>
 					<p style="text-align: justify;">
-                        This will be a 24 hour coding marathon (hackathon) where computer gurus and thinkers from other disciplines in Lesotho and South Africa's higher education institutions will battle it out, solving the most interesting problems of our time. Students and graduates from NUL, LIMKWOKWIN, LEROTHOLI, BOTHO etc, and South Africa Universities are invited to apply. <br>
+                        This will be a 24 hour coding marathon (hackathon) where computer gurus and thinkers from other disciplines in Lesotho and South Africa's higher education institutions will battle it out, solving the most interesting problems of our time. Students and graduates from NUL, LIMKOKWING, LEROTHOLI, BOTHO etc, and South Africa Universities are invited to apply. <br>
                         Competing teams must have a maximum of 5 competitors and a minimum of 1 competitor. Each team must have at least one person with a knowledge of coding. Awards will be given to winners. 
                     </p>
                     <h5 class="stall-card-subtitle">

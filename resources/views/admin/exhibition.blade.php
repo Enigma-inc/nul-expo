@@ -12,9 +12,10 @@
    @if($exhibitionApplications->count()>0)
      @foreach ($exhibitionApplications as $index =>$exhibitionApplication)
          <div class=" admin-abstract-list col-xs-12">
-           <div class="image">
+           <div class="image" style="text-align:center">
              <img width="100%" src="{{$exhibitionApplication->country_flag}}" alt="flag">
-                <h2>{{$index +1}}</h2>
+             <h2>{{$index +1}}</h2>
+           <small >{{$exhibitionApplication->created_at->diffForHumans()}}</small>
            </div>
            <div class="panel panel-default col-xs-12">
 
