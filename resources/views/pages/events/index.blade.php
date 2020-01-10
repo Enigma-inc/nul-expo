@@ -87,10 +87,6 @@
 					<p style="text-align: justify;">
                         The Conference will be in the form of a Science, Technology and Innovation Forum at the Gala Dinner. The Gala will be a time to enjoy and reflect on the journey of innovation.
                     </p>
-                    <h5 class="stall-card-subtitle">
-                        <i class="fa fa-clock" style="color: #e13f30 !important;margin-right: 5px;" aria-hidden="true"></i>
-                        Deadline: 15th of January 2020
-                    </h5>
                     <p style="font-style: italic;">
                         Contact: ketsi.motlatsi@gmail.com or call +266 53256707 for more information.
                     </p>

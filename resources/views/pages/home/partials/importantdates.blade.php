@@ -28,7 +28,7 @@
                     	<figure class="icon"><img src="images/icons/icon-schedule.png" alt="" title=""></figure>
                         <h3 class="primary-color">Gala Dinner</h3>
 						<blockquote>
-                        <h3>24 Jan 2020</h3>
+                        <h3>23 Jan 2020</h3>
                         </blockquote>
                     </article>
 
