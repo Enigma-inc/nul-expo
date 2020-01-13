@@ -114,7 +114,7 @@
                     <div class="stall-header">
                         <h3 class="stall-card-title">NUL-UNDP-VODACOM HACKATHON</h3>
 
-                        @if (date('d/m/Y') > date('07/01/2020'))
+                        @if (date('d/m/Y') > date('15/01/2020'))
                         <button class="btn btn-xs btn-primary">
                             Applications closed.
                         </button>
