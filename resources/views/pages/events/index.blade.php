@@ -76,15 +76,11 @@
                 <div class="stall-card-right">
                     <div class="stall-header">
                         <h3 class="stall-card-title">GALA DINNER</h3>
-                        @if (date('d/m/Y') > date('15/01/2020'))
-                        <button class="btn btn-xs btn-primary">
-                            Applications closed.
-                        </button>
-                        @else
+                        
                         <a href="https://app.ticketbox.co.ls/e/3/nulistice-2020-expo-gala-dinner" target="_blank">
                             <img src="{{asset('compiled/images/get-tickets-yellow.svg')}}">
                         </a>
-                        @endif
+                        
                     </div>
                     <h5 class="stall-card-subtitle">
                         <i class="fa fa-calendar-o" style="color: #e13f30 !important;margin-right: 5px;"
