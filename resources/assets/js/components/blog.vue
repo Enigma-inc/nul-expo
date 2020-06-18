@@ -14,17 +14,19 @@
 
                 <div class="wow fadeInUp animated col-md-8">
                  <!-- Post Title -->
-                <h4  v-html="article.title.rendered" style="visibility: visible; animation-name: fadeInUp; color: #e13f30; text-align:left"></h4>
-                                        <!-- Text -->
-                        <p v-html="article.excerpt.rendered" style="text-align: justify;"></p>
-                        <a v-bind:href="article.link" target="_blank" class="default-btn orange hvr-bounce-to-right pull-left" style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 17px; border-width: 0px; margin-bottom: 5px 13.9429px 6.97143px 0px; padding: 7px 17px; letter-spacing: 0px; font-size: 10px;">
-                        Read More</a>
+                <a v-bind:href="article.link" target="_blank">
+                    <h4  v-html="article.title.rendered" style="visibility: visible; animation-name: fadeInUp; color: #e13f30; text-align:left"></h4>
+                </a>
+                <!-- Text -->
+                <p v-html="article.excerpt.rendered" style="text-align: justify;"></p>
+                <a v-bind:href="article.link" target="_blank" class="default-btn orange hvr-bounce-to-right pull-left" style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 17px; border-width: 0px; margin-bottom: 5px 13.9429px 6.97143px 0px; padding: 7px 17px; letter-spacing: 0px; font-size: 10px;">
+                Read More</a>
                 </div>
                 </div>    
 
             </div>
             <div class="row text-center">   
-             <a href="http://nulresearchandinnovations.co.ls/" target="_blank" class="default-btn green hvr-bounce-to-right pull-right margin-right-30" style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 17px; border-width: 0px; margin-bottom: 5px 13.9429px 6.97143px 0px; padding: 7px 17px; letter-spacing: 0px; font-size: 10px;">
+             <a href="https://www.nulresearchandinnovations.co.ls/" target="_blank" class="default-btn green hvr-bounce-to-right pull-right margin-right-30" style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 17px; border-width: 0px; margin-bottom: 5px 13.9429px 6.97143px 0px; padding: 7px 17px; letter-spacing: 0px; font-size: 10px;">
                         More Articles</a>
             </div>
             

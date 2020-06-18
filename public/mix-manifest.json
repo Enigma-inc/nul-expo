@@ -1,11 +1,14 @@
 {
-    "/admin-assets/js/app.js": "/admin-assets/js/app.js?id=3c450fd03d054507579f",
-    "/js/app.js": "/js/app.js?id=aaab4b95ab1aa7c7877e",
-    "/css/app.css": "/css/app.css?id=7b171e47f0bfa17c84ec",
-    "/admin-assets/css/app.css": "/admin-assets/css/app.css?id=7cfa37461f8f45efc3fa",
-    "/css/helpers.css": "/css/helpers.css?id=6ec7e2e1f7f1c1922b79",
-    "/compiled/css/2020-theme.css": "/compiled/css/2020-theme.css?id=70d411b96f2c0e2f6348",
-    "/js/app-live.js": "/js/app-live.js?id=741deb1b0e174ed0eda3",
+    "/admin-assets/js/app.js": "/admin-assets/js/app.js?id=5b3359eaffd32722b9fa",
+    "/admin-assets/js/app.js.map": "/admin-assets/js/app.js.map?id=346f0f6f56cb4cde8b3d",
+    "/js/app.js": "/js/app.js?id=0ce8d048d1d031a372f2",
+    "/css/app.css": "/css/app.css?id=0b191a37269c32066757",
+    "/admin-assets/css/app.css": "/admin-assets/css/app.css?id=b523dbeed15e9d2ae102",
+    "/css/helpers.css": "/css/helpers.css?id=91a464dcf326c6dc08b4",
+    "/compiled/css/2020-theme.css": "/compiled/css/2020-theme.css?id=58e24ecd6d1473fd281c",
+    "/js/app.js.map": "/js/app.js.map?id=2d9eb537d7288da1780f",
+    "/js/app-live.js": "/js/app-live.js?id=4fe6c850480b2b2dd79f",
+    "/js/app-live.js.map": "/js/app-live.js.map?id=3b5e5f1f5fc4f530c2cf",
     "/admin-assets/js/bundle.js": "/admin-assets/js/bundle.js?id=4fe7f982f19144a0b5e2",
     "/css/vuetify.css": "/css/vuetify.css?id=cf1af773942288734d63"
 }
