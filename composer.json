@@ -26,7 +26,8 @@
         "unisharp/laravel-ckeditor": "^4.7",
         "infyomlabs/laravel-generator": "6.0.x-dev",
         "laravelcollective/html": "^6.0",
-        "infyomlabs/adminlte-templates": "6.0.x-dev"
+        "infyomlabs/adminlte-templates": "6.0.x-dev",
+        "ixudra/curl": "6.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

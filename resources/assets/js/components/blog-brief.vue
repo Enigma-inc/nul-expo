@@ -5,7 +5,7 @@
         </div>
         <div v-if="!loading">
             <div class="row">
-                <div class="post-item wow animated col-xs-12" v-for="(article,index) in articles" v-if="index <=2">
+                <div class="post-item wow animated col-xs-12" v-for="(article,index) in articles" :key="index" v-if="index <=2">
 
                     <div class="row" style="padding: 20px;">
                         <div class="post wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
@@ -43,7 +43,7 @@
         },
         mounted() {
             this.loading = true;
-            axios.get('http://nulresearchandinnovations.co.ls/blog/api/articles/featured').then(response => {
+            axios.get('https://www.nulresearchandinnovations.co.ls/wp-json/wp/v2/posts?_embed').then(response => {
 
                 this.articles = response.data;
                 this.loading = false;

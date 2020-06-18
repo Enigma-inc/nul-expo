@@ -41,3 +41,6 @@ Route::get('events/reris','RerisEventController@index');
  
  
  Route::post('/events/{id}/toggle-status','GeneralEventController@toggleStatus')->middleware('auth:api');
+
+//Blog Api
+Route::get('blog', 'API\BlogAPIController@index');

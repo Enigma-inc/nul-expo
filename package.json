@@ -21,7 +21,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "bootstrap-sass": "^3.4.1",
     "cross-env": "^3.2.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "laravel-mix": "^5.0.0",
     "lodash": "^4.17.15",
     "resolve-url-loader": "^3.1.0",
