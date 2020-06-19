@@ -23,11 +23,11 @@
 
             </div> -->
 
-            <div class="post-item" v-for="(article, index) in articles" :key="index">
+            <div class="post-item wow animated" v-for="(article, index) in articles" :key="index">
                 <a class="post-img" v-bind:href="article.link">
                     <img height="200" width="200" :src="getArticleFeaturedImgUrl(article)" alt="">
                 </a>
-                <div class="post-content">
+                <div class="post-content wow fadeInUp animated">
                     <a v-bind:href="article.link">
                         <h4 v-html="article.title.rendered"></h4>
                     </a>
@@ -117,6 +117,15 @@
                 font-size: 14px;
                 margin-top: 15px;
                 margin: 15px 0 0 0 !important;
+                transition: all 0.2s ease-out 0s; 
+                min-height: 0px; 
+                min-width: 0px; 
+                line-height: 17px; 
+                border-width: 0px; 
+                margin-bottom: 5px 13.9429px 6.97143px 0px; 
+                padding: 7px 17px; 
+                letter-spacing: 0px; 
+                font-size: 10px;
             }
 
             .footer{
