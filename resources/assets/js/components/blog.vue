@@ -116,6 +116,7 @@
                 padding: 5px 10px;
                 font-size: 14px;
                 margin-top: 15px;
+                margin: 15px 0 0 0 !important;
             }
 
             .footer{
@@ -127,6 +128,9 @@
     @media only screen and (max-width: 1080px){
         .post-item{
             flex-flow: wrap;
+            .post-content{
+                margin: 10px;
+            }
         }
     }
 </style>
